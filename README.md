@@ -1,4 +1,4 @@
-# Cours de géomatique territoriale - Sorbonne Université - L2/S4 - GEOMAT (2024-2025)
+# Cours d'analyse de données - Sorbonne Université - M1/S1 (2025-2026)
 
 Le plan des séances est indicatif. En fonction des besoins, il pourra évoluer. `GitHub` étant un outil de *versionning*, il convient aux étudiants d'être attentifs aux dates de mises à jour. Idéalement, il faut se rendre sur la plateforme toutes les semaines.
 
