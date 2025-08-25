@@ -60,7 +60,7 @@ Si vous voulez vous documenter sur `Docker`, libre à vous, et je ne saurais que
 
 ## Installer les paquets
 
-Dans ce cours, on utilise de nombreux paquets. Il suffit de taper leur nom dans le fichier `requirements.txt` **avant** de lancer la commande `docker-compose up -d --build`.
+Dans ce cours, on utilise de nombreux paquets. Il suffit de taper leurs noms dans le fichier `requirements.txt` **avant** de lancer la commande `docker-compose up -d --build`.
 
 Par défaut, j'ai placé tous les paquets nécessaires pour les T.D.
 
