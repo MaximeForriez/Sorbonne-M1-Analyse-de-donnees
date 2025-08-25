@@ -20,7 +20,7 @@ Chaque séance possède son dossier.
 
 ### [Séance 1. Présentation du contenu du cours et mise en route](./Seance-01/Seance-01.md)
 
-Tous les groupes doivent télécharger dans le [dossier suivante](./Installation%20de%20Python%20avec%20Docker/).
+Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%20de%20Python%20avec%20Docker/).
 
 - Débutants [17/09/2025] - Clignancourt - Salle 426 - 12h00-14h00
 
@@ -151,7 +151,7 @@ Tous les groupes doivent télécharger dans le [dossier suivante](./Installation
 
 - Lethielleux, Maurice, 2010, *Statistique descriptive en 27 fiches*, Paris, Dunod, IV-156 p. [Express sup]
 
-Lipschutz, Seymour, *Probabilités*, trad. fr., Paris, McGraw-Hill, VI-154 p. [Série Schaum]
+- Lipschutz, Seymour, *Probabilités*, trad. fr., Paris, McGraw-Hill, VI-154 p. [Série Schaum]
 
 - Marchand, Bernard, 1972, « L’usage des statistiques en géographie ». *L’espace géographique*, vol. 1, n°2, p. 79–100. [Excellent article de synthèse]
 
