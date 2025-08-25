@@ -1,14 +1,18 @@
 # Cours d'analyse de données - Sorbonne Université - M1/S1 (2025-2026)
 
-Le plan des séances est indicatif. En fonction des besoins, il pourra évoluer. `GitHub` étant un outil de *versionning*, il convient aux étudiants d'être attentifs aux dates de mises à jour. Idéalement, il faut se rendre sur la plateforme toutes les semaines.
+Le plan des séances est **indicatif**. En fonction des besoins, il pourra évoluer. `GitHub` étant un outil de *versionning*, il convient aux étudiants d'être attentifs aux dates de mises à jour. Idéalement, il faut se rendre sur la plateforme toutes les semaines.
 
 Ce dépôt va progressivement contenir toutes les ressources des séances.
+
 - Orientations bibliographiques
+
 - Conseils sur les tutoriels à visualiser pour mieux comprendre les manipulations, et surtout s'entraîner
+
 - Schémas du cours
+
 - Fichiers de code
 
-Chaque séance possède son dossier.
+Chaque séance possède son dossier. Vous devez les sélectionner en fonction votre niveau.
 
 ## Objectif des séances
 
@@ -17,6 +21,11 @@ Chaque séance possède son dossier.
 ## Plan du cours
 
 ### [Séance 0. Rattrapages des notions mathématiques mal maîtrisées](./Formulaire-mathematique/README.md)
+
+Si vous avez des difficultés à comprendre les équations, voici des cours et des exercices corrigés afin que vous compreniez mieux les notions mathématiques abordées. Nous sommes en **mathématiques appliquées**. De fait, ne pas savoir résoudre les équations et les problèmes mathématiques attachés aux analyses de données est **normal**, **mais vous devez savoir lire une équation et l'utiliser**. Les nombres, les probabilités, les fonctions, le calcul différentiel, le calcul intégral, les bases de l'algèbre linéaire, les matrices, *etc*. ne doivent vous poser aucun problème. Les exercices proposés sont basiques, mais, si vous les comprenez, vous n'aurez aucun mal à comprendre les raisonnements en analyse de données. La mise en œuvre des traitements de données s'effectue avec la béquille qu'est le langage de programmation `Python` qui a pré-codé de nombreuses analyses statistiques dans ses modules.
+
+> [!WARNING]
+> Retenez bien que la phrase « ouin, ouin, je suis un littéraire, je ne comprends rien aux mathématiques », je ne veux pas l'entendre. Moi-même je suis littéraire et, même si je ne peux démontrer l'intégralité des étapes d'une méthode statistique, je les comprends, et c'est en les comprenant que je peux utiliser les outils avec `Python`. Toutefois, pour la comprendre, il faut maîtriser des mathématiques élémentaires, donc vous **devez** rattraper ce que vous méconnaissez et le comprendre. C'est très important si vous voulez travailler dans les métiers touchant les données.
 
 ### [Séance 1. Présentation du contenu du cours et mise en route](./Seance-01/Seance-01.md)
 
@@ -49,7 +58,7 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 - Intermédiaires [05/11/2025] - Clignancourt - Salle 426 - 12h00-14h00
 
 > [!WARNING]
-> Dernier cours en salle 426
+> Dernier cours en salle 426 pour les intermédiaires
 
 - Confirmés (GEOINT) [01/10/2025] - Clignancourt - Salle 217 - 10h00-12h00
 
@@ -60,7 +69,7 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 - Intermédiaires [19/11/2025] - Clignancourt - Salle 217 - 10h00-12h00
 
 > [!WARNING]
-> Changement de salle et d'horaire
+> Changement de salle et d'horaire pour les intermédiaires
 
 - Confirmés (GEOINT) [08/10/2025] - Clignancourt - Salle 217 - 10h00-12h00
 

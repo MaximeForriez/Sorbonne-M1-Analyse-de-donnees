@@ -1,5 +1,7 @@
 # Probabilités
 
+## Cours
+
 Vous savez [dénombrer](./01-Denombrement.md). Désormais, il est possible d'envisager de comprendre les probabilités. En statistiques, les probabilités sont souvent ramener à des fréquences, qui correspondent à des « probabilités pratiques ». De fait, les statistiques ne peuvent être comprises qu'à deux conditions :
 1. savoir dénombrer ;
 2. savoir établir des probabilités.
@@ -8,21 +10,27 @@ Mathématiquement, les probabilités peuvent être très complexes. En cas prati
 
 Commençons par un cas pratique : le [problème du chevalier de Méré](./PDF/Mere.pdf).
 
-## Les ensembles
+### Les ensembles
 
 
 
-## Les probabilités simples
+### Les probabilités simples
 
 
 
-## Les probabilité conditionnelles
+### Les probabilité conditionnelles
 
 
 
-## Conclusion
+### Conclusion
 
 Les probabilités servent à établir les **distributions statistiques**.
+
+## Exercices
+
+- [Exercices sur les probabilités](./Exercices/02-Probabilites.pdf)
+
+- [Corrections des exercices sur les probabilités](./Solutions/02-Probabilites-Corrections.pdf)
 
 ## Tutoriels
 

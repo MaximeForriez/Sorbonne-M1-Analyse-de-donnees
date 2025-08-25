@@ -60,6 +60,15 @@ Il faut se poser les questions sans *a priori* sur la situation géographique qu
 
 #### Les tirages avec remise : la combinaison avec répétitions
 
+
+
+
+## Exercices
+
+- [Exercices sur le dénombrement](./Exercices/01-Denombrement.pdf)
+
+- [Corrections des exercices sur le dénombrement](./Solutions/01-Denombrement-Corrections.pdf)
+
 ## Tutoriels
 
 - [Le dénombrement - Vision d'ensemble](https://www.youtube.com/watch?v=fO3T4njqyAs)
