@@ -229,4 +229,7 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 ## Notation
 
-Tous les T.D. sont notés. Pour la fin du semestre, vous devez me rendre un portfolio contenant tous les exercices demandés.
+Tous les T.D. sont notés. Pour la fin du semestre, vous devez me rendre un portfolio contenant tous les exercices demandés sur **votre** `GitHub` en m'envoyant un lien à mon courriel universitaire `maxime.forriez@sorbonne-universite.fr`.
+
+> [!WARNING]
+> Les serveurs de l'université en tant d'usage fluctant, si le problème persiste jusqu'en décembre, exceptionnellement, vous pourrez m'envoyer votre travail sur mon adresse personnelle, `maxime.forriez@gmail.com`.
