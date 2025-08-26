@@ -133,7 +133,7 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 - Gassara, Elyes (2022). *Docker / Kubernetes. Pour optimiser et accélérer les développements d’applications conteneurisées*, Paris, Eyrolles, VIII-192 p.
 
-- Girschig, M., 1969, *Analyse statistique*, Paris, École centrale des arts & Manufactures, 55 p.
+- Girschig, M., 1969, [*Analyse statistique*](./Formulaire-mathematique/Girschig-M-1969-Analyse%20statistique.pdf), Paris, École centrale des arts & Manufactures, 55 p.
 
 - Goldfarb, Bernard & Pardoux, Catherine, 2011, *Introduction à la méthode statistique. Manuel et exercices corrigés*, Paris. Dunod, X-374 p. [Éco sup]
 
