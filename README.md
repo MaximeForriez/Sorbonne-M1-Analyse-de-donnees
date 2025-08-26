@@ -188,9 +188,13 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 - Sanders, Lena, 1989, *L’analyse des données appliquées à la géographie*, Montpellier, GIP-Reclus, 268 p. [Alidade]
 
+- Saporta, Gilbert, 2011, *Probabilités. Analyse de données. Statistique*, Paris, Éditions Technip, XXXIV-622 p. [3e édition révisée]
+
 - Schutz, Émilien et Bussonnier, Mattias, 2020, *Python pour les SHS. Introduction à la programmation pour le traitement de données. Pratique de la statistique*, Rennes, Presses universitaires de Rennes, XVI-334 p. [Pratique de la statistique]
 
-- Spiegel, Murray R., 1984, *Théorie et applications de la statistique*, trad. Alain Ergas & Jean-François Marcotorchino, Paris, McGraw-Hill, X-358 p. [réédition de 1972]
+- Spiegel, Murray R., 1981, *Probabilités et statistique*, trad. Romain Jacoud, Paris, McGraw-Hill, X-386 p. [Série Schaum]
+
+- Spiegel, Murray R., 1984, *Théorie et applications de la statistique*, trad. Alain Ergas & Jean-François Marcotorchino, Paris, McGraw-Hill, X-358 p. [Série Schaum] [réédition de 1972]
 
 - Spiegel, Murray R., 1974, *Formules et tables de mathématiques*, trad. Michel Lobenberg, Paris, McGraw-Hill, 272 p. [Série Schaum]
 
