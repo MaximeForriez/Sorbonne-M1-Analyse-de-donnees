@@ -103,7 +103,7 @@
 - $\Omega$, $\varOmega$ : omega
 
 > [!NOTE]
-> $\nabla$ : nabla, est un delta inversé.\aleph
+> $\nabla$ : nabla, est un $\Delta$ inversé.
 
 ## Alphabet hébraïque
 
