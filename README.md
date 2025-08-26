@@ -125,7 +125,7 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 - Dumolard, Pierre, 2011, *Données géographiques. Analyse statistique multivariée*, Paris, Lavoisier-Hermès, 208 p.
 
-- Dumolard, Pierre, Allignol, Françoise, Paul, Emmanuel et Quesseveur, Erwan [*L’outil informatique en géographie*](https ://dspace.mshalpes.prd.fr/bitstream/1801/19/2/book_geoinfo.pdf), 150 p. 
+- Dumolard, Pierre, Allignol, Françoise, Paul, Emmanuel et Quesseveur, Erwan [*L’outil informatique en géographie*](https://dspace.mshalpes.prd.fr/bitstream/1801/19/2/book_geoinfo.pdf), 150 p. 
 
 - Dumolard, Pierre, Dubus, Nathalie & Charleux, Laure, 2003, *Les statistiques en géographie*, Paris, Belin, 240 p. [Atout géographie]
 

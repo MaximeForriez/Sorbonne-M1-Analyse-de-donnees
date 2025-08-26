@@ -6,4 +6,4 @@ Ce dossier regroupe quelques techniques probabilistes ou statistiques hors progr
 
     - [Exercices]()
 
-    - [Doudou le lapin]()
+    - [Doudou le hamster]()
