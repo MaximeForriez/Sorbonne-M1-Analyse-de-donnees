@@ -125,13 +125,13 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 - Dumolard, Pierre, 2011, *Données géographiques. Analyse statistique multivariée*, Paris, Lavoisier-Hermès, 208 p.
 
-- Dumolard, Pierre, Allignol, Françoise, Paul, Emmanuel et Quesseveur, Erwan [*L’outil informatique en géographie*](https://dspace.mshalpes.prd.fr/bitstream/1801/19/2/book_geoinfo.pdf), 150 p. 
+- Dumolard, Pierre, Allignol, Françoise, Paul, Emmanuel et Quesseveur, Erwan, [*L’outil informatique en géographie*](https://iga.ujf-grenoble.fr/cours-en-ligne/book_geoinfo.pdf), 150 p. 
 
 - Dumolard, Pierre, Dubus, Nathalie & Charleux, Laure, 2003, *Les statistiques en géographie*, Paris, Belin, 240 p. [Atout géographie]
 
 - Foucart, Thierry, 1984, *Analyse factorielle de tableaux multiples*. Paris, Masson, 188 p. [Méthode + Programmes]
 
-- Gassara, Elyes (2022). *Docker / Kubernetes. Pour optimiser et accélérer les développements d’applications conteneurisées*, Paris, Eyrolles, VIII-192 p.
+- Gassara, Elyes, 2022, *Docker / Kubernetes. Pour optimiser et accélérer les développements d’applications conteneurisées*, Paris, Eyrolles, VIII-192 p.
 
 - Girschig, M., 1969, [*Analyse statistique*](./Formulaire-mathematique/Girschig-M-1969-Analyse%20statistique.pdf), Paris, École centrale des arts & Manufactures, 55 p.
 
