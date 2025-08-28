@@ -231,16 +231,9 @@ $\begin{array}{l} \mathrm{card} \left( A_1, \cup A_2, \cup \ldots{} \cup A_n \ri
 
 ## Exercices
 
+- [Exercices sur les ensembles finis](./Exercices/)
 
-
-
-
-
-
-
-
-
-
+- [Corrections des exercices sur ](./Solutions/)
 
 ## Notes de bas de page
 
