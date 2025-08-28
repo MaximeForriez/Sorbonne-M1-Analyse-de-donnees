@@ -242,7 +242,7 @@ $\begin{array}{l} \mathrm{card} \left( A_1, \cup A_2, \cup \ldots{} \cup A_n \ri
 
 
 
-
+## Notes de bas de page
 
 [^1]: John Venn (1834-1923)
 
