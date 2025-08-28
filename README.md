@@ -141,7 +141,7 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 - Grandjacquot, Marie-Pierre, 1999, *Outils statistiques*, Paris, Eska, 134 p. [Théorie et pratique du management - Méthodes quantitatives]
 
-- Groupe CHADULE, 1997, *Initiation aux pratiques statistiques en géographie*. Paris, Masson, 204 p.
+- Groupe CHADULE[^1], 1997, *Initiation aux pratiques statistiques en géographie*. Paris, Masson, 204 p.
 
 - Howell, David C., 2024, *Méthodes statistiques en sciences humaines*, Louvain-la-Neuve, DeBoeck Supérieur, XVI-782 p. [Ouvertures psycholohiques] [3<sup>e</sup> édition]
 
@@ -153,6 +153,8 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 - Lahousse, Philippe & Piedenna, Vincent, 1998, *L’outil statistique en géographie*, t. 1, *Les distributions spatiales*, Paris, Armand Colin, 96 p. [Synthèse 43]
 
 - Lahousse, Philippe & Piedenna, Vincent, 1998, *L’outil statistique en géographie*, t. 2, *L’analyse bivariée*, Paris, Armand Colin, 96 p. [Synthèse 96]
+
+- Le Roux, Brigitte, 2014, *Analyse géométrique des données multidimensionnelles*, Paris, Dunod, IV-408 p.
 
 - Lebart, Ludovic, Piron, Marie & Morineau, Alain, 2006, *Statistique exploratoire multidimensionnelle. Visualisations et inférences en fouille de données*. Paris, Dunod, XVI-464 p. [Science sup] [4<sup>e</sup> édition] [Référence complète et simple d'accès pour les statistiques multivariées]
 
@@ -166,7 +168,7 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 - Martin, Olivier, 2020, *L’analyse quantitative des données*, Paris, Armand Colin, 126 p. [128]
 
-- McKinney, Wes, 2021, *Analyse de données avec Python. Préparation des données avec Pandas, NumPy et Ipython*, Paris, O’Reilly, XVI-540 p.
+- McKinney, Wes, 2021, [*Analyse de données avec Python. Préparation des données avec Pandas, NumPy et Ipython*](https://katfile.com/cwnuhyd8bkx1), Paris, O’Reilly, XVI-540 p. [[Version anglaise](https://www.lkhibra.ma/books/Python-for-Data-Analysis.pdf)]
 
 - Monino, Jean-Louis, Kosianski, Jean-Michel & Le Cornu, François, 2010, *Statistique descriptive*, Paris, Dunod, VIII-280 p.
 
@@ -198,7 +200,7 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 - Spiegel, Murray R., 1974, *Formules et tables de mathématiques*, trad. Michel Lobenberg, Paris, McGraw-Hill, 272 p. [Série Schaum]
 
-- Thabut, Gabriel, 2018, [Les statistiques : pour quoi faire ?](https://des-pneumo.org/wp-content/uploads/2018/04/Biostat_Thabut-compressed.pdf)
+- Thabut, Gabriel, 2018, [*Les statistiques : pour quoi faire ?*](https://des-pneumo.org/wp-content/uploads/2018/04/Biostat_Thabut-compressed.pdf)
 
 - Tenenhaus, Michel, 2007, *Statistique. Méthodes pour décrire, expliquer et prévoir*, Paris, Dunod, XII-680 p.
 
@@ -246,3 +248,9 @@ Tous les T.D. sont notés. Pour la fin du semestre, vous devez me rendre un port
 
 > [!WARNING]
 > Les serveurs de l'université en tant d'usage fluctant, si le problème persiste jusqu'en décembre, exceptionnellement, vous pourrez m'envoyer votre travail sur mon adresse personnelle, `maxime.forriez@gmail.com`.
+
+
+
+
+
+[^1] : CHADULE signifie : Henri Chamussy (1935-2015), Joël Charre (né en 1946), Pierre Dumolard (né en 1941) et Maryvonne Le Berre (1940-2012). Ce sont les principaux auteurs de manuel de statistiques en géographie.
