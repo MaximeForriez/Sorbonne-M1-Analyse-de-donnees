@@ -2,6 +2,10 @@
 
 Pourquoi apprendre `Python` ? Pour beaucoup, `Python` sera l'`Excel` de demain, c'est-à-dire il sera plus judicieux d'opérer des traitements avec `Python` qu'`Excel`. C'est normal, la société évolue, et `Excel` est inapproprié pour opérer un traitement automatique performant, surtout lorsque la masse et les sources de données sont très importantes, or nous  sommes dans un monde de données massives. Le tableur n'est plus le meilleur outil pour tenir un tableau de bord par exemple.
 
+## Durée d'apprentissage
+
+En moyenne, vous mettrez un mois à maîtriser les bases du langage et à savoir les utiliser. Bien entendu, cela requerra de votre part un certain investissement et cela dépendra de vos capacités propres. 
+
 ## Documentation
 
 Cette série de T.D. ne peut que vous donner un bref aperçu du langage de programmation `Python`. Vous allez apprendre les rudiments de la version 3[^1]. L'objectif est d'en acquérir les bases. Tout au long des séances, vous serez confrontés à des problèmes. Typiquement, un code qui ne marche pas, il faudra apprendre à résoudre par vous-mêmes les problèmes. Pour ce, la [documentation officielle](https://docs.python.org/3/) du langage doit devenir votre meilleure amie. De nombreuses documentations sont en français, mais, pour toutes les nouvelles technologies, il faut savoir lire l'anglais technique.
@@ -19,6 +23,121 @@ Par ailleurs, les tutoriels sur `Youtube` sont très nombreux en français.
 - [Formation vidéo - Exercices](https://www.youtube.com/watch?v=HVN4qv6Dxdk&list=PLrSOXFDHBtfEiSgOG1FM4oq-yS24iV4s1)
 
 - *etc*.
+
+> [!TIP]
+> Une version comprend trois nombres séparés par un point : $x$.$y$.$z$.
+> - $x$ est le numéro de la version majeure.
+> - $y$ est le numéro de la version mineure.
+> - $z$ est le numéro de la version micro.
+
+## Vocabulaire de base
+
+- **Programme** : ensemble structuré réalisant des tâches beaucoup plus ciblées qu'un script
+
+- **Programmer** : écrire une série d'instructions à un ordinateur dans le but qu'il exécute une tâche
+
+- **Script** : ensemble de commandes organisant une action de l'ordinateur
+
+## Position du cours par rapport au langage `Python`
+
+« Un préjugé récurrent voudrait que les S.H.S. se montrent méfiantes à l'égard de nouveautés technologiques et, à ce titre, se tiennent à distance des évolutions informatiques. Non seulement ce préjugé est faux, en témoignant les traditions poussées d'analyse statistique en sciences sociales ou l'usage des historiens et des archéologues des bases de données, mais a pour conséquence de limiter l'appropriation de ces outils » (Schutz & Bussonnier, 2020, p. III). Avec ce cours d'analyse de données, c'est l'occasion pour vous, si vous vous reconnaissez dans cette citation, de pouvoir découvrir et apprendre les outils informatiques indispensables de nos jours. L'objectif de ce cours n'est pas d'être exhaustif. Il s'agit de vous donner les bases dans un contexte précis, ici l'analyse de données géographiques, afin que vous puissez effectuer vos analyses de données sereinement.
+
+Vous allez apprendre à programmer pour produire des analyses géographiques. Quelles sont les conséquences de cette apprentissage dans la manière d'étudier ou de faire de la géographie.
+
+1. Développer votre pensée abstraite
+
+2. Apprendre à décomposer des problèmes
+
+3. Encourager votre créativité pour résoudre des problèmes
+
+4. Acquérir une compétence professsionnelle utile tout au long de votre vie
+
+5. Renforcer votre confiance en vous
+
+6. Favoriser la rencontre entre technologie et votre esprit critique
+
+7. Vous amuser
+
+Pourquoi le `Python` ?
+
+1. C'est le langage le plus demandée par les organisations (avec le `Java`)
+
+	- Source : [Tiobe](https://www.tiobe.com/tiobe-index)
+
+2. C'est un langage intuitif, donc facile  à apprendre.
+
+	- Cela étant, le langage donne de mauvaises habitudes de programmation, car elles ne sont pas universelles. Il faut sans arrêter se documenter.
+
+Le cours de `Python`, comme celui de statistiques, est **progressif**. Avant de consulter les modules et les *framework*, il faut maîtriser les bases du langage, c'est ce que propose cette page.
+
+Le but d'associer géographie, `Python` et statistiques est de vous faire acquérir des réflexes :
+
+1. pour traiter vos données ;
+
+2. dans l'analyse statistique de vos données ;
+
+3. dans le choix de vos routines d'analyse statistique ;
+
+4. dans l'analyse critique de vos données et de vos résultats.
+
+> [!WARNING]
+> Le langage `Python` évolue très vite. Il est possible que certains modules ou *framework* deviennent rapidement obsolètes.
+
+Pourquoi un géographe doit-il consacrer du temps à l'apprentissage de la programmation ?
+
+1. Réaliser automatiquement des traitements courants
+
+	- Exemple : recoder des données
+
+2. Réaliser des tâches avec une nouvelle stratégie
+
+	- Exemple : collecter des données en ligne (*scrapping* ou autres téléchargements automatiques)
+
+Quelles sont les raisons poussant les géographes à programmer ?
+
+1. L'inadaptation à vos besoins des solutions existantes
+
+2. L'inexistence du bon format (celui dont vous avez besoin) dans les données disponibles
+
+3. L'inexistence des données, sauf si on les reconstitue avec d'autres données
+
+4. L'inexistence de logiciels économiquement abordables (chéreté des licences)
+
+5. La nécessité d'utiliser plusieurs logiciels pour un même jeu de données (ce qui est pénible)
+
+6. L'envie d'automatiser certaines tâches, notamment sans valeur ajoutée
+
+7. Le travail en équipe avec des programmeurs amateurs ou professionnels
+
+Quelles sont concrètement les tâches pouvant être automatisées avec `Python` ?
+
+1. Chercher de l'information présente dans plusieurs fichiers en local ou en ligne
+
+2. Faire et automatiser des traitements statistiques
+
+3. Extraire de l'information de fichiers de formats différents
+
+4. Faire des visualisations (graphiques, cartes, *etc*.)
+
+5. Mettre en forme un fichier
+
+6. Faire une veille sur des sites ou des réseaux sociaux
+
+7. Produire des documents mis en forme
+
+8. Modifier automatiquement des fichiers
+
+	- Exemple : En cas de mise à jour
+
+9. Faire une interface avec une base de données spécifique
+
+10. Résumer des informations présentes dans un grand ensemble de textes
+
+11. Automatiser et vérifier des opérations de collecte
+
+12. Faire de l'apprentissage automatique
+
+13. Développer des logiciels adaptés à vos besoins
 
 ## Syntaxe de base
 
