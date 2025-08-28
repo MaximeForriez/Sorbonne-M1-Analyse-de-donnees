@@ -12,7 +12,7 @@ Un ensemble peut être fini, comme le nombre de cas possibles, ou infini, comme 
 
 ## Les ensembles finis
 
-Un ensemble est **fini** s'il existe $n \in \mathbb{N}^{*}$ et une bijection de $E$ vers l'ensemble $\left\lbrace 1, 2, 3, ..., n \right\rbrace$.
+Un ensemble est **fini** s'il existe $n \in \mathbb{N}^{*}$ et une bijection de $E$ vers l'ensemble $\left\lbrace 1, 2, 3, \ldots{}, n \right\rbrace$.
 
 ## Le cardinal d'un ensemble fini
 
@@ -47,7 +47,7 @@ L'**ensemble des parties** $\mathscr{P} \left( E \right)$ de l'ensemble fini $E$
 
 **Figure 1. Arbre de dénombrement de l'ensemble des parties $\mathscr{P} \left( E \right)$ avec $E = \left\lbrace a, b, c, d \right\rbrace$**
 
-$\mathscr{P} \left( E \right) = \left\lbrace \varnothing, \left\lbrace a \right\rbrace, \left\lbrace b \right\rbrace, \left\lbrace c \right\rbrace, \left\lbrace d \right\rbrace, ..., \left\lbrace a, b, c, d \right\rbrace \right\rbrace$
+$\mathscr{P} \left( E \right) = \left\lbrace \varnothing, \left\lbrace a \right\rbrace, \left\lbrace b \right\rbrace, \left\lbrace c \right\rbrace, \left\lbrace d \right\rbrace, \ldots{}, \left\lbrace a, b, c, d \right\rbrace \right\rbrace$
 
 Il est fastidieux d'établir un arbre pour chaque ensemble. Il existe une formule permettant de calculer le cardinal de l'ensemble des parties $\mathscr{P} \left( E \right)$.
 
@@ -158,7 +158,7 @@ $A \times B = \left\lbrace \left( x, y \right) / x \in A \textrm{ et } y \in B \
 
 #### Le produit cartésien de $n$ ensembles
 
-Soient $A_1, A_2, ..., A_n$, un élément de $A_1 \times A_2 \times ... \times A_n$ est une **liste ordonnée** : le premier appartenant à $A_1$, le deuxième appartenant à $A_2$, ..., le dernier appartenant à $A_n$. Il est noté $A^n$.
+Soient $A_1, A_2, \ldots{}, A_n$, un élément de $A_1 \times A_2 \times \ldots{} \times A_n$ est une **liste ordonnée** : le premier appartenant à $A_1$, le deuxième appartenant à $A_2$, ..., le dernier appartenant à $A_n$. Il est noté $A^n$.
 
 Propriété. Le nombre d'éléments d'un produit cartésien à $n$ ensembles vaut :
 
@@ -227,7 +227,7 @@ $\mathrm{card} \left( A \cup B \right) = \mathrm{card} A + \mathrm{card} B - \ma
 
 Pour $n$ ensembles finis $A_1$, ..., $A_n$,
 
-$\begin{array}{l} \mathrm{card} \left( A_1, \cup A_2, \cup ... \cup A_n \right) = \sum_{i = 1}^{n} \mathrm{card} A_i - \sum_{i < j}^{n} \mathrm{card} \left( A_i \cap A_j \right) + ... \\ + \left( -1 \right)^{n + 1} \mathrm{card} \left( A_1 \cap A_2, \cap ... \cap A_n \right) \end{array}$
+$\begin{array}{l} \mathrm{card} \left( A_1, \cup A_2, \cup \ldots{} \cup A_n \right) = \sum_{i = 1}^{n} \mathrm{card} A_i - \sum_{i < j}^{n} \mathrm{card} \left( A_i \cap A_j \right) + \ldots{} \\ + \left( -1 \right)^{n + 1} \mathrm{card} \left( A_1 \cap A_2, \cap \ldots{} \cap A_n \right) \end{array}$
 
 ## Exercices
 
