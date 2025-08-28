@@ -231,7 +231,7 @@ $\begin{array}{l} \mathrm{card} \left( A_1, \cup A_2, \cup \ldots{} \cup A_n \ri
 
 ## Exercices
 
-- [Exercices sur les ensembles finis](./Exercices/)
+- [Exercices sur les ensembles finis](./Exercices/00-Ensembles-finis.pdf)
 
 - [Corrections des exercices sur ](./Solutions/)
 
