@@ -16,7 +16,7 @@ Un ensemble est **fini** s'il existe $n \in \mathbb{N}^{*}$ et une bijection de 
 
 ## Le cardinal d'un ensemble fini
 
-Le **cardinal** est le nombre d'éléments $n$ d'un ensemble fini $E$. Il est noté $\mathrm{card} E$, ou $\left| E \right|$, ou $#E$.
+Le **cardinal** est le nombre d'éléments $n$ d'un ensemble fini $E$. Il est noté $\mathrm{card} E$, ou $\left| E \right|$, ou #$E$.
 
 > [!WARNING]
 > $\mathrm{card} \varnothing = 0$
