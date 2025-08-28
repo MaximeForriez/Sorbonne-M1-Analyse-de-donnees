@@ -311,7 +311,13 @@ Cas particuliers :
 
 - Compter le nombre de partie $A$ dans $E$ ayant $k$ éléments équivaut à compter le nombre de parties de la forme complémentaire de $A$ ayant $n - p$ éléments. $\mathrm{C}_{n}^{n - p} = \left( \begin{array}{c} n \\ n - p \end{array} \right) = \mathrm{C}_{n}^{p} = \left( \begin{array}{c} n \\ p \end{array} \right)$
 
-- Soient $\mathrm{card} E = n, a \in E \textrm{ et } E' = E / \left\lbrace a \right\rbrace$\footnote{Se lit $E$ privé de $a$.}. Il existe deux sortes de parties $A \subset E$ ayant $p$ éléments : \begin{inparaenum} \item celles qui ne contiennent pas $a$ ; \item celles qui contiennent $a$. \end{inparaenum} Celles qui ne contiennent pas $a$ sont des parties à $p$ éléments dans $E'$ qui possède $n - 1$ éléments, et il y en a $\textrm{C}_{n - 1}^{p}$. Celles qui contiennent $a$ sont de la forme $A = \left\lbrace a \right\rbrace \cup A'$ avec $A'$ une partie à $p - 1$ éléments de $E'$, et il y en a $\textrm{C}_{n - 1}^{p - 1}$. Il s'agit de la formule du **triangle de Pascal**\marginpar{Blaise Pascal (1623-1662)} : $\mathrm{C}_{n - 1}^{p} + \mathrm{C}_{n - 1}^{p - 1} = \left( \begin{array}{c} n - 1 \\ p \end{array} \right) + \left( \begin{array}{c} n - 1 \\ p - 1 \end{array} \right) =  \mathrm{C}_{n}^{p} = \left( \begin{array}{c} n \\ p \end{array} \right)$ avec $0 < p < n$.
+- Soient $\mathrm{card} E = n, a \in E \textrm{ et } E' = E / \left\lbrace a \right\rbrace$\footnote{Se lit $E$ privé de $a$.}. Il existe deux sortes de parties $A \subset E$ ayant $p$ éléments :
+
+1. celles qui ne contiennent pas $a$ ;
+
+2. celles qui contiennent $a$.
+
+Celles qui ne contiennent pas $a$ sont des parties à $p$ éléments dans $E'$ qui possède $n - 1$ éléments, et il y en a $\textrm{C}_{n - 1}^{p}$. Celles qui contiennent $a$ sont de la forme $A = \left\lbrace a \right\rbrace \cup A'$ avec $A'$ une partie à $p - 1$ éléments de $E'$, et il y en a $\textrm{C}_{n - 1}^{p - 1}$. Il s'agit de la formule du **triangle de B. Pascal** : $\mathrm{C}_{n - 1}^{p} + \mathrm{C}_{n - 1}^{p - 1} = \left( \begin{array}{c} n - 1 \\ p \end{array} \right) + \left( \begin{array}{c} n - 1 \\ p - 1 \end{array} \right) =  \mathrm{C}_{n}^{p} = \left( \begin{array}{c} n \\ p \end{array} \right)$ avec $0 < p < n$.
 
 ##### Exercice type 1
 
