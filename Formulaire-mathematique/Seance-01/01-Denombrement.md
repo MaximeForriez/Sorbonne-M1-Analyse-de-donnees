@@ -142,7 +142,7 @@ Bilan. $3 \times 2 \times 1 = 3!$
 
 **Généralisation.** $p \left( p - 1 \right) \left( p - 2 \right) \ldots{}  \left( 1 \right) = p!$ permutations.
 
-###### Exercice type
+#### Exercice type
 
 Un sac contient les cinq lettres indiscernables au toucher du mot TABLE inscrite sur cinq cartons. On tire un à un tous les cartons du sac, que l'on dispose dans l'ordre du tirage pour former un mot. Combien de mots différents peut-on obtenir ?
 
@@ -469,7 +469,7 @@ La base des probabilités, et, par extension, des statistiques, est de savoir co
 
 - [Exercices sur le dénombrement](./Exercices/01-Denombrement.pdf)
 
-- [Corrections](./Solutions/01-Denombrement-Corrections.pdf)
+- [Corrections des exercices sur le dénombrement](./Solutions/01-Denombrement-Corrections.pdf)
 
 ## Notes de bas de page
 
