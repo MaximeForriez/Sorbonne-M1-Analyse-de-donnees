@@ -21,7 +21,7 @@ Par ailleurs, les tutoriels sur `Youtube` sont très nombreux en français.
 - *etc*.
 
 > [!TIP]
-> Une version comprend trois nombres séparés par un point : $x$.$y$.$z$.
+> Une version comprend trois nombres séparés par un point : $x$ . $y$ . $z$.
 > - $x$ est le numéro de la version majeure.
 > - $y$ est le numéro de la version mineure.
 > - $z$ est le numéro de la version micro.
