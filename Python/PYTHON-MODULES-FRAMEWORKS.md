@@ -1,8 +1,8 @@
 # Les modules de `Python`
 
-- [Top 18 des paquets `Python` pour explorer, analyser et visualiser des données](./PDF/Top%2018%20Python%20Libraires%20for%20Data%20Scientists.pdf)
+## Modules utiles pour manipuler les données
 
-## Le module `PyPDF`
+### Le module `PyPDF`
 
 La documentation est :
 
@@ -48,13 +48,7 @@ Les fonctions et les méthodes principales sont :
 
 - `page2.merge_transformed_page(reader.pages[` numéro de page` ], pypdf.Transformation().translate(` nombre `),` nombre de pages `)` pour ajuster le contenu de la page.
 
-## L'objet `turtle`
-
-[Documentation officielle de turtle](https://docs.python.org/3/library/turtle.html)
-
-`import turtle`
-
-## L'objet `PIL.Image`
+### L'objet `PIL.Image`
 
 -[Documentation officielle](https://pillow.readthedocs.io/en/stable/)
 
@@ -62,7 +56,7 @@ Les fonctions et les méthodes principales sont :
 
 `import PIL.Image`
 
-## L'objet `openpyxl`
+### L'objet `openpyxl`
 
 - [Documentation officielle du paquet](https://pypi.org/project/openpyxl/)
 
@@ -74,7 +68,9 @@ Les fonctions et les méthodes principales sont :
 
 `import openpyxl`
 
-## Traitement des données
+## Traitement des données avec des *framework*
+
+### Documentation
 
 - [Comment explorer et analyser les données avec les paquets `Python` ?](./PDF/Exploratory-Data-Analysis.pdf)
 
@@ -88,21 +84,27 @@ Les fonctions et les méthodes principales sont :
 
 - [Comment visualiser les données avec les paquets `Python` ?](./PDF/Plotly.pdf)
 
-- [`Python` *Cheat Sheets*](./PDF/Universite-de-Compiegne-Python-for-Data-Science-Cheat-Sheet-v1.pdf)
+### Liste des *framework*
 
-- [`Python` *Cheat Sheets*](./PDF/Universite-de-Compiegne-Python-for-Data-Science-Cheat-Sheet-v2.pdf)
-
-### `pandas`
-
-- Wadeed, Madni, [Comment utiliser `Pandas` ?](./PDF/Pandas/Madni-Wadeed-Pandas-Cheat-Sheet.pdf)
-
-- [Comment utiliser `Pandas` ?](./PDF/Pandas/Pandas-Cheatsheet-A%20Beginners%20Guide.pdf)
-
-- [Comment utiliser `Pandas` ?](./PDF/Pandas/Exploratory-Data-Analysis-with-Pandas.pdf)
-
-- [Apprendre `Pandas` ?](./PDF/Pandas/Learning-Pandas.pdf)
-
-- [Apprendre `Pandas` ?](./PDF/Pandas/Ali-Syed%20Afroz-Python%20Master%20Data%20Manipulation%20and%20Visualization.pdf)
+| *Framework* | Utilité | Documentation | Natif |
+| :-: | :-: | :-: | :-:  |
+| `SciPy` | Calcul scientifique | [`SciPy`](https://www.scipy.org) | non |
+| `NumPy` | Stockage et calcul des données (fonctions et nombres aléatoires) | [`NumPy`](https://numpy.org/) | non |
+| `Pandas` | Données de tableurs | [`Pandas`](https://pandas.pydata.org/) | non |
+| `Matplolib` | Visualisation des données | [`Matplotlib`*: Visualization with* `Python`](https://matplotlib.org/) | non |
+| `Nltk` | Analyse textuelle | [*Natural Language Toolkit*](https://www.nltk.org/) | non |
+| `Networkx` | Analyse de réseaux | [*Network Analysis in* `Python`](https://networkx.org/) | non |
+| `Scikit-learn` | *Machine Learning* | [*Machine Learning in *`Python`](https://scikit-learn.org/stable/) | non |
+| `Dask` | Analyse de données massives[^1] | [*Parallel *`Python` *Fast and Easy*](https://www.dask.org/) | non |
+| `Seaborn` | Visualisation de données statistiques | [`Seaborn`*: Statistical Data Visualisation*](https://seaborn.pydata.org/) | non |
+| `BeautifulSoup` | Manipulation des pages internet | [`BeautifulSoup`](https://pypi.org/project/beautifulsoup4/) | oui |
+| `Scrapy` | Collecte des données sur internet | [`Scrapy`](https://www.scrapy.org/) | non |
+| `Tweepy` | interface avec `Twitter`/`X` | [`Tweepy`](https://www.tweepy.org/) | non |
+| `GeoPandas` | Construction d'une carte à partir de données géoréférencées | [`GeoPandas`](https://geopandas.org/en/stable/) | non |
+| `smtplit` | Envoi de courriel avec le protocole S.M.T.P.[^2] | [`smtplit`](https://docs.python.org/3/library/smtplib.html) | oui |
+| `requests` | Requête sur internet | [`requests`](https://pypi.org/project/requests/) | oui |
+| `random` | Générateur de nombres aléatoires | [`random`](https://docs.python.org/3/library/random.html) | oui |
+| `glob` | Recherche de chemin de style `Unix`[^3] | [`glob`](https://docs.python.org/3/library/glob.html#module-glob) | oui |
 
 ### `matplotlib`
 
@@ -125,3 +127,11 @@ Les fonctions et les méthodes principales sont :
 - Mishra, Abhishek, [Comment utiliser `Seaborn` ?](./PDF/Seaborn/Mishra-Abhishek-Seaborn.pdf)
 
 - Vardhan, Prudhvi, [Comment utiliser `Seaborn` ?](./PDF/Seaborn/Vardhan-Prudhvi-Seaborn.pdf)
+
+## Notes de bas de page
+
+[^1]: En anglais : *Big Data*
+
+[^2]: *Simple Mail Transfer Protocol*
+
+[^3]: `Unix` est le noyau des systèmes d'exploitation `MacOS` et `Linux`.

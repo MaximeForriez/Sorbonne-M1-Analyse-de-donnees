@@ -1,10 +1,6 @@
-# Introduction au langage de programmation Python
+# Introduction au langage de programmation `Python`
 
 Pourquoi apprendre `Python` ? Pour beaucoup, `Python` sera l'`Excel` de demain, c'est-à-dire il sera plus judicieux d'opérer des traitements avec `Python` qu'`Excel`. C'est normal, la société évolue, et `Excel` est inapproprié pour opérer un traitement automatique performant, surtout lorsque la masse et les sources de données sont très importantes, or nous  sommes dans un monde de données massives. Le tableur n'est plus le meilleur outil pour tenir un tableau de bord par exemple.
-
-## Durée d'apprentissage
-
-En moyenne, vous mettrez un mois à maîtriser les bases du langage et à savoir les utiliser. Bien entendu, cela requerra de votre part un certain investissement et cela dépendra de vos capacités propres. 
 
 ## Documentation
 
