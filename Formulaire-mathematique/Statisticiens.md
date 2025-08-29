@@ -140,6 +140,8 @@ Le nom d'un théorème peut faire oublier le vécu du statisticien. Voici la lis
 
 - Henry Mann (1905-2000)
 
+- Andreï Andraïevitch Markov (1856-1922)
+
 - Lorenzo Mascheroni (1750-1800)
 
 - Tobias Mayer (1723-1762)
