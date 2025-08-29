@@ -29,7 +29,7 @@ Le troisième intérêt de `Git` est le dépôt en lui-même des travaux que vou
 > `Git` est un outil `Linux`. Il fonctionne de manière optimale avec ce système d'exploitation. Si vous installez `Git` sur un P.C. tournant sur `Windows`, l'installateur de `Git` va installer un noyau `Linux` afin de faire fonctionner un terminal de type `bash`. Dans n'importe quel dossier de `Windows`, vous pourrez y accéder simplement en faisant un clic droit de votre souris et de cliquer sur `Open Git Bash here`.
 
 > [!NOTE]
-> Avec W.S.L., il vous est possible d'installer un terminal `Linux` en tant que sous-noyau de votre systèmme d'exploitation `Windows`.
+> Avec W.S.L., il vous est possible d'installer un terminal `Linux` en tant que sous-noyau de votre système d'exploitation `Windows`.
 > - [Installer un terminal `Linux` sur `Windows` avec WSL en quelques clics](https://www.youtube.com/watch?v=VuXpOXhn2Hk)
 > - [Maîtrisez le terminal `Linux` : commandes essentielles pour débutants](https://www.youtube.com/watch?v=GHPxJ7kPCcI)
 > - [Cours sur W.S.L.](https://www.youtube.com/watch?v=uLbyhmpnbnE&list=PLSuzYIVSEUT4LyB66TpKeCUmbTteLYrXz) (Approfondissement sur W.S.L.)
