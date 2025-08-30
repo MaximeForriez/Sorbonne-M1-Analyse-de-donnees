@@ -159,7 +159,7 @@ Sur la page d'accueil, il faut changer l'option par défaut de `Contributing set
 Dans le dossier de liaison, il faut donner le nom de l'utilisateur.
 
 ```
-	$git config –global user.name "MaximeForriez"
+	$ git config –global user.name "MaximeForriez"
 ```
 
 Il faut donner le courriel de l'utilisateur.
@@ -170,9 +170,10 @@ Il faut donner le courriel de l'utilisateur.
 
 Il faut donner l'éditeur de code que l'on utilise.
 
-- `$git config –global core.editor` *chemin local et nom de l'éditeur de code*
+- `$ git config –global core.editor` *chemin local et nom de l'éditeur de code*
 
 Par exemple, pour `NotePad++` :
+
 ```
     $ git config –global core.editor "C:\Program Files\Notepad\Notepad.exe" -multiInst -notabbar -nosession -noPlugin
 ```
@@ -180,7 +181,7 @@ Par exemple, pour `NotePad++` :
 Par exemple, pour `Visual Studio Code` :
 
 ```
-	$git config –global core.editor "code –wait"
+	$ git config –global core.editor "code –wait"
 ```
 
 > [!NOTE]
@@ -225,14 +226,15 @@ Techniquement, `Git` met en place un système de **pointeurs**, les **référenc
 
 ## `Git` en local
 
-> [!N0TE]
+> [!NOTE]
 > La branche principale par défaut `master` a été renommée `main`. Il faut faire attention à ce détail dans les deux projets.
 
 ### Versionner son code
 
 Dans le dossier de dépôt, il faut initialiser un dépôt avec la commande `GitBash` suivante :
+
 ```
-	$git init
+	$ git init
 ```
 
 Celle-ci crée un dossier caché qui assure la gestion des versions d'un projet.
@@ -253,7 +255,7 @@ Après avoir produit un code, il faut déposer la version produite dans `Git` à
 2.  Ajouter une sauvegarde de version dans le dépôt
 
 ```
-	$git commit -m "Description"
+	$ git commit -m "Description"
 ```
 
 Il est impératif de décrire le plus précisément possible le dépôt.
@@ -406,7 +408,7 @@ On commence par le sujet et on décrit la motivation du changement.
 #### Lister les dépôts
 
 ```
-	$git remote -v
+	$ git remote -v
 ```
 
 #### Gérer les log
@@ -428,7 +430,7 @@ Les options sont :
 Pour lister les deux derniers `commit`, on tape la commande :
 
 ```
-	$git log n2
+	$ git log n2
 ```
 
 Pour obtenir la liste de tous les dépôts concernant un `commit`, on tape la commande :
@@ -498,7 +500,7 @@ Les formats possibles sont :
 Pour afficher le `commit` parent de `HEAD`, on tape la commande
 
 ```
-	$git show HEAD^
+	$ git show HEAD^
 ```
 
 ou
@@ -512,7 +514,7 @@ Si on ajoute un nombre après `^` ou ` `, il va chercher le `commit` parent + 1.
 Pour afficher un `commit` spécifique à partir d'un code `SHA `, on tape la commande :
 
 ```
-	$git show "sha-1"
+	$ git show "sha-1"
 ```
 
 Ainsi, `git show` sert à afficher un seul `commit`. Il renvoie :
@@ -532,7 +534,7 @@ Pour recharger la version d'un fichier à partir de son code SHA, on tape la com
 Pour recharger la version d'un fichier la plus récente, on tape :
 
 ```
-	$git checkout main
+	$ git checkout main
 ```
 
 #### Obtenir l'état des sauvegardes
@@ -548,7 +550,7 @@ Pour obtenir l'état des sauvegardes du dépôt, on tape la commande :
 Pour afficher les modifications du `commit` avant le dépôt, on tape :
 
 ```
-	$git diff "SHA-1" "SHA-2"
+	$ git diff "SHA-1" "SHA-2"
 ```
 
 La commande équivaut à :
@@ -560,7 +562,7 @@ La commande équivaut à :
 Pour modifier la description effectuée avec l'option `-m`, on tape la commande :
 
 ```
-	$git commit -amend "Description"
+	$ git commit -amend "Description"
 ```
 	
 Un éditeur apparaît afin de corriger la description.
@@ -618,7 +620,7 @@ Le fichier se situant dans `.git/config` surcharge le fichier se trouvant dans :
 Pour visualiser toutes les paramétrages, on tape la commande :
 
 ```
-	$git config –list –show-origin
+	$ git config –list –show-origin
 ```
 
 ## Interface de `GitHub`
@@ -805,7 +807,7 @@ Pour mettre les fichiers sur le *cloud* de `GitHub`, il faut effectuer trois ét
 1. Ajouter toutes les modifications
 
 ```
-	$git add .
+	$ git add .
 ```
 > [!NOTE]
  >`.` peut être remplacé par un ou plusieurs fichiers, ce qui est d'ailleurs **vivement** conseillé.
@@ -819,7 +821,7 @@ Pour mettre les fichiers sur le *cloud* de `GitHub`, il faut effectuer trois ét
 3. Pousser les modifications vers le serveur sur la branche `main`
 
 ```
-	$git push -u origin main
+	$ git push -u origin main
 ```
 
 > [!NOTE]
@@ -846,17 +848,17 @@ Il est possible de récupérer uniquement les fichiers modifiés depuis un dép�
 
 - `$ git remote add origin` *adresse I.P. / H.T.T.P.S. ou  SSH du dépôt personnel*
 
-- `$git remote add upstream` *adresse I.P. / H.T.T.P.S. du dépôt principal*
+- `$ git remote add upstream` *adresse I.P. / H.T.T.P.S. du dépôt principal*
 
 - `$ git fetch upstream` *nom de la branche* $\rightarrow$ La commande permet de mettre à jour le dépôt personnel à rapport aux `Pull Request`.
 
-- `$git push origin main`
+- `$ git push origin main`
 
 Le dépôt génère un lien H.T.T.P.S. Il est possible de récupérer les fichiers depuis un dépôt distant en donnant l'autorisation de lier le dépôt avec ce dossier (Fig. 3).
 
 - `$ git clone` *lien du dépôt* `github.com`
 
-- `$git push -u origin main`
+- `$ git push -u origin main`
 
 Pour créer un `fork` à partir d'un autre dépôt distant, il suffit de se rendre sur la page `GitHub` de ce dépôt, de se rendre sur l'onglet `Fork`, puis `Create a new fork`, puis `Create fork`.
 
@@ -880,13 +882,13 @@ En ligne sur `GitHub`, cela consiste à cliquer sur `Contribute`, puis sur `Pull
 
 `$ git remote add upstream` *lien du dépôt distant quelconque*
 
-`$git remote add origin` *lien du dépôt distant personnel qui a effectué un* `fork` de dépôt distant précédent
+`$ git remote add origin` *lien du dépôt distant personnel qui a effectué un* `fork` de dépôt distant précédent
 
 `$ git fetch upstream` permet de récupérer les mises à jour effectuées sur le dépôt distant `upstream`.
 
 Désormais, tout `pull` met à jour à partir du dépôt distant quelconque.
 
-`$git push` met à jour le dépôt distant personnel.
+`$ git push` met à jour le dépôt distant personnel.
 
 Pour ajouter le `push` dans l'`upstream`, il faut faire un `Pull request`.
 

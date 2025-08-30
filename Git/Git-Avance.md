@@ -208,7 +208,7 @@ Sur `GitHub`, il est possible de créer une branche parallèle à la branche pri
 
 Pour déposer dans la nouvelle branche créée, on utilise :
 
-- `$git checkout` *nom de la branche*
+- `$ git checkout` *nom de la branche*
 
 Désormais, tous les dépôts s'effectueront dans cette branche secondaire.
 
@@ -219,7 +219,7 @@ Désormais, tous les dépôts s'effectueront dans cette branche secondaire.
 > [!NOTE]
 > Pour revenir à la branche principale, il faut taper :
 > ```
-> 	$git checkout main
+> 	$ git checkout main
 > ```
 
 > [!NOTE]
@@ -231,7 +231,7 @@ Désormais, tous les dépôts s'effectueront dans cette branche secondaire.
 Pour définir une branche par défaut `main`, on tape la commande :
 
 ```
-	$git config –global init.defaultBranch main
+	$ git config –global init.defaultBranch main
 ```
 
 #### Téléchargement depuis son dépôt distant personnel
@@ -297,7 +297,7 @@ Il est possible de supprimer l'option dans un fichier `.gitconfig` en y tapant :
 ou en tapant :
 
 ```
-	$git config –global merge.commit no$ git config –global merge.ff no
+	$ git config –global merge.commit no$ git config –global merge.ff no
 ```
 
 ![td5-fig3](IMG/Git-Merge.png "Différence entre *fast-forward* et sans *fast-forward*")
@@ -308,7 +308,7 @@ ou en tapant :
 
 Toute branche secondaire peut être fusionnée à la branche principale. La fusion s'effectue toujours sur la branche parente la plus proche. Cela signifie que la branche source s'importe vers la branche actuelle mentionnée. Cette opération est un *merge request*.
 
-- `$git merge` *nom de la branche à fusionner*
+- `$ git merge` *nom de la branche à fusionner*
 
 La fonction `merge` permet de conserver les deux branches et leur historique.
 
@@ -327,7 +327,7 @@ Soient deux branches partant chacune dans leur direction, jusqu'à ce qu'elles f
 Lors de la création d'un `commit` de fusion, `Git` tentera de fusionner automatiquement les historiques séparés. Si `Git` rencontre une donnée modifiée dans les deux historiques, il ne pourra pas les combiner automatiquement.
 
 ```
-	$git merge –no-f -m "merge" nom_de_la_branche
+	$ git merge –no-f -m "merge" nom_de_la_branche
 ```
 
 équivaut à :
@@ -356,7 +356,7 @@ Il faut, à la suite de la fusion, supprimer la branche secondaire.
 
 #### Nettoyage des branches obsolètes
 
-La commande `$git fetch –prune` permet de nettoyer les branches obsolètes.
+La commande `$ git fetch –prune` permet de nettoyer les branches obsolètes.
 
 1. Elle permet de se connecter à un dépôt distant partagé.
 
@@ -431,7 +431,7 @@ Pour installer `GitFlow` sur `Windows`, il faut se rendre sur la page \href{http
 5. Ouvrir `GitBash` et y taper
 
 ```
-	$git clone –recursive git://github.com/nvie/gitflow.git
+	$ git clone –recursive git://github.com/nvie/gitflow.git
 ```
 
 6. Installer `git` à partir de `GitSCM to Windows` en téléchargeant l'outil à partir de la page \href{https://gitforwindows.org}{https://gitforwindows.org} :
@@ -467,7 +467,7 @@ Pour initialiser un `GitFlow`, on utilise la commande :
 Pour afficher la version, on utilise la commande :
 
 ```
-	$git flow version
+	$ git flow version
 ```
 
 Pour afficher et gérer la configuration, on utilise la commande :
@@ -479,7 +479,7 @@ Pour afficher et gérer la configuration, on utilise la commande :
 Pour afficher les log d'une branche, on utilise la commande :
 
 ```
-	$git flow log
+	$ git flow log
 ```
 
 Pour créer une nouvelle branche, on utilise les quatre branches spécifiques à `GitFlow`.
@@ -489,12 +489,12 @@ Pour créer une nouvelle branche, on utilise les quatre branches spécifiques à
 1. Créer une branche `feature`
 	- `$ git flow feature start` *nom de la nouvelle branche*
 2. Gérer le dépôt à distance
-	- `$git remote add origin ../remote`
+	- `$ git remote add origin ../remote`
 	- `$ git flow feature publish` *nom de la nouvelle branche*
-	- `$git pull origin feature/` *nom de la nouvelle branche*
+	- `$ git pull origin feature/` *nom de la nouvelle branche*
 	- `$ git remote rm origin ../remote` pour supprimer une branche
 3. Fusionner la branche `feature` avec la branche `develop`
-	- `$git flow feature finish` *nom de la branche à fusionner*
+	- `$ git flow feature finish` *nom de la branche à fusionner*
 
 ##### Créer une branche de version
 
@@ -504,11 +504,11 @@ Pour créer une nouvelle branche, on utilise les quatre branches spécifiques à
 
 2. Ajouter un fichier
 
-	- `$git add` *nom du fichier à déposer*
+	- `$ git add` *nom du fichier à déposer*
 
 	- `$ git commit -m "` *description de la version* `"`
 
-	- `$git flow release finish`
+	- `$ git flow release finish`
 
 		- Un utilitaire s'ouvre et pose une série de questions auxquelles il faut répondre.
 
@@ -518,11 +518,11 @@ Pour créer une nouvelle branche, on utilise les quatre branches spécifiques à
 
 	- `$ git push –tags`
 
-	- `$git push origin main`
+	- `$ git push origin main`
 
 	- `$ git push origin develop`
 
-	- `$git push -u origin main` (pour pousser une branche d'un dépôt local sur un dépôt distant ; `-u` est un raccourci de `–set-upstram`)
+	- `$ git push -u origin main` (pour pousser une branche d'un dépôt local sur un dépôt distant ; `-u` est un raccourci de `–set-upstram`)
 	
 	- `$ git push -f origin main` (pour forcer la poussée)
 
@@ -530,13 +530,13 @@ Pour créer une nouvelle branche, on utilise les quatre branches spécifiques à
 
 1. Créer une branche `hotfix`
 
-	- `$git flow hotfix start` *nom de la modification*
+	- `$ git flow hotfix start` *nom de la modification*
 
 2. Ajouter une correction
 
 	- `$ git add` *nom du fichier à déposer*
 
-	- `$git commit -m "` *description de la modification* `"`
+	- `$ git commit -m "` *description de la modification* `"`
 
 	- `$ git flow hotfix finish` *nom de la modification*
 
@@ -546,7 +546,7 @@ Pour créer une nouvelle branche, on utilise les quatre branches spécifiques à
 
 ##### Autres branches
 
-`$git flow bugfix` gère la branche `bugfix`.
+`$ git flow bugfix` gère la branche `bugfix`.
 
 `$ git flow support` gère la branche `support`.
 
@@ -557,7 +557,7 @@ Pour créer une nouvelle branche, on utilise les quatre branches spécifiques à
 Il est possible de fusionner les `commit` afin d'en faciliter leur lecture. `rebase` réapplique des `commit` sur le sommet de l'autre base. Il change le point de bifurcation (Fig. \ref{td5-fig4}).
 
 ```
-	$git rebase -i HEAD 2
+	$ git rebase -i HEAD 2
 ```
 
 La commande ouvre un fichier dans l'éditeur de code par défaut. `HEAD 2` permet d'appeler l'avant-dernier `commit`. Au début de ce fichier, il y a une série de `pick` avec le numéro de `commit`. Il suffit de remplacer `pick` (ou `p`) par `squash` (ou `s`) au niveau de ce que l'on souhaite fusionner. `squash` fusionne et reprend les historiques. `squash` regroupe les `commit` d'un `merge` de branches.
@@ -590,14 +590,14 @@ La commande `git merge` permet de ramener les modifications d'une branche qui a 
 
 ```
 	$ git switch main
-	$git merge develop
+	$ git merge develop
 ```
 
 2. Le `fast-forward` s'applique en cas d'historique linéaire.
 
 ```
 	$ git switch main
-	$git merge develop
+	$ git merge develop
 ```
 
 La commande `git rebase` permet de déplacer le point de départ de la première à la suite de la seconde.
@@ -611,7 +611,7 @@ La commande `git rebase` permet de déplacer le point de départ de la première
 2. Utiliser la commande :
 
 ```
-	$git rebase main
+	$ git rebase main
 ```
 
 > [!NOTE]
@@ -621,7 +621,7 @@ La commande `git rebase` permet de déplacer le point de départ de la première
 
 ```
 	$ git rebase –continue
-	$git rebase –abort
+	$ git rebase –abort
 ```
 
 Le `rebase` d'une branche sur une autre amène les deux branches dans une situation de `fast-forward`. Cela implique un `merge` sans `merge commit`.
@@ -654,7 +654,7 @@ Les options sont :
 Pour supprimer un dépôt, on tape la commande :
 
 ```
-	$git reset
+	$ git reset
 ```
 
 Pour supprimer un fichier déposé, on tape la commande :
@@ -666,9 +666,9 @@ Pour supprimer un fichier déposé, on tape la commande :
 Pour fusionner une branche secondaire vers la branche principale `main`, on tape :
 
 ```
-	$git reset "nom du SHA" –hard$ git checkout "Nom de la branche secondaire"
-	$git rebase "Nom de la branche secondaire"$ git checkout main
-	$git merge "Nom de la branche secondaire"
+	$ git reset "nom du SHA" –hard$ git checkout "Nom de la branche secondaire"
+	$ git rebase "Nom de la branche secondaire"$ git checkout main
+	$ git merge "Nom de la branche secondaire"
 ```
 
 Cela permet de réorganiser les dépôts locaux avant tout envoi en ligne aux autres participants du projet. Cela permet de répondre à une urgence. Par exemple, votre supérieur vous demande de finir un code alors que vous n'avez pas terminé celui que vous êtes en train de taper.
@@ -689,7 +689,7 @@ Pour défaire un `commit`, on tape la commande :
 Pour défaire un `commit` déposé, on tape la commande :
 
 ```
-	$git revert "numéro du commit"
+	$ git revert "numéro du commit"
 ```
 
 Par exemple :
@@ -711,7 +711,7 @@ Le remisage est une **mémoire de stockage sans dépôt**.
 Pour remettre les modifications d'un répertoire de travail non fini avec la commande suivante (à éviter) :
 
 ```
-	$git stash .
+	$ git stash .
 ```
 
 ou
@@ -725,7 +725,7 @@ Le fichier se déplace dans la remisage (*stash*).
 Pour visualiser la liste des remisages :
 
 ```
-	$git stash list
+	$ git stash list
 ```
 
 Pour enregistrer les remisages dans le dépôt :
@@ -737,7 +737,7 @@ Pour enregistrer les remisages dans le dépôt :
 Pour restaurer une pile de remisage :
 
 ```
-	$git stash apply
+	$ git stash apply
 ```
 
 Pour supprimer une pile de remisage :
@@ -749,7 +749,7 @@ Pour supprimer une pile de remisage :
 Pour enregistrer une suppression dans une pile de remisage :
 
 ```
-	$git rm –cached .
+	$ git rm –cached .
 ```
 
 Pour retirer les éléments ajoutés dans une pile de remisage :
@@ -761,14 +761,14 @@ Pour retirer les éléments ajoutés dans une pile de remisage :
 ou
 
 ```
-	$git reset
+	$ git reset
 ```
 
 Les commandes du remisage enregistrent les modifications locales et rétablit le répertoire de travail afin qu'il correspondent au dépôt `HEAD`.
 
 - `$ git stash` *nom de la pile*
 
-- `$git stash show stash@{` *numéro de la pile* `} [-p]`
+- `$ git stash show stash@{` *numéro de la pile* `} [-p]`
 
 - `$ git stash pop stash@{` *1* `}`
 
@@ -776,17 +776,17 @@ Une fois la dernière ligne de commande exécutée, la pile de remisage est supp
 
 Pour changer de branche lors d'un remisage :
 
-- `$git stash`
+- `$ git stash`
 
 - `$ git checkout` *nom de la branche secondaire*
 
-- `$git stash apply`
+- `$ git stash apply`
 
 - `$ git stash drop`
 
 Pour créer une branche à partir du remisage :
 
-- `$git stash`
+- `$ git stash`
 
 - `$ git stash branch` *nom de la branche*
 
@@ -827,7 +827,7 @@ La commande `git reflog` permet d'accéder à l'historique de positionnement d'u
 Pour obtenir l'intégralité de l'historique de `head`, on tape la commande :
 
 ```
-	$git reflog
+	$ git reflog
 ```
 
 Pour obtenir l'historique d'une branche, on tape la commande :
@@ -843,13 +843,13 @@ Il existe deux principaux cas d'utilisation :
 1. revenir en arrière après avoir opéré par erreur la commande `git` `reset` `–hard`  `origin/master`. On effectue la manipulation suivante :
 
 ```
-	$git reflog nom_de_la_branche$ git reset –hard hash_du_commit_supprimé_par_erreur
+	$ git reflog nom_de_la_branche$ git reset –hard hash_du_commit_supprimé_par_erreur
 ```
 
 La première commande permet de récupérer le *hash* du `commit` que l'on veut. En général, il est rare que l'on fasse cette opération après avoir réalisé plusieurs `commit`. On l'effectue immédiatement après avoir commis l'erreur. La commande suivante permet en une ligne de récupérer le dernier `commit` effacé par erreur :
 	
 ```
-	$git reset –hard nom_de_la_branche@{1}
+	$ git reset –hard nom_de_la_branche@{1}
 ```
 
 2. revenir en arrière après une commande `rebase` ratée.
@@ -871,7 +871,7 @@ Il est possible de créer un dépôt centralisé, en local ou sur `GitHub`, appe
 Créer un lien entre le dépôt centralisé et le dépôt à distance
 ```
 	$ git remote add origin "C:\...\depot-remote"
-	$git remote -v
+	$ git remote -v
 ```
 
 `origin` est le nom de la branche sur laquelle il faut déposer. La dernière commande fournit une visualisation du dépôt à distance.
@@ -880,7 +880,7 @@ Ajouter une branche au dépôt à distance :
 
 - `$ git branch` *nom de la branche*
 
-- `$git push origin` *nom de la branche*
+- `$ git push origin` *nom de la branche*
 
 - `$ git branch -r`
 
@@ -889,7 +889,7 @@ La dernière commande fournit une visualisation des branches à distance.
 Récupérer les branches d'un développeur sur le projet déposé
 
 ```
-	$git pull origin main
+	$ git pull origin main
 ```
 
 avec `origin` le nom de la branche.
@@ -898,13 +898,13 @@ Cloner le projet d'un développeur sur sa machine locale
 
 - `$ git clone "C:\...\depot-remote" "` *nom du dossier dans lequel on enregistre le clone* `"`
 
-- `$git config –global branch.autosetuprebase always` (La commande permet de configurer le clone afin d'éviter les conflits de dépôt)
+- `$ git config –global branch.autosetuprebase always` (La commande permet de configurer le clone afin d'éviter les conflits de dépôt)
 
 Donner une version pour un livrable :
 
 ```
 	$ git tag "v1.0"
-	$git push tags
+	$ git push tags
 ```
 
 avec `"v1.0"` le numéro de version.
