@@ -21,7 +21,7 @@ Le troisième intérêt de `Git` est le dépôt en lui-même des travaux que vou
 
 ## Objectifs
 
-- Créer votre compte `GitHub`
+- Créer son compte `GitHub`
 
 - Comprendre la différence entre `Git` et `GitHub`
 
