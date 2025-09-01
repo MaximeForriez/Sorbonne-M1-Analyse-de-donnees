@@ -529,6 +529,8 @@ En `Python`, il existe deux types de fonction :
 
 Les fonctions natives ont déjà été rencontrées précédemment avec : `print()`, `input()`, `int()`, `float()`, `str()`, `bool()`, *etc*. Pour en apprendre d'autres, il faut lire la documentation. Il n'est pas rare que, lorsque vous voulez créer une fonction, elle existe déjà.
 
+- [Cinq fonctions natives de `Python` à connaître impérativement](./PDF/5%20powerful%20functions%20in%20Python.pdf)
+
 Les fonctions créées par le développeur sont celles que nous allons voir dans cette partie.
 
 Peu importe la fonction, il faut partir du principe qu'**une fonction n'accomplit qu'une tâche**.
