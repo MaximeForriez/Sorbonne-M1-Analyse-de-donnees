@@ -452,7 +452,8 @@ $\sum_{i = 1}^{k} {f_i} = 1$
 > [!NOTE]
 > Il ne faut pas confondre lors d'une analyse de données l'effectif total $n$ et le nombre de modalités $k$. Au stade exploratoire des données, il est fréquent que l'on confonde les deux nombres entiers. De fait, il est rare que $n = k$, c'est-à-dire que le nombre de modalités soit égal à l'effectif total, puisque, dans la plupart des études, il s'agit de réduire le nombre $n$ à quelques éléments agrégés significatifs représentés par le nombre $k$. Ainsi, dans la pratique, on trouve $k \leq n$. On retrouve ici l'idée que les statistiques ne disent rien au sujet de chaque caractère, mais informent sur les grandes tendances observées.
 
-La fréquence, étant une valeur comprise entre 0 et 1, sert à établir une probabilité réelle dans le sens où elle est observée. Elle permet d'établir une **distribution statistique empirique** de laquelle il sera possible de conclure sur le type de loi de probabilité utilisée. Pour construire la distribution, il faut préablement connaître les paramètres statistiques élémentaires.
+La fréquence, étant une valeur comprise entre 0 et 1, sert à établir une «
+probabilité réelle » dans le sens où elle est observée. Elle permet d'établir une **distribution statistique empirique** de laquelle il sera possible de conclure sur le type de loi de probabilité utilisée. Pour construire la distribution, il faut préablement connaître les paramètres statistiques élémentaires.
 
 ## Notes de bas de page
 
