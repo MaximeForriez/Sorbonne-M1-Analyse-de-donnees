@@ -186,7 +186,7 @@ Les méthodes descriptives s'appliquent en particulier aux tableaux individus co
       <td rowspan="2" style="text-align:center;">Mélange</td>
     </tr>
     <tr>
-      <td style="text-align:center;"><span style="font-style:italic;">k</span> = 2$</td>
+      <td style="text-align:center;"><span style="font-style:italic;">k</span> = 2</td>
       <td style="text-align:center;"><span style="font-style:italic;">k</span> > 2</td>
     </tr>
     <tr>
