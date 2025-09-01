@@ -72,6 +72,8 @@ Le nom d'un théorème peut faire oublier le vécu du statisticien. Voici la lis
 
 - Robert Gibrat (1904-1980)
 
+- Corrado Gini (1884-1965)
+
 - Valery Ivanovitch Glivenko (1896-1940)
 
 - Boris Vladimirovitch Gnedenko (1912-1995)
@@ -131,6 +133,8 @@ Le nom d'un théorème peut faire oublier le vécu du statisticien. Voici la lis
 - Erich Leo Lehmann (1917-2009)
 
 - Rensis Likert (1903-1981)
+
+- Henrik Antoon Lorentz (1853-1928)
 
 ## M
 
