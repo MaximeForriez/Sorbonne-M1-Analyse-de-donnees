@@ -88,3 +88,11 @@ Par défaut, j'ai placé tous les paquets nécessaires pour les T.D.
 4. `Builds`
 
 	- Supprimer tous les éléments qui s'y trouvent
+
+## Installationq alternativeq si `Docker` n'est pas installé
+
+- [`Python` officiel en ligne et en console](https://www.python.org/shell/) (les données externes ne sont pas accessibles)
+
+- [`Python` en `Google`](https://colab.research.google.com/) (nécessite un compte `Google`)
+
+- [`Python` online](https://www.online-python.com/) (les bibliothèques externes ne peuvent pas être installées)
