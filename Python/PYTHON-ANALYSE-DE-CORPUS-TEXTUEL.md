@@ -55,13 +55,22 @@ On utilise la bibliothèque `Wikipedia`.  faire des recherches sur Wikipédia, i
 1. Lemmatiser les mots décomposés, c'est-à-dire réduire les mots à leur racine
 
 ```
-
+    from nltk.stem.snowball import FrenchStemmer
+    stemmer = FrenchStemmer()
+    texte_lemmatise = [stemmer.stem(m) for m in texte_tokenise]
+    print(texte_lemmatise[0:10])
 ```
 
 2. Repérer les éléments de ponctuation
 
 ```
-
+    import pandas as pd
+    from nltk.corpus import stopwords
+    from string import punctuation
+    stop_words = stopwords.word('french') + list(punctuation)
+    texte_lemmatise_filtre = [i for i in texte_lemmatise if i not in stop_words]
+    print(texte_lemmatise_filtre[0:5])
+    pd.Series(texte_lemmatise_filtre).value_counts()[0:10]
 ```
 
 3. Appliquer le modèle *Term Frequency-Inverse Document Frequency* (`td-idf`)
@@ -75,7 +84,13 @@ On utilise la bibliothèque `Wikipedia`.  faire des recherches sur Wikipédia, i
 Pour créer un nuage de mots, on utilise la bibliothèque `WordCloud`.
 
 ```
-
+    from wordcloud import WordCloud
+    texte = [" ".join(i) for i in corpus['contenu_lem'].values]
+    texte = " ".join(texte)
+    wordcloud = WordCloud(background_color = "white", max_words = 5000, contour_width = 3)
+    wordcloud.generate(texte)
+    wordcloud.to_image()
+    wordcloud.to_file("nuage.png")
 ```
 
 ### Analyser les thèmes d'un corpus
@@ -97,7 +112,23 @@ La qualité de l'analyse va dépendre de :
 4. les paramètres de ce modèle.
 
 ```
-
+    from gensim.corpora import Dictionary
+    from gensim.models.phrases import Phrases, Phraser
+    from gensim.models.ldamodel import LdaModel
+    #Générer les bigrams
+    phrases = Phrases(list(corpus["contenu_lem"]), min_count = 1, threshold = 1)
+    phraser = Phraser(phrases)
+    corpus["contenu_lem_bi"] = corpus["contenu_lem"] \ .apply(lambda x:  phraser[x])
+    #Création du corpus
+    dictionary = Dictionary(corpus["contenu_lem_bi"])
+    corpus_convert = [dictionary.doc2bow(line) for line in list(corpus["contenu_lem_bi"])]
+    #Modélisation
+    lda_model = LdaModel(corpus = corpus_convert, id2word = dictionary, num_topics = 5, random_state = 100, update_every = 1, chunksize = 100, passes = 10, alpha = 'auto', per_word_topics = True)
+    #Affichage
+    categories = lda_model.print_topics()
+    print(categories[0])
 ```
 
 La bibliothèque `pyLDAvis` est un outil de visualisation graphique des thèmes L.D.A.
+
+## [Analyser un réseau de mots](./PYTHON-ANALYSE-DE-RESEAUX.md)

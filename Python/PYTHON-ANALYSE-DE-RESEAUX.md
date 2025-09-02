@@ -22,7 +22,7 @@ Les traitements possibles sont :
 
 ## Construire un réseau
 
-On utilise la bibliothèque `Networkx`. Pour la tester, on utilise les données Wikipédia sur le mot « cancer ».
+On utilise la bibliothèque `Networkx`. Pour la tester, on utilise les données Wikipédia sur le mot « cancer » (cf. [Analyse de corpus textuel](./PYTHON-ANALYSE-DE-CORPUS-TEXTUEL.md)).
 
 ```
     corpus = []
