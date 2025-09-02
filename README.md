@@ -53,7 +53,7 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 ### [Séance 5. Statistiques univariées (3). Statistiques inférentielles](./Seance-05/Seance-05.md)
 
-- Débutants [26/11/2025] - Clignancourt - Salle 426 - 12h00-14h00
+- Débutants [19/11/2025] - Clignancourt - Salle 426 - 12h00-14h00
 
 - Intermédiaires [05/11/2025] - Clignancourt - Salle 426 - 12h00-14h00
 
@@ -64,7 +64,7 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 ### [Séance 6. Statistiques univariées (4). Statistique d'ordre des variables qualitatives](./Seance-06/Seance-06.md)
 
-- Débutants [03/12/2025] - Clignancourt - Salle 426 - 12h00-14h00
+- Débutants [26/11/2025] - Clignancourt - Salle 426 - 12h00-14h00
 
 - Intermédiaires [19/11/2025] - Clignancourt - Salle 217 - 10h00-12h00
 
@@ -75,11 +75,15 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 ### [Séance 7. Statistiques bivariées (1). Relations entre deux variables](./Seance-07/Seance-07.md)
 
+- Débutants [03/12/2025] - Clignancourt - Salle 426 - 12h00-14h00 (en version allégée)
+
 - Intermédiaires [26/11/2025] - Clignancourt - Salle 217 - 10h00-12h00
 
 - Confirmés (GEOINT) [15/10/2025] - Clignancourt - Salle 217 - 10h00-12h00
 
 ### [Séance 8. Statistiques bivariées (2). Régression et corrélation statistique](./Seance-08/Seance-08.md)
+
+- Débutants [03/12/2025] - Clignancourt - Salle 426 - 12h00-14h00 (en version allégée)
 
 - Intermédiaires [03/12/2025] - Clignancourt - Salle 217 - 10h00-12h00
 
