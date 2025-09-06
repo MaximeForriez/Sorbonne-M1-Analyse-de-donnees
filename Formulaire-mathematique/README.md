@@ -50,6 +50,8 @@ La collection qui explique le mieux les notions mathématiques à mon sens est l
 
 - Ayres, Frank, 1972, *Théorie et applications des équations différentielles*, trad. fr., Paris, McGraw-Hill, 296 p. [Série Schaum]
 
+- Ayres, Frank, 1979, *Trigonométrie*, trad. Michel Lobenberg, Paris, McGraw-Hill, VI-208 p. [Série Schaum]
+
 - Ayres, Frank, 1986, *Les matrices*, trad. fr., Paris, McGraw-Hill, 214 p. [Série Schaum]
 
 - Ayres, Frank, 1989, *Théorie et applications du calcul différentiel et intégral*, trad. fr., Paris, McGraw-Hill Book Company, VIII-480 p. [Série Schaum]

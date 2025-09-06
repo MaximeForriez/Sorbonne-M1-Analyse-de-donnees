@@ -123,6 +123,8 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 - Cloux, Pierre-Yves, Garlot, Thomas & Kohler, Johann, 2016, *Docker. Pratique des architectures à base de conteneurs. Études, développement & intégration*, Paris, Dunod, XIV-306 p.
 
+- Cottet-Emard, François, 2020, *Probabilités et tests d'hypothèse*, Louvain-la-Neuve, DeBoeck Supérieur, VI-246 p. [Sup en poche - Maths L1/L2]
+
 - Couty, Françoise, Debord, Jean & Fredon, Daniel, 2007, *Mini-manuel de probabilités et statistique*, Paris, Dunod, 246 p.
 
 - Delsart, Virginie & Vaneecloo, Nicolas, 2010, *Probabilités, variables aléatoires, lois classiques*, tome 1, Villeneuve-d’Ascq, Presses universitaires du Septentrion,  318 p.[Guides pratiques]
@@ -173,6 +175,8 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 - Martin, Olivier, 2020, *L’analyse quantitative des données*, Paris, Armand Colin, 126 p. [128]
 
 - McKinney, Wes, 2021, [*Analyse de données avec Python. Préparation des données avec Pandas, NumPy et Ipython*](https://katfile.com/cwnuhyd8bkx1), Paris, O’Reilly, XVI-540 p. [[Version anglaise](https://www.lkhibra.ma/books/Python-for-Data-Analysis.pdf)]
+
+- Minvielle, Erwann & Souiah, Sid-Ahmed, 2003, *L'analyse statistique et spatiale. Statistiques, cartographie, télédétection, S.I.G.*, Nantes, Éditions du temps, p. 1-284 [Outils et méthodes en géographie]
 
 - Monino, Jean-Louis, Kosianski, Jean-Michel & Le Cornu, François, 2010, *Statistique descriptive*, Paris, Dunod, VIII-280 p.
 
