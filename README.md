@@ -228,6 +228,8 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 - [Maths Adultes](https://www.youtube.com/@MathsAdultes/playlists)
 
+- [Maths PlusUn](https://www.youtube.com/watch?v=nC17mUSyFLU&list=PLzY3ZTzw_O34BOVyLrBMZrMz8YZFBR8l3&index=2)
+
 > [!WARNING]
 > Les vidéos **ne doivent pas** être toutes regardées, mais, si vous avez des difficultés avec des notions mathématiques non spécifiques aux statistiques, regarder quelques vidéos (en prenant des notes) peut être précieux. Vous éviterez ainsi de vous plonger dans d'incompréhensibles manuels de mathématiques sans le cours associé.
 
