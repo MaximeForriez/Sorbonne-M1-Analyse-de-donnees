@@ -398,7 +398,7 @@ $Y = \frac{1 - \sqrt{1 - Q^2}}{Q}$
 
 [^5]: Auguste Bravais (1811-1863)
 
-[^6]: Auguste Pearson (1811-1863)
+[^6]: Karl Pearson (1857-1936)
 
 [^7]: Kendall, Maurice G., 1938, "A New Measure of Rank Correlation", *Biometrika*, vol 30, n°1-2, p. 81-93
 
