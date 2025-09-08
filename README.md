@@ -73,7 +73,7 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 - Confirmés (GEOINT) [08/10/2025] - Clignancourt - Salle 217 - 10h00-12h00
 
-### [Séance 7. Statistiques bivariées (1). Relations entre deux variables](./Seance-07/Seance-07.md)
+### [Séance 7. Statistiques bivariées (1). Régression et corrélation statistique de deux variables quantitatives](./Seance-07/Seance-07.md)
 
 - Débutants [03/12/2025] - Clignancourt - Salle 426 - 12h00-14h00 (en version allégée)
 
@@ -81,7 +81,7 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 - Confirmés (GEOINT) [15/10/2025] - Clignancourt - Salle 217 - 10h00-12h00
 
-### [Séance 8. Statistiques bivariées (2). Régression et corrélation statistique](./Seance-08/Seance-08.md)
+### [Séance 8. Statistiques bivariées (2). Étude de deux variables qualitatives](./Seance-08/Seance-08.md)
 
 - Débutants [03/12/2025] - Clignancourt - Salle 426 - 12h00-14h00 (en version allégée)
 
