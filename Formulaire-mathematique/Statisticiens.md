@@ -62,6 +62,8 @@ Le nom d'un théorème peut faire oublier le vécu du statisticien. Voici la lis
 
 - Ronald Aymer Fisher (1890-1962)
 
+- E. W. Forgy (?-?)
+
 - René Maurice Fréchet (1878-1973)
 
 ## G
@@ -130,13 +132,19 @@ Le nom d'un théorème peut faire oublier le vécu du statisticien. Voici la lis
 
 - Georges Louis Leclerc (1707-1788), comte de Buffon
 
+- Adrien-Marie Legendre (1752-1833)
+
 - Erich Leo Lehmann (1917-2009)
 
 - Rensis Likert (1903-1981)
 
-- Henrik Antoon Lorentz (1853-1928)
+- Jarl Waldemar Lindeberg (1876-1932)
+
+- Max Otto Lorenz (1876-1959)
 
 ## M
+
+- James MacQueen (1929-2914)
 
 - Prasanta Chandra Mahalanobis (1893-1972)
 
@@ -192,6 +200,8 @@ Le nom d'un théorème peut faire oublier le vécu du statisticien. Voici la lis
 
 - Calyampudi Radhakrishna Rao (1920-2023)
 
+- William M. Rand (?-?)
+
 ## S
 
 - Gilbert Saporta (né en 1946)
@@ -231,6 +241,8 @@ Le nom d'un théorème peut faire oublier le vécu du statisticien. Voici la lis
 - Wilson Allen Wallis (1912-1998)
 
 - Ernst Hjalmar Waloddi Weibull (1887-1979)
+
+- Joe H. Ward (?-?)
 
 - Donald Ransom Whitney (1915-2007)
 

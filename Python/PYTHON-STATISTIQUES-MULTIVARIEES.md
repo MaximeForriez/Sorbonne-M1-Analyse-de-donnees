@@ -267,6 +267,8 @@ On utilise la bibliothèque `Scikit-learn`.
 
 On peut calculer le nombre dans chaque groupe avec `pd.Series(kmeans.labels_).value_counts()`
 
+`Scikit-learn` peut calculer l{'}indice de Rand et l{'}information mutuelle normalisée.
+
 ### Classification ascendante hiérarchique (C.A.H.)
 
 L'algorithme définit ce qu'est « être proche ».

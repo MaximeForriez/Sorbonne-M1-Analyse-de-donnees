@@ -268,7 +268,7 @@ $m_l \geq m_e$
 
 La comparaison des valeurs de la médiale et de la médiane constitue une **mesure de concentration**. En général, si $\Delta M$ est grand par rapport à l'intervalle de variation, la concentration est forte. Inversement, si $\Delta M$ est petit par rapport à l'étendue, la concentration est faible. Dit autrement, lorsque l'écart entre la médiale et la médiane est important par rapport à l'étendue de la distribution de la variable, la concentration est forte. Par contre, lorsque l'écart entre les deux est faible, la concentration est faible ; la distribution est égalitaire. La médiale est liée par l'**indice de C. Gini** [10bis].
 
-La courbe de C. Gini a pour objectif de décrire les effets de la concentration d'une population statistique. Elle se construit sur un repère orthonormé à partir des fréquences cumulées relatives. Les valeurs de la fréquence cumulée globale relative de la série $Q \left( x \right)$ sont portées en ordonnée. Elles varient entre 0 et 1. La courbe se construit point par point. On porte sur l'axe des abscisses les valeurs $F \left( x \right)$ et sur l'axe des ordonnées les valeurs $Q \left( x \right)$. On obtient le **carré de H. A.Lorentz**[^12]. Un pourcentage $F_i$ de la population se partage un pourcentage $Q_i$ de la masse totale des valeurs globales. **Plus la courbe s'éloigne de la diagonale du carré, plus la concentration est importante**.
+La courbe de C. Gini a pour objectif de décrire les effets de la concentration d'une population statistique. Elle se construit sur un repère orthonormé à partir des fréquences cumulées relatives. Les valeurs de la fréquence cumulée globale relative de la série $Q \left( x \right)$ sont portées en ordonnée. Elles varient entre 0 et 1. La courbe se construit point par point. On porte sur l'axe des abscisses les valeurs $F \left( x \right)$ et sur l'axe des ordonnées les valeurs $Q \left( x \right)$. On obtient le **carré de M. O. Lorenz**[^12]. Un pourcentage $F_i$ de la population se partage un pourcentage $Q_i$ de la masse totale des valeurs globales. **Plus la courbe s'éloigne de la diagonale du carré, plus la concentration est importante**.
 
 > [!NOTE]
 > Les valeurs de la fréquence cumulée de la série $\left( n_i, x_i \right)$ sont portées en abscisse. Elles varient entre 0 et 1.
@@ -615,7 +615,7 @@ Si ${\beta}_2 = 0$ alors la distribution est dite **mésocurtique**. On peut cit
 
 [^11]: Corrado Gini (1884-1965)
 
-[^12]: Henrik Antoon Lorentz (1853-1928)
+[^12]: Max Otto Lorenz (1876-1959)
 
 [^13]: En anglais : *variance*
 
