@@ -34,7 +34,7 @@ On suppose que le facteur contrôlé $A$ prend $k$ modalités $A_i$ (Tab. 1).
 | **Moyenne de l'échantillon** | ${\bar{x}}_1$ | $\ldots{}$ | ${\bar{x}}_i$ | $\ldots{}$ | ${\bar{x}}_k$ |
 | **Nombre d'observations dans l'échantillon** | $n_1$ | $\ldots{}$ | $n_i$ | $\ldots{}$ | $n_k$ |
 
-**Tableau 1. Facteur contrôlé prenant $ k $ modalités**
+**Tableau 1. Facteur contrôlé prenant $k$ modalités**
 
 On note $N$ le nombre total d'observations, ${\bar{x}}_i$ la moyenne des observations pour la modalité $i$, et $\bar{x}$ la moyenne générale des observations.
 

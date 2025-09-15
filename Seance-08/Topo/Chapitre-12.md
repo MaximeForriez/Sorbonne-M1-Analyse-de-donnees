@@ -155,7 +155,7 @@ On pose deux variables qualitatives : l'état du patient au bout de cinq jours d
     </tr>
 </table>
 
-**Tableau 2. Tableau de contingence et valeurs du $ {\chi}^2 $**
+**Tableau 2. Tableau de contingence et valeurs du ${\chi}^2$**
 
 On pose les deux hypothèses :
 
