@@ -20,6 +20,8 @@ Chaque séance possède son dossier. Vous devez les sélectionner en fonction vo
 
 ## Plan du cours
 
+[Planning synthétisé](./Forriez-M1-GEANDO.pdf)
+
 ### [Séance 0. Rattrapages des notions mathématiques mal maîtrisées](./Formulaire-mathematique/README.md)
 
 Si vous avez des difficultés à comprendre les équations, voici des cours et des exercices corrigés afin que vous compreniez mieux les notions mathématiques abordées. Nous sommes en **mathématiques appliquées**. De fait, ne pas savoir résoudre les équations et les problèmes mathématiques attachés aux analyses de données est **normal**, **mais vous devez savoir lire une équation et l'utiliser**. Les nombres, les probabilités, les fonctions, le calcul différentiel, le calcul intégral, les bases de l'algèbre linéaire, les matrices, *etc*. ne doivent vous poser aucun problème. Les exercices proposés sont basiques, mais, si vous les comprenez, vous n'aurez aucun mal à comprendre les raisonnements en analyse de données. La mise en œuvre des traitements de données s'effectue avec la béquille qu'est le langage de programmation `Python` qui a pré-codé de nombreuses analyses statistiques dans ses modules.
