@@ -28,6 +28,8 @@ Le nom d'un théorème peut faire oublier le vécu du statisticien. Voici la lis
 
 - (sir) Cyril Cecil Barrow Burt (1883-1971)
 
+- Christoph Buys-Ballot (1817-1890)
+
 ## C
 
 - J. Douglas Carroll (1939-2011)
