@@ -96,6 +96,8 @@ Le nom d'un théorème peut faire oublier le vécu du statisticien. Voici la lis
 
 - Pierre Jean Paul Henry (1848-1907)
 
+- Charles Holt (1921-2010)
+
 - Harold Hotelling (1895-1973)
 
 - Michel Huber (1875-1947)
@@ -216,6 +218,8 @@ Le nom d'un théorème peut faire oublier le vécu du statisticien. Voici la lis
 
 - Samuel Sanford Shapiro (1930-2023)
 
+- Evgenii Evgenievich Slutsky (1880-1948)
+
 - George Snedecor (1881-1974)
 
 - Charles Spearman (1863-1945)
@@ -250,6 +254,8 @@ Le nom d'un théorème peut faire oublier le vécu du statisticien. Voici la lis
 
 - Frank Wilcoxon (1892-1965)
 
+- Peter R. Winters (?-?)
+
 - Martin Bradley Wilks (1922-2013)
 
 - Herman Wold (1908-1992)
@@ -258,7 +264,7 @@ Le nom d'un théorème peut faire oublier le vécu du statisticien. Voici la lis
 
 ## Y
 
-- George Udney Yules (1871-1951)
+- George Udney Yule (1871-1951)
 
 ## Z
 
