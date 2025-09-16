@@ -141,27 +141,81 @@ On définit les **fréquences relatives** $f_{ij}$, $f_{i.}$ et $f_{.j}$ par la 
 
 Le tableau de contingence permet de vérifier si les deux variables sont bien dépendantes l'une de l'autre. Toutefois, pour représenter graphiquement deux variables quantitatives, on utilise un nuage de points dans $\mathbb{R}^2$. 
 
-### Moyennes marginales
+### Les caractéristiques marginales
+
+#### Moyennes marginales
 
 La moyenne arithmétique, c''est-à-dire l'espérance mathématique, de $X$ vaut :
 
-$\mathbb{E} \left( X \right) = \frac{1}{n} \sum_{i = 1}^{p} n_{i.} x_i$  
+$\mathbb{E} \left( X \right) = \frac{1}{n} \sum_{i = 1}^{p} n_{i.} x_i$
 
 La moyenne arithmétique, c''est-à-dire l'espérance mathématique, de $Y$ vaut :  
 
-$\mathbb{E} \left( Y \right) = \frac{1}{n} \sum_{j = 1}^{q} n_{.j} y_j$  
+$\mathbb{E} \left( Y \right) = \frac{1}{n} \sum_{j = 1}^{q} n_{.j} y_j$
 
 Le point G de coordonnées $\left( \mathbb{E} \left( X \right), \mathbb{E} \left( Y \right) \right)$ est appelé **point moyen**.
 
-### Variances marginales
+#### Variances marginales
 
 La variance de $X$ vaut :  
 
-$\mathbb{V} \left( X \right) = \frac{1}{n} \sum_{i = 1}^{p} n_{i.} \left( x_i - \mathbb{E} \left( X \right) \right)^2 = \left[ \frac{1}{n} \sum_{i = 1}^{p} n_{i.} {x_i}^2 \right] - \mathbb{E} \left( X \right)$  
+$\mathbb{V} \left( X \right) = \frac{1}{n} \sum_{i = 1}^{p} n_{i.} \left( x_i - \mathbb{E} \left( X \right) \right)^2 = \left[ \frac{1}{n} \sum_{i = 1}^{p} n_{i.} {x_i}^2 \right] - \mathbb{E} \left( X \right)$
 
 La variance de $Y$ vaut :  
 
-$\mathbb{V} \left( Y \right) = \frac{1}{n} \sum_{j = 1}^{q} n_{.j} \left( y_j - \mathbb{E} \left( Y \right) \right)^2 = \left[ \frac{1}{n} \sum_{j = 1}^{q} n_{.j} {y_j}^2 \right] - \mathbb{E} \left( Y \right)$  
+$\mathbb{V} \left( Y \right) = \frac{1}{n} \sum_{j = 1}^{q} n_{.j} \left( y_j - \mathbb{E} \left( Y \right) \right)^2 = \left[ \frac{1}{n} \sum_{j = 1}^{q} n_{.j} {y_j}^2 \right] - \mathbb{E} \left( Y \right)$
+
+### Les caractéristiques conditionnelles
+
+#### Moyennes conditionnelles
+
+$\mathbb{E} \left( X_j \right) = \frac{1}{n_{.j}} \sum_{i = 1}^{p} n_{ij} x_i$
+
+et
+
+$\mathbb{E} \left( Y_i \right) = \frac{1}{n_{i.}} \sum_{j = 1}^{q} n_{ij} y_j$
+
+#### Variances conditionnelles
+
+$\mathbb{V} \left( X_j \right) = \frac{1}{n_{.j}} \sum_{i = 1}^{p} n_{ij} \left( x_i - \mathbb{E} \left( X_j \right) \right)^2$  
+
+et 
+
+$\mathbb{V} \left( Y_i \right) = \frac{1}{n_{i.}} \sum_{j = 1}^{q} n_{ij} \left( y_j - \mathbb{E} \left( Y_i \right) \right)^2$  
+
+### Les relations entre les caractéristiques marginales et les caractéristiques conditionnelles
+
+#### Moyenne
+
+La moyenne marginale est la moyenne pondérée des moyennes conditionnelles :
+
+$\mathbb{E} \left( X \right) = \frac{1}{n} \sum{j = 1}{q} n_{.j} \mathbb{E} \left( X_j \right)$
+
+et
+
+$\mathbb{E} \left( Y \right) = \frac{1}{n} \sum{i = 1}{p} n_{i.} \mathbb{E} \left( Y_i \right)$
+
+C'est le **théorème de la moyenne conditionnée**.
+
+#### Variance
+
+La variance marginale est la somme de la moyenne pondérée des variances conditionnelles et de la variance pondérée des moyennes conditionnelles.
+
+$\mathbb{V} \left( X \right) = \bar{\mathbb{V} \left( X \right)} + \mathbb{V} \left( {\bar{X}}_j \right)$
+
+$\mathbb{V} \left( X \right) = \frac{1}{n} \sum_{j = 1}^{q} n_{.j} \mathbb{V} \left( X_j \right) + \frac{1}{n} \sum_{j = 1}^{q} n_{.j} \left( {\bar{X}}_j - \bar{X} \right)^2$
+	
+et
+
+$\mathbb{V} \left( Y \right) = \bar{\mathbb{V} \left( Y \right)} + \mathbb{V} \left( {\bar{Y}}_i \right)$
+
+C'est le **théorème de la variance conditionnée**.
+
+La variance traduit la dispersion de la distribution. Dans le cas de la distribution marginale de $X$ ou de $Y$, la dispersion résulte de deux facteurs :
+
+1. la dispersion des distribution conditionnées autour de leurs moyennes $\bar{\mathbb{V} \left( X \right)}$ ou $\bar{\mathbb{V} \left( Y \right)}$ que l'on appelle **variance intra-population** (ou variance résiduelle) que l'on note souvent $s_w^2 \left( X \right)$ ou $s_w^2 \left( Y \right)$, $w$ signifiant *within*.
+
+2. la dispersion des moyennes conditionnelles autour de la moyenne $\mathbb{V} \left( {\bar{Y}}_i \right)$ ou $\mathbb{V} \left( {\bar{X}}_j \right)$ que l'on appelle **variance inter-population** (ou variance expliquée) que l'on note $s_b^2 \left( X \right)$ ou $s_b^2 \left( Y \right)$, $b$ signifiant *between*.
 
 ### Covariance
 
