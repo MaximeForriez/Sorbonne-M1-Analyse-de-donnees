@@ -4,6 +4,8 @@ Ce dossier regroupe quelques techniques probabilistes ou statistiques hors progr
 
 - [Les chaînes de Markov](./Chaine-de-Markov.md)
 
-    - [Exercices]()
+    - [Exercices](./PDF/Exercices-Chaine-de-Markov.pdf)
 
-    - [Doudou le hamster](./PDF/Doudou.pdf)
+    - [Corrections des exercices](./PDF/Exercices-Chaine-de-Markov%20-Corrections.pdf)
+
+    - [Cas pratique type : Doudou le hamster](./PDF/Doudou.pdf)
