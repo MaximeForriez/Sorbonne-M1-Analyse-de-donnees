@@ -63,7 +63,7 @@ En informatique, on distingue les données en fonction de leur format. Cela se r
 
 Pour lire un fichier binaire, on utilise `"rb"` au lieu de `"r"`.
 
-Pour écire un fichier binaire, on utilise `"wb"` au lieu de `"w"`.
+Pour écrire un fichier binaire, on utilise `"wb"` au lieu de `"w"`.
 
 ## Gérer un dossier
 

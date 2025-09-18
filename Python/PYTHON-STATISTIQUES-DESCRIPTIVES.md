@@ -74,6 +74,12 @@ On peut définir un seul intervalle afin de calculer la **distance interquantile
     donnees["nom de la colonne"].max()
 ```
 
+## Calculer l'effectif total d'une colonne
+
+```
+    donnees["nom de la colonne"].sum()
+```
+
 ## Analyse bivariée des données avec `Pandas`
 
 ### Croisement entre deux variables
