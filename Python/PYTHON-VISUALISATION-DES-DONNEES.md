@@ -116,7 +116,7 @@ Il existe trois bibliothèques pour faire des visualisations de données :
     plot.set_title("titre du graphique")
     plot.set_xlabel("titre de l'axe des abscisses")
     plot.set_ylabel("titre de l'axe des ordonnées")
-    plt.save("./adresse/figure.png")
+    plt.savefig("./adresse/figure.png")
 ```
 
 - `plt` est un alias de `pyplot`.
