@@ -143,5 +143,3 @@ Soit $a_i$ un état absorbant d'une chaîne de Markov ayant la matrice de transi
 ## Notes de bas de page
 
 [^1]: Andreï Andraïevitch Markov (1856-1922)
-
-Adrien-Marie Legendre (1752-1833)
