@@ -169,6 +169,8 @@ En géographie, tous les cas statistiques sont possibles.
 
 ### Découverte du `Python`
 
+- [Diaporama du cours d'introduction](./PDF/Cours-GEAND-Algorithmique-Python.pdf)
+
 ## Bibliographie
 
 - Abiteboul, Serge & Florence Hachez-Leroy, 2015, [« Humanités numériques »](https://1024.socinfo.fr/2015/07/1024_6_2015_41.pdf), *Bulletin de la société informatique de France*, n°6, p. 41-57

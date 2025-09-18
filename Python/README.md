@@ -1,5 +1,7 @@
 # `Python`
 
+- [Diaporama - support du cours](./PDF/Cours-GEAND-Algorithmique-Python.pdf)
+
 - [Commandes de base](./PYTHON-COMMANDES-DE-BASE.md)
 
 - [Conseils](./PYTHON-CONSEILS.md)
