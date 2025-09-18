@@ -39,6 +39,8 @@ Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%
 
 - Confirmés (GEOINT) [17/09/2025] - Clignancourt - Salle 217 - 10h00-12h00
 
+    - Rattrapage [24/09/2025] - Clignancourt - Salle 217 - 10h00-12h00
+
 ### [Séance 2. Principes généraux de la statistique](./Seance-02/Seance-02.md)
 
 - Débutants [08/10/2025] - Clignancourt - Salle 426 - 12h00-14h00
