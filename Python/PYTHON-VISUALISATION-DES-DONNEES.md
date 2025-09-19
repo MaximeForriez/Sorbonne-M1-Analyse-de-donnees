@@ -18,6 +18,8 @@ Il existe trois bibliothèques pour faire des visualisations de données :
 
 - [Documentation officielle](https://matplotlib.org/)
 
+- [Documentation non officielle](https://www.python-simple.com/python-matplotlib/matplotlib-intro.php)
+
 - [Documentation non officielle](https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html)
 
 - Khan, Tajamul, [`matplotlib` *Cheat Sheet*](./PDF/Matplotlib/Khan-Tajamul-MatPlotLib.pdf)
