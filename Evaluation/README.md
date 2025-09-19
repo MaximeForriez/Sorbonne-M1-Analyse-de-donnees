@@ -61,13 +61,13 @@ Votre rapport doit apporter la réponse aux questions posées de manière struct
 
     1. Indications des problèmes que vous avez rencontrés et comment vous les avez résolus (ou pas)
 
-        > [!NOTE]
-        > L'objectif est de constituer une F.A.Q. pour vos successeurs.
-
     2. Indications de vos difficultés d'apprentissage
 
-        > [!NOTE]
-        > L'objectif est d'améliorer les méthodes d'apprentissage pour vos successeurs..
+> [!NOTE]
+> L'objectif du point 1 est de constituer une F.A.Q. pour vos successeurs.
+
+> [!NOTE]
+> L'objectif du point 2 est d'améliorer les méthodes d'apprentissage pour vos successeurs..
 
 ## Points bonus
 
