@@ -55,7 +55,9 @@ Votre rapport doit apporter la réponse aux questions posées de manière struct
 
 - Vous commenterez librement sous la forme d'un court paragraphe les résultats obtenus. Le commentaire peut être technique ou scientifique.
 
-- Votre rapport doit être structuré par séance d'activités.
+- Votre rapport doit être structuré par séance d'activités. Il doit contenir des phrases complètes.
+
+- Votre rapport doit conclure par une réflexion personnelle sur les sciences des données et les humanités numériques en fonction des exercices de votre parcours.
 
 - Options :
 
