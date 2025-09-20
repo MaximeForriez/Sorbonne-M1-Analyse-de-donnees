@@ -161,7 +161,7 @@ Pour effectuer un test, on distingue deux cas.
 - Si $n > 30$, $r_s$ peut se calculer avec un $t$ de Student.
 
 
-$t = \left( \sqrt{} \right) \frac{r_s}{\sqrt{1 - {r_s}^2}}$
+$t = \left( \sqrt{n - 2} \right) \frac{r_s}{\sqrt{1 - {r_s}^2}}$
 
 $t$ est lu dans la table de Student avec un degré de liberté $ddl = n - 2$.
 
