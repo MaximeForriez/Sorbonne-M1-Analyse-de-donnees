@@ -37,6 +37,8 @@ Vous serez évalué sur :
 
 - Je veux un rapport sous un format P.D.F. (-10 points dans le cas contraire).
 
+- Plus d'une faute par page rendue (-2 points)
+
 ### Le fond
 
 - Tous les exercices se décomposent en deux.
