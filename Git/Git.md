@@ -12,7 +12,7 @@
 
 Votre rendu final doit être déposé sur votre `GitHub` personnel sous la forme d'un portfolio. Vous devez juste m'envoyer son lien pour être évalué. Voici quelques éléments pour vous apprendre à utiliser efficacement `GitHub`. Pourquoi utiliser `Git` plutôt que `Moodle` ? La réponse est simple. Vous devez me transmettre des fichiers `Python`, or `Moodle` va les considérer comme des attaques au niveau de son serveur. Vous n'avez pas le choix. Vous devez maîtriser très rapidement `Git` afin de me rendre votre travail.
 
-Le deuxièmme intérêt de `Git` est que le moteur tend à être utilisé de plus en plus dans les organisations professionnelles. C'est un atout important à mettre dans votre C.V. si vous allez au-delà de ce qui vous est demandé pour effectuer le dépôt de votre portfolio.
+Le deuxième intérêt de `Git` est que le moteur tend à être utilisé de plus en plus dans les organisations professionnelles. C'est un atout important à mettre dans votre C.V. si vous allez au-delà de ce qui vous est demandé pour effectuer le dépôt de votre portfolio.
 
 Le troisième intérêt de `Git` est le dépôt en lui-même des travaux que vous avez effectués en université. Vous pouvez envoyer un lien à l'entreprise dans laquelle vous voulez avoir un stage ou être recruté avec vos réalisations démontrant ainsi votre savoir faire. Au-delà du cde, vous pouvez par exemple l'utiliser pour gérer les versions de votre mémoire, vos rapports, *etc*. Il vous faudra être stratégique dans vos choix afin de prouver vos savoir-faire. Par ailleurs, vous montrez également votre maîtrise de la plateforme.
 
@@ -752,7 +752,7 @@ Les paramètres sont :
 
 	- `Add classic branch protection rule`.
 
-- `Rules`$\rightarrow$`Rulesets`$\rightarrow$`New ruleset` permet de créer des rôles ;
+- `Rules`$\rightarrow$ `Rulesets` $\rightarrow$ `New ruleset` permet de créer des rôles ;
 
 	- `New branch ruleset` ;
 
