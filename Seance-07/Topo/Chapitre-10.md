@@ -1,329 +1,331 @@
-# Théorie de la corrélation. Corrélation simple
+# Régression linéaire entre deux variables aléatoires : étude détaillée
 
-L'analyse de corrélation indique le degré de linéarité entre les variables. Dans l'analyse de régression, on estime une fonction entière (l'équation de la régression), mais, avec l'analyse de corrélation, un nombre est recherché. Il s'agit d'un indice conçu pour donner une photographie instantanée de l'intensité avec laquelle deux variables évoluent ensemble. Toutefois, la corrélation reste un outil moins puissant que la régression, mais elle intervient de manière à aider son interprétation.
-
-La **corrélation** cherche à déterminer de quelle façon une relation, linéaire ou non, peut décrire ou expliquer la relation qu'il existe entre plusieurs variables.
-
-Lorsque de telles variables satisfont toutes une relation quelconque, on dit qu'elles sont **complètement corrélées**, ou qu'il existe une **corrélation totale** entre elles.
-
-Lorsque il n'y a que deux variables qui interviennent, on dit que la corrélation et la régression sont **simples**. Dans le cas contraire, on dit que la corrélation et la régression sont **multiples**.
-
-Si $Y$ croît en même temps que $X$, la corrélation est **positive** ou **directe** (Fig. 1).
-
-![fig40](IMG/Correlation-lineaire-positive.png "Corrélation linéaire positive")
-
-**Figure 1. Corrélation linéaire positive**
-
-Si $Y$ décroît lorsque $X$ croît, la corrélation est **négative** ou **indirecte** (Fig. 2).
-
-![fig41](IMG/Correlation-lineaire-negative.png "Corrélation linéaire négative")
-
-**Figure 2. Corrélation linéaire négative**
-
-S'il n'existe aucune relation entre les variables, on dit qu'il n'existe pas de corrélation entre les variables, ou qu'**elles ne sont pas corrélées** (Fig. 3).
-
-![fig42](IMG/Correlation-nulle.png "Corrélation linéaire nulle")
-
-**Figure 3. Corrélation linéaire nulle**
-
-Lorsque tous les points ont tendance à se rapprocher d'une même courbe, la corrélation est **non linéaire**. Une relation non linéaire est nécessaire pour exprimer la régression et l'estimation. Il est clair que la corrélation non linéaire peut être positive ou négative.
-
-Par observation directe du diagramme de dispersion, on peut déterminer **qualitativement** si une droite ou une courbe donnée représente bien la relation qui existe entre plusieurs variables. Pour traiter **quantitativement** le problème de la dispersion des données autour d'une droite ou d'une courbe, il est indispensable de définir une **mesure de la corrélation**.
-
-## Erreur quadratique moyenne d'un estimateur (ou écart type lié)
-
-Soit $\hat{Y}$ la valeur estimée. Soit $Y$ la valeur observée. On appelle l'écart type de $Y$ lié par $X$ la quantité $s_{Y, X}$ :
-
-$s_{Y, X} = \sqrt{\frac{\sum_{i = 1}^{n} \left( Y_i - {\hat{Y}_i} \right)^2}{n}}$
-
-De même, on appelle l'écart type de $X$ lié par $Y$ la quantité $s_{X, Y}$ :
-
-$s_{X, Y} = \sqrt{\frac{\sum_{i = 1}^{n} \left( X_i - {\hat{X}_i} \right)^2}{n}}$
-
-Pour une droite, les écarts types liés sont :
-
-$\left\lbrace  \begin{array}{l} s_{Y, X} = \sqrt{\frac{\sum_{i = 1}^{n} {Y_i}^2 - a_0 \sum_{i = 1}^{n} Y_i - a_1 \sum_{i = 1}^{n} X_i Y_i}{n}} \\ s_{X, Y} = \sqrt{\frac{\sum_{i = 1}^{n} {X_i}^2 - b_0 \sum_{i = 1}^{n} X_i - b_1 \sum_{i = 1}^{n} X_i Y_i}{n}} \end{array} \right.$
-
-Pour $n$ grand, l'erreur suit une loi normale, donc :
-
-$\left\lbrace  \begin{array}{l} s_{Y, X} = 68 \% \\ 2 s_{Y, X} = 95 \% \\ 3 s_{Y, X} = 97,5 \%  \end{array} \right.$
-
-## Variations expliquée et résiduelle
-
-La **variation totale** de $Y$ est $\sum_{i = 1}^{n} \left( Y_i - \bar{Y} \right)^2$, c'est-à-dire la somme des carrés des écarts des valeurs de $Y$ par rapport à la moyenne $\bar{Y}$.
-
-$\underbrace{\sum_{i = 1}^{n} \left( Y_i - \bar{Y} \right)^2}_{\textrm{variation totale}} = \underbrace{\sum_{i = 1}^{n} \left( Y_i - {\hat{Y}}_i \right)^2}_{\textrm{variation résiduelle}} - \underbrace{\sum_{i = 1}^{n} \left( {\hat{Y}}_i - \bar{Y} \right)^2}_{\textrm{variation expliquée}}$
-
-## Coefficient de corrélation
-
-On appelle **coefficient de détermination** le rapport de la variation expliquée et de la variation totale. Ce rapport est nul si la variation expliquée est nulle, c'est-à-dire si la variation totale est totalement résiduelle. Par contre, il est égal à 1 si la variation résiduelle est nulle, c'est-à-dire si la variation totale peut être complètement expliquée. Dit autrement, le rapport varie entre 0 et 1. Puisqu'il est toujours positif ou nul, on peut le désigner par $r^2$.
-
-$r^2 = \frac{\sum_{i = 1}^{n} \left( {\hat{Y}}_i - \bar{Y} \right)^2}{\sum_{i = 1}^{n} \left( Y_i - \bar{Y} \right)^2}$
-
-La quantité $r$ est appelée **coefficient de corrélation** :
-
-$r = \pm \sqrt{\frac{\sum_{i = 1}^{n} \left( {\hat{Y}}_i - \bar{Y} \right)^2}{\sum_{i = 1}^{n} \left( Y_i - \bar{Y} \right)^2}}$
+Souvent, en se fondant sur des données d'un échantillon, on souhaite estimer la valeur d'une variable aléatoire $Y$ en fonction d'une seconde variable $X$. La mise en relation des deux variables quantitatives (ou semi-quantitatives) s’effectue par l'intermédiaire de la méthode des moindres carrés. On obtient une **courbe** dite **de régression** ajustant au mieux les données de l'échantillon. Dans ce cas, le résultat obtenu est une courbe de régression de $Y$ en $X$, puisque l'on estime les valeurs de $Y$ à partir des valeurs de $X$. Toutefois, il est important de souligner qu'il est possible d'inverser le choix est de proposer une courbe de régression de $X$ en $Y$, et, de manière générale, les deux courbes obtenues seront différentes. Parmi toutes les courbes possibles, le cas d'une droite est le plus simple et le plus étudié. Dans ce cas, il s'agit d'une **régression linéaire**.
 
 > [!NOTE]
-> Les signes $+$ et $-$ correspondent respectivement aux valeurs positive et négative de la corrélation.
+> Contrairement à une idée trop répandue, il n'existe aucune relation forte entre régression linéaire et méthode des moindres carrés. Il ne faut pas confondre les deux notions. La régression linéaire peut être ajustable par d'autres méthodes, comme celle sous contrainte des multiplicateurs de Lagrange. Par ailleurs, la méthode des moindres carrés permet d'ajuster d'autres types de courbes que les droites – des paraboles par exemple. De fait, la méthode des moindres carrés permet seulement de calculer une forme de régression linéaire.
 
-> [!NOTE]
->  $r$ est une quantité sans dimension et ne dépend pas des unités considérées.
+La régression linéaire sert à :
 
-Il existe une relation entre $r$, $s_Y$ et $s_{Y, X}$. L'écart type de $Y$ vaut :
+1. contrôler ;
 
-$s_Y = \sqrt{\frac{\sum_{i = 1}^{n} \left( Y_i - \bar{Y} \right)^2 }{n}}$
+2. prévoir ;
 
-À partir de là, il est facile de prouver que le coefficient de corrélation $r$ vaut :
+3. décider.
 
-$r = \sqrt{1 - \frac{{s_{Y, X}}^2}{{s_Y}^2}}$
+Toutefois, il existe cinq conditions d'application.
 
-Il faut bien remarquer que l'on ne tient pas compte du signe pour le cas général, ce qui permet d'écrire :
+1. La variable explicative $X$ est considérée sans erreur.
 
-$s_{Y, X} = s_Y \sqrt{1 - r^2}$
+2. L'erreur $\xi$ ne porte que sur la variable à expliquer $Y$.
 
-## Remarques fondamentales sur le coefficient de corrélation
+3. L'erreur $\xi$ est indépendante de la variable explicative $X$, ce qui signifie que $\mathbb{V} \left( \xi \right) = \textrm{constante}$.
 
-Les deux définitions du coefficient de corrélation sont très générales et peuvent servir tout aussi bien pour des relations non linéaires, la seule différence réside dans le fait que $\hat{Y}$ est calculé à partir d'une équation de régression non linéaire au lieu d'une équation linéaire et que l'on supprime les signes $+$ ou $-$. Dans un tel cas, l'équation de l'écart type lié est parfaitement générale.
+4. La relation est en moyenne linéaire, ce qui signifie que $\mathbb{E} \left( Y \setminus X = x \right) = f \left( x \right) = \alpha x + \beta$. L'espérance de $Y$ est liée à celle de $X$.
 
-Par exemple, si l'équation d'estimation est un polynôme quelconque : $Y = a_0 + a_1 X + a_2 X^2 + \ldots{} + a_{p - 1} X^{p - 1}$. L'écart type lié d'un polynôme est alors :
+5. La distribution de $Y$ est supposée normale.
 
-${s_{Y, X}} = \sqrt{\frac{\sum_{i = 1}^{n} {Y_i}^2 - a_0 \sum_{i = 1}^{n} Y_i - a_1 \sum_{i = 1}^{n} X_i Y_i - \ldots{} - a_{p - 1} \sum_{i = 1}^{n} {X_i}^{p - 1} Y_i}{n}}$
+Pour toutes ces raisons, la régression linéaire mérite que lui consacre un chapitre entier.
 
-Pour les petits échantillons, l'écart type lié modifié de l'estimation vaut alors :
+## Fonction linéaire
 
-${{\hat{s}}_{Y, X}} = {s_{Y, X}} \sqrt{\frac{n}{n - p}}$
+On appelle **fonction linéaire** une fonction dont la dérivée est soit une constante, soit nulle. Graphiquement, une fonction linéaire est représentée par une droite. À l'opposé, on appelle **fonction non linéaire** toute fonction qui n'est pas linéaire. Comme vu dans le chapitre sur la méthode des moindres carrés, il existe toujours des moyens de se ramener à une fonction linéaire, ce qui étend de la technique de la régression linéaire à plusieurs cas qui, à la base, sont non linéaires.
 
-avec $n - p$ le nombre de degrés de liberté. Dans le cas d'une droite, on a  : $n - 2$ degrés de liberté.
+La projection graphique du nuage de points de $X$ et de $Y$ permet d'éliminer rapidement le choix de la régression linéaire.
 
-> [!NOTE]
->  La valeur de $r$ calculée dans tous les cas mesure le degré de liaison propre au type d'équation considérée.
-> - Si l'on suppose que l'équation est linéaire et si $r \approx 0$, on peut dire qu'il n'y a pas de corrélation linéaire entre les variables, mais cela ne signifie pas qu'il n'y ait pas de corrélation puisqu'il peut y avoir une forte corrélation non linéaire entre les variables.
-> - Le coefficient de corrélation mesure l'**efficacité de l'ajustement** des données par les courbes considérées.
+- On observe un « effet tromblon » si le nuage de points forme un « triangle équilatéral ». Cela signifie que la variance de $X$ est liée à la variance de $Y$. 
 
-> [!NOTE]
->  Un fort coefficient de corrélation (proche de $-1$ ou $+1$) n'indique pas nécessairement une dépendance directe des variables. Par exemple, il peut se faire qu'il existe une forte corrélation entre le nombre de livres publiés chaque année et le nombre de parties de base-ball jouées pendant la même période. Pourtant, il est évident qu'il n'existe aucun lien entre ces deux faits. On appelle de tels cas des **corrélations fausses** ou **trompeuses**.
+- On peut observer une relation clairement non linéaire en projetant le nuage de points.
 
-## Expression du coefficient de corrélation linéaire
+- Dans un nuage de points formant un cercle avec deux points à l'intérieur de celui-ci, ces deux points tirent la courbe vers eux pour générer une régression linéaire.
 
-Si les variances des variables aléatoires $X$ et $Y$ sont non nulles, en centrant les coordonnées sur leurs moyennes respectives, $\bar{X}$ et $\bar{Y}$, il est facile de montrer que le **coefficient de corrélation linéaire** de $X$ et de $Y$ le réel $r$ défini par :
+- Dans le cas d'un nuage de points présentant deux « paquets circulaires », la relation linéaire éventuelle est tirée par leur existence même. Cela signifie qu'il existe de populations distinctes.
 
-$r = \frac{\mathrm{cov} \left( X, Y \right)}{\sigma \left( X \right) \sigma \left( Y \right)}$
+- Il se peut que le nuage de points projette deux ou plusieurs alignements linéaires. Dans ce cas, il faut partitionner la population pour isoler les cas de régression linéaire possibles.
 
-avec $\mathrm{cov} \left( X, Y \right) = s_{Y, X} = s_{X, Y}$. Il mesure la dépendance symétrique entre $X$ et $Y$. Cette nouvelle formule présente l'avantage de donner automatiquement le signe de $r$.
+- Dans un nuage de points formant un « paquet », il se peut qu'un point exceptionnel en sorte, et tire la régression linéaire vers lui.
 
-- **Propriété 1.** Le nombre $r$ est invariant pour tout changement d'origine et d'échelle.
+- Il peut exister un défaut d'alignement, représenté par un point clairement en dehors de l'alignement.
 
-- **Propriété 2.** Le nombre $r$ est indépendant du choix de l'origine.
+## Méthode des moindres carrés et régression linéaire
 
-- **Propriété 3.** $r$ est toujours compris entre $-1$ et $+1$. C'est l'**inégalité de Cauchy-Schwarz**\footnote{Lors des analyses multivariées, il sera expliqué que $r$ correspond à un cosinus, ce qui justifie d'autant plus l'encadrement entre $- 1$ et $+ 1$}.
+En raison des erreurs de mesure, les $n$ points $\left( x, y \right)$ ne sont pas alignés, mais le sont « presque » sur une même droite $y = ax + b$. Il faut alors choisir $a$ et $b$ de sorte que la droite soit la meilleure possible. Dit autrement, cela revient à choisir une mesure de l'écart entre cette droite et le nuage de points expérimental $\left( x, y \right)$. Pour ce, en règle générale, on choisit le carré de la différence entre le point théorique et le point expérimental :
 
-- **Propriété 4.** Si $X$ et $Y$ sont indépendants, alors $r = 0$. Par contre, la réciproque est fausse, car $r = 0$ signifie qu'il n'existe aucune relation linéaire entre $X$ et $Y$.
+${\Delta}_i = \left( y_i - a x_i - b \right)^2$
 
-- **Propriété 5.** Le nuage de points est une droite si et seulement si $r = 1$ (qui est une droite de pente positive) ou $r = -1$ (qui est une droite de pente négative). Si $r$ est voisin de 1, on dit qu'il existe une forte corrélation linéaire entre $X$ et $Y$.
+avec $i = \left\lbrace 1, 2, \ldots{}, n \right\rbrace$. L'écart total vaut alors :
 
-De fait, le coefficient de corrélation est un nombre sans unité, toujours compris entre $-1$ et $+1$. Il traduit la plus ou moins grande dépendance linéaire de $X$ et $Y$, ou, géométriquement, le plus ou moins grand aplatissement. Un coefficient de corrélation nul (ou proche de zéro) signifie qu'il n'existe pas de relation linéaire entre les caractères. Lorsque le coefficient de corrélation est proche de $-1$ ou de $+1$, les caractères sont dits **fortement corrélés**.
+$J \left( a, b \right) = \sum_{i = 1}^{n} \left( y_i - a x_i - b \right)^2$
 
-> [!WARNING]
-> La corrélation n'établit pas une cause, mais elle aide à en trouver une. Deux phénomènes corrélés n'entraînent pas que l'un soit la cause de l'autre. Corrélation et causalité sont deux notions différentes.
+**Effectuer une régression linéaire par la méthode des moindres carrés, c'est trouver la droite qui minimise l'écart total**, c'est-à-dire la somme des carrés des différences. Dans la figure 1, on étudie la droite de régression de $Y$ rapport à $X$.
 
-On peut déterminer quatre cas.
+![fig31](IMG/Moindre-carre-Regression-lineaire.png "Méthode des moindres carrés et régression linéaire")
 
-1. Si $r = -1$, alors il s'agit d'une **corrélation négative parfaite**. Tous les points de mesures sont situés sur une droite de régression de pente négative (Fig. 2).
+**Figure 1. Méthode des moindres carrés et régression linéaire**
 
-2. Si $r = +1$, alors il s'agit d'une **corrélation positive parfaite**. Tous les points de mesures sont situés sur une droite de régression de pente positive (Fig. 1).
+Il faut bien comprendre que le nuage de point est le résultat d'une double estimation ponctuelle. $x$ est une estimation de la variable aléatoire $X$ et $y$ est une estimation de la variable aléatoire $Y$. De fait, les coefficients $a$ et $b$ recherchés peuvent être considérés eux-mêmes comme une estimation des estimateurs $A$ et $B$, réalisations des coefficients $\alpha$ et $\beta$ de la population mère.
 
-3. Si $r = 0$, alors il s'agit d'une **corrélation nulle** (Fig. 3).
+On note $\bar{x}$ la moyenne estimée de l'abscisse $x$, $\bar{y}$ la moyenne estimée de l'abscisse $y$. Le couple $\left( \bar{x}, \bar{y} \right)$ correspond au **point moyen** (estimé) du nuage de points. On note $s_x$ l'écart type estimé de la variable $X$, et $s_y$ l'écart type estimé de la variable $Y$. La covariance de $x$ et de $y$ est notée $\mathrm{cov} \left( x, y \right)$.
 
-4. Si $-1 \leq r \leq +1$, il s'agit d'une corrélation négative ou positive dite **corrélation imparfaite**.
+L'étude mathématique s'effectue grâce à l'étude de la fonction de plusieurs variables $J$. Par définition, un minimum d'une fonction à plusieurs variables ne peut se produire qu'en un point où les dérivées partielles s'annulent c'est-à-dire :
 
-### La matrice de covariance
+$\left\lbrace  \begin{array}{l} \frac{\partial J}{\partial a} = -2 \sum_{i = 1}^{n} \left[ x_i \left( y_i - a x_i - b \right) \right] = 0 \\ \frac{\partial J}{\partial b} = -2 \sum_{i = 1}^{n} \left( y_i - a x_i - b \right) = 0 \end{array} \right.$
 
-Il est pratique de construire une **matrice de covariance**. Il s'agit d'une matrice carrée, souvent notée $\sigma$ permettant, grâce à trois variables, de **mesurer l'erreur statistique**.
+On obtient un système linéaire d'ordre 2 en $a$ et $b$, dont les solutions sont :
 
-$\sigma = \left[  \begin{array}{cc} \sigma \left( X \right) & \mathrm{cov} \left( X, Y \right) \\ \mathrm{cov} \left( X, Y \right) & \sigma \left( Y \right) \end{array} \right]$
-
-avec $\mathrm{cov} \left( X, Y \right)$ la covariance de $X$ et de $Y$, $\sigma \left( X \right)$ et $\sigma \left( Y \right)$ sont les écarts types des variables $X$ et $Y$.
-
-> [!NOTE]
-> La matrice de covariance est symétrique.
-
-> [!NOTE]
-> La matrice de covariance obtenue avec deux variables se généralise très facilement à $n$ variables aléatoires.
-
-###### Matrice de covariance et inégalité de Cauchy-Schwarz
-
-La matrice de covariance permet de démontrer l'inégalité de Cauchy-Schwarz. Grâce à la définition du produit scalaire, on sait que :
-
-$\left( \mathrm{cov} \left( X, Y \right) \right)^2 \leq \left( \sigma \left( X \right) \right)^2 \left( \sigma \left( Y \right) \right)^2$
-
-ce qui peut s'écrire :
-
-$\frac{\left( \mathrm{cov} \left( X, Y \right) \right)^2}{\left( \sigma \left( X \right) \right)^2 \left( \sigma \left( Y \right) \right)^2} \leq 1$
-
-or la fonction carrée admet deux antécédents symétriques : $-1$ et $+1$, donc la relation est bornée telle que :
-
-$-1 \leq \frac{\left( \mathrm{cov} \left( X, Y \right) \right)}{\sigma \left( X \right) \sigma \left( Y \right)} \leq +1$
-
-or $r = \frac{\left( \mathrm{cov} \left( X, Y \right) \right)}{\sigma \left( X \right) \sigma \left( Y \right)}$, donc :
-
-$-1 \leq r \leq +1$
-
-### Le test d'indépendance pour deux variables quantitatives
-
-Soient $X$ et $Y$ deux variables aléatoires quantitatives de densités respectives $h$ et $g$ ; $f$ est la densité du couple $\left( X, Y \right)$. Si les variables aléatoires sont indépendantes, les densités doivent vérifier la propriété : $f \left( x, y \right) = h \left( x \right) g \left( y \right)$. Cette propriété est l'hypothèse $H_0$ qu'il faut tester. Afin de la vérifier, les propriétés du coefficient de corrélation $r$ pour des populations normales, puis pour des populations quelconques.
-
-#### Échantillons normaux
-
-Dans le cadre d'un échantillon, le coefficient de corrélation de la population mère $\rho$ est estimé par $r$. Une condition nécessaire et suffisante d'indépendance entre deux variables aléatoires normales est un coefficient de corrélation $r = 0$. Il est alors simple de formuler le test d'indépendance :
-
-$\left\lbrace  \begin{array}{l} H_0 : \rho = 0 \\ H_1 : \rho \neq 0 \end{array} \right.$
-
-Il est à noter que ce test est robuste.
-
-Le coefficient $r$ peut être considéré comme la réalisation d'une variable aléatoire $R$. Il existe des tables donnant les valeurs de la densité de la variable $R$. Les propriétés de cette variable dépendent des valeurs du coefficient $\rho$.
-
-##### Cas où $\rho = 0$
-
-Si $\rho = 0$, la distribution de $R$ est alors symétrique. De fait, la variable aléatoire $t = \frac{R \sqrt{n - 2}}{\sqrt{1 - R^2}}$ est une variable aléatoire de Student à $\upsilon = \left( n - 2 \right)$ degrés de liberté. On en déduit la densité de la variable $R$ :
-
-$f \left( r \right) = \frac{1}{\beta \left( \frac{1}{2}, \frac{n - 2}{2} \right)} \left( 1 - r^2 \right)^{\frac{n - 4}{2}}$
-
-avec $B$ la fonction bêta ainsi que ses moments :
-
-$\mathbb{E} \left( R \right) = 0$
+$a = \frac{n \sum_{i = 1}^{n} x_i y_i - \sum_{i = 1}^{n} x_i \sum_{i = 1}^{n} y_i}{n \sum_{i = 1}^{n} {x_i}^2 - \left( \sum_{i = 1}^{n} x_i \right)^2} = \frac{\mathrm{cov} \left( x, y \right)}{{s_x}^2}$
 
 et
 
-$\mathbb{V} \left( R \right) = \frac{1}{n - 1}$
+$b = \frac{\sum_{i = 1}^{n} y_i \sum_{i = 1}^{n} {x_i}^2 - \sum_{i = 1}^{n} x_i \sum_{i = 1}^{n} x_i y_i}{n \sum_{i = 1}^{n} {x_i}^2 - \left( \sum_{i = 1}^{n} x_i\right)^2} = \bar{y} - a \bar{x}$
 
-On en déduit les propriétés de $\rho$. Pour un test d'indépendance, on est amené à rejeter les grandes valeurs de $\left| r \right|$. La région critique est alors de la forme $\left| R \right| > k$.
-
-
-> [!NOTE]
->  Si $n = 4$, la loi de la variable $R$ est une loi uniforme sur $\left[ -1, +1 \right]$.
+La simplification de la solution de $b$ en utilisant les paramètres estimés montre que la droite estimée passe par le point moyen.
 
 > [!NOTE]
->  Si $n > 100$, la loi de $R$ peut être approchée par la loi normale $R \sim N \left( 0, \sqrt{\frac{1}{n - 1}} \right)$ 
+> Ce sont les deux formules préprogrammées dans la quasi-totalité des tableurs comme Excel®, des calculatrices et des calculateurs du type MathLab®, Mathematica® ou Maple®. Retenir ces formules peu commodes est par conséquent peu utile. Il faut se concentrer sur la méthode pour les obtenir et retenir les propriétés associées.
 
-##### Cas où $\rho \neq 0$
+## Décomposition de la variance
 
-Pour $\rho \neq 0$, la loi de la variable $R$ est connue mais difficile à utiliser. Ses moments sont :
+On note ${y_i}^{*}$ la valeur théorique obtenue pour $x_i$ *via* la droite de régression estimée, c'est-à-dire ${y_i}^{*} = a x_i + b$. On appelle le résidu (ou l'erreur de prédiction), $e_i$, l'écart entre la valeur théorique et la valeur observée, $e_i = y_i - {y_i}^{*}$. Il est possible de réécrire $e_i$ en introduisant la moyenne estimée $\bar{y}$ :
 
-$\mathbb{E} \left( R \right) = \rho - \frac{\rho \left( 1 - {\rho}^2 \right)}{2n}$
+$y_i = {y_i}^{*} + e_i = \left( y_i - \bar{y} \right) = \left( {y_i}^{*} - \bar{y} \right) + e_i$
 
-et
+On note que ${y_i}^{*} - \bar{y} = a \left( x_i - \bar{x} \right)$.
 
-$\mathbb{V} \left( R \right) = \frac{\left( 1 - {\rho}^2 \right)^2}{n - 1}$
+Si l'on centre $y_i$ sur sa moyenne $\bar{y}$, on obtient une mesure de l'écart à la moyenne :
 
-On considère la transformée $Z$ de Fisher de $R$ :
+$\underbrace{y_i - \bar{y}}_{\textrm{écart total}} = \underbrace{\left( {y_i}^{*} - \bar{y} \right)}_{\textrm{écart expliqué}} + \underbrace{\left( y_i - {y_i}^{*} \right)}_{\textrm{écart non expliqué}}$
 
-$Z = \frac{1}{2} \ln \left( \frac{1 + R}{1 - R} \right) = \frac{\ln 10}{2} \log \left( \frac{1 + R}{1 - R} \right) \approx 1,15129 \log \left( \frac{1 + R}{1 - R} \right)$
+Lorsque l'on cherche une droite de régression de $Y$ par rapport à $X$, les variables $X$ et $Y$ ne jouent pas le même rôle. $Y$ est la variable à expliquer, et $X$ est la variable potentiellement explicative. Il est possible de décomposer la variance en une partie expliquée (la variance expliquée) et un partie non expliquée, résiduelle (la variance résiduelle) (Fig. 2).
 
-Lorsque $n \geq 25$, la loi de $Z$ tend vers une loi normale : $Z \sim N \left( Z, \frac{1}{\sqrt{n - 3}} \right)$.
+![fig34](IMG/Fig-15-5.jpg "Variance expliquée et variance résiduelle (Wonnacott & Wonnacott, 1995, p. 549)")
 
-Ce test permet de déterminer les intervalles de confiance des coefficients de corrélation.
+**Figure 2. Variance expliquée et variance résiduelle[^1] (p. 549)**
 
-#### Échantillons quelconques
+Après obtention de la droite de régression de $Y$ par rapport à $X$, on peut écrire la variance totale ${s_y}^2$ :
 
-Le test précédent est encore valable si $n > 25$. Toutefois, dans le cas des échantillons non normaux, on ne teste plus l'indépendance, mais seulement la **« non-corrélation linéaire »**.
+$\underbrace{{s_y}^2}_{\textrm{variance totale}} = {s_{ax + b}}^2 + \frac{1}{n} \sum_{i = 1}^{n} n_i \left( y_i - a x_i - b \right)^2 = \underbrace{a^2 {s_x}^2}_{\textrm{variance expliquée}} + \underbrace{{s_e}^2}_{\textrm{variance résiduelle}}$
 
-## Signification de la différence entre deux coefficients de corrélation
+La variance totale de $Y$ est égale à la somme de la variance expliquée par l'ajustement affine, c'est-à-dire par la variable $X$, et la variance résiduelle (Fig. 3) :
 
-Pour savoir si deux coefficients de corrélation $r_1$ et $r_2$ obtenus à partir d'échantillons de tailles respectives $n_1$ et $n_2$, diffèrent l'un de l'autre de façon significative, on calcule la transformée de Fisher $Z_1$ et $Z_2$ correspondant à $r_1$ et $r_2$ :
+$\underbrace{\sum_{i = 1}^{n} \left( y_i - \bar{y} \right)^2}_{\textrm{variance totale}} = \underbrace{\sum_{i = 1}^{n} \left( {y_i}^{*} - \bar{y} \right)^2}_{\textrm{variance expliquée}} + \underbrace{\sum_{i = 1}^{n} \left( y_i - {y_i}^{*} \right)^2}_{\textrm{variance résiduelle}}$
 
-$Z_1 = \frac{1}{2} \ln \left( \frac{1 + r_1}{1 - r_1} \right)$
+avec $\sum_{i = 1}^{n} \left( {y_i}^{*} - \bar{y} \right)^2 = \sum_{i = 1}^{n} \left( {y_i}^{*} - \bar{y} \right)^2$
 
-et
+![fig35](IMG/Fig-15-6.jpg "La réduction de la variance (Wonnacott & Wonnacott, 1995, p. 549)")
 
-$Z_2 = \frac{1}{2} \ln \left( \frac{1 + r_2}{1 - r_2} \right)$
+**Figure 3. La réduction de la variance[^1] (p. 549)**
 
-On peut alors utiliser la statistique $z = \frac{\left( Z_1 - Z_2 \right) - \left( \bar{Z_1} - \bar{Z_2} \right)}{\sqrt{\frac{1}{n_1 - 3} + \frac{1}{n_2 - 3}}}$.
+Il est à noter qu'ici le terme « variance » est abusif, car la variance totale vaut exactement :
 
-### Problème 1.
+$\begin{array}{l} \sum_{i = 1}^{n} \left( y_i - \bar{y} \right)^2 = \frac{1}{n} \sum_{i = 1}^{n} \left( y_i - \bar{y} \right)^2 = \frac{1}{n} \sum_{i = 1}^{n} \left[ \left( {y_i}^{*} - \bar{y} \right) + \left( y_i - {y_i}^{*} \right) \right]^2 \\ \sum_{i = 1}^{n} \left( y_i - \bar{y} \right)^2 = \sum_{i = 1}^{n} \left( {y_i}^{*} - \bar{y} \right)^2 + \sum_{i = 1}^{n} \left( y - {y_i}^{*} \right)^2 + 2\sum_{i = 1}^{n} \left[ \left( {y_i}^{*} - \bar{y} \right) \left( y - {y_i}^{*} \right) \right]  \end{array}$
 
-La valeur d'un coefficient de corrélation, calculé à partir d'un échantillon de taille 18, est égale à 0,32. Peut-on en conclure au seuil de signification $\alpha = 0,05$ et $\alpha = 0,01$ que le coefficient de corrélation $\rho$ de la population n'est pas nul ?
+mais $2\sum_{i = 1}^{n} \left[ \left( {y_i}^{*} - \bar{y} \right) \left( y - {y_i}^{*} \right) \right]$ comporte un terme nul, car $2\sum_{i = 1}^{n} \left( y - {y_i}^{*} \right) =  2\sum_{i = 1}^{n} \left( y - a x_i - b \right) = 0$ par définition de la méthode des moindres carrés.
 
-$n = 18$, donc il s'agit d'un petit échantillon. Il faut tester avec une variable $t$ de Student.
+### Coefficient de détermination
 
-Les deux hypothèses sont :
+Si l'on prend le rapport entre la variance expliquée de $Y$ et la variance totale de $Y$, on obtient le **coefficient de détermination** qui mesure la qualité de l'ajustement linéaire. :
 
-$\left\lbrace  \begin{array}{l} H_0 : \rho = 0 \\ H_1 : \rho \neq 0  \end{array} \right.$
+$\frac{\textrm{variance expliquée}}{\textrm{variance totale}} = \frac{{s_{aX + b}}^2}{{s_{Y}}^2} = a^2 \frac{{s_X}^2}{{s_Y}^2} = \frac{\left[ \mathrm{cov} \left( x, y \right) \right]}{{s_X}^2 {s_Y}^2} = \left[ \frac{\mathrm{cov} \left( x, y \right)}{s_X s_Y} \right]^2 = r^2$
 
-La valeur du $t$ de Student est :
+Par définition, le coefficient de détermination correspond au carré du coefficient de corrélation. Le coefficient de détermination mesure la contribution d'une des variables à l'explication de la seconde.
 
-$t = \frac{r\sqrt{n - 2}}{\sqrt{1 -r^2}} \approx \frac{0,32\sqrt{18 - 2}}{\sqrt{1 -0,32^2}} \approx 1,35$
+$r^2$ est également lié à la variance résiduelle par une relation approximative :
 
-Avec $\alpha = 0,05$, $H_0$ est rejetée si $t > t_{0,95}$ avec $t_{0,95} \approx 1,75$ pour $\upsilon = 16$ degrés de liberté, puisque $t < t_{0,95}$ il est impossible de conclure.
+${s_e}^2 \approx \left( 1 - r^2 \right) {s_y}^2$
 
-Avec $\alpha = 0,01$, $H_0$ est rejetée si $t > t_{0,99}$ avec $t_{0,99} \approx 2,58$ pour $\upsilon = 16$ degrés de liberté, puisque $t < t_{0,99}$ il est impossible de conclure.
+Dit autrement dit, la variance résiduelle ${s_e}^2$ n'est qu'une fraction de la variance totale ${s_y}^2$. Cette fraction correspond au **coefficient d'indétermination** $\left( 1 - r^2 \right)$. Si, par exemple, on écrit ${s_e}^2 \approx 0,60 {s_y}^2$, cela signifie que 60 % de la variance totale de $Y$ reste inexpliquée. L'approximation vient du fait que la variance résiduelle s'exprime de la manière suivante : ${s_e}^2 = \frac{1}{n - 2} \sum_{i = 1}^{n} \left( y_i - {y_i}^2 \right)^2$.
 
-### Problème 2.
+Le rapport entre la variance expliquée de $Y$ et la variance résiduelle de $Y$ est une variable $F$ de Fisher. La variance totale possède $n - 1$ degré de liberté, la variance expliquée $1$, et la variance résiduelle $n - 2$.
 
-Quelle serait la taille minimale nécessaire d'un échantillon pour pouvoir conclure que le coefficient de corrélation 0,32 diffère significativement de zéro au seuil de $\alpha = 0,05$ ?
+$F = \frac{\textrm{variance expliquée}}{\textrm{variance résiduelle}} = \frac{\sum_{i = 1}^{n} \left( {y_i}^{*} - \bar{y} \right)^2}{\frac{1}{n - 2} \sum_{i = 1}^{n} \left( y_i - {y_i}^{*} \right)^2} = \frac{a^2 {s_x}^2}{{s_e}^2}$
 
-Pour $n -2$ degrés de liberté, on pose que $t_{0,95}$ doit être égale à :
+Le test de Fisher teste l'absence de corrélation entre $X$ et $Y$. Si $F > F_{\alpha} \left( 1, n - 2 \right)$ alors $X$ et $Y$ sont corrélées. Cela permet de répondre à la question suivante : « La liaison linéaire est-elle significative ? ».
 
-$t_{0,95} \approx \frac{0,32\sqrt{n - 2}}{\sqrt{1 -0,32^2}}$
+### Coefficient de corrélation linéaire
 
-Pour un nombre de degrés de liberté infini, on sait que $t_{0,95} \approx 1,64$, donc $n = 25,60$. Dit autrement, il suffit de tester les valeurs de $n \geq 26$ pour trouver rapidement la valeur de $n$.
+$r$ est une estimation ponctuelle de la variable aléatoire $R$, réalisation du coefficient de corrélation $\rho$ de la population mère. $y$ est tout à fait symétrique par rapport à $x$. Dit autrement, $r$ ne distingue pas la variable expliquée $y$ et le régresseur $x$.
 
-- Pour $n = 26$, le degré de liberté $\upsilon = 24$ et le $t$ de Student calculé vaut : $t \approx 1,65$.
+Le coefficient de corrélation $r$ mesure le degré de liaison linéaire entre $X$ et $Y$. Lorsque $r = 0$, le nuage de point est symétrique. De fait, $r$ indique dans ce cas l'absence de relation linéaire. Plus $\left| r \right| \rightarrow 1$, plus la liaison linéaire est forte. Toutefois, à lui seul, il n'est pas possible de conclure sur cet aspect. En effet, lorsque la population n'est pas normale bivariée, de telles inférences peuvent s'avérer risquées, voire impossibles. Elles ne sont pas « robustes ». De plus, il dépend du nombre de points : lorsqu'il y a peu de points, $r$ est peu significatif.
 
-- Pour $n = 27$, le degré de liberté $\upsilon = 25$ et le $t$ de Student calculé vaut : $t \approx 1,69$.
+Il faut noter que le coefficient de corrélation est une mesure invariante d'échelle.
 
-- Pour $n = 28$, le degré de liberté $\upsilon = 26$ et le $t$ de Student calculé vaut : $t \approx 1,72$.
+On suppose que la population soit normale bivariée, ce qui signifie que les valeurs $X$ suivent une distribution normale, de même que les valeurs $Y$. Le nuage de points peut être représenté de façon satisfaisante par une ellipse qui englobe la plupart des points (environ 85 %) et qui est appelée **ellipse de concentration** (Fig. 4).
 
-- Pour $n = 29$, le degré de liberté $\upsilon = 27$ et le $t$ de Student calculé vaut : $t \approx 1,76$.
+![fig33](IMG/Fig-15-3.jpg "Nuage de point et ellipse de concentration (Wonnacott & Wonnacott, 1995, P. 544)")
 
-On en conclut que la taille minimale pour avoir un seuil significatif $\alpha = 0,05$ est $n = 28$.
+**Figure 4. Nuage de point et ellipse de concentration[^1] (p. 544)**
 
-### Problème 3.
+Il est possible d'écrire $r$ en fonction de la variance résiduelle *via* la formule du coefficient d'indétermination, ce qui donne :
 
-On a calculé un coefficient de corrélation sur un échantillon de taille 24 et l'on a trouvé $r = 0,75$. Peut-on rejeter l'hypothèse que le coefficient de corrélation de la population soit aussi faible que $\rho = 0,60$ et $\rho = 0,50$ au seuil de signification $\alpha = 0,05$.
+$r \approx \sqrt{1 - \frac{{s_e}^2}{{s_y}^2}}$
 
-Les deux hypothèses sont :
+Cela revient à effectuer une étude de la dispersion résiduelle qui montre si l'on a réussi à réduire les données de manière significative.
 
-$\left\lbrace  \begin{array}{l} H_0 : \rho \neq 0 \\ H_1 : \rho = 0  \end{array} \right.$
+### Conséquence du centrage sur la moyenne
 
-Pour le mener à bien, on utilise la transformation $Z$ de Fisher sur le coefficient de corrélation : $Z \approx \frac{1}{2} \ln \left( \frac{1 + 0,75}{1 - 0,75} \right) \approx 0,9730$.
+Lorsque l'on centre les variables $X$ et $Y$, $x - \bar{x}$ et $y - \bar{y}$, cela revient à changer l'origine du repère. Le point moyen devient le centre du repère (Fig. 5).
 
-- Pour $\rho = 0,60$, $\bar{Z} \approx \frac{1}{2} \ln \left( \frac{1 + 0,60}{1 - 0,60} \right) \approx 0,6932$, $s_Z \approx \sqrt{\frac{1}{24 - 3}} \approx 0,2182$ et $z = \frac{Z - \bar{Z}}{s_Z} \approx \frac{0,9730 - 0,6932}{0,2132} \approx 1,28$. Au seuil $\alpha = 0,05$, à partir d'un test unilatéral de la distribution normale, on ne pourra rejeter l'hypothèse uniquement si $z \geq 1,64$. Pour notre cas, on ne peut pas rejeter l'hypothèse que le coefficient de corrélation de la population vaut $0,60$ au seuil de signification $\alpha = 0,05$.
+![fig32](IMG/Fig-15-1-2.jpg "Nuage de points et changement de repère (Wonnacott & Wonnacott, 1995, p. 541)")
 
-- Pour $\rho = 0,50$, $\bar{Z} \approx \frac{1}{2} \ln \left( \frac{1 + 0,50}{1 - 0,50} \right) \approx 0,5493$, $s_Z \approx \sqrt{\frac{1}{24 - 3}} \approx 0,2182$ et $z = \frac{Z - \bar{Z}}{s_Z} \approx \frac{0,9730 - 0,5494}{0,2132} \approx 1,94$. Au seuil $\alpha = 0,05$, à partir d'un test unilatéral de la distribution normale, on ne pourra rejeter l'hypothèse uniquement si $z \geq 1,64$. Pour notre cas, on peut rejeter l'hypothèse que le coefficient de corrélation de la population vaut $0,50$ au seuil de signification $\alpha = 0,05$.
+**Figure 5. Nuage de points et changement de repère[^1] (p. 541)**
 
-### Problème 4.
+D'après la figure 5, les domaines I et III  vérifient $\sum_{i = 1}^{n} x_i y_i > 0$, tandis que les domaines II et IV vérifient $\sum_{i = 1}^{n} x_i y_i < 0$. De plus, il n'existe pas de liaison entre $X$ et $Y$ avec des points d'observation répartis de manière « homogène » : $\sum_{i = 1}^{n} x_i y_i = 0$.
 
-Le coefficient de corrélation entre les notes de mathématiques et de physique d'un groupe de 21 étudiants est de $r = 0,80$. Calculer les limites de confiance à 95 % de ce coefficient.
+## Régression et corrélation
 
-Puisque $r = 0,80$ et $n = 21$, les limites de confiance à 95 % de $\bar{Z}$ sont données par $Z \pm 1,96 s_Z \approx \frac{1}{2} \ln \left( \frac{1 + 0,80}{1 - 0,80} \right) \pm 1,96 \frac{1}{21 - 3} \approx 1,0986 \pm 0,4620$. De fait, $0,5366 \leq \bar{Z} \leq 1,5606$. Aux bornes, si $\bar{Z} = 0,5366$ alors $\rho = 0,4904$, et si $\bar{Z} = 1,5606$, alors $\rho = 0,9155$. Cela permet d'encadrer la valeur de $\rho$ : $0,4904 \leq \rho \leq 0,9155$ au seuil de confiance de 95 %.
+### Relation entre l'ordonnée à l'origine $a$ et la pente de la régression et $r$ le coefficient de corrélation
 
-### Problème 5.
+$a$ et $r$ se ressemblent beaucoup :
 
-On a calculé les coefficients de corrélation pour deux échantillons de taille $n_1 = 28$ et $n_2 = 35$ et l'on a trouvé respectivement $r_1 = 0,50$ et $r_2 = 0,30$. Y a-t-il une différence significative entre les deux coefficients au seuil de $\alpha = 0,05$ ?
-
-On calcule les variables $Z_i$ de Fisher correspondantes :
-
-$Z_1 \approx \frac{1}{2} \ln \left( \frac{1 + 0,50}{1 - 0,50} \right)  \approx 0,5493$
+$a = \frac{\mathrm{cov} \left( x, y \right)}{{s_x}^2}$
 
 et
 
-$Z_2 \approx \frac{1}{2} \ln \left( \frac{1 + 0,30}{1 - 0,30} \right)  \approx 0,3095$
+$r = \frac{\mathrm{cov} \left( x, y \right)}{s_x s_y}$
 
-avec
+De fait, pour rapprocher $a$ et $r$, il suffit d'écrire
 
-$m_{Z_1 - Z_2} = \bar{Z_1} - \bar{Z_2} = 0$
+$a s_x = \frac{\mathrm{cov} \left( x, y \right)}{s_x}$
+
+puis d'introduire $s_y$ ;
+
+$a \frac{s_x}{s_y} = \frac{\mathrm{cov} \left( x, y \right)}{s_x s_y} = r$
+
+donc :
+
+$a = \frac{s_y}{s_x} r$
+
+De fait, si $a = 0$, alors $r = 0$, et, réciproquement, si $r = 0$, alors $a = 0$.
+
+### Tester l'hypothèse d'un coefficient directeur nul
+
+Le coefficient directeur $a$ peut être vu comme la réalisation de la variable aléatoire $A$ estimant la valeur $\alpha$, c'est-à-dire :
+
+$\mathbb{E} \left( A \right) = \alpha$
 
 et
 
-$s_{Z_1 - Z_2} \approx \sqrt{\frac{1}{28 - 3} + \frac{1}{35 - 3}} \approx 0,2669$
+$\mathbb{V} \left( A \right) = \frac{{\sigma}^2}{\sum_{i =1}^{n} \left( x_i - \bar{x} \right)^2}$
 
-On peut alors utiliser la statistique $z = \frac{\left( Z_1 - Z_2 - m_{Z_1 - Z_2} \right)}{s_{Z_1 - Z_2}} \approx \frac{0,5493 - 0,3095}{0,8985} \approx 0,8983$. On rejettera $H_0$ si $z > 1,96$ ou $z < -1,96$. Ici, on ne peut pas rejeter $H_0$, on en conclut que les résultats ne diffèrent pas de façon significative au seuil $\alpha = 0,05$.
+On calcule la variable $U$ telle que $U = \frac{A - \alpha}{\frac{{\sigma}}{\sqrt{\sum_{i =1}^{n} \left( x_i - \bar{x} \right)^2}}}$. Avec un écart type observé de ${\sigma}^{*}$, on obtient une loi $t$ de Student à $n - 2$ degré de liberté, dont la valeur vaut : $t = \frac{A - \alpha}{\frac{{\sigma}^{*}}{\sqrt{\sum_{i =1}^{n} \left( x_i - \bar{x} \right)^2}}}$.
 
-## Corrélation des séries chronologiques et spatiales
+Pour l'hypothèse nulle $H_0$, on suppose que $\alpha = 0$, ce qui signifie que $-t_{\frac{\alpha}{2}} < \frac{a}{\frac{{\sigma}^{*}}{\sqrt{\sum_{i =1}^{n} \left( x_i - \bar{x} \right)^2}}} < t_{\frac{\alpha}{2}}$. Dans ce cas, il n'existe aucune relation linéaire entre $X$ et $Y$.
 
-Pour finir, il faut faire quelques remarques sur les séries chronologiques et spatiales.
+Pour l'hypothèse alternative $H_1$, on suppose que $\alpha \neq 0$. Dit autrement, $t$ est en dehors de l'intervalle $\left[ -t_{\frac{\alpha}{2}}, t_{\frac{\alpha}{2}}\right]$. La pente n'est pas nulle.
 
-1. Si chacune des variables $X$ et $Y$ dépend du temps y avoir une liaison entre elles qui ne soit pas nécessairement une relation « cause à effet », et qui conduise à des **corrélations trompeuses**. On obtient le coefficient de corrélation en faisant correspond à chaque instant $t$ un couple de $\left( X, Y \right)$ et en utilisant les formules précédentes.
+## Étude des deux droites de régression possibles
 
-2. On peut essayer de corréler une variable $x$ prise à un certain instant avec une valeur $X$ correspondant à un instant antérieur. On appelle une telle corrélation : **autocorrélation**. Cette remarque s'applique également pour les variables spatiales de position.
+Jusqu'à présent, le texte a étudié la régression de $Y$ en $X$ (Fig. 6), mais, si elle n'est pas convaincante, il est tout à fait possible d'effectuer la régression de $X$ en $Y$ (Fig. 7).
+
+![fig36](IMG/Fig-15-7.jpg "La régression de $Y$ en $X$ (Wonnacott & Wonnacott, 1995, p. 556)")
+
+**Figure 6. La régression de $Y$ en $X$ [^1] (p. 556)**
+
+![fig37](IMG/Fig-15-8.jpg "La régression de $X$ en $Y$ (Wonnacott & Wonnacott, 1995, p. 557)")
+
+**Figure 7. La régression de $X$ en $Y$[^1] (p. 557)**
+
+Dans les deux cas, une **ellipse de concentration** englobe la plupart des observations possibles (Fig. 8). Pourquoi la droite de régression ne correspond-t-elle pas à l'axe principal de cette ellipse ? Simplement, parce que choisir cet axe serait un choix trop « optimiste ». C'est pour cela que la méthode s'appelle « régression ». Une « régression à la moyenne » n'a par conséquent aucun sens. La régression de $Y$ en $X$ permet, en connaissant $X_1$ de proposer la meilleure prédiction possible pour $Y$. Il s'agit de $P_1$ qui est situé au milieu du segment $\left[ AB \right]$ et sur la droite de régression ${Y}^{*}$. La régression de $X$ en $Y$ permet, en connaissant $Y_1$ de proposer la meilleure prédiction possible pour $X$. Il s'agit de $P_2$ qui est situé au milieu du segment $\left[ CD \right]$ et sur la droite de régression ${X}^{*}$. L'axe principal est un axe de symétrie entre les deux droites de régression.
+
+Il est possible d'écrire l'équation de la droite des moindres carrés $Y = a_0 + a_1 X$, c'est-à-dire la droite de régression de $Y$ en $X$ :
+
+$Y - \bar{Y} = r \frac{s_Y}{s_X} \left( X - \bar{X} \right)$
+
+De la même façon, la droite de régression de $X$ en $Y$ peut s'écrire :
+
+$X - \bar{X} = \frac{1}{r} \frac{s_X}{s_Y} \left( Y - \bar{Y} \right)$
+
+Dans le deux cas, le coefficient de corrélation $r$ intervient, ce qui permet de préciser quatre propriétés.
+
+- **Propriété 1.** Les pentes des deux droites sont égales si et seulement si $r = \pm 1$, si et seulement si les deux droites sont identiques, si et seulement s'l existe une corrélation linéaire parfaite entre les variables $X$ et $Y$.
+
+- **Propriété 2.** Si $r = 0$, les droites sont perpendiculaires. Il n'existe pas de corrélation linéaire entre $X$ et $Y$.
+
+- **Propriété 3.** Le coefficient de corrélation linéaire mesure l'écart entre deux droites de régression (Fig. 8).
+
+- **Propriété 4.** Si $Y = a_0 + a_1 X$ et $X = b_0 + b_1 Y$, alors $r^2 = a_1 b_1$. Cette propriété correspond à la dissymétrie des deux droites de moindres carrés. Cela se démontre facilement. Lors de la régression linéaire de $Y$ en $X$, on sait que $a_1 = \frac{\mathrm{cov} \left( X, Y \right)}{s^2 \left( X \right)}$. Lors de la régression linéaire de $X$ en $Y$, on sait que $b_1 = \frac{\mathrm{cov} \left( X, Y \right)}{s^2 \left( Y \right)}$. La combinaison des deux informations permet de montrer que le produit entre $a_1$ et $b_1$ correspond au carré du coeffcient de corrélation.
+
+![fig38](IMG/regression-X-en-Y-et-Y-en-X.png "Combinaison des deux régressions de $Y$ en $X$ et de $X$ en $Y$")
+
+**Figure 8. Combinaison des deux régressions de $Y$ en $X$ et de $X$ en $Y$**
+
+## Régression d'échantillonnage
+
+L{'équation de droite $Y = b + aX$ s'obtient à partir des données de l'échantillon. On s'intéresse souvent à l'équation de régression de la population mère d'où l'on a tiré l'échantillon. Les deux tests suivants permettent d'estimer les coefficients de la droite de régression pour la population donnée pour laquelle $Y = \beta + \alpha X$.
+
+### Test sur l'hypothèse $a = \alpha$
+
+Pour tester l'hypothèse que le coefficient de régression $a$ est égal à une valeur particulière $\alpha$, on utilise le fait que la statistique $t = \frac{a - \alpha}{\frac{\mathrm{cov} \left( X, Y \right)}{s_X}} \sqrt{n - 2} = \frac{a - \alpha}{\sqrt{1 - r^2}} \sqrt{n - 2}$ suit une distribution de Student à $\upsilon = n - 2$ degrés de liberté. On peut également utiliser cette statistique pour trouver des intervalles de confiance pour les coefficients de régression de la population à partir des valeurs d'échantillonnage.
+
+### Test d'hypothèse sur les valeurs estimées
+
+Soit $Y_0$ la valeur prévue pour $Y$ correspondant à la valeur $X = X_0$, estimée par l'équation de régression d'échantillonnage, unies par la relation $Y_0 = b + a X_0$. Soit $X_p$ la valeur prévue pour $Y$ correspondant à $X = X_0$ pour la population mère. Alors la statistique $t = \frac{Y_0 - Y_p}{\mathrm{cov} \left( X, Y \right) \sqrt{n + 1 + \frac{\left( X_0 - \bar{X} \right)^2}{{s_X}^2}}} \sqrt{n - 2}$ suit une distribution de Student à $\upsilon = n - 2$ degrés de liberté. À partir de la formule précédente, on peut également trouver les limites de confiance de valeurs prévues pour la population.
+
+### Test d'hypothèse sur les valeurs moyennes estimées
+
+Soit $Y_0$ la valeur prévue pour $Y$ correspondant à $X = X_0$, estimée par l'équation de régression empirique, à savoir $Y_0 = b + a X_0$. Soit $Y_p$ la valeur prévue dans la population $Y$ correspondant à $X = X_0$ pour la population mère. Alors la statistique $t = \frac{Y_0 - Y_p}{\mathrm{cov} \left( X, Y \right) \sqrt{1 - \frac{\left( X_0 - \bar{X} \right)^2}{{s_X}^2}}} \sqrt{n - 2}$ suit une loi de Student à $\upsilon = n - 2$ degrés de liberté. On peut en déduire les limites de confiance de valeurs moyennes prévues pour la population.
+
+## Intervalles de confiance de la droite de régression
+
+La construction d'intervalles de confiance de la droite de régression permet de répondre à la question suivante : « Existe-t-il des observations excentriques ? ».
+
+On sait que :
+
+$\mathbb{E} \left( Ax + B \right) = \alpha x + \beta$
+
+avec $A$ et $B$ deux variables aléatoires estimées par $a$ et $b$ représentant respectivement le coefficient directeur et l'ordonné à l'origine. $\alpha$ et $\beta$ sont les valeurs réelles de ces variables. Il est alors possible de proposer un intervalle de confiance pour cette estimation (Fig. \ref{fig44}) telle que :
+
+$-u_{\frac{\alpha}{2}} < \frac{ax + b - \left( \alpha x + \beta \right) }{{\sigma}_{Ax + B}} < u_{\frac{\alpha}{2}}$
+
+donc
+
+$ax + b - u_{\frac{\alpha}{2}} {{\sigma}_{Ax + B}} < \alpha x + \beta < ax + b + u_{\frac{\alpha}{2}} {{\sigma}_{Ax + B}}$
+
+![fig44](IMG/Estimation-d-une-droite.png "Illustration de la notion d'intervalle de confiance de l'estimation d'une droite")
+
+**Figure 9. Illustration de la notion d'intervalle de confiance de l'estimation d'une droite**
+
+En réalité, il existe deux intervalles de confiance :
+
+- l'intervalle de confiance de la droite de régression même (Fig. \ref{fig45}) : ${\sigma}^2 \left( \frac{1}{n} + \frac{\left( x_j - \bar{x} \right)^2}{\sum_{i = 1}^{n} \left( x_i - \bar{x} \right)^2} \right)$ ;
+
+- l'intervalle de confiance de l'espérance de $Y$ pour une valeur $X$ donnée : ${\sigma}^2 \left( 1 + \frac{1}{n} + \frac{\left( x_j - \bar{x} \right)^2}{\sum_{i = 1}^{n} \left( x_i - \bar{x} \right)^2} \right)$.
+
+![fig45](IMG/Estimation-d-une-droite-Intervalle-de-confiance.png "Estimation de la notion d'intervalle de confiance d'une droite")
+
+**Figure 10. Estimation de la notion d'intervalle de confiance d'une droite**
+
+## Comparaison de deux droites de régression estimées
+
+Soit une droite de régression issue d'un échantillon de taille $n_1$ ayant un coefficient directeur $a_1$ et une variance résiduelle ${\sigma}_{R_1}$. Soit une droite de régression issue d'un échantillon de taille $n_2$ ayant un coefficient directeur $a_2$ et une variance résiduelle ${\sigma}_{R_2}$. 
+
+En première étape, on compare les variances par un test de Fisher-Snedecor avec la variable $F = \frac{\frac{{\sigma}_{R_1}}{n_1 - 2}}{\frac{{\sigma}_{R_2}}{n_2 - 2}}$. Si le test est positif, on peut calculer une variance commune valant :
+
+${{\sigma}^{*}}^2 = \frac{{\sigma}_{R_1} + {\sigma}_{R_2}}{n_1 + n_2 - 4}$
+
+La seconde étape consiste à comparer les pentes estimées entre elles. On pose $\mathbb{E} \left( A_1 \right)  = \alpha$, $\mathbb{V} \left( A_1 \right) = \frac{{\sigma}^2}{\sum_{i = 1}^{n_1} \left( x_i - {\bar{x}}_1 \right)^2}$, $\mathbb{E} \left( A_2 \right) = \alpha$, $\mathbb{V} \left( A_2 \right) = \frac{{\sigma}^2}{\sum_{i = 1}^{n_2} \left( x_i - {\bar{x}}_2 \right)^2}$. On en déduit que :
+
+$\mathbb{E} \left( A_1 - A_2 \right) = 0$
+
+et
+
+$\mathbb{V} \left( A_1 - A_2 \right) = {{\sigma}^2} \left( \frac{1}{\sum_{i = 1}^{n_1} \left( x_i - {\bar{x}}_1 \right)^2} + \frac{1}{\sum_{i = 1}^{n_2} \left( x_i - {\bar{x}}_1 \right)^2} \right)$
+
+Le test $u = \frac{A_1 - A_2}{\frac{\sigma}{\sqrt{\frac{1}{\sum_{i = 1}^{n_1} \left( x_i - {\bar{x}}_1 \right)^2} + \frac{1}{\sum_{i = 1}^{n_2} \left( x_i - {\bar{x}}_1 \right)^2}}}}$ suit une loi normale, donc $t = \frac{A_1 - A_2}{\frac{{\sigma}^{*}}{\sqrt{\frac{1}{\sum_{i = 1}^{n_1} \left( x_i - {\bar{x}}_1 \right)^2} + \frac{1}{\sum_{i = 1}^{n_2} \left( x_i - {\bar{x}}_1 \right)^2}}}}$ suit une loi de Student à $n_1 + n_2 - 4$ degrés de liberté.
+
+## Autres méthodes de régression linéaire
+
+### Ajustement affine graphique
+
+La méthode graphique consiste à tracer à l'oeil à l'aide d'une règle transparente une droite $y = ax + b$ s'ajustant le mieux possible sur le nuage de points. Les coefficients $a$ et $b$ sont estimés après avoir tracé la droite.
+
+### Droite de Mayer[^2]
+
+On découpe le nuage de points en deux sous-ensembles de même effectif. Pour chacun des deux sous-ensembles, on calcule la moyennes des $x_i$ et la moyenne des $y_i$. On obtient ainsi deux points moyens $\left( \bar{x_1}, \bar{y_1} \right)$ et $\left( \bar{x_2}, \bar{y_2} \right)$. Il reste à tracer la droite passant par ces deux points.
+
+## Notes de bas de page
+
+[^1]: Wonnacott, Thomas H. & Wonnacott, Ronald J., 1995, *Statistique. Économie – Gestion – Sciences – Médecine*, trad. Patrick Cohendet, Maurice Lethielleux, Mohammed Lyazid, Anne-Marie Richardot & Gérard Schade, Paris, Économica, 920 p.
+
+[^2]: Tobias Mayer (1723-1762)

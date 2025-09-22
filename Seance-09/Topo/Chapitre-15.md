@@ -1,125 +1,326 @@
-# Statistique multivariée et géographie
+# Méthodes factorielles
 
-L'analyse des données a plus d'un siècle d'existence. L'**analyse factorielle** consiste à transformer un tableau en une représentation graphique. L'analyse canonique fut développée par C. Spearman[^1] [^2] et K. Pearson au début du XX<sup>e siècle. L'approche de Charles Spearman propose de comparer une matrice de données $\mathbf{T}$ avec le cas d'indépendance $\mathbf{T_0}$. Ainsi, il établit une égalité avec la meilleure approximation $\mathbf{T_1}$ et le reste des valeurs $\mathbf{T_2}$.
+Les méthodes factorielles sont des **analyses en axes principaux**. Elles permettent de dépouiller une enquête. Elles opèrent une **réduction** des variables en produisant des **visualisations graphiques**, et ce, en suivant toujours la même méthode :
 
-$\mathbf{T} - \mathbf{T_0} = \mathbf{T_1} + \mathbf{T_2}$
+1. créer un tableau de données ;
 
-L{}indépendance est définie par une premier valeur propre triviale. La représentation graphique de Charles Spearman consiste à confronter l'approximation et le reste.
+2. opérer la décomposition en valeurs singulières[^1] (D.V.S.) ;
 
-Vers 1930, H. Hotelling[^3] donna les bases de l'analyse en composantes principales [^4]. Cela étant, ce ne fut que vers 1973 que J.-P. Benzécri[^5] proposa et étudia l'analyse des correspondances vue précédemment[^6] [^7].
+3. adapter la D.V.S. au cas d'espèce (variables quantitatives, variables qualitatives, variables mixtes, *etc*.).
 
-Contrairement à la démarche utilisée en statistique inférentielle, on ne cherche pas à induire des lois valables pour la population entière à partir des résultats obtenus sur les individus observés. L'analyse des données s'apparente à de la statistique descriptive.
+> [!WARNING]
+> L'approche nécessite une connaissance de l'[algèbre linéaire](../../Formulaire-mathematique/Seance-09/05-Algebre%20lineaire.md).
 
-De fait, on retrouve ici les trois grandes méthodes de l'analyse des données :
+## Le tableau de données
 
-1. les méthodes descriptives, dont l'objectif est de décrire et de résumer les informations obtenues ;
+Un **tableau de données** présente une masse d'information sous la forme d'une matrice rectangulaire. Il se base sur la distinction entre deux analyses :
 
-2. les méthodes explicatives (ou méthode d’analyse de dépendance), dont l'objectif est d'expliquer un phénomène, c'est-à-dire trouver un lieu, fonctionnel ou non, entre une ou plusieurs variables expliquées et une ou plusieurs variables explicatives ;
+1. celle des individus ;
 
-3. les méthodes de prévision, dont l'objectif est d'analyser et de résumer les informations obtenues.
+2. celle des caractères.
 
-Deux position scientifiques alimentent les analyses multivariées :
+En lignes, notées $i = \left\lbrace 1, 2, \ldots{}, n \right\rbrace$, les individus sont représentés. En colonne, notées $j = \left\lbrace 1, 2, \ldots{}, p \right\rbrace$, les caractères sont représentés. Le tableau est noté $\mathbf{X}$. Il se décompose en :
 
-1. comprendre la production des résultats ;
+- vecteurs lignes représentant les individus dans l'espace ${\mathbb{R}}^p$. Ils représentent un point avec $p$ coordonnées.
+- vecteurs colonnes représentant les individus dans l'espace ${\mathbb{R}}^n$. Ils représentent un point avec $n$ coordonnées.
 
-2. comprendre la manière d'utiliser la méthode, c'est-à-dire admettre une « boîte noire ».
+Chacune des deux dimensions du tableau de données permet de définir des **distances** (ou des proximités) entre les éléments définissant l'autre dimensions.
 
-## Méthodes descriptives
+1. L'ensemble des colonnes permet de définir des distances (ou des proximités) entre lignes.
 
-### Méthodes de classification
+2. L'ensemble des lignes permet de calculer des distances (ou des proximités) entre colonnes.
 
-Les méthodes de classification ont pour objectif de regrouper des individus, décrits par un certain nombre de variables, ou de caractères, en un nombre restreint de classes de sorte que :
+**Les proximités géométriques traduisent des associations statistiques** soit entre les individus, soit entre les caractères.
 
-1. les individus appartenant à une même classe soient le plus semblable possible ;
+Les tableaux de distances (ou de proximités) associés à ces représentations géométriques peuvent être décrits par les deux grandes familles de méthodes :
 
-2. les classes soient bien séparées.
+1. les méthodes en axes principaux (ou méthodes factorielles) : A.C.P., A.F.C., A.C.M., *etc*. ;
 
-La plus utilisée est la **classification ascendante hiérarchique** (C.A.H.), qui est généralement couplée avec une analyse factorielle.
+2. les méthodes de classification : nuées dynamiques, C.A.H., A.F.D., *etc*.
 
-### Analyse factorielle en composantes principales
+La métrique permet de calculer les distances entre points-lignes ou entre points-colonnes.
 
-L'analyse en composante principale (A.C.P.), due à K. Pearson et H. Hotelling, a pour but d'étudier les liens existants entre $p$ variables mesurées sur $n$ individus, d'éliminer les redondances (deux variables corrélées apportant à peu près la même information), ainsi que de remplacer les variables initiales par un petit nombre de variables (1, 2 ou 3), appelées **axes factoriels** ou **composantes principales** en fonction du nuage de points étudié. Ces variables sont des combinaisons linéaires des variables initiales non corrélées entre elles.
+Les types de tableau possibles sont :
 
-### Analyse factorielle des correspondances
+- le tableau de type « caractères-individus » ;
 
-L'analyse factorielle des correspondances (A.C.P.) est une méthode proposée par J.-P. Benzécri vers 1973, pour l'étude des tableaux de contingence de deux variables qualitatives. Elle est devenue la méthode privilégiée pour la description des données qualitatives et un outil puissant pour le dépouillement des enquêtes.
+    - Ce tableau s'emploie avec des **variables quantitatives continues**.
 
-Le tableau des données contient les fréquences observées des modalités de deux phénomènes. Le test du ${\chi}^2$ permet de déterminer s’il existe une liaison entre ces deux phénomènes, et l'analyse factorielle des correspondances décrit cette liaison par l'intermédiaire du tableau de contingence qui peut mettre en évidence des ressemblances entre les colonnes du tableau, entre les lignes ou des proximités entre les lignes et les colonnes par l'intermédiaire de son *mapping*.
+    - La proximité entre caractères s'établit avec le calcul d'une corrélation. La proximité entre individus se caractérise par des similitudes globales entre les valeurs observées.
 
-La méthode s'étend sur plusieurs variables *via* l'analyse factorielle des correspondances multiples (A.C.M.).
+    - C'est le tableau d'entrée, par exemple, d'une analyse en composantes principales (A.C.P.).
 
-### Analyse factorielle discriminante
+- le tableau de contingences (ou binaire) ;
 
-Sur l'ensemble des individus d'une population $P$, on étudie $p$ caractères quantitatifs et un caractère qualitatif prenant un nombre fini $k$ de modalités. La population est répartie en $k$ classes.
+    - Le tableau de contingences est un tableau de comptages obtenu par le croisement entre **deux caractères nominaux**.
 
-Le but de l'analyse factorielle discriminante (A.F.D.) est de rechercher si ce caractère qualitatif a une influence sur les $p$ variables mesurées et de déterminer, éventuellement, des **caractères discriminants**, définissant, sur l'ensemble des individus, une partition aussi proche que possible de la partition induite par la variable qualitative initiale. Dit autrement, il s'agit d'une technique statistique ayant pour objectif de décrire, expliquer et prédire l'appartenance à des groupes prédéfinis (classes, modalités de la variable à prédire, *etc*.) d'un ensemble d'observations (individus, exemples, *etc*.) à partir d'une série des variables prédictives (descripteurs, variables exogènes, *etc*.). Ainsi, l'analyse factorielle discriminante se ramène à une analyse en composantes principales, effectuée sur l'ensemble des centres de gravité des individus d'une même classe, chaque classe correspondant à une des $k$ modalités de la variable qualitative initiale.
+    - Les lignes et les colonnes jouent un rôle identique. La proximité s'établit en utilisant une distance ${\chi}^2$.
 
-L'A.F.D. est utilisée dans de nombreux domaines statistiques : la statistique exploratoire[^8], l'analyse de données[^9], la reconnaissance des formes[^10], particulièrement utilisé dans la **reconnaissance optique de caractères**[^11], l'apprentissage automatique[^12], la fouille des données[^13], *etc*. L'A.F.D. se subdivise en deux approches :
+    - C'est le tableau d'entrée, par exemple, d'une analyse factorielle des correspondances (A.F.C.).
 
-1. l'analyse factorielle discriminante descriptive ;
+- le tableau disjonctif complet (T.D.C.) (ou tableau disjonctif joint ou tableau logique).
 
-2. l'analyse factorielle discriminante prédictive.
+    - Le T.D.C. est un grand tableau contenant des **caractères nominaux**. Il croise les individus avec les modalités des caractères.
 
-L'analyse factorielle discriminante prédictive permet de construire une **fonction de classement**, c'est-à-dire définissant des règles d'affectation, qui permet de prédire le groupe d'appartenance d'un individu à partir des valeurs prises par les variables prédictives. Elle est définie par un cadre probabiliste, qui permet de proposer une analyse discriminante linéaire : la **technique de la régression logistique**. Celle-ci est fondée sur un modèle de régression binomiale, lui-même issu d'un cas particulier du modèle linéaire généralisé. La technique fut inventée par J. Berkson[^14] en 1944 et 1951, et fut baptisé « modèle *logit* ». Un choix binaire (0 ou 1) entraîne :
+    - C'est le tableau d'entrée, par exemple, d'une analyse des correspondances multiples (A.C.M.).
 
-$\ln \left( \frac{\Pr \left( X = 1 \right)}{\Pr \left( X = 0 \right)} \right) = a_0 + a_1 x_1 + \ldots{} + a_j x_j$
+## L'analyse factorielle
 
-ou
+« L'analyse factorielle traite des tableaux de nombres et elle remplace un tableau difficile à lire par un tableau plus simple à lire qui soit une bonne approximation de celui-ci »[^2] (p. 5).
 
-$\ln \left( \frac{\Pr \left( X = 1 \right)}{1 - \Pr \left( X = 1 \right)} \right) = b_0 + b_1 x_1 + \ldots{} + b_j x_j$
+Que signifie mettre en facteur ? Comment procéder ? Soit une matrice $\mathbf{A}$, une analyse factorielle recherche des vecteurs $\mathbf{u}_i$ proportionnels à des facteurs ${\lambda}_i$ (les valeurs propres), c'est-à-dire :
+    $\left( \mathbf{A} - \mathbf{I} \right).{\mathbf{u}_i} = {{\lambda}_i}{\mathbf{u}_i}$
 
-$\Pr \left( X = 1 \right) = \frac{e^{b_0 + b_1 x_1 + \ldots{} + b_j x_j}}{1 + e^{b_0 + b_1 x_1 + \ldots{} + b_j x_j}}$
+avec $\mathbf{I}$ la matrice identité.
 
-## Méthodes explicatives
+### Écart à l'indépendance
 
-### Méthodes de régression
+« Le respect de la proportion moyenne pour toutes les lignes du tableau correspond à ce que l'on nomme la **situation d'indépendance** »[^2] (p. 7). La situation d'indépendance aboutit à la déduction d'un **effectif théorique**. À partir de là, il est possible d'étudier l'**écart** entre la situation observée et la situation indépendante. « L'écart à l'indépendance nous permet de repérer s'il y a **attraction** entre une ligne et une colonne (écart positif), s'il y a **indépendance** entre la ligne et la colonne (écart nul), ou si au contraire il y a **répulsion** entre la ligne et la colonne (écart négatif) »[^2] (p. 10-11) En projetant orthogonalement les données sur les axes factoriels ($\mathbf{u}_i$) avec un produit scalaire, on peut proposer une autre définition des trois termes en utilisant l'angle de projection formé entre la droite définie par l'origine et le point projeté, et la droite définie par l'origine et le projeté du point. Cet angle $\theta$ varie entre 0 et $\pi$.
 
-Les méthodes de régression consistent à trouver une relation, linéaire ou non, entre une variable expliquée et une ou plusieurs variables explicatives, l'ajustement étant obtenu en général, par la **méthode des moindres carrés**. Elles sont utilisées dans le cas où toutes les variables explicatives sont quantitatives, comme cela a été expliqué lors de l'approche bivariée.
+1. Si $\theta \in \left[ 0, \frac{\pi}{2} \right[$, alors on se situe dans une situation de conjonction, c'est-à-dire d'attraction.
 
-### Analyse canonique
+2. Si $\theta = \frac{\pi}{2}$, alors on se situe dans une situation de quadrature, c'est-à-dire d'indépendance.
 
-L'analyse canonique développée par H. Hotelling généralise la méthode de régression multiple, mais présente un intérêt théorique assez limité, car elle conduit à de grandes difficultés d'interprétation. Cette méthode cherche à synthétiser les relations pouvant exister entre deux groupes de variables, en déterminant les combinaisons linéaires des variables du premier groupe les plus corrélées à des combinaisons linéaires des variables du second groupe. Si le second groupe est constitué d'une seule variable, on retrouve la régression multiple.
+3. Si $\theta \in \left] \frac{\pi}{2}, \pi \right]$, alors on se situe dans une situation de opposition, c'est-à-dire de répulsion.
 
-### Analyse de la variance
+### Écart à l'indépendance pondérée : la distance du ${\chi}^2$
 
-L'analyse de la variance est une méthode qui consiste à tester l'influence d'une ou plusieurs variables qualitatives sur une variable quantitative. Contrairement à son nom, il s'agit d'étudier des moyennes. On cherche à contrôler si une variation des modalités prises par les variables explicatives, seules ou combinées, entraîne une variation de la variable expliquée $Y$.
+« Le principe de base de la décomposition factorielle [consiste] à remplacer le tableau initial par une **approximation de rang un** donc facile à lire, mais qui soit la plus proche possible au nom d'un certain critère. Dans le cas de l'analyse des correspondances, ce critère est le ${\chi}^2$ »[^2] (p. 21) Il s'agit d'un écart à l'indépendance **pondéré**, appelé la **contribution au** ${\chi}^2$.
 
-Précédemment, l'étude portée sur deux variables : une quantitative et une qualitative. Dans cette partie, il s'agira d'étendre l'analyse à plusieurs variables qualitatives.
+Soit $\mathbf{T}$ un tableau de données.
 
-### Analyse de la covariance
+$\mathbf{T} = \left( \begin{array}{ccc} 13 & 2 & 5\\ 20 & 2 & 8\\ 10 & 5 & 5\\ 7 & 1 & 22\\ \end{array} \right)$
 
-L'analyse de la covariance est une méthode qui généralise les méthodes de régression et de l'analyse de la variance.
+On calcule les marges lignes, composantes d'un vecteur ligne calculées en additionnant les effectifs des colonnes :
 
-## Méthodes de prévision
+$\begin{array}{l} 13 + 20 + 10 + 7 = 50\\ 2 + 2 + 5 + 1 = 10\\ 5 + 8 + 5 + 22 = 40 \end{array}$
 
-Les méthodes de prévision concernent principalement l'analyse et la prévision des séries chronologiques. Celles-ci ont principalement pour but de mettre en évidence une tendance, une saisonnalité et un résidu à l'aide d'un modèle multiplicatif, le plus utilisé en gestion, ou d'un modèle additif.
+ce qui donne le vecteur $\left( \begin{array}{ccc} 50 & 10 & 40 \end{array} \right)$.
+
+On calcule les marges colonnes, composantes d'un vecteur colonne calculées en additionnant les effectifs des lignes :
+
+$\begin{array}{l} 13 + 2 + 5 = 20\\ 20 + 2 + 8 = 30\\ 10 + 5 + 5 = 20\\ 7 + 1 + 22 = 30 \end{array}$
+
+ce qui donne le vecteur $\left( \begin{array}{c} 20\\ 30\\ 20\\ 30 \end{array} \right)$.
+
+L'effectif total $n$ vaut : $n = 100$. Il permet de calculer les effectifs théoriques ${\mathbf{T}}_0$ à partir des marges lignes et des marges colonnes. On calcule les moyennes marginales des lignes :
+
+$\left( \begin{array}{ccc} \frac{50}{100} & \frac{10}{100} & \frac{40}{100} \end{array} \right) = \left( \begin{array}{ccc} \frac{1}{2} & \frac{1}{10} & \frac{2}{5} \end{array} \right)$
+
+On utilise la matrice du vecteur marginale colonne et la matrice diagonale des moyennes marginales des lignes pour calculer l'effectif théorique en fonction des marges lignes.
+
+$\left( \begin{array}{ccc} 20 & 20 & 20\\ 30 & 30 & 30\\ 20 & 20 & 20\\ 30 & 30 & 30 \end{array} \right) . \left( \begin{array}{ccc} \frac{1}{2} & 0 & 0\\ 0 & \frac{1}{10} & 0\\ 0 & 0 & \frac{2}{5} \end{array} \right) = \left( \begin{array}{ccc} 10 & 2 & 8\\ 15 & 3 & 12\\ 10 & 2 & 8\\ 15 & 3 & 12 \end{array} \right)$
+
+En calculant les effectifs théoriques à partir des moyennes marginales des colonnes :
+
+$\left( \begin{array}{c} \frac{1}{5}\\ \frac{3}{10}\\ \frac{1}{5}\\ \frac{3}{10} \end{array} \right)$
+
+On obtient un résultat identique.
+
+$\left( \begin{array}{cccc} \frac{1}{5} & 0 & 0 & 0\\ 0 & \frac{3}{10} & 0 & 0\\ 0 & 0 & \frac{1}{5} & 0\\ 0 & 0 & 0 & \frac{3}{10} \end{array} \right) . \left( \begin{array}{ccc} 50 & 10 & 40\\ 50 & 10 & 40\\ 50 & 10 & 40\\ 50 & 10 & 40 \end{array} \right) = \left( \begin{array}{ccc} 10 & 2 & 8\\ 15 & 3 & 12\\ 10 & 2 & 8\\ 15 & 3 & 12 \end{array} \right)$
+
+Pour utiliser le ${\chi}^2$, on procède en trois étapes.
+
+1. $\mathbf{T} - {\mathbf{T}}_0 = \mathbf{R}$ permet d'obtenir l'écart entre les valeurs observées et les valeurs théoriques.
+
+$\left( \begin{array}{ccc} 13 & 2 & 5\\ 20 & 2 & 8\\ 10 & 5 & 5\\ 7 & 1 & 22\\ \end{array} \right) - \left( \begin{array}{ccc} 10 & 2 & 8\\ 15 & 3 & 12\\ 10 & 2 & 8\\ 15 & 3 & 12 \end{array} \right) = \left( \begin{array}{ccc} 3 & 0 & -3\\ 5 & -1 & -4\\ 0 & 3 & -3\\ -8 & -2 & 10 \end{array} \right)$
+
+2. On divise les éléments de $r_{ij}$ par les éléments de $t_{0_{ij}}$ :
+
+${\mathbf{T}}_1 = \left( \begin{array}{ccc} \frac{3}{10} & 0 & -\frac{3}{8}\\ \frac{1}{3} & -\frac{1}{3} & -\frac{1}{3}\\ 0 & \frac{3}{2} & -\frac{3}{8}\\ -\frac{8}{15} & -\frac{2}{3} & \frac{5}{6} \end{array} \right)$
+
+3. On calcule l'écart pondéré en multipliant les éléments $r_{ij}$ par les éléments de $t_{1_{ij}}$. C'est la contribution au ${\chi}^2$ de chaque valeur $\left( i, j \right)$ :
+
+${\chi}^{2}_{ij} = \left( \begin{array}{ccc} \frac{9}{10} & 0 & \frac{9}{8}\\ \frac{5}{3} & \frac{1}{3} & \frac{4}{3}\\ 0 & \frac{9}{2} & \frac{9}{8}\\ \frac{64}{15} & \frac{4}{3} & \frac{25}{3} \end{array} \right)$
+
+La contribution totale du ${\chi}^2$ vaut :
+
+${\chi}^2 = \sum_{i = 1}^{n} \sum_{j = 1}^{=} {\chi}^2_{ij} = \frac{9}{10} + 0 + \frac{9}{8} + \frac{5}{3} + \frac{1}{3} + \frac{4}{3} + 0 + \frac{9}{2} + \frac{9}{8} + \frac{64}{15} + \frac{4}{3} + \frac{25}{3}$
+
+donc ${\chi}^2 = \frac{299}{12} \approx 24,917$.
+
+On peut calculer la part du ${\chi}^2$ de chaque ligne, de chaque colonne, de chaque élément. Idéalement, on convertit les valeurs brutes en pourcentage. 
+
+« L'indice ${\chi}^2$ est une approximation de la quantité d'information (au sens de la théorie mathématique de l'information) »[^2] (p. 24).
+
+- Si ${\chi}^2 = 0$, alors l'indépendance entre les lignes et les colonnes est validée.
+
+- Si ${\chi}^2_{ij} = 0$, alors les valeurs du couple $\left( i, j \right)$ sont indépendantes entre elles.
+
+La **contribution absolue** est notée ${\phi}^2$.
+
+${\phi}^2 = \frac{{\chi}^2}{n} = \frac{299}{12000} \approx 0,249$
+
+On peut calculer pour chaque couple un ${\phi}^2_{ij}$ à partir de chaque ${\chi}^2_{ij}$. Comme le ${\chi}^2$, il vaut mieux exprimer les valeurs en pourcentage.
+
+La décomposition du ${\chi}^2$ est additive. Chaque facteur calculé peut être utilisé.
+
+${\chi}^2 = {\lambda}_1 {\chi}^2 + {\lambda}_2 {\chi}^2 + \ldots{}$
+
+De fait, ${\lambda}_1 {\chi}^2$ est la contribution au ${\chi}^2$ de l'axe 1, ${\lambda}_2 {\chi}^2$, la contribution au ${\chi}^2$ de l'axe 2, *etc*.
+
+« Pour bien utiliser une méthode statistique comme l'analyse factorielle, comprendre son fonctionnement est nécessaire **mais non suffisant** : il faut aussi en acquérir une expérience, en quelque sorte **étalonner** la méthode pour son propre compte, voir ses réactions dans telle ou telle situation »[^2] (p. 68).
+
+## La décomposition en valeurs singulières (D.V.S.)
+
+Il s'agit ici de détailler le calcul général des facteurs $\lambda$. Soit $\mathbf{X}$ une matrice ayant $n$ lignes et $p$ colonnes. $n \times p$ est le nombre d'éléments.
+
+### Recherche d'une droite de régression orthogonale dans le nuage des caractères
+
+On recherche un vecteur $\mathbf{u}$ tel que $\mathbf{X}\mathbf{u}$ avec la contrainte ${{}^t}\mathbf{u}.\mathbf{u} = 1$. Cela permet de maximiser la distance entre le vecteur projeté et l'origine du vecteur $\mathbf{u}$ recherché. La répétition de la manipulation permet de définir tous les axes de projection.
+
+Le vecteur unitaire ${\mathbf{u}}_1$ qui caractérise le sous-espace à une dimension ajustant au mieux le nuage des $n$ points individus dans ${\mathbb{R}}^p$, est le **vecteur propre** de la matrice diagonalisée ${{}^t}\mathbf{X}.\mathbf{X}$ d'ordre $\left( p, p \right)$ correspondant à la plus grande **valeur propre** ${\lambda}_1$. L'axe définit par ${\mathbf{u}}_1$ est le premier **axe factoriel** (ou principal).
+
+L'analyse générale effectue une rotation du repère autour de l'origine $O$ et fournit un système de **vecteurs orthonormés** : ${\mathbf{u}}_1$, $\left(  {\mathbf{u}}_1,  {\mathbf{u}}_2 \right)$, $\ldots{}$, $\left(  {\mathbf{u}}_1, {\mathbf{u}}_2, \ldots{}, {\mathbf{u}}_p \right)$ passent au plus près du nuage étudié.
+
+On note $\mathbf{u_{\alpha}}$ le vecteur propre de la matrice ${{}^t}\mathbf{X}.\mathbf{X}$ correspondant à la valeur propre $\mathbf{{\lambda}_{\alpha}}$.
+
+### Ajustement du nuage des variables dans l'espace des individus
+
+On recherche ici le vecteur unitaire $\mathbf{v}$ tel que ${{}^t}\mathbb{X}.\mathbf{v}$ avec la contrainte ${{}^t}\mathbf{v}.\mathbf{v} = 1$.
+
+On utilise la matrice diagonalisée $\mathbf{X}.{{}^t}\mathbf{X}$ d'ordre $\left( n, n \right)$
+
+On note $\mathbf{v_{\alpha}}$ le vecteur propre normé de la matrice $\mathbf{X}.{{}^t}\mathbf{X}$ correspondant à la valeur propre $\mathbf{{\mu}_{\alpha}}$.
+
+### Relation entre les deux espaces
+
+Dans ${\mathbb{R}}^p$, on a : ${{}^t}\mathbf{X}.\mathbf{X}.\mathbf{u_{\alpha}} = \mathbf{{\lambda}_{\alpha}}.\mathbf{u_{\alpha}}$, tandis que, dans ${\mathbb{R}}^n$, on a : $\mathbf{X}.{{}^t}\mathbf{X}.\mathbf{v_{\alpha}} = \mathbf{{\mu}_{\alpha}}.\mathbf{v_{\alpha}}$.
+
+À partir de la première équation, on peut écrire : $\left( \mathbf{X}.{{}^t}\mathbf{X} \right).\mathbf{X}.\mathbf{u_{\alpha}} = \mathbf{{\lambda}_{\alpha}}.\mathbf{X}.\mathbf{u_{\alpha}}$.
+
+À partir de la seconde équation, on peut écrire : $\mathbf{X}.{{}^t}\mathbf{X}.\mathbf{v_{\alpha}}.{{}^t}\mathbf{v_{\alpha}} = \mathbf{{\mu}_{\alpha}}.\mathbf{v_{\alpha}}.{{}^t}\mathbf{v_{\alpha}}$, or, on avait posé la contrainte $\mathbf{v_{\alpha}}.{{}^t}\mathbf{v_{\alpha}} = 1$, donc $\mathbf{X}.{{}^t}\mathbf{X} = \mathbf{{\mu}_{\alpha}}$.
+
+En combinant les deux résultats précédents, on obtient : $\mathbf{{\mu}_{\alpha}}.\mathbf{X}.\mathbf{u_{\alpha}} = \mathbf{{\lambda}_{\alpha}}.\mathbf{X}.\mathbf{u_{\alpha}}$, d'où $\mathbf{{\mu}_{\alpha}} = \mathbf{{\lambda}_{\alpha}}$. **Ce résultat est fondamental, car il unit les deux nuages de points**, caractères et individus. Pour chaque nuage, les vecteurs propres seront différents, pas les valeurs propres.
+
+Les valeurs propres étant égales d'un nuage à l'autre, on en déduit les **formules de transition** entre ${\mathbb{R}}^p$ et ${\mathbb{R}}^n$.
+
+$\left\lbrace \begin{array}{l} \mathbf{v_{\alpha}} = \frac{1}{\sqrt{{\lambda}_{\alpha}}}.\mathbf{X}.\mathbf{u_{\alpha}} \mathbf{u_{\alpha}} = \frac{1}{\sqrt{{\lambda}_{\alpha}}}.{{}^t}\mathbf{X}.\mathbf{v_{\alpha}} \end{array} \right.$
+
+Dans ${\mathbb{R}}^p$, $\mathbf{u_{\alpha}}$ est le $\alpha$-ième axe factoriel. On calcule le vecteur ${\psi}_{\alpha}$ des coordonnées sur cet axe par :
+
+$\mathbf{{\psi}_{\alpha}} = \mathbf{X}.\mathbf{u_{\alpha}}$
+
+Dans ${\mathbb{R}}^n$, $\mathbf{v_{\alpha}}$ est le $\alpha$-ième axe factoriel. On calcule le vecteur ${\psi}_{\alpha}$ des coordonnées sur cet axe par :
+
+$\mathbf{{\varphi}_{\alpha}} = {{}^t}\mathbf{X}.\mathbf{v_{\alpha}}$
+
+Les facteurs peuvent se calculer :
+
+$\mathbf{{\psi}_{\alpha}} = \mathbf{v_{\alpha}}.\sqrt{\mathbf{{\lambda}_{\alpha}}}$
+
+et
+
+$\mathbf{{\varphi}_{\alpha}} = \mathbf{u_{\alpha}}.\sqrt{\mathbf{{\lambda}_{\alpha}}}$
+
+> [!NOTE]
+> L'orientation des axes est **arbitraire**. Les vecteurs propres sont définis au signe près.
+> [!NOTE]
+> Les vecteurs de coordonnées dans ${\mathbb{R}}^p$ et ${\mathbb{R}}^n$ ont pour norme :
+> ${{}^t}\mathbf{{\psi}_{\alpha}}.\mathbf{{\psi}_{\alpha}} = \sum_{i = 1}^{n} {\psi}_{{\alpha}i} = \mathbf{{\lambda}_{\alpha}}$
+> et
+> ${{}^t}\mathbf{{\varphi}_{\alpha}}.\mathbf{{\varphi}_{\alpha}} = \sum_{j = 1}^{p} {\varphi}_{{\alpha}i} =$
+
+## La diversification de l'analyse générale
+
+La **métrique** est la formule de la distance. Le **critère d'ajustement** est la pondération des points. Les deux varient suivant la **nature des caractères**.
+
+L'analyse générale présuppose deux éléments.
+
+1.Les espaces sont munis de la métrique euclidienne usuelle dont la forme quadratique est associée à la matrice identité $\mathbf{I}$.
+
+2. Tous les points du nuage ont la même importance.
+
+**Constat.** Il arrive que l'on ait à travailler avec une métrique plus générale et avec des individus dont les masses sont différentes qui interviennent dans les calculs de moyennes et lors de l'ajustement des sous-espaces.
+
+**Le principe d'analyse factorielle se généralise à des métriques et des critères quelconque**.
+
+Dans l'espace ${\mathbb{R}}^p$, on considère le nuage de $n$ points lignes pesants. Soient la matrice $\mathbf{X}$ d'ordre $\left( n, p \right)$ représentent un tableau de données, $M$ la matrice symétrique définie positive d'ordre $\left( p, p \right)$ définissant la métrique dans ${\mathbb{R}}^p$, et $\mathbf{D}$ la matrice diagonale d'ordre $\left( n, n \right)$ dont les éléments diagonaux sont les masses $m_i$ des $n$ points.
+
+Un vecteur unitaire $\mathbb{u}$ de ${\mathbb{R}}^p$ vérifie la **relation de normalisation** :
+
+${{}^t}\mathbf{u}.\mathbf{M}.\mathbf{u} = 1$
+
+Les coordonnées de la projection $H_i$ du point $i$ sur l'axe $\mathbf{u}$ vaut :
+
+$OH_i = {x_i}.\mathbf{M}.\mathbf{u}$
+
+L'ensemble $F$ des coordonnées des projections sur l'axe $\mathbf{u}$ des $n$-points lignes s'exprime par :
+
+$\mathbf{F} = \mathbf{X}.\mathbf{M}.\mathbf{u}$	
+
+Selon le critère d'ajustement, on recherche le vecteur $\mathbf{u}$ qui rend maximale la somme pondérée des carrés des projections, c'est-à-dire ${\max}_{\left( u \right)} \left\lbrace {{}^t}\mathbf{u}.\mathbf{M}.{{}^t}\mathbf{X}.\mathbf{D}.\mathbf{X}.\mathbf{M}.\mathbf{u} \right\rbrace$ sous la contrainte ${{}^t}\mathbf{u}.\mathbf{M}.\mathbf{u} = 1$.
+
+$\mathbf{u}$ est le vecteur propre de la matrice $\mathbf{A} = {{}^t}\mathbf{X}.\mathbf{D}.\mathbf{X}.\mathbf{M}$ correspondant à la plus grande valeur propre $\lambda$.
+
+L'équation de l'axe factoriel $\mathbf{u}$ dans ${\mathbb{R}}^p$ s'écrit :
+${{}^t}\mathbf{X}.\mathbf{D}.\mathbf{X}.\mathbf{M}.\mathbf{u} = {\lambda}.\mathbf{u}$
+
+et les coordonnées factorielles des $n$ points sont données par la relation :
+$\mathbf{\psi} = \mathbf{X}.\mathbf{M}.\mathbf{u}$
+
+> [!WARNING]
+> Si les masses et les métriques dans ${\mathbb{R}}^p$ ($\mathbf{D}$ et $\mathbf{M}$) et dans ${\mathbb{R}}^n$ ($\mathbf{P}$ la matrice des masses des $p$ points colonnes et $\mathbf{Q}$ la métrique dans ${\mathbb{R}}^n$) n'ont **aucune relation privilégiée entre elles**. De fait, on perd les relations de transition et la formule de reconstitution.
+> 1. En A.C.P. normée, on utilise la même métrique dans les deux espaces.
+> 2. En A.F.C., la matrice des masses dans un espace est liée à la métrique de l'autre espace, ce qui permet de conserver les relations de transition.
+
+Les **axes principaux** (ou axes d'inertie) s'expriment par la quantité :
+
+${{}^t}\mathbf{u}.\mathbf{M}.{{}^t}\mathbf{X}.\mathbf{D}.\mathbf{X}.\mathbf{M}.\mathbf{u} = \mathbf{\psi}.\mathbf{D}.\mathbf{\psi} = \sum_{i = 1}^{n} m_i {\psi}_{i}^{2}$
+
+représentant l'inertie du nuage de points pesants le long de l'axe d'allongement maximal, l'axe factoriel $\mathbf{u}$. Elle est égale à la valeur propre $\mathbf{\lambda}$ associée au vecteur propre $\mathbf{u}$. Les $p$ vecteurs propres définissent des axes d'inertie du nuage de points. On les obtient par odre d'inerties décroissantes. La somme de toutes les valeurs propres donne l'inertie totale du nuage. C'est la trace de la matrice diagonalisée, appelée **matrice d'inertie** $\mathbf{B} = {{}^t}\mathbf{X}.\mathbf{D}.\mathbf{X}.\mathbf{M}$
+
+$\textrm{Tr} \left( B \right) = \sum_{\alpha = 1}^{p} {\lambda}_{\alpha}$
+
+## La motivation d'effectuer une analyse factorielle
+
+Pourquoi réaliser une analyse factorielle ?
+
+Une méthode factorielle se résume en trois points.
+
+1. Étudier l'inertie des facteurs
+    - Elle permet de comprendre l'importance globale des liaisons entre caractères.
+    
+    -  L'outil d'analyse principal est le diagramme des valeurs propres.
+    
+    - On établit le pourcentage d'inertie pour chaque facteur.
+
+2. Étudier la contribution des individus aux axes
+
+3. Interpréter axe par axe chaque caractère
+
+La démarche d'interprétation d'une analyse factorielle se résume en trois éléments.
+
+1. « Interpréter, c'est d'abord rendre clair »[^3] (p. 279).
+
+2. « Interpréter, c'est aussi donner un sens »[^3] (p. 280).
+
+3. « Interpréter, c'est enfin jouer de façon personnelle »[^3] (p. 281).
+
+Il faut vérifier les biais et interpréter les facteurs.
+
+1. Vérifier si un facteur s'explique par quelques éléments aberrants
+
+2. Vérifier s'il y a un facteur d'opposition
+
+3. Vérifier si un facteur met en évidence un groupe
+
+4. Vérifier si un facteur est associé à une partition
+
+5. Vérifier s'il y a un facteur d'échelle
+
+6. Vérifier s'il y a un effet taille, notamment pour une A.C.P.
+
+7. Vérifier s'il y a un effet Guttman, notamment pour une A.F.C. ou une A.C.M.
+
+8. Donner en toute prudence un nom aux facteurs. Cette démarche est risquée, car elle peut limiter l'interprétation aux noms données aux axes.
+
+« Il est évident que l'analyse factorielle n'est qu'un instrument, un outil : elle permet de décrire les grandes lignes d'un tableau de nombres comme une moyenne décrit une valeur centrale d'une distribution ou un écart type sa variabilité. Ces outils peuvent-ils avoir statut de modèle ? Dans le cas de l'analyse factorielle le débat existe »[^2] (p. 118).
 
 ## Notes de bas de page
 
-[^1]: Charles Spearman (1863-1945)
+[^1]: En anglais : *Singular Value Decomposition* (D.V.S.)
 
-[^2]: Spearman, Charles, 1904, "General Intelligence", Objectively Determined and Measured », *American Journal of Psychology*, vol. 15, n°2, p. 201-293
+[^2]: Cibois, Philippe, 2000, *L'analyse factorielle. Analyse en composantes principales et analyse factorielle des correspondances*, Paris, P.U.F., 128 p. [Que sais-je ?]
 
-[^3]: Harold Hotelling (1895-1973)
-
-[^4]: Hotelling, Harold, 1933, "Analysis of a Complex of Statistical Variables into Principal Components", *Journal of Educational Psychology*, vol. 24, n°6, p. 417-441
-
-[^5]: Jean-Paul Benzécri (1932-2019)
-
-[^6]: Benzécri, Jean-Paul, 1973, *L'analyse de données*, t. 1, *La taxinomie*, Paris, Dunod, VIII-616 p.
-
-[^7]: Benzécri, Jean-Paul, 1973, *L'analyse de données*, t. 2, *L'analyse de correspondances*, Paris, Dunod, VI-620 p.
-
-[^8]: En anglais : *exploratory data analysis*
-
-[^9]: En anglais : *data analysis*
-
-[^10]: En anglais : *pattern recognition*
-
-[^11]: En anglais : *optical character recognition* (O.C.R.) ou océrisation
-
-[^12]: En anglais : *machine learning*
-
-[^13]: En anglais : *data mining*
-
-[^14]: Joseph Berkson (1889-1982)
+[^3]: Escofier, Brigitte & Pagès, Jérôme, 2016, *Analyses factorielles simples et multiples. Cours et études de cas*, Paris, Dunod, VIII-392 p. [Sciences sup]
