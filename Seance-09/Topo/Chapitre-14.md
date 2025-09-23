@@ -1,6 +1,6 @@
 # Statistique multivariée et géographie
 
-L'analyse des données a plus d'un siècle d'existence. L'**analyse factorielle** consiste à transformer un tableau en une représentation graphique. L'analyse canonique fut développée par C. Spearman[^1] [^2] et K. Pearson au début du XX<sup>e siècle. L'approche de Charles Spearman propose de comparer une matrice de données $\mathbf{T}$ avec le cas d'indépendance $\mathbf{T_0}$. Ainsi, il établit une égalité avec la meilleure approximation $\mathbf{T_1}$ et le reste des valeurs $\mathbf{T_2}$.
+L'analyse des données a plus d'un siècle d'existence. L'**analyse factorielle** consiste à transformer un tableau en une représentation graphique. L'analyse canonique fut développée par C. Spearman[^1] [^2] et K. Pearson au début du XX<sup>e</sup> siècle. L'approche de Charles Spearman propose de comparer une matrice de données $\mathbf{T}$ avec le cas d'indépendance $\mathbf{T_0}$. Ainsi, il établit une égalité avec la meilleure approximation $\mathbf{T_1}$ et le reste des valeurs $\mathbf{T_2}$.
 
 $\mathbf{T} - \mathbf{T_0} = \mathbf{T_1} + \mathbf{T_2}$
 
