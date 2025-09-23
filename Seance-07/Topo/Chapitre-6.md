@@ -61,3 +61,7 @@ Dans le cas d'un échantillon, le test de signification à deux variables suit l
 5. lire dans la table de la loi de probabilité du modèle utilisée la valeur plafond en fonction de $\alpha$ et de $\upsilon$. Si l'intensité calculée de la relation entre $X$ et $Y$ est inférieure à la valeur plafond lue dans la table, on conclura que $X$ et $Y$ sont très probablement indépendants. Si elle lui est supérieure ou égale, on rejettera l'hypothèse $H_0$ d'indépendance entre $X$ et $Y$.
 
 La géographie analyse bien souvent, non pas deux variables, mais une multitude. Ainsi, des méthodes d'analyse descriptive généralisées ont été inventées et rendues faciles dans leur usage par l'ordinateur. L'ensemble de cette partie propose une série de chapitres présentant tous les aspects des relations entre deux variables (type A, type B et type C). Il se concluera par un chapitre de transition vers le multivarié en présentant une analyse multidimensionnelle à partir des relations entre deux variables.
+
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-07-Chapitre-06.pdf)

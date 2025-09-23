@@ -110,6 +110,10 @@ $\left\lbrace  \begin{array}{l} \sum_{i = 1}^{N} Z_i = a_0 N + a_1 \sum_{i = 1}^
 
 On peut considérer des équations plus compliquées que l'équation linéaire. De telles équations correspondent à des surfaces dites **surfaces de régression**. Si le nombre de variables excède trois, on parle d'**hyperplans de régression**.
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-07-Chapitre-08.pdf)
+
 ## Notes de bas de page
 
 [^1]: Adrien-Marie Legendre (1752-1833)

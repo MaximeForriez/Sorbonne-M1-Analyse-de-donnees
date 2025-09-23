@@ -1603,6 +1603,12 @@ $\Pr \left( U - h \right) = \frac{h}{\alpha - 1}$
 
 « La distribution scalante n'a pas d'échelle propre, mais emprunte toujours celle de l'observateur »[^19] (p. 79).
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-04.pdf)
+
+- [Exercice](./Exercice/Seance-4.pdf)
+
 ## Notes de bas de page
 
 [^1]: Boris Vladimirovitch Gnedenko (1912-1995)

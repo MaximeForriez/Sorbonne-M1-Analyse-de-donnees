@@ -317,6 +317,10 @@ Il faut vérifier les biais et interpréter les facteurs.
 
 « Il est évident que l'analyse factorielle n'est qu'un instrument, un outil : elle permet de décrire les grandes lignes d'un tableau de nombres comme une moyenne décrit une valeur centrale d'une distribution ou un écart type sa variabilité. Ces outils peuvent-ils avoir statut de modèle ? Dans le cas de l'analyse factorielle le débat existe »[^2] (p. 118).
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-09-Chapitre-15.pdf)
+
 ## Notes de bas de page
 
 [^1]: En anglais : *Singular Value Decomposition* (D.V.S.)

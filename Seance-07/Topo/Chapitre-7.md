@@ -407,14 +407,6 @@ $m_{pq} = \int_D \int x^p y^q f \left( x, y \right) \mathrm{d} x \mathrm{d} y$
 
 Dans les relations de dépendance, il apparaît souvent clairement que l'une des variables permet d'estimer l'autre. On établit de fait une relation fonctionnelle entre les deux dont il convient d'estimer et de tester la nature (droite, parabole, *etc*.). C'est là qu'intervient la notion de régression, dont la principale méthode est celle des moindres carrés.
 
+## Liens
 
-
-
-
-
-
-
-
-
-
-
+- [Topo en format P.D.F.](./PDF/Seance-07-Chapitre-07.pdf)

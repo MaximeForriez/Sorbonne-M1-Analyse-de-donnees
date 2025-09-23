@@ -31,7 +31,7 @@ J'ai peu insisté sur le caractère progressif à l'intérieur de chaque séance
 
 - Avoir mathématiquement compris l'ensemble des analyses univariées et bivariées
 
-- Connaître l'algèbre linéraire : matrices, systèmes linéaires, espaces vectoriels
+- Connaître l'algèbre linéraire : [matrices](../Formulaire-mathematique/Seance-09/04-Calcul%20matriciel.md), [systèmes linéaires](../Formulaire-mathematique/Seance-09/05-Algebre%20lineaire.md), [espaces vectoriels](../Formulaire-mathematique/Seance-09/03-Generalisation%20de%20la%20notion%20de%20vecteurs.md)
 
     - [Comprendre les matrices](https://www.youtube.com/watch?v=Dr9J1BIcVBw)
 
@@ -43,17 +43,23 @@ J'ai peu insisté sur le caractère progressif à l'intérieur de chaque séance
 
     - Jean-Marc Lasgouttes, 2023-2024, [Cours d'analyse de données : A.F.C. et A.C.M. - Synthèse du calcul matriciel](https://who.rocq.inria.fr/Jean-Marc.Lasgouttes/ana-donnees/cours-afc-acm.pdf)
 
-## Tests statistiques
+## [Tests statistiques](../Seance-05/Seance-05.md)
 
 - [Table du Khi<sup>2</sup>](https://who.rocq.inria.fr/Jean-Marc.Lasgouttes/ana-donnees/chi-deux.pdf)
 
 - [Table de la loi normale centrée et réduite](https://www.math.u-bordeaux.fr/~mchabano/Tab0.pdf)
 
-## Calculer des matrices
+## Calculer des [matrices](../Formulaire-mathematique/Seance-09/04-Calcul%20matriciel.md)
 
 [Calculer des matrices](https://matrixcalc.org/fr/)
 
-## L'analyse factorielle en composantes principales (A.C.P.)
+## La philosophie de l'analyse factorielle
+
+- [](./Topo/Chapitre-14.md)
+
+- [](./Topo/Chapitre-15.md)
+
+## [L'analyse factorielle en composantes principales (A.C.P.)](./Topo/Chapitre-16.md)
 
 - Escofier, Brigitte & Pagès, Jérôme, 2016, [*Analyses factorielles simples et multiples. Cours et études de cas*](https://cdn-cms.f-static.com/uploads/1460418/normal_5b9ba5dc15394.pdf), Paris, Dunod, VIII-392 p. [Sciences sup]
 
@@ -67,7 +73,7 @@ J'ai peu insisté sur le caractère progressif à l'intérieur de chaque séance
 
 - Philippeau, Gérard, (1992). *Comment interpréter les résultats d'une analyse en composantes principales*, Paris, Institut technique des céréales et des fourrages (I.T.C.F.), 64 p. [STAT-ICTF]
 
-## L'analyse factorielle des correspondances (A.F.C.)
+## [L'analyse factorielle des correspondances (A.F.C.)](../Seance-08/Topo/Chapitre-13.md)
 
 - Escofier, Brigitte & Pagès, Jérôme, 2016, [*Analyses factorielles simples et multiples. Cours et études de cas*](https://cdn-cms.f-static.com/uploads/1460418/normal_5b9ba5dc15394.pdf), Paris, Dunod, VIII-392 p. [Sciences sup]
 
@@ -81,19 +87,23 @@ J'ai peu insisté sur le caractère progressif à l'intérieur de chaque séance
 
 - Moreau, Jean, Doudin, Pierre-André & Cazes, Pierre, 2000, *L'analyse des correspondances et les techniques connexes. Approches nouvelles pour l'analyse statistique des données*, Berlin, Springer, XVI-266 p. [Mathématiques & Applications 32]
 
-## L'analyse factorielle des correspondances multiples (A.C.M.)
+## [L'analyse factorielle des correspondances multiples (A.C.M.)](./Topo/Chapitre-17.md)
 
 - Escofier, Brigitte & Pagès, Jérôme, 2016, [*Analyses factorielles simples et multiples. Cours et études de cas*](https://cdn-cms.f-static.com/uploads/1460418/normal_5b9ba5dc15394.pdf), Paris, Dunod, VIII-392 p. [Sciences sup]
 
 - Lebart, Ludovic, Piron, Marie & Morineau, Alain, 2006, [*Statistique exploratoire multidimensionnelle. Visualisations et inférences en fouille de données*](https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2022-03/010029478.pdf), Paris, Dunod, XVI-464 p. [Science sup] [3<sup>e</sup> édition] [Référence complète et simple d'accès pour les statistiques multivariées]
 
-## Les classifications non supervisées
+## [Les méthodes de classification](./Topo/Chapitre-18.md)
+
+### [Les classifications non supervisées](./Topo/Chapitre-19.md)
 
 - Lebart, Ludovic, Piron, Marie & Morineau, Alain, 2006, [*Statistique exploratoire multidimensionnelle. Visualisations et inférences en fouille de données*](https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2022-03/010029478.pdf), Paris, Dunod, XVI-464 p. [Science sup] [3<sup>e</sup> édition] [Référence complète et simple d'accès pour les statistiques multivariées]
 
 - Nakache, Jean-Pierre & Confais, Josiane, 2000, *Méthodes de classification avec illustrations SPAD® et SAS®*, Montreuil, Centre international de statististique et d'informatique appliquées (C.I.S.I.A.), X-186 p.
 
-## L'analyse factorielle discriminante (A.F.D.)
+### [L'analyse factorielle discriminante (A.F.D.)](./Topo/Chapitre-21.md)
+
+- [L'analyse discriminante - Généralités](./Topo/Chapitre-20.md)
 
 - Bardos, Mireille, 2001, *Analyse discriminante. Application au risque et scoring financier*, Paris, Dunod, VIII-224 p. [Manuel]
 
@@ -101,7 +111,7 @@ J'ai peu insisté sur le caractère progressif à l'intérieur de chaque séance
 
 - Lebart, Ludovic, Piron, Marie & Morineau, Alain, 2006, [*Statistique exploratoire multidimensionnelle. Visualisations et inférences en fouille de données*](https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2022-03/010029478.pdf), Paris, Dunod, XVI-464 p. [Science sup] [3<sup>e</sup> édition] [Référence complète et simple d'accès pour les statistiques multivariées]
 
-## L'analyse factorielle multiple (A.F.M.)
+## [L'analyse factorielle multiple (A.F.M.)](./Topo/Chapitre-22.md)
 
 Si vous avez survécu à l'A.C.P., à l'A.C.M., aux classifications non supervisées et à l'A.F.D., il se peut que l'A.F.M. soit la goutte d'eau qui fait déborder le vase. Cette technique est en réalité la plus proche des modèles que l'on peut déployer en sciences humaines et sociales, donc en géographie, mais c'est la plus difficile à comprendre. Pour l'instant, la vulgarisation est inexistante. Il faut vous contenter de la description de l'A.F.M. proposée par ses inventeurs, Brigitte Escofier et Jérôme Pagès, mais surtout d'articles scientifiques bruts lorsque l'on souhaite affiner la technique en fonction des données.
 
@@ -124,3 +134,7 @@ Maîtriser toutes les subtilités de l'A.F.M. n'est pas votre priorité, mais il
 ### L'analyse factorielle multiple procustéenne
 
 - Morand, Elisabeth & Pagès, Jérôme, 2007, [« Analyse factorielle multiple procustéenne »](https://www.numdam.org/item/JSFS_2007__148_2_65_0.pdf), *Journal de la Société française de statistique & Revue de statistique appliquée*, vol. 148, n°2, p. 65-97
+
+## Liens
+
+- [Exercice](./Exercice/Seance-9.pdf)

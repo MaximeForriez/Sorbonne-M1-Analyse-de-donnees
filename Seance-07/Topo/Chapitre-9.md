@@ -327,3 +327,7 @@ Pour finir, il faut faire quelques remarques sur les séries chronologiques et s
 1. Si chacune des variables $X$ et $Y$ dépend du temps y avoir une liaison entre elles qui ne soit pas nécessairement une relation « cause à effet », et qui conduise à des **corrélations trompeuses**. On obtient le coefficient de corrélation en faisant correspond à chaque instant $t$ un couple de $\left( X, Y \right)$ et en utilisant les formules précédentes.
 
 2. On peut essayer de corréler une variable $x$ prise à un certain instant avec une valeur $X$ correspondant à un instant antérieur. On appelle une telle corrélation : **autocorrélation**. Cette remarque s'applique également pour les variables spatiales de position.
+
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-07-Chapitre-09.pdf)

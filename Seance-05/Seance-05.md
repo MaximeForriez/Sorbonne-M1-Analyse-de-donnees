@@ -2780,6 +2780,12 @@ Les tests statistiques suscitent de nombreuses controverses[^30]. En général, 
 
 **Mieux vaut un bon intervalle de confiance qu'un test bancal**.
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-05.pdf)
+
+- [Exercice](./Exercice/Seance-5.pdf)
+
 ## Notes de bas de page
 
 [^1]: Les méthodes d'inférence par le principe de vraisemblance ne sont pas les seules envisageables. Il existe également l'**inférence bayésienne**.

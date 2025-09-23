@@ -21,9 +21,11 @@ Le plan $\mathbb{R}^3$ est formé des **triplets** $\left[ \begin{array}{c} x_1 
 
 ![fig56](IMG/Vecteurs-dans-le-plan-Triplet-2.png "Point dans l'espace")
 
+**Figure 1. Point dans l'espace**
 
 ![fig57](IMG/Vecteurs-dans-le-plan-Triplet-1.png "Vecteur dans l'espace")
 
+**Figure 2. Vecteur dans l'espace**
 
 ### Généralisation
 
@@ -49,6 +51,7 @@ Soient $u = \left[ \begin{array}{c} u_1 \\ u_2 \\ \ldots{} \\ u_n \end{array} \r
 
 ![fig55](IMG/Vecteurs-dans-le-plan.png "Vecteurs dans le plan")
 
+**Figure 3. Vecteurs dans le plan**
 
 > [!NOTE]
 > Il faut apprendre à écrire les vecteurs sans flèche.
@@ -769,14 +772,11 @@ La famille est libre.
 
 **Proposition.** La famille $\left\lbrace v_1, v_2 \right\rbrace$ est liée si et seulement si $v_1$ est un multiple de $v_2$ est un multiple de $v_1$.
 
-\begin{description}
-    \item[**Théorème.**] Soit $E$ un $\mathbb{K}$-espace vectoriel, une famille $\mathcal{F} = \left\lbrace v_1, v_2, \ldots{}, v_p \right\rbrace$ de $p \geq 2$ vecteurs de $E$ est une famille liée si et seulement si au moins un des vecteurs de $\mathcal{F}$ est combinaison linéaire des autres vecteurs de $\mathcal{F}$.
-\end{description}
+**Théorème.** Soit $E$ un $\mathbb{K}$-espace vectoriel, une famille $\mathcal{F} = \left\lbrace v_1, v_2, \ldots{}, v_p \right\rbrace$ de $p \geq 2$ vecteurs de $E$ est une famille liée si et seulement si au moins un des vecteurs de $\mathcal{F}$ est combinaison linéaire des autres vecteurs de $\mathcal{F}$.
 
-\begin{description}
-    \item[**Exemple 1.**] Deux vecteurs dans le plan sont linéairement dépendants si et seulement si ils sont colinéaires.
-    \item[**Exemple 2.**] Trois vecteurs dans l'espace sont linéairement dépendants si et seulement si ils sont coplanaires.
-\end{description}
+- **Exemple 1.** Deux vecteurs dans le plan sont linéairement dépendants si et seulement si ils sont colinéaires.
+
+- **Exemple 2.** Trois vecteurs dans l'espace sont linéairement dépendants si et seulement si ils sont coplanaires.
 
 **Proposition.** Soit $\mathcal{F} = \left\lbrace v_1, v_2, \ldots{}, v_p \right\rbrace$ une famille de $p$ vecteur de $\mathbb{R}^n$. Si $\mathcal{F}$ contient plus de $n$ éléments (c'est-à-dire $p > n$), alors $\mathcal{F}$ est une famille libre.
 

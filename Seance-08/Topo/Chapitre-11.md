@@ -176,6 +176,10 @@ Il est à noter que l'écart à l'indépendance le plus important ${{\chi}_{22}}
 
 Il ne reste qu'à déterminer la $p_{value}$ de $\upsilon = \left( n_1 - 1 \right) \left( n_2 - 1 \right)$ degrés de liberté, c'est-à-dire $\upsilon = 1$. Le test est unilatéral. Pour un seuil de confiance $\alpha$, il existe une table spécifique. Pour $\alpha = 0,05$, ${{\chi}_C}^2 = 3,841$. Ici, ${\chi}^2 < {{\chi}_C}^2$, ce qui signifie que $H_0$ est rejetée. Le taux de guérison entre les deux traitements est difféent. Les deux variables sont liées. En cas d'indépendance, il y aurait eu moins de 2,5 % de chances d'obtenir de telles différences entre les deux traitements. On aurait eu $0,01 < p_{value} < 0,025$.
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-08-Chapitre-11.pdf)
+
 ## Notes de bas de page
 
 [^1]: Alexander Alexandrovich Chuprov (ou Tschuprov) (1874-1926)

@@ -198,6 +198,10 @@ L'A.F.C. utilise des catégories mutuellement exclusives. La matrice s'y rapport
 
 L'A.F.C. se généralise avec plusieurs variables. On parle alors d'analyse des composantes multiples (A.C.M.). Le tableau disjonctif est remplacé par le **tableau de Burt**[^3]. Lors du chapitre portant sur l'A.C.M., la première partie commencera par un exemple d'A.F.C.
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-08-Chapitre-13.pdf)
+
 ## Notes de bas de page
 
 [^1]: Jean-Paul Benzécri (1932-2019)

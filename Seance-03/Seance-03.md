@@ -591,6 +591,12 @@ Si ${\beta}_2 = 0$ alors la distribution est dite **mésocurtique**. On peut cit
 > [!WARNING]
 > Si les coefficients d'asymétrie et d'aplatissement sont des estimateurs biaisés. Il faut utiliser les définitions de la moyenne et de l'écart type non biaisés pour les calculer dans le cadre d'un échantillon.
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-03.pdf)
+
+- [Exercice](./Exercice/Seance-3.pdf)
+
 ## Notes de bas de page
 
 [^1]: Une algèbre est un ensemble de règles de calcul.

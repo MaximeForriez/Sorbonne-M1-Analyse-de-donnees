@@ -324,6 +324,10 @@ La méthode graphique consiste à tracer à l'oeil à l'aide d'une règle transp
 
 On découpe le nuage de points en deux sous-ensembles de même effectif. Pour chacun des deux sous-ensembles, on calcule la moyennes des $x_i$ et la moyenne des $y_i$. On obtient ainsi deux points moyens $\left( \bar{x_1}, \bar{y_1} \right)$ et $\left( \bar{x_2}, \bar{y_2} \right)$. Il reste à tracer la droite passant par ces deux points.
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-07-Chapitre-10.pdf)
+
 ## Notes de bas de page
 
 [^1]: Wonnacott, Thomas H. & Wonnacott, Ronald J., 1995, *Statistique. Économie – Gestion – Sciences – Médecine*, trad. Patrick Cohendet, Maurice Lethielleux, Mohammed Lyazid, Anne-Marie Richardot & Gérard Schade, Paris, Économica, 920 p.

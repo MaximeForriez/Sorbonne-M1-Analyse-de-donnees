@@ -94,6 +94,10 @@ L'analyse de la covariance est une méthode qui généralise les méthodes de r�
 
 Les méthodes de prévision concernent principalement l'analyse et la prévision des séries chronologiques. Celles-ci ont principalement pour but de mettre en évidence une tendance, une saisonnalité et un résidu à l'aide d'un modèle multiplicatif, le plus utilisé en gestion, ou d'un modèle additif.
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-09-Chapitre-14.pdf)
+
 ## Notes de bas de page
 
 [^1]: Charles Spearman (1863-1945)

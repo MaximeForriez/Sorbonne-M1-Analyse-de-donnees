@@ -455,6 +455,12 @@ $\sum_{i = 1}^{k} {f_i} = 1$
 La fréquence, étant une valeur comprise entre 0 et 1, sert à établir une «
 probabilité réelle » dans le sens où elle est observée. Elle permet d'établir une **distribution statistique empirique** de laquelle il sera possible de conclure sur le type de loi de probabilité utilisée. Pour construire la distribution, il faut préablement connaître les paramètres statistiques élémentaires.
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-02.pdf)
+
+- [Exercice](./Exercice/Seance-2.pdf)
+
 ## Notes de bas de page
 
 [^1]: Marchand, Bernard, 1972, « L'usage des statistiques en géographie », *L'espace géographique*, vol. 1, n°2, p. 79-100
@@ -471,8 +477,7 @@ probabilité réelle » dans le sens où elle est observée. Elle permet d'étab
 
 [^7]: Wonnacott, Thomas H. & Wonnacott, Ronald J., 1995, *Statistique. Économie – Gestion – Sciences – Médecine*, trad. Patrick Cohendet, Maurice Lethielleux, Mohammed Lyazid, Anne-Marie Richardot & Gérard Schade, Paris, Économica, 920 p.
 
-[^8]: biblio3169
-Jacquard, Albert, 2000, *Les probabilités*, Paris, P.U.F., 128 p. [Que sais-je ? n°1571] [réédition de 1974]
+[^8]: Jacquard, Albert, 2000, *Les probabilités*, Paris, P.U.F., 128 p. [Que sais-je ? n°1571] [réédition de 1974]
 
 [^9]: Morgenthaler, Stephan, 2007, *Introduction à la statistique*, Lausanne, Presses polytechniques et universitaires romandes, XII-386 p. [Enseignement des mathématiques] [3e édition augmentée]
 

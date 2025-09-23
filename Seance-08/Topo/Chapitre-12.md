@@ -264,6 +264,10 @@ Le rapport $F = \frac{\frac{{S_A}^2}{k - 1}}{\frac{{S_R}^2}{n - k}} = \frac{\fra
 > [!WARNING]
 > Pour appliquer ces résultats, il faut supposer que, pour chaque modalité du facteur contrôlé, les distributions de $Y$ suivent des lois normales de même espérance et de même variance.
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-08-Chapitre-12.pdf)
+
 ## Notes de bas de page
 
 [^1]: En anglais : Analysis of Variance (An.O.Va.)

@@ -386,6 +386,12 @@ et
 
 $Y = \frac{1 - \sqrt{1 - Q^2}}{Q}$
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-06.pdf)
+
+- [Exercice](./Exercice/Seance-6.pdf)
+
 ## Notes de bas de page
 
 [^1]: Andrej Dmitrievich Chegodaev (1905-1994)
