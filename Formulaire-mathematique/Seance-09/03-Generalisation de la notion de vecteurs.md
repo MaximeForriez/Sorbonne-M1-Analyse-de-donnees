@@ -948,6 +948,10 @@ $\dim \left( F + G \right) = \dim F + \dim G - \dim \left( F \cap G \right)$
 
 **Corollaire.** Tout sous-espace vectoriel $F$ d'un espace vectoriel $E$ de dimension finie admet un **supplémentaire**.
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/03-Generalisation%20de%20la%20notion%20de%20vecteurs.pdf)
+
 ## Notes de bas de page
 
 [^1]: au sens de l'inclusion

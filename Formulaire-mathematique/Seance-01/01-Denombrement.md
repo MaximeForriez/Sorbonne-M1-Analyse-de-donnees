@@ -471,6 +471,10 @@ La base des probabilités, et, par extension, des statistiques, est de savoir co
 
     - [Quiz sur le dénombrement](https://www.apprendre-en-ligne.net/MADIMU2/PROBA/quiz1.php)
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/02-Probabilite.pdf)
+
 ## Exercices
 
 - [Exercices sur le dénombrement](./Exercices/01-Denombrement.pdf)

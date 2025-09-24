@@ -1270,6 +1270,10 @@ Soient $A = \left( a_{ij} \right) \in M_{n, p} \left( \mathbb{K} \right)$ une ma
 
 **Proposition.** Le rang de $A$ est égal au rang de sa transposée ${{}^t}A$.
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/04-Calcul%20matriciel.pdf)
+
 ## Notes de bas de page
 
 [^1]: Leopold Kronecker (1823-1891)

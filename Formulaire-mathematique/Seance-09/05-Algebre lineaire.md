@@ -343,6 +343,10 @@ Le fait que l'on puisse toujours se ramener à un système échelonné réduit i
 
 - **Théorème.** Tout système homogène d'équations linéaires dont le nombre d'inconnus est strictement plus grand que le nombre d'équations a une infinité de solution.
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/05-Algebre%20lineaire.pdf)
+
 ## Notes de bas de page
 
 [^1]: ou inconnue

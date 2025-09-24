@@ -971,6 +971,10 @@ Pour illustrer le cas de distributions sans moyenne et sans écart type, il est 
 
     - [Approfondissement et programmes en `Python`](https://www.apprendre-en-ligne.net/hearthstone/index.html)
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/02-Probabilite.pdf)
+
 ## Exercices
 
 - [Exercices sur les probabilités](./Exercices/02-Probabilites.pdf)

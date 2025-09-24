@@ -229,6 +229,10 @@ Pour $n$ ensembles finis $A_1$, ..., $A_n$,
 
 $\begin{array}{l} \mathrm{card} \left( A_1, \cup A_2, \cup \ldots{} \cup A_n \right) = \sum_{i = 1}^{n} \mathrm{card} A_i - \sum_{i < j}^{n} \mathrm{card} \left( A_i \cap A_j \right) + \ldots{} \\ + \left( -1 \right)^{n + 1} \mathrm{card} \left( A_1 \cap A_2, \cap \ldots{} \cap A_n \right) \end{array}$
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/00-Ensemble-fini.pdf)
+
 ## Exercices
 
 - [Exercices sur les ensembles finis](./Exercices/00-Ensembles-finis.pdf)
