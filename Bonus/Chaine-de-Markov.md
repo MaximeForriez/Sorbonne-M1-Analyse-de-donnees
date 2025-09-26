@@ -140,6 +140,10 @@ Soit $a_i$ un état absorbant d'une chaîne de Markov ayant la matrice de transi
 
 **Théorème.** Si l'un des éléments de la diagonale principale d'une matrice stochastique $P$ est égal à $1$, $P$ n'est pas régulière, sauf si $P$ est une matrice $1 \times 1$.
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Chaines-de-Markov.pdf)
+
 ## Notes de bas de page
 
 [^1]: Andreï Andraïevitch Markov (1856-1922)
