@@ -89,7 +89,7 @@ Par défaut, j'ai placé tous les paquets nécessaires pour les T.D.
 
 	- Supprimer tous les éléments qui s'y trouvent
 
-## Installationq alternativeq si `Docker` n'est pas installé
+## Installation alternative si `Docker` n'est pas installé
 
 - [`Python` officiel en ligne et en console](https://www.python.org/shell/) (les données externes ne sont pas accessibles)
 
