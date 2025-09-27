@@ -1,6 +1,6 @@
 # Indice de Jaccard
 
-L'indice\footnote{ou le coefficient de Jaccard ou le coefficient de communauté} de P. Jaccard[^1] compare la similarité entre des échantillons. Il s'agit du rapport entre le cardinal de l'intersection des ensembles considérés et le cardinal de l'union des ensembles[^2]. Soient $A$ et $B$, l'indice est :
+L'indice[^1] de P. Jaccard[^2] compare la similarité entre des échantillons. Il s'agit du rapport entre le cardinal de l'intersection des ensembles considérés et le cardinal de l'union des ensembles[^3]. Soient $A$ et $B$, l'indice est :
 
 $J \left( A, B \right) = \frac{\mathrm{card } \left( A \cap B \right)}{\mathrm{card } \left( A \cup B \right)}$
 
@@ -22,6 +22,8 @@ $d = 1 - J \left( S_1, S_2, \ldots{}, S_n \right) = \frac{\mathrm{card } \left( 
 
 ## Notes de bas de page
 
-[^1]: Paul Jaccard (1868-1944)
+[^1]: ou le coefficient de Jaccard ou le coefficient de communauté
 
-[^2]: Jaccard, Paul, 1901, « Distribution de la flore alpine dans le bassin des Dranses et dans quelques régions voisines », *Bulletin de la société vaudoise des sciences naturelles*, n°37, p. 241-272
+[^2]: Paul Jaccard (1868-1944)
+
+[^3]: Jaccard, Paul, 1901, « Distribution de la flore alpine dans le bassin des Dranses et dans quelques régions voisines », *Bulletin de la société vaudoise des sciences naturelles*, n°37, p. 241-272
