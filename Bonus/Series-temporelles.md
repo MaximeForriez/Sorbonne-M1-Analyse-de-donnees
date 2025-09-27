@@ -201,7 +201,7 @@ La prévision ${\hat{x}}_T \left( h \right)$ réalisée par la méthode de lissa
 
 ${\hat{x}}_T \left( h \right) = \alpha \sum_{i = 0}^{T - 1} \left( 1 - \alpha \right)^i.x_{T - i}$
 
-$0 < \alpha > 1$.
+$0 < \alpha < 1$.
 
 Le paramètre $\alpha$ est la constante de lissage. Si $T$ est élevé, la somme des pondérations est peu différente de $1$ :
 
@@ -232,7 +232,8 @@ On obtient la solution suivante :
 $\left\lbrace \begin{array}{l} {\hat{a}}_1 \left( T \right) = 2 S_1 \left( T \right) - S_2 \left( T \right)\\ {\hat{a}}_2 \left( T \right) = \frac{\alpha}{1 - \alpha} \left( S_1 \left( T \right) - S_2 \left( T \right) \right) \end{array} \right.$
 
 $\left\lbrace \begin{array}{l} S_1 \left( T \right) = \alpha \sum_{i = 0}^{T - 1} \left( 1 - \alpha \right)î x_{T - i}\\ S_2 \left( T \right) = \alpha \sum_{i = 0}^{T - 1} \left( 1 - \alpha \right)î S_1 \left( T - i \right) \end{array} \right.$, ce qui conduit à la prévision :
-	${\hat{x}}_T \left( h \right) = {\hat{a}}_1 \left( T \right) + {\hat{a}}_2 \left( T \right) h$
+
+${\hat{x}}_T \left( h \right) = {\hat{a}}_1 \left( T \right) + {\hat{a}}_2 \left( T \right) h$
 
 La quantité $S_1 \left( T \right)$ résulte du lissage exponentiel de la série $\left\lbrace x_t : t = 1, \ldots{}, T \right\rbrace$. La quantité $S_2 \left( T \right)$ résulte du lissage exponentiel simple de la série $\left\lbrace S_1 \left( t \right) : t = 1, \ldots{}, T \right\rbrace$.
 
