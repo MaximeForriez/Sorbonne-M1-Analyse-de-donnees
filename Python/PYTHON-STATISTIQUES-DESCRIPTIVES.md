@@ -98,6 +98,57 @@ La méthode a plusieurs options :
 
 - `normalize='index'` qui permet de calculer les pourcentages par lignes.
 
+### Régression linéaire par la méthode des moindres carrées entre deux variables
+
+La bibliothèque permettant de calculer une régression linéaire par la méthode des moindres carrées entre deux variables est `scipy.stats` en utilisant la méthode `linregress(x, y)` prenant en paramètres : `x`, la variable à expliquer et `y`, la variable explicative. Le résultat est une liste comprenant :
+
+- le coefficient directeur de la droite de régression ;
+
+- l'ordonnée à l'origine de la droite de régression ;
+
+- le coefficient de corrélation de K. Pearson ;
+
+- la probabilité critique ;
+
+- la déviation standard.
+
+Pour utiliser la méthode, on suppose que `x` et `y` sont deux listes de même dimension, et on utilise une liste appelée `params` :
+
+```
+    params = scipy.stats.linregress(x, y)
+    pente = params[0]
+    ordonnee = params[1]
+    correlation = params[2]
+    pvalue = params[3]
+    deviationstandard = params[4]
+```
+
+Pour visualiser le résultat, il faut :
+
+1. Calculer la droite de régression :
+
+```
+    y_modele = []
+    for i in range(0,len(x)):
+        y_modele.append(a * x[i] + b)
+```
+
+2. Tracer le nuage de points et la droite de régression
+
+```
+    fig, plot = plt.subplots()
+    plot.scatter(x, y, c = "blue")
+    plot.plot(x, y_modele, "-r", color = "red")
+    plot.set_title("Régression linéaire entre x et y")
+    plot.set_xlabel("x (unité de x)")
+    plot.set_ylabel("y (unité de y)")
+    plt.show()
+    plt.savefig("./regression.png")
+```
+
+> [!WARNING]
+> Il faut bien écrire tous les arguments dans `plot.plot(x, y_modele, "-r", color = "red")` pour tracer une droite de régression en rouge.
+
 ### Corrélation entre deux variables
 
 ```
