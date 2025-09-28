@@ -178,3 +178,7 @@ Avec `Pandas`, l'écriture est un peu plus simple avec la méthode `.corr()`.
 > On peut appliquer plusieurs méthodes de calcul avec la méthode `.agg()` :
 > - avec une liste : `donnees.agg(["median", "mean"])` ;
 > - avec un dictionnaire : `donnees.agg({"Médiane": "median", "Moyenne": "mean"})`.
+
+### Test du ${\chi}^2$
+
+[https://sites.google.com/view/aide-python/statistiques/test-du-%CF%87-khi2](https://sites.google.com/view/aide-python/statistiques/test-du-%CF%87-khi2)
