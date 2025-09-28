@@ -100,6 +100,8 @@ La méthode a plusieurs options :
 
 ### Régression linéaire par la méthode des moindres carrées entre deux variables
 
+Tutoriel : [https://tube-sciences-technologies.apps.education.fr/w/dJg6Vq7ByfvxgW36YUap68](https://tube-sciences-technologies.apps.education.fr/w/dJg6Vq7ByfvxgW36YUap68)
+
 La bibliothèque permettant de calculer une régression linéaire par la méthode des moindres carrées entre deux variables est `scipy.stats` en utilisant la méthode `linregress(x, y)` prenant en paramètres : `x`, la variable à expliquer et `y`, la variable explicative. Le résultat est une liste comprenant :
 
 - le coefficient directeur de la droite de régression ;
