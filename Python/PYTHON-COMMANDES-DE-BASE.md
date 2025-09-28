@@ -967,6 +967,14 @@ Il suffit d'utiliser la clé comme si c'était un indice.
 
 	print(dictionnaire["prenom"])
 
+### Ajouter une valeur
+
+Il suffit d'utiliser la méthode `update()` munie de la clé et de la valeur.
+
+	dictionnaire.update({clé: valeur})
+
+	print(dictionnaire["clé"])
+
 ### Copier un dictionnaire
 
 Tout comme les listes, on ne peut pas copier directement par une simple affectation un dictionnaire.
