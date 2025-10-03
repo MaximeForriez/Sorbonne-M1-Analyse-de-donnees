@@ -1,10 +1,13 @@
 # Évaluation du module
 
-Il vous est demandé de me rendre l'ensemble de vos travaux pour le **19 décembre 2025 au plus tard**.
+Il vous est demandé de me rendre l'ensemble de vos travaux pour le **19 décembre 2025 23:59:59 au plus tard**.
 
 La procédure sera la suivante.
 
-- Dans l'onglet d'évaluation du `Discord` ou sur mon courriel personnel (pour l'instant), vous m'envoyez le lien de votre portfolio.
+- Dans l'onglet d'évaluation du `Discord` ou sur mon courriel professionnel alternatif : `mforriez.sorbonne.universite@gmail.com` (pour l'instant), vous m'envoyez le lien de votre portfolio.
+
+> [!WARNING]
+> Le dépôt sur `GitHub` fait partie de l'exercice. Je n'évaluerai aucun autre type d'envoi. Si vous n'utilisez pas `GitHub`, votre note sera 00/20.
 
 - À réception de votre message, je considère que toutes les modifications ultérieures à la date de rendu (jour et heure exacts) sont caduques.
 
