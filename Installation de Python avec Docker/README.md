@@ -42,7 +42,7 @@ Si vous voulez vous documenter sur `Docker`, libre à vous, et je ne saurais que
 >[!WARNING]
 > Si vous avez déjà lancé une image `Docker`, il faudra taper : `docker-compose up -d --build`
 
-4. Dans le dossier `src`, il y a un fichier `main.py`. C'est dans ce fichier que vous taperez votre code. Pour chaque séance, il vous suffira de copier les fichiers du T.D. dans ce dossier.
+4. Dans le dossier `src`, il y a un fichier `main.py`. C'est dans ce fichier que vous taperez votre code. Pour chaque séance, il vous suffira de copier les fichiers de l'exercice dans ce dossier.
 
 5. Pour tester votre code, taper `docker-compose run python` (juste cette commande à chaque modification)
 
@@ -89,7 +89,7 @@ Par défaut, j'ai placé tous les paquets nécessaires pour les T.D.
 
 	- Supprimer tous les éléments qui s'y trouvent
 
-## Installation alternative si `Docker` n'est pas installé
+## Installations alternatives si `Docker` n'est pas installé
 
 - [`Python` officiel en ligne et en console](https://www.python.org/shell/) (les données externes ne sont pas accessibles)
 
