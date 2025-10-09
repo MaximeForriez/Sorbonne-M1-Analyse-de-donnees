@@ -19,8 +19,10 @@ Les analyses factorielles fonctionnent de toutes avec la même logique informati
     #Centrer-réduire
     tab_norm = StandardScaler().fit_transform(tableau)
     #ACP
-    pca = PCA(n_components = 3)
-    decomposition = pd.DataFrame(data = tab_norm, columns = ['Facteur 1', 'Facteur 2', 'Facteur 3'])
+    pca = PCA(n_components = 3).fit(tab_norm)
+    #Affichage des composantes principales
+    decomposition = pd.DataFrame(data = pca.components_, columns = ['Facteur 1', 'Facteur 2', 'Facteur 3'])
+    print(decomposition)
 ```
 
 - `PCA` signifie *Principal Components Analysis*. Il faut retenir que, en général, l'abréviation anglaise des méthodes statistiques premd de retrouver les fonctions sur `Python`.
@@ -30,7 +32,7 @@ Les analyses factorielles fonctionnent de toutes avec la même logique informati
 2. On peut obtenir les valeurs propres $\lambda$.
 
 ```
-    decomposition.head()
+    decomposition.explained_variance_
 ```
 
 3. On peut obtenir les valeurs singulières $\sqrt{\lambda}$.
