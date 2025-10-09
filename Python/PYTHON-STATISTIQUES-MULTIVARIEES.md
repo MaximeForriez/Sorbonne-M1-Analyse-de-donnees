@@ -32,7 +32,8 @@ Les analyses factorielles fonctionnent de toutes avec la même logique informati
 2. On peut obtenir les valeurs propres $\lambda$.
 
 ```
-    decomposition.explained_variance_
+    nbindividus = tab_norm.shape[0]
+    (nbindividus - 1)/nbindividus * pca.explained_variance_
 ```
 
 3. On peut obtenir les valeurs singulières $\sqrt{\lambda}$.
