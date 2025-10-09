@@ -20,7 +20,7 @@ Les analyses factorielles fonctionnent de toutes avec la même logique informati
     tab_norm = StandardScaler().fit_transform(tableau)
     #ACP
     pca = PCA(n_components = 3)
-    decomposition = pd.DataFrame(data = decomposition, columns = ['Facteur 1', 'Facteur 2', 'Facteur 3'])
+    decomposition = pd.DataFrame(data = tab_norm, columns = ['Facteur 1', 'Facteur 2', 'Facteur 3'])
 ```
 
 - `PCA` signifie *Principal Components Analysis*. Il faut retenir que, en général, l'abréviation anglaise des méthodes statistiques premd de retrouver les fonctions sur `Python`.
