@@ -8,10 +8,6 @@
 
 - [Fonction caractéristique](./03-Fonction-caracteristique.md)
 
-## Rappels mathématiques : les suites numériques
+## Rappels mathématiques : les nombres complexes
 
-- [La notation indicielle](./PDF/01-La-notation-indicielle.pdf)
-
-- [Les suites numériques](./PDF/)
-
-- À venir : Les séries numériques
+- [Les nombres complexes](./PDF/01-Les-nombres-complexes.pdf)
