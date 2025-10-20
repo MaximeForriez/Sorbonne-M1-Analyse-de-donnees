@@ -4,20 +4,20 @@
 
 - [Algèbre des nombres réels](./PDF/01-Algebre-des-nombres-reels.pdf)
 
-- À venir : La géométrie élémentaire
+- [La géométrie élémentaire](./PDF/02-La-geometrie-descriptive.pdf)
 
-- [Les applications dans le plan](./PDF/03-Les-applications-dans-le-plan.pdf)
+- [Trigonométrie](./PDF/03-Trigonometrie.pdf)
 
-- [Trigonométrie](./PDF/04-Trigonometrie.pdf)
+- [Les applications dans le plan](./PDF/04-Les-applications-dans-le-plan.pdf)
 
-- À venir : Les vecteurs
+- [Les vecteurs](./PDF/05-Les%20vecteurs.pdf)
 
-- À venir : Les équations cartésiennes
+- [Les équations cartésiennes](./PDF/06-Equations-cartesiennes.pdf)
 
-- À venir : Les vecteurs dans le plan
+- [Le calcul vectoriel dans le plan](./PDF/07-Calcul-vectoriel-dans-le-plan.pdf)
 
-- À venir : Les vecteurs dans l'espace à trois dimensions
+- [Le calcul vectoriel dans l'espace à trois dimensions](./PDF/08-Calcul-vectoriel-dans-un-espace-a-trois-dimensions.pdf)
 
-- À venir : Les courbes paramétrées
+- [Les courbes paramétrées](./PDF/09-Courbes-parametrees.pdf)
 
-- À venir : Les barycentres dans le plan et dans l'espace à trois dimensions
+- [Les barycentres dans le plan et dans l'espace à trois dimensions](./PDF/10-Barycentres-dans-le-plan-et-dans-l-espace-a-trois-dimensions.pdf)
