@@ -91,8 +91,10 @@ Par défaut, j'ai placé tous les paquets nécessaires pour les T.D.
 
 ## Installations alternatives si `Docker` n'est pas installé
 
-- [`Python` officiel en ligne et en console](https://www.python.org/shell/) (les données externes ne sont pas accessibles)
-
 - [`Python` en `Google`](https://colab.research.google.com/) (nécessite un compte `Google`)
+
+	- C'est la meilleure solution en ligne. Normalement, vous avez accès à toutes les bibliothèques.
+
+- [`Python` officiel en ligne et en console](https://www.python.org/shell/) (les données externes ne sont pas accessibles)
 
 - [`Python` online](https://www.online-python.com/) (les bibliothèques externes ne peuvent pas être installées)

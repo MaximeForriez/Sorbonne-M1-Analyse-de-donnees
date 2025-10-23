@@ -6,6 +6,8 @@ Les analyses factorielles fonctionnent de toutes avec la même logique informati
 
 ### Analyse en composantes principales (A.C.P.)
 
+En complément : [https://fxjollois.github.io/cours-2019-2020/lp-iot--python-ds/seance2-ACP-classif.html](https://fxjollois.github.io/cours-2019-2020/lp-iot--python-ds/seance2-ACP-classif.html)
+
 1. Pour faire des A.C.P., on a besoin de la bibliothèque `Scikit-learn`.
 
 > [!WARNING]
@@ -135,33 +137,41 @@ On peut calculer l'inertie expliquée avec `afc.explained_inertia_`.
 
 ### Analyse des correspondances multiples (A.C.M.)
 
-L'A.C.M. s'utilise avec plusieurs variables catégorielles. Les lignes correspondent aux individus et les colonnes, aux variables qualitatives.
+L'A.C.M. s'utilise avec plusieurs variables catégorielles. Les lignes correspondent aux individus et les colonnes, aux variables qualitatives. En plus de `Pandas`, on utilise la bibliothèque `Prince`.
 
-1. Construction le tableau disjonctif complet (T.D.C.) sur lequel l'A.C.M. sera réalisée. On note `X` le tableau catégoriel.
+1. Construire le tableau disjonctif complet (T.D.C.) sur lequel l'A.C.M. sera réalisée avec `Pandas`. On note `X` le tableau catégoriel.
 
 ```
     import pandas as pd
-    X = pd.read_vcs(./fichier.csv)
-    pd.get_dummies(X)
+    import prince
+    import matplotlib.pyplot as plt
+    X = pd.read_csv(./fichier.csv)
+    tdc = pd.get_dummies(X)
 ```
 
-2. Calculer l'A.C.M. sur deux facteurs
+2. Calculer l'A.C.M. sur deux facteurs avec `Prince`
 
 ```
-    acm = prince.MCA(n_components = 2)
-    print([round(i, 3) for i in acm.explained_inertia_])
+    acm = prince.MCA(n_components = 2).fit(X)
 ```
+
+ou
+
+```
+    acm = prince.MCA(n_components = 2).fit(tdc)
+```
+
+- L'attribut `n_components` fixe le nombre d'axes. Il est possible de faire l'A.C.M. avec les données brutes, ici `X`, ou le T.D.C., ici `tdc`.
 
 - Les valeurs propres se calculent avec `acm.eigenvalues_`.
 
-- Les coordonnées des lignes s'obtiennent avec `mca.row_coordinates(X)`.
+- Les coordonnées des lignes s'obtiennent avec `acm.row_coordinates(X)` ou `acm.row_coordinates(tdc)`.
 
-- Les coordonnées des lignes s'obtiennent avec `mca.columns_coordinates(Y)`.
+- Les coordonnées des colonnes s'obtiennent avec `acm.column_coordinates(X)` ou `acm.column_coordinates(tdc)`.
 
-3. Visualiser les deux premiers facteurs
+3. Visualiser les deux premiers facteurs avec `Prince`
 
 ```
-    X.columns = [i.replace("_", "") for i in X.columns]
     plot = acm.plot_coordinates(
         X = X,
         figsize = (4, 4),
@@ -170,14 +180,55 @@ L'A.C.M. s'utilise avec plusieurs variables catégorielles. Les lignes correspon
         column_points_size = 30,
         show_column_labels = False
     )
-    plot.get_figure().savefig('mca.png')
+    plot.get_figure().savefig('acm.png')
 ```
-4. Calculer la contribution de l'A.C.M. avec `Prince`
+
+Malheureusement, la solution `Prince` peut poser problème. On utilise alors `Matplotlib` pour s'en sortir.
 
 ```
-    mca_prince = prince.MCA(n_components = 12)
-    mca_prince.fit(X)
-    T = mca_prince.row_coordinates(X)
+    #1 - On récupère les coordonnées des lignes et des colonnes
+    coordX = acm.row_coordinates(tdc)
+    coordY = acm.column_coordinates(tdc)
+    #2 - On récupère le nom des lignes et des colonnes
+    nomligne = coordX.index
+    nomcolonne = coordY.index
+    #3 - On visualise les deux premiers facteurs
+    xligne = coordX[0]
+    yligne = coordX[1]
+    xcolonne = coordY[0]
+    ycolonne = coordY[1]
+    # Astuce : Pour agrandir correctement l'image qui, par défaut, est exprimée en inches. On utilise la conversion suivante :
+    cm = 1/2.54  # centimeters in inches
+    fig, plot = plt.subplots(figsize=(50*cm, 50*cm))
+    # On crée un nuage de points pour les lignes (individus) et un nuage de points pour les colonnes (modalités)
+    plot.scatter(xligne, yligne, c = 'blue')
+    plot.scatter(xcolonne, ycolonne, c = 'red')
+    # Astuce : On visualise le nom des lignes et des colonnes avec ces deux boucles :
+    for i in range(0,len(nomligne)):
+        plot.annotate(nomligne[i], (xligne[i], yligne[i]))
+    for i in range(0,len(nomcolonne)):
+        plot.annotate(nomcolonne[i], (xcolonne[i], ycolonne[i]))
+    plot.set_title("Projection des facteurs 1 et 2 des lignes")
+    plot.set_xlabel("Facteur 1")
+    plot.set_ylabel("Facteur 2")
+    plt.savefig("./acm.png")
+```
+
+4. Calculer la contribution de l'A.C.M. (les cosinus carrés) avec `Prince` des lignes (avec `X` et `tdc`) :
+
+```
+    T = acm.row_coordinates(X)
+    d2 = (T ** 2).sum(axis = 1)
+    intermediaire = (T ** 2)
+    intermediaire["d2"] = d2
+    cos2 = intermediaire.apply(lambda x : x/x["d2"], axis = 1)
+    cos2 = cos2.drop("d2", axis = 1)
+```
+
+5. Calculer la contribution de l'A.C.M. (les cosinus carrés) avec `Prince` des colonnes (avec `X` et `tdc`) :
+
+```
+    T = acm.column_coordinates(X)
     d2 = (T ** 2).sum(axis = 1)
     intermediaire = (T ** 2)
     intermediaire["d2"] = d2
@@ -270,7 +321,7 @@ On utilise la bibliothèque `Scikit-learn`.
 
 On peut calculer le nombre dans chaque groupe avec `pd.Series(kmeans.labels_).value_counts()`
 
-`Scikit-learn` peut calculer l{'}indice de Rand et l{'}information mutuelle normalisée.
+`Scikit-learn` peut calculer l'[indice de Rand](../Formulaire-mathematique/Seance-09/09-Indice-de-Rand.md) et l{'}information mutuelle normalisée.
 
 ### Classification ascendante hiérarchique (C.A.H.)
 
