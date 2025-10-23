@@ -70,7 +70,6 @@ Néanmoins, pour représenter les individus correctement, il faut passer par `Ma
     individu = pca.transform(tab_norm)
     decompositionindividu = pd.DataFrame(data = individu, columns = ['Facteur 1', 'Facteur 2', 'Facteur 3'])
     print(decompositionindividu)
-
     #Visualisation des individus
     x = decompositionindividu["Facteur 1"]
     y = decompositionindividu["Facteur 2"]
@@ -86,30 +85,30 @@ Néanmoins, pour représenter les individus correctement, il faut passer par `Ma
     plt.savefig("./acp.png")
 ```
 
-6. On peut calculer la qualité de la projection des données. Cela permet d'avoir une information sur la définition produite par la projection sur quelques axes. La mesure correspond aux cosinus carrés.
+6. Calculer la qualité de la projection des données. Cela permet d'avoir une information sur la définition produite par la projection sur quelques axes. La mesure correspond aux cosinus carrés.
 
 ```
-    d2 = (tab_norm ** 2).sum(axis = 1)
+    d2 = (tab_norm ** 2).sum(axis = 0)
     cos2 = decomposition ** 2
     cos2["d2"] = d2
     cos2 = cos2.apply(lambda x : x/x["d2"], axis = 1)
     cos2 = cos2.drop("d2", axis = 1)
-    cos2 = head()
+    cos2.columns = ["COS2 Facteur 1", "COS2 Facteur 2", "COS2 Facteur 3"]
+    print(cos2)
 ```
 
-7. On peut calculer la contribution des individus aux facteurs (CTR)
+7. Calculer la contribution des individus aux facteurs (CTR)
 
 ```
     valeurs_propres = pca.singular_values_ ** 2
-    n = len(decomposition)
     ctr = decomposition ** 2
     for col, val in zip(ctr.columns, valeurs_propres):
-        ctr.loc[:,col] = ctr.loc[:, col] / (n * val)
+        ctr.loc[:,col] = ctr.loc[:, col] / (len(decomposition) * val)
     ctr.columns = ["CTR Facteur 1", "CTR Facteur 2", "CTR Facteur 3"]
     ctr.head()
 ```
 
-8. Calculer le cercle de corrélation
+8. Calculer les coordonnées des variables et tracer le cercle de corrélation
 
 ```
     #Coordonnées des variables : cercle de corrélation
@@ -123,14 +122,14 @@ Néanmoins, pour représenter les individus correctement, il faut passer par `Ma
     #Création d'un Dataframe contenant les coordonnées de la corrélation des variables : 'id' appelle une liste contenant des noms des variables qu'il faut récupérer ; 'COR_1', ... 'COR_n' listent autant de corrélation qu'il y a de variables.
     coordonneesvariable = pd.DataFrame({
         'id': nomdesvariables,
-        'COR_1': correlationvariable[:,0],
-        'COR_2': correlationvariable[:,1], 
-        'COR_3': correlationvariable[:,2]
+        'CORRELATION FACTEUR 1': correlationvariable[:,0],
+        'CORRELATION FACTEUR 2': correlationvariable[:,1], 
+        'CORRELATION FACTEUR 3': correlationvariable[:,2]
     })
     print(coordonneesvariable)
     #Visualisation du cercle de corrélation entre la COR_1 (facteur 1) et la COR_2 (facteur 2)
-    x = coordonneesvariable["COR_1"]
-    y = coordonneesvariable["COR_2"]
+    x = coordonneesvariable["CORRELATION FACTEUR 1"]
+    y = coordonneesvariable["CORRELATION FACTEUR 2"]
     nomligne = nomdesvariables
     # Astuce : Pour agrandir correctement l'image qui, par défaut, est exprimée en inches. On utilise la conversion suivante :
     cm = 1/2.54
@@ -255,7 +254,7 @@ Malheureusement, la solution `Prince` peut poser problème. On utilise alors `Ma
     plt.savefig("./acm.png")
 ```
 
-4. Calculer la contribution de l'A.C.M. (les cosinus carrés) avec `Prince` des lignes (avec `X` et `tdc`) :
+4. Calculer la qualité des axes de l'A.C.M. (les cosinus carrés) avec `Prince` des lignes (avec `X` et `tdc`) :
 
 ```
     T = acm.row_coordinates(X)
@@ -264,9 +263,10 @@ Malheureusement, la solution `Prince` peut poser problème. On utilise alors `Ma
     intermediaire["d2"] = d2
     cos2 = intermediaire.apply(lambda x : x/x["d2"], axis = 1)
     cos2 = cos2.drop("d2", axis = 1)
+    print(cos2)
 ```
 
-5. Calculer la contribution de l'A.C.M. (les cosinus carrés) avec `Prince` des colonnes (avec `X` et `tdc`) :
+5. Calculer la qualité des axes de l'A.C.M. (les cosinus carrés) avec `Prince` des colonnes (avec `X` et `tdc`) :
 
 ```
     T = acm.column_coordinates(X)
@@ -275,6 +275,7 @@ Malheureusement, la solution `Prince` peut poser problème. On utilise alors `Ma
     intermediaire["d2"] = d2
     cos2 = intermediaire.apply(lambda x : x/x["d2"], axis = 1)
     cos2 = cos2.drop("d2", axis = 1)
+    print(cos2)
 ```
 
 ## Les modèles de régression
