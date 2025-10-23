@@ -35,22 +35,22 @@ En complément : [https://fxjollois.github.io/cours-2019-2020/lp-iot--python-ds/
 
 ```
     nbindividus = tab_norm.shape[0]
-    (nbindividus - 1)/nbindividus * pca.explained_variance_
+    valeurpropre = (nbindividus - 1)/nbindividus * pca.explained_variance_
 ```
 
 3. On peut obtenir les valeurs singulières $\sqrt{\lambda}$.
 
 ```
-    print([round(i, 2) for i in pca.explained_singular_values_])
+    varianceexpliquee = pca.explained_singular_values_
 ```
 
 4. On peut obtenir la proportion de variance expliquée.
 
 ```
-    print([round(i, 2) for i in pca.explained_variance_ratio_])
+    pourcentagevarianceexpliquee = pca.explained_variance_ratio_
 ```
 
-5. On peut visualiser les résultats
+5. On peut visualiser les résultats à partir de la décomposition calculée précédemment. Elle visualise le nuage de points des variables.
 
 ```
     plot = decomposition.plot(
@@ -61,6 +61,29 @@ En complément : [https://fxjollois.github.io/cours-2019-2020/lp-iot--python-ds/
         y = "Facteur 2",
         marker = "v"
     )
+```
+
+Néanmoins, pour représenter les individus correctement, il faut passer par `Matplotlib` :
+
+```
+    #Coordonnées des individus
+    individu = pca.transform(tab_norm)
+    decompositionindividu = pd.DataFrame(data = individu, columns = ['Facteur 1', 'Facteur 2', 'Facteur 3'])
+    print(decompositionindividu)
+
+    #Visualisation des individus
+    x = decompositionindividu["Facteur 1"]
+    y = decompositionindividu["Facteur 2"]
+    nom = #Mettre le nom des individus
+    cm = 1/2.54  # centimeters in inches
+    fig, plot = plt.subplots(figsize=(50*cm, 50*cm))
+    plot.scatter(x, y, c = 'blue')
+    for i in range(0,len(nom)):
+        plot.annotate(nom[i], (x[i], y[i]))
+    plot.set_title("Projection des facteurs 1 et 2 des lignes")
+    plot.set_xlabel("Facteur 1")
+    plot.set_ylabel("Facteur 2")
+    plt.savefig("./acp.png")
 ```
 
 6. On peut calculer la qualité de la projection des données. Cela permet d'avoir une information sur la définition produite par la projection sur quelques axes. La mesure correspond aux cosinus carrés.
@@ -86,27 +109,45 @@ En complément : [https://fxjollois.github.io/cours-2019-2020/lp-iot--python-ds/
     ctr.head()
 ```
 
-8. La bibliothèque `Prince` a une fonction `pca` qui calcule directement la contribution des individus.
+8. Calculer le cercle de corrélation
 
 ```
-    import prince
-    pca = prince.PCA(
-        n_components = 3,
-        rescale_with_mean = True,
-        rescale_with_std = True
-    )
-    pca = pca.fit(tableau.values)
-    decomposition = pca.transform(tableau.values)
-    print([round(i, 2) for i in pca.explained_inertia_])
+    #Coordonnées des variables : cercle de corrélation
+    nbvariables = tab_norm.shape[1]
+    #Racine carrée des valeurs propres
+    sqrt_eigval = np.sqrt(valeurpropre)
+    #Matrice vide pour avoir les coordonnées
+    correlationvariable = np.zeros((nbvariables, nbvariables)) 
+    for k in range(nbvariables):
+        correlationvariable[:,k] = pca.components_[k,:] * sqrt_eigval[k]
+    #Création d'un Dataframe contenant les coordonnées de la corrélation des variables : 'id' appelle une liste contenant des noms des variables qu'il faut récupérer ; 'COR_1', ... 'COR_n' listent autant de corrélation qu'il y a de variables.
+    coordonneesvariable = pd.DataFrame({
+        'id': nomdesvariables,
+        'COR_1': correlationvariable[:,0],
+        'COR_2': correlationvariable[:,1], 
+        'COR_3': correlationvariable[:,2]
+    })
+    print(coordonneesvariable)
+    #Visualisation du cercle de corrélation entre la COR_1 (facteur 1) et la COR_2 (facteur 2)
+    x = coordonneesvariable["COR_1"]
+    y = coordonneesvariable["COR_2"]
+    nomligne = nomdesvariables
+    # Astuce : Pour agrandir correctement l'image qui, par défaut, est exprimée en inches. On utilise la conversion suivante :
+    cm = 1/2.54
+    fig, plot = plt.subplots(figsize=(50*cm, 50*cm))
+    fig.suptitle("Cercle des corrélations")
+    plot.set_xlim(-1, 1)
+    plot.set_ylim(-1, 1)
+    # Ajout des axes
+    plot.axvline(x = 0, color = 'lightgray', linestyle = '--', linewidth = 1)
+    plot.axhline(y = 0, color = 'lightgray', linestyle = '--', linewidth = 1)
+    # Ajout des noms des variables
+    for i in range(0,len(nomligne)):
+        plot.annotate(nomligne[i], (x[i], y[i]))
+    # Ajout du cercle
+    plt.gca().add_artist(plt.Circle((0,0), 1, color='blue', fill=False))
+    plt.savefig("./acp-cercle-de-correlation.png")
 ```
-
-- `pca.explained_inertia_` calcule la variance expliquée par chaque axe.
-
-- `pca_eigenvalues_` calcule les valeurs propres.
-
-- `columns.correlations(...)` calcule le coefficient de corrélation.
-
-- `row_contributions(...)` calcule la contribution de chaque individu.
 
 ### Analyse factorielle des correspondances (A.F.C.)
 
@@ -198,7 +239,7 @@ Malheureusement, la solution `Prince` peut poser problème. On utilise alors `Ma
     xcolonne = coordY[0]
     ycolonne = coordY[1]
     # Astuce : Pour agrandir correctement l'image qui, par défaut, est exprimée en inches. On utilise la conversion suivante :
-    cm = 1/2.54  # centimeters in inches
+    cm = 1/2.54
     fig, plot = plt.subplots(figsize=(50*cm, 50*cm))
     # On crée un nuage de points pour les lignes (individus) et un nuage de points pour les colonnes (modalités)
     plot.scatter(xligne, yligne, c = 'blue')
