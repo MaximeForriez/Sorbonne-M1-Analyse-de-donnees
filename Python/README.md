@@ -18,6 +18,8 @@
 
 - [Visualisation des données](./PYTHON-VISUALISATION-DES-DONNEES.md)
 
+- [Régressions](./PYTHON-STATISTIQUES-REGRESSIONS.md)
+
 - [Réalisation de statistiques multivariées](./PYTHON-STATISTIQUES-MULTIVARIEES.md)
 
 - [Analyse de corpus textuels](./PYTHON-ANALYSE-DE-CORPUS-TEXTUEL.md)
