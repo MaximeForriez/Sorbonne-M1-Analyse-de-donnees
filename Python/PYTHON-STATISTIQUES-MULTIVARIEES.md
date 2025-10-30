@@ -278,51 +278,6 @@ Malheureusement, la solution `Prince` peut poser problème. On utilise alors `Ma
     print(cos2)
 ```
 
-## Les modèles de régression
-
-### La régression linéaire
-
-On peut l'hypothèse qu'il existe une variable dépendante `Y`, reliée à des variables indépendantes `X` par une relation linéaire[^1].
-
-```
-    import statsmodels.api as sm
-    donnees = ...
-    X = donnees[[ ..., ..., ...]]
-    Y = donnees[]
-    modele = sm.OLS(Y, X)
-    regression = modele.fit()
-```
-
-1. Afficher les paramètres de la régression
-
-```
-    print('Paramètres : ', regression.params)
-```
-
-2. Afficher le coefficient de détermination
-
-```
-    print('R2 : ', round(regression.rsquared, 2))
-```
-
-3. Présenter l'ensemble des éléments du modèle de régression
-
-```
-    print(regression.summary())
-```
-
-4. Opérer un test d'hypothèse et déterminer les barres d'erreur
-
-```
-    regression.pvalues()
-```
-
-### La régression logistique
-
-La régression logistique se calcule soit sur des variables qualitatives, soit sur des variables quantitatives. La régression s'effectue sur la probabilité d'avvoir l'une ou l'autre des valeurs de la variable dépendante par rapport aux variables indépendantes.
-
-On utilise la bibliothèque `Patsy`, notamment la fonction `dmatrice(...)` pour faire un T.D.C.
-
 ## Les classifications
 
 L'objectif est d'étudier des groupes (ou *clusters*) comme :
