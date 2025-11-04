@@ -90,6 +90,8 @@ Votre rapport doit apporter la réponse aux questions posées de manière struct
 
 - Des points bonus seront attribués si vous me faites une annexe mathématique de toutes les équations calculées par `Python` que vous avez comprises.
 
+## [Résumé des barèmes](./Bareme-GEANDO-Questions-Code-Bonus.pdf)
+
 ## Remarque
 
 - Vous êtes des littéraires de formation pour bon nombre d'entre vous. C'est pour cela que je disproportionne légèrement les coefficients. Les deux parties sont notées sur 20.

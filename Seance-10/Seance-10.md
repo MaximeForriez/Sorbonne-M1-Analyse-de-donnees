@@ -11,3 +11,5 @@
 ## Liens
 
 - [Exercice](./Exercice/Seance-10.pdf)
+
+- [Exemple de régression linéaire multiple avec `Python`](https://www.labri.fr/perso/zemmari/ia_data/html/TD_3-regression_corrige.html)
