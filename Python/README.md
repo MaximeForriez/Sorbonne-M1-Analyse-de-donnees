@@ -10,7 +10,7 @@
 
 - [Humanités numériques](./HUMANITES-NUMERIQUES.md)
 
-- [Manipulation des données](./PYTHON-MANIPULATIION-DES-DONNEES.md)
+- [Manipulation des données](./PYTHON-MANIPULATION-DES-DONNEES.md)
 
 - [Réalisation de statistiques descriptives](./PYTHON-STATISTIQUES-DESCRIPTIVES.md)
 

@@ -384,14 +384,14 @@ Pour créer un tableau dans `Pandas`, on utilise `Series`.
 
 Les méthodes possibles sont :
 
-- `to_excel(...)` pour convertir en `*.xls` ;
+- `to_excel(...)` pour convertir en `*.xlsx` ;
 
 - `to_csv(...)` pour convertir en `*.csv`.
 
 Par exemple
 
 ```
-    valeur.to_excel("./fichier.xls")    
+    valeur.to_excel("./fichier.xlsx")    
 ```
 
 Il est possible de créer un fichier par ligne de données.
