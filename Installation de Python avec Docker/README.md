@@ -8,7 +8,7 @@ Si vous voulez vous documenter sur `Docker`, libre à vous, et je ne saurais que
 
 ## Installation de `Python` avec `Docker`
 
-1. Pour `MAC/OS` et `Windows`, télécharger `Docker Engine`
+1. Pour `MAC/OS` et `Windows`, télécharger `Docker Engine` (ou `Docker Desktop`) [https://docs.docker.com/desktop/setup/install/windows-install/](https://docs.docker.com/desktop/setup/install/windows-install/)
 
 2. Ouvrir un compte sur la plateforme `Docker`
 
