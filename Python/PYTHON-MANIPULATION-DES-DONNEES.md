@@ -198,27 +198,31 @@ Il existe deux objets :
 
 Avec `DataFrame`, chaque colonne est un objet `Series`. Chaque ligne est une rangée (ou *row*). Un index est créé. Il commence par 0.
 
+```
+    data = pd.DataFrame(tableau)
+```
+
 #### Visualiser les données
 
-- `tableau.head()` permet de lire le début du tableau.
+- `data.head()` permet de lire le début du tableau.
 
-- `tableau.tail()` permet de lire la fin du tableau.
+- `data.tail()` permet de lire la fin du tableau.
 
 #### Obtenir la forme générale du tableau
 
 Il s'agit d'obtenir le nombre de lignes et de colonnes.
 
 ```
-    tableau.shape
+    data.shape
 ```
 
 #### Obtenir le nom des lignes et des colonnes
 
 
 ```
-    list(tableau.index)[:]
-    list(tableau.columns)[:]
-    tableau.loc[index,colonne]
+    list(data.index)[:]
+    list(data.columns)[:]
+    data.loc[index,colonne]
 ```
 
 - Il est possible de définir tous les intervalles possibles.
@@ -228,8 +232,8 @@ Il s'agit d'obtenir le nombre de lignes et de colonnes.
 #### Afficher la dernière ligne du tableau
 
 ```
-    total = len(tableau)
-    tableau.loc[total - 1]
+    total = len(data)
+    data.loc[total - 1]
 ```
 
 > [!NOTE]
@@ -238,18 +242,20 @@ Il s'agit d'obtenir le nombre de lignes et de colonnes.
 #### Afficher une colonne
 
 ```
-    colonne_a_afficher = tableau.columns[0]
-    tableau[colonne_a_afficher].head()
+    colonne_a_afficher = data.columns[0]
+    data[colonne_a_afficher].head()
 ```
 
 ### Modifier un tableau  `Pandas`
+
+`tableau` est un objet `DataFrame`.
 
 #### Sélection des colonnes
 
 Pour sélectionner des colonnes, on crée une liste `colonnes` avec les noms des colonnes, puis on tape :
 
 ```
-    tableau = tableau[colonnes]
+    colonnes = tableau[colonnes]
 ```
 
 #### Manipuler l'index
@@ -257,7 +263,7 @@ Pour sélectionner des colonnes, on crée une liste `colonnes` avec les noms des
 Il existe une méthode dédiée `set_index()` permettant de définir qu'une des colonnes du tableau soit son index. L'intérêt est de pouvoir sélectionner les lignes en fonction des valeurs de cette colonne.
 
 ```
-    tableau = tableau.set_index(colonne)
+    index = tableau.set_index(colonne)
 ```
 
 La méthode `set_index(...)` prend en paramètre le nom de la colonne.
