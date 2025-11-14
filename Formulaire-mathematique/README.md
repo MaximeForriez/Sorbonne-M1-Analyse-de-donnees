@@ -82,7 +82,11 @@ La collection qui explique le mieux les notions mathématiques à mon sens est l
 
 - Lipschutz, Seymour, 1984, *Algèbre linéaire*, Paris, McGraw-Hill, VIII-330 p. [Série Schaum]
 
+- Lipschutz, Seymour, 1986, *Les structures de données*, trad. Romain Jacoud, Paris, McGraw-Hill, VIII-342 p. [Série Schaum]
+
 - Lipschutz, Seymour, 1987, *Probabilités*, trad. fr., Paris, McGraw-Hill, VI-154 p. [Série Schaum]
+
+- Lipschutz, Seymour, 1990, *Mathématiques discrètes*, trad. Bernard Geoffrion, Paris, McGraw-Hill, X-248 p. [Série Schaum]
 
 - Scheid, Francis, 1986, *Analyse numérique*, trad. Romain Jacoud, Paris, McGraw-Hill, IV-424 p. [Série Schaum]
 
