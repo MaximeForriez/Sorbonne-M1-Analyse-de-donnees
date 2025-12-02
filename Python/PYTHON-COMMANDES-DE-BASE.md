@@ -8,6 +8,8 @@ Cette série de T.D. ne peut que vous donner un bref aperçu du langage de progr
 
 - [`Python` *Cheat Sheets*](https://www.utc.fr/~jlaforet/Suppl/python-cheatsheets.pdf) (Universite de Compiègne)
 
+- [`Python` Ultimate Guide](./PDF/Python-Ultimate-Guide.pdf)
+
 - [Association francophone du `Python`](https://www.afpy.org/)
 
 Par ailleurs, les tutoriels sur `Youtube` sont très nombreux en français.
