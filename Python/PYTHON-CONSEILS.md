@@ -43,3 +43,39 @@ En moyenne, vous mettrez un mois à maîtriser les bases du langage et à savoir
     - [Stackoverflow](https://stackoverflow.com)
 
     - [Google](www.google.com/)
+
+## La méthode des 4C
+
+La méthode des 4C est proposée par le développeur Nathan Dupin.
+
+1. **Comprendre**, la base avant tout
+
+	- Comprendre les concepts clés
+
+	- Créer une architecture sans copier-coller
+
+	- Partir sur 80 % de compréhension, 20 % d'exécution
+
+2. **Créer**, le code comme un jeu
+
+	- Petits projets et défis
+
+	- Gamification du code
+
+	- Apprentissage par l'erreur
+
+3. **Collaborer**, la force de l'union
+
+	- *Pair programming*
+	
+    - *Code review* et *feedback*
+
+	- Progresser ensemble
+
+4. **Consolider**, la répétition intelligente
+
+	- Projets complexes
+
+	- *Refactoring* et optimisation
+
+	- Expertise par une pratique régulière
