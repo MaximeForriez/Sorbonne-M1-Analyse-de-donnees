@@ -48,6 +48,8 @@ Le troisième intérêt de `Git` est le dépôt en lui-même des travaux que vou
 
 Tous les tutoriels ne sont pas à visualiser. Idéalement, à partir des vidéos d'introduction des cours, vous choisissez le cours qui vous convient le mieux. Si ces ressources ne vous conviennent pas, pour vous aider à juger le sérieux d'un cours `YouTube`, sachez qu'un cours `Git` dure entre 1h30 et 2h00 pour que vous deveniez autonome sur la plateforme et dans votre apprentissage régulier de nouvelles commandes.
 
+- [Tutoriel `Git` pour ceux qui ne veulent apprendre uniquement ce qui est nécessaire pour ce cours](https://www.youtube.com/watch?v=Fc9CQVF4vwE&list=PLuMW20nBgcbp43oYXRwWo0jTffeS5-oWV&index=2)
+
 - [`Git` expliqué simplement : tutoriel complet pour débutants](https://www.youtube.com/watch?v=anP0LBVhUzA)
 
 - [`Git` et `GitHub` pour le *data science* : le guide complet pour débutants](https://www.youtube.com/watch?v=xwFj6WCJW0I)
@@ -66,7 +68,9 @@ Tous les tutoriels ne sont pas à visualiser. Idéalement, à partir des vidéos
 
 ## Ressources
 
-- [Site officiel](https://git-scm.com/)
+- [Site officiel (en anglais)](https://git-scm.com/)
+
+- [Documentation en français](https://docs.github.com/fr/get-started/start-your-journey/about-github-and-git)
 
 - [Guide simplifié de `Git`](./PDF/Pardo-Julen-2016-Git-Tutorial.pdf)
 
