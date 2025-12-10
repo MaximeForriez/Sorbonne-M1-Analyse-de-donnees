@@ -163,29 +163,29 @@ Sur la page d'accueil, il faut changer l'option par défaut de `Contributing set
 Dans le dossier de liaison, il faut donner le nom de l'utilisateur.
 
 ```
-	$ git config –global user.name "MaximeForriez"
+	$ git config --global user.name "MaximeForriez"
 ```
 
 Il faut donner le courriel de l'utilisateur.
 
 ```
-    $ git config –global user.email maxime.forriez@sorbonne-universite.fr
+    $ git config --global user.email maxime.forriez@sorbonne-universite.fr
 ```
 
 Il faut donner l'éditeur de code que l'on utilise.
 
-- `$ git config –global core.editor` *chemin local et nom de l'éditeur de code*
+- `$ git config --global core.editor` *chemin local et nom de l'éditeur de code*
 
 Par exemple, pour `NotePad++` :
 
 ```
-    $ git config –global core.editor "C:\Program Files\Notepad\Notepad.exe" -multiInst -notabbar -nosession -noPlugin
+    $ git config --global core.editor "C:\Program Files\Notepad\Notepad.exe" -multiInst -notabbar -nosession -noPlugin
 ```
 
 Par exemple, pour `Visual Studio Code` :
 
 ```
-	$ git config –global core.editor "code –wait"
+	$ git config --global core.editor "code –wait"
 ```
 
 > [!NOTE]
@@ -194,7 +194,7 @@ Par exemple, pour `Visual Studio Code` :
 Il est possible de visualiser la configuration.
 
 ```
-    $ git config –list
+    $ git config --list
 ```
 
 Pour en savoir plus : [https://git-scm.com/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git](https://git-scm.com/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git)
@@ -425,11 +425,11 @@ La commande permet de visualiser le `commit`. Il fournit son code SHA-1, la date
 
 Les options sont :
 
-1. `–oneline`
+1. `--oneline`
 
-2. `–oneline –graph`
+2. `--oneline –graph`
 
-3. `–oneline –graph –name-status`
+3. `--oneline –graph –name-status`
 
 Pour lister les deux derniers `commit`, on tape la commande :
 
@@ -451,33 +451,33 @@ La commande `show` *option* *objet* affiche les différents types d'objets (blob
 
 Les options possibles sont :
 
-- `–pretty=` *format* ;
+- `--pretty=` *format* ;
 
-- `–format=` *format* ;
+- `--format=` *format* ;
 
-- `–abbrev-commit` ;
+- `--abbrev-commit` ;
 
-- `–no-abbrev-commit` ;
+- `--no-abbrev-commit` ;
 
-- `–oneline` ;
+- `--oneline` ;
 
-- `–encoding=` *encodage* ;
+- `--encoding=` *encodage* ;
 
-- `–expand-tabs=` *nombre* ;
+- `--expand-tabs=` *nombre* ;
 
-- `–no-expand-tabs` ;
+- `--no-expand-tabs` ;
 
-- `–notes=` *référence* ;
+- `--notes=` *référence* ;
 
-- `–no-notes` ;
+- `--no-notes` ;
 
-- `–show-notes=` *référence* ;
+- `--show-notes=` *référence* ;
 
-- `–standard-notes` ;
+- `--standard-notes` ;
 
-- `–no-standard-notes` ;
+- `--no-standard-notes` ;
 
-- `–show-signature`.
+- `--show-signature`.
 
 Les formats possibles sont :
 
@@ -560,13 +560,13 @@ Pour afficher les modifications du `commit` avant le dépôt, on tape :
 La commande équivaut à :
 
 ```
-	$ git log –graph -p
+	$ git log --graph -p
 ```
 
 Pour modifier la description effectuée avec l'option `-m`, on tape la commande :
 
 ```
-	$ git commit -amend "Description"
+	$ git commit --amend "Description"
 ```
 	
 Un éditeur apparaît afin de corriger la description.

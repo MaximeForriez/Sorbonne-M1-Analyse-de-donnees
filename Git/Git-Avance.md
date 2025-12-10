@@ -89,7 +89,7 @@ La première ligne contient toujours les titres.
 
 La deuxième ligne précise l'alignement :
 
-- `–-` pour « à gauche » ;
+- `--` pour « à gauche » ;
 
 - `:-:` pour « au centre » ;
 
@@ -105,7 +105,7 @@ Le site [tablesgenerator.com](tablesgenerator.com) permet de réaliser des table
 
 ### Les traits
 
-La commande `–-` permet de tirer un trait.
+La commande `--` permet de tirer un trait.
 
 ### Les notes de bas de page
 
@@ -231,7 +231,7 @@ Désormais, tous les dépôts s'effectueront dans cette branche secondaire.
 Pour définir une branche par défaut `main`, on tape la commande :
 
 ```
-	$ git config –global init.defaultBranch main
+	$ git config --global init.defaultBranch main
 ```
 
 #### Téléchargement depuis son dépôt distant personnel
@@ -242,7 +242,7 @@ Dans le mode par défaut, `pull` est l'abréviation de l'exécution des commande
 
 `pull` lance un `fetch` avec les paramètres donnés et appelle un `merge` pour fusionner les têtes de branche récupérées dans la branche courante.
 
-Avec l'option `–rebase`, `pull` lance un `rebase` à la place d'un `merge`.
+Avec l'option `--rebase`, `pull` lance un `rebase` à la place d'un `merge`.
 
 `$ git pull` *options* *dépôt* *références à récupérer et références locales à mettre à jour*
 
@@ -250,19 +250,19 @@ Avec l'option `–rebase`, `pull` lance un `rebase` à la place d'un `merge`.
 
 La commande `fetch` télécharge les objets et références depuis un autre dépôt.
 
-- `git fetch –all` *nom du dépôt distant source ou groupe*\footnote{Un groupe est une liste de dépôts.} $\rightarrow$ récupération de tous les éléments distants
+- `git fetch --all` *nom du dépôt distant source ou groupe*\footnote{Un groupe est une liste de dépôts.} $\rightarrow$ récupération de tous les éléments distants
 
-- `git fetch –depth=` *nombre entier* $\rightarrow$ récupération en indiquant le nombre de `commit` à récupérer (la profondeur)
+- `git fetch --depth=` *nombre entier* $\rightarrow$ récupération en indiquant le nombre de `commit` à récupérer (la profondeur)
 
 - `git fetch -f`  $\rightarrow$ pour forcer la commande
 
-- `git fetch -p` (ou `–prune`) $\rightarrow$ pour, avant de récupérer, supprimer toutes les références de suivi à distance qui n'existe plus sur le dépôt distant 
+- `git fetch -p` (ou `--prune`) $\rightarrow$ pour, avant de récupérer, supprimer toutes les références de suivi à distance qui n'existe plus sur le dépôt distant 
 
-- `git fetch -t` (ou `–tags`)  $\rightarrow$ récupération de toutes les étiquettes à distance 
+- `git fetch -t` (ou `--tags`)  $\rightarrow$ récupération de toutes les étiquettes à distance 
 
-- `git fetch -n` (ou `–no-tags`) 
+- `git fetch -n` (ou `--no-tags`) 
 
-- `git fetch -v` (ou `–verbose`) $\rightarrow$ déclenchement du mode bavard
+- `git fetch -v` (ou `--verbose`) $\rightarrow$ déclenchement du mode bavard
 
 - *etc*.
 
@@ -278,7 +278,7 @@ Pour lister des lignes précises :
 
 liste les lignes de 1 à 2.
 
-`git log -S "ligne" –pretty=format:'%h %an %ad %s'` recherche les log concernant des lignes contenant `"ligne"`.
+`git log -S "ligne" --pretty=format:'%h %an %ad %s'` recherche les log concernant des lignes contenant `"ligne"`.
 
 #### Notion de *fast-forward*
 
@@ -297,7 +297,7 @@ Il est possible de supprimer l'option dans un fichier `.gitconfig` en y tapant :
 ou en tapant :
 
 ```
-	$ git config –global merge.commit no$ git config –global merge.ff no
+	$ git config --global merge.commit no$ git config –global merge.ff no
 ```
 
 ![td5-fig3](IMG/Git-Merge.png "Différence entre *fast-forward* et sans *fast-forward*")
@@ -314,7 +314,7 @@ La fonction `merge` permet de conserver les deux branches et leur historique.
 
 Il peut exister un conflit entre les branches. Pour l'établir, on utilise la commande suivante pour supprimer l'option *fast-forward* :
 
-- `$ git merge –no-ff` *nom d'une autre branche secondaire*
+- `$ git merge --no-ff` *nom d'une autre branche secondaire*
 
 Le conflit se résout manuellement sur l'éditeur local qui affiche le conflit.
 
@@ -327,7 +327,7 @@ Soient deux branches partant chacune dans leur direction, jusqu'à ce qu'elles f
 Lors de la création d'un `commit` de fusion, `Git` tentera de fusionner automatiquement les historiques séparés. Si `Git` rencontre une donnée modifiée dans les deux historiques, il ne pourra pas les combiner automatiquement.
 
 ```
-	$ git merge –no-f -m "merge" nom_de_la_branche
+	$ git merge --no-f -m "merge" nom_de_la_branche
 ```
 
 équivaut à :
@@ -344,7 +344,7 @@ La commande `pull` exécute les commandes `fetch`, puis `merge`.
 
 Il peut exister un conflit entre les branches. Pour l'établir, on utilise la commande suivante pour supprimer l'option *fast-forward* :
 
-- `$ git pull –no-ff`
+- `$ git pull --no-ff`
 
 Le conflit se résout manuellement sur l'éditeur local qui affiche le conflit.
 
@@ -367,7 +367,7 @@ La commande `$ git fetch –prune` permet de nettoyer les branches obsolètes.
 Pour automatiser la tâche, il suffit de la configurer :
 
 ```
-	$ git config –global remote.origin.prune true
+	$ git config --global remote.origin.prune true
 ```
 
 ### Utilisation de `GitFlow`
@@ -516,7 +516,7 @@ Pour créer une nouvelle branche, on utilise les quatre branches spécifiques à
 
 3. Pousser les versions vers la branche voulue
 
-	- `$ git push –tags`
+	- `$ git push --tags`
 
 	- `$ git push origin main`
 
@@ -570,15 +570,15 @@ Avec `rebase`, la modification de l'historique est irréversible. Le `merge` est
 
 Options :
 
-- `git rebase –continue` redémarre le processus de `rebase` après avoir résolu un conflit de fusion.
+- `git rebase --continue` redémarre le processus de `rebase` après avoir résolu un conflit de fusion.
 
-- `git rebase –skip` redémarre le processus de `rebase` en sautant la rustine actuelle.
+- `git rebase --skip` redémarre le processus de `rebase` en sautant la rustine actuelle.
 
-- `git rebase –abort` abandonne l'opération `rebase` et réinitialise `HEAD` à la branche originale.
+- `git rebase --abort` abandonne l'opération `rebase` et réinitialise `HEAD` à la branche originale.
 
-- `git rebase –quit` abandonne l'opération `rebase`, mais `HEAD` n'est pas réinitialisé à la branche d'origine.
+- `git rebase --quit` abandonne l'opération `rebase`, mais `HEAD` n'est pas réinitialisé à la branche d'origine.
 
-- `git rebase –edit-todo` édite la liste à faire lors d'un `rebase` interactif.
+- `git rebase --edit-todo` édite la liste à faire lors d'un `rebase` interactif.
 
 - `git rebase –show-current-patch` affiche la rustine actuelle dans un `rebase` interactif, ou lorsque le `rebase` est arrêté en raison de conflits. Cela équivaut à `git rebase REBASE_HEAD`.
 
@@ -620,8 +620,8 @@ La commande `git rebase` permet de déplacer le point de départ de la première
 3. Utiliser la commande :
 
 ```
-	$ git rebase –continue
-	$ git rebase –abort
+	$ git rebase --continue
+	$ git rebase --abort
 ```
 
 Le `rebase` d'une branche sur une autre amène les deux branches dans une situation de `fast-forward`. Cela implique un `merge` sans `merge commit`.
@@ -634,19 +634,19 @@ Il existe la commande `reset` pour revenir à un état antérieur (Fig. 4).
 
 Les options sont :
 
-- `–soft` retourne sur le précédent `commit` tout en enregistrant l'historique en cours sur le précédent `commit`. Il ne touche pas du tout le fichier d'index ou l'arbre de travail. La commande laisse tous les fichiers modifiés dans `Changes` `to` `be` `commited`.
+- `--soft` retourne sur le précédent `commit` tout en enregistrant l'historique en cours sur le précédent `commit`. Il ne touche pas du tout le fichier d'index ou l'arbre de travail. La commande laisse tous les fichiers modifiés dans `Changes` `to` `be` `commited`.
 
-- `–mixed` réinitialise l'index, mais pas l'arbre de travail. Les fichiers modifiés sont conservés, mais ils ne sont pas marqués pour l'engagement. Par défaut, il rapporte ce qui n'a pas été mis à jour.
+- `--mixed` réinitialise l'index, mais pas l'arbre de travail. Les fichiers modifiés sont conservés, mais ils ne sont pas marqués pour l'engagement. Par défaut, il rapporte ce qui n'a pas été mis à jour.
 
-- `–hard` modifie tout. Il réinitialise l'index et l'arbre de travail. Toute modification des fichiers de suivis dans l'arbre de travail depuis `commit` sont détruits. Tout fichier non suivi ou les répertoires dans la manière d'écrire les fichiers suivis sont simplement supprimés. **Cela supprime le dépôt sans l'enregistrer**.
+- `--hard` modifie tout. Il réinitialise l'index et l'arbre de travail. Toute modification des fichiers de suivis dans l'arbre de travail depuis `commit` sont détruits. Tout fichier non suivi ou les répertoires dans la manière d'écrire les fichiers suivis sont simplement supprimés. **Cela supprime le dépôt sans l'enregistrer**.
 
-- `–merge` réinitialise l'index et met à jour les fichiers de l'arbre de travail qui sont différents entre `commit` et `HEAD`, mais conserve ceux qui sont différents entre l'index et l'arbre de travail. Si un fichier est différent entre `commit` et l'index qui a des modifications non indexées, la réinitialisation est annulée.
+- `--merge` réinitialise l'index et met à jour les fichiers de l'arbre de travail qui sont différents entre `commit` et `HEAD`, mais conserve ceux qui sont différents entre l'index et l'arbre de travail. Si un fichier est différent entre `commit` et l'index qui a des modifications non indexées, la réinitialisation est annulée.
 
-- `–keep` réinitialise les entrées d'index et met à jour les fichiers dans l'arbre de travail qui sont différents entre `commit` et `HEAD`. Si un fichier qui est différent entre `commit` et `HEAD` qui a des modifications locales, la réinitialisation est annulée.
+- `--keep` réinitialise les entrées d'index et met à jour les fichiers dans l'arbre de travail qui sont différents entre `commit` et `HEAD`. Si un fichier qui est différent entre `commit` et `HEAD` qui a des modifications locales, la réinitialisation est annulée.
 
-- `–recurse-submodules`. Lorsque l'abre est mis à jour, `–recurse-submodules` réinitialisera de manière récursive l'arbre de travail de tous les sous-modules actifs en fonction du `commit` enregistré dans le super projet.
+- `--recurse-submodules`. Lorsque l'abre est mis à jour, `--recurse-submodules` réinitialisera de manière récursive l'arbre de travail de tous les sous-modules actifs en fonction du `commit` enregistré dans le super projet.
 
-- `–no-recurse-submodules`
+- `--no-recurse-submodules`
 
 > [!NOTE]
 > Les quatre dernières options sont rarement utilisées.
@@ -749,13 +749,13 @@ Pour supprimer une pile de remisage :
 Pour enregistrer une suppression dans une pile de remisage :
 
 ```
-	$ git rm –cached .
+	$ git rm --cached .
 ```
 
 Pour retirer les éléments ajoutés dans une pile de remisage :
 
 ```
-	$ git restored –stage .
+	$ git restored --stage .
 ```
 
 ou
@@ -849,7 +849,7 @@ Il existe deux principaux cas d'utilisation :
 La première commande permet de récupérer le *hash* du `commit` que l'on veut. En général, il est rare que l'on fasse cette opération après avoir réalisé plusieurs `commit`. On l'effectue immédiatement après avoir commis l'erreur. La commande suivante permet en une ligne de récupérer le dernier `commit` effacé par erreur :
 	
 ```
-	$ git reset –hard nom_de_la_branche@{1}
+	$ git reset --hard nom_de_la_branche@{1}
 ```
 
 2. revenir en arrière après une commande `rebase` ratée.
@@ -898,7 +898,7 @@ Cloner le projet d'un développeur sur sa machine locale
 
 - `$ git clone "C:\...\depot-remote" "` *nom du dossier dans lequel on enregistre le clone* `"`
 
-- `$ git config –global branch.autosetuprebase always` (La commande permet de configurer le clone afin d'éviter les conflits de dépôt)
+- `$ git config --global branch.autosetuprebase always` (La commande permet de configurer le clone afin d'éviter les conflits de dépôt)
 
 Donner une version pour un livrable :
 
@@ -971,7 +971,7 @@ Il doit exister un lien de section dans les fichiers `README.md` et les pages d'
 Il est possible d'indiquer le message par défaut, dans un fichier, qui apparaîtra dans l'éditeur lorsque l'on exécute la commande `git commit` :
 
 ```
-	$ git config –global commit.template nom_du_fichier.txt
+	$ git config --global commit.template nom_du_fichier.txt
 ```
 
 ## Références
@@ -1023,7 +1023,7 @@ L'installation est simple et rapide.
 Pour obtenir la version, on tape la commande :
 
 ```
-	$ gh –version
+	$ gh --version
 ```
 
 Pour s'authentifier avec son compte `GitHub`, il faut utiliser la commande :
@@ -1095,62 +1095,63 @@ Il est possible de déclarer des alias avec la commande :
 
 `$ gh auth login` *options* permet d'identifier un hôte `GitHub`. L'option `–with-token` précise le jeton de l'entrée standard. Par défaut, la commande utilise le jeton d'authentification contenu dans les environnements d'environnement. Il est possible de créer `GH_TOKEN:${{ github.token }})` dans le fichier `env` sous `Linux`. Les autres options sont :
 
-- `–git-protocol` *chaîne de caractères* (ou `-p`) qui définit le protocole à utiliser pour les opérations `git` sur cet hôte ;
+- `--git-protocol` *chaîne de caractères* (ou `-p`) qui définit le protocole à utiliser pour les opérations `git` sur cet hôte ;
 
-- `–hostname` *chaîne de caractères* (ou `-h`) qui donne le nom d'hôte de l'instance `GitHub` pour s'authentifier avec ;
+- `--hostname` *chaîne de caractères* (ou `-h`) qui donne le nom d'hôte de l'instance `GitHub` pour s'authentifier avec ;
 
-- `–insecure-storage` qui sauvegarder les justificatifs d'authentification en texte clair au lieu du magasin d'accréditation ;
+- `--insecure-storage` qui sauvegarder les justificatifs d'authentification en texte clair au lieu du magasin d'accréditation ;
 
-- `–scopes` *chaîne de caractères* (ou `-s`) qui donne des champs d'authentification supplémentaires à demande ;
+- `--scopes` *chaîne de caractères* (ou `-s`) qui donne des champs d'authentification supplémentaires à demande ;
 
-- `–skip-ssh-key` qui gère les clés SSH ;
+- `--skip-ssh-key` qui gère les clés SSH ;
 
-- `–web` (ou `-w`) qui ouvre un navigateur pour s'authentifier ;
+- `--web` (ou `-w`) qui ouvre un navigateur pour s'authentifier ;
 
-- `–with-token` qui renvoie au jeton de lecture standard.
+- `--with-token` qui renvoie au jeton de lecture standard.
 
 `$ gh auth loginout` *option* supprime l'authentification pour un compte `GitHub`. Cette commande supprime la configuration d'authentification stockée pour un compte. La configuration n'est supprimée que localement. Néanmoins, elle n'invalide pas les jetons d'authentification. Les options sont :
 
-- `–hostname` *chaîne de caractères* (ou `-h`) qui enregistre le nom de l'hôte de l'instance de `GitHub` pour se déconnecter ;
+- `--hostname` *chaîne de caractères* (ou `-h`) qui enregistre le nom de l'hôte de l'instance de `GitHub` pour se déconnecter ;
 
-- `–user` *chaîne de caractères* (ou `-u`) qui permet de définir le compte à déconnecter.
+- `--user` *chaîne de caractères* (ou `-u`) qui permet de définir le compte à déconnecter.
 
 `$ gh auth refresh` *option* étend ou fixe les possibilités d'autorisation pour les identifiants stockés pour le compte actif. Les options sont :
 
-- `–hostname` *chaîne de caractères* (ou `-h`) qui définit l'hôte `GitHub` à utiliser pour l'authentification ;
+- `--hostname` *chaîne de caractères* (ou `-h`) qui définit l'hôte `GitHub` à utiliser pour l'authentification ;
 
-- `–insecure-storage` qui sauvegarde les justificatifs d'authentification en texte clair au lieu d'une autre modification ;
+- `--insecure-storage` qui sauvegarde les justificatifs d'authentification en texte clair au lieu d'une autre modification ;
 
-- `–remove-scopes` *chaîne de caractères* (ou `-r`) qui retire des champs d'authentification ; ils sont séparés par une virgule ;
+- `--remove-scopes` *chaîne de caractères* (ou `-r`) qui retire des champs d'authentification ; ils sont séparés par une virgule ;
 
-- `–reset-scopes` *chaîne de caractères* qui réinitialise les champs d'authentification à l'ensemble minimal de champ d'application par défaut ;
+- `--reset-scopes` *chaîne de caractères* qui réinitialise les champs d'authentification à l'ensemble minimal de champ d'application par défaut ;
 
-- `–scopes` *chaîne de caractères* (ou `-s`) qui définit des champs d'authentification supplémentaires ; ils sont séparés par une virgule.
+- `--scopes` *chaîne de caractères* (ou `-s`) qui définit des champs d'authentification supplémentaires ; ils sont séparés par une virgule.
 
 `$ gh auth setup-git` *option* configure l'aide à l'authentification. S'il n'existe pas d'hôtes authentifiés, la commande échoue avec une erreur. Les options sont :
 
-- `–force` *chaîne de caractères* (ou `-f`) qui force la mise en place même si l'hôte n'est pas connu. Toutefois, il doit être utilisé avec `–hostname` ;
+- `--force` *chaîne de caractères* (ou `-f`) qui force la mise en place même si l'hôte n'est pas connu. Toutefois, il doit être utilisé avec `–hostname` ;
 
-- `–hostname` *chaîne de caractères* (ou `-h`) qui définit l'hôte `GitHub` à utiliser pour l'authentification.
+- `--hostname` *chaîne de caractères* (ou `-h`) qui définit l'hôte `GitHub` à utiliser pour l'authentification.
 
 `$ gh auth status` *options* permet d'obtenir l'emplacement du jeton, le compte actif et l'état d'authentification pour chaque hôte `GitHub`. Les options sont :
 
-- `–active` (ou `-a`) qui affiche uniquement le compte actif ;
+- `--active` (ou `-a`) qui affiche uniquement le compte actif ;
 
-- `–hostname` *chaîne de caractères* (ou `-h`) qui vérifie uniquement le statut d'authentification d'un nom d'hôte spécifique ;
+- `--hostname` *chaîne de caractères* (ou `-h`) qui vérifie uniquement le statut d'authentification d'un nom d'hôte spécifique ;
 
-- `–show-token` *chaîne de caractères* (ou `-t`) qui affiche le jeton d'authentification. 
+- `--show-token` *chaîne de caractères* (ou `-t`) qui affiche le jeton d'authentification. 
 
 `$ gh auth switch` *options* change le compte actif d'authentification d'un hôte `GitHub`. Les options sont :
 
-- `–hostname` *chaîne de caractères* (ou `-h`) qui vérifie uniquement le statut d'authentification d'un nom d'hôte spécifique ;
-- `–user` *chaîne de caractères* (ou `-u`) qui permet de changer de compte utilisateur. 
+- `--hostname` *chaîne de caractères* (ou `-h`) qui vérifie uniquement le statut d'authentification d'un nom d'hôte spécifique ;
+
+- `--user` *chaîne de caractères* (ou `-u`) qui permet de changer de compte utilisateur. 
 
 `$ gh auth token` renvoie le jeton d'authentification pour un compte `GitHub` donné.
 
-- `–hostname` *chaîne de caractères* (ou `-h`) qui vérifie uniquement le statut d'authentification d'un nom d'hôte spécifique. Sans cette option, l'hôte par défaut est choisi ;
+- `--hostname` *chaîne de caractères* (ou `-h`) qui vérifie uniquement le statut d'authentification d'un nom d'hôte spécifique. Sans cette option, l'hôte par défaut est choisi ;
 
-- `–user` *chaîne de caractères* (ou `-u`) qui permet de changer de compte utilisateur. 
+- `--user` *chaîne de caractères* (ou `-u`) qui permet de changer de compte utilisateur. 
 
 #### `gh browse`
 
@@ -1158,21 +1159,21 @@ La commande ouvre le référentiel `GitHub dans le navigateur web`.
 
 `$ gh browse` *nombre* *option* ou `$ gh browse` *chemin* *option* ou `$gh browse` *numéro SHA-1 du commit* *option* permet d'ouvrir le référentiel `GitHub` dans le navigateur web.
 
-`$ gh browse -b` *chaîne de caractères* (ou `–branch`) sélectionne une autre branche en passant dans le nom de la branche.
+`$ gh browse -b` *chaîne de caractères* (ou `--branch`) sélectionne une autre branche en passant dans le nom de la branche.
 
-`$ gh browse -c` *chaîne de caractères* (ou `–commit`) sélectionne un autre `commit` SHA-1. Par défaut, il renvoie le dernier `commit`.
+`$ gh browse -c` *chaîne de caractères* (ou `--commit`) sélectionne un autre `commit` SHA-1. Par défaut, il renvoie le dernier `commit`.
 
-`$ gh browse -n` (ou `–no-browser`) fournit l'U.R.L. de destination au lieu d'ouvrir le navigateur.
+`$ gh browse -n` (ou `--no-browser`) fournit l'U.R.L. de destination au lieu d'ouvrir le navigateur.
 
-`$ gh browse -p` (ou `–projects`) définit les projets du dépôt ouvert.
+`$ gh browse -p` (ou `--projects`) définit les projets du dépôt ouvert.
 
-`$ gh browse -r` (ou `–releases`) définit les `release` du dépôt ouvert.
+`$ gh browse -r` (ou `--releases`) définit les `release` du dépôt ouvert.
 
 `$ gh browse -R` *hôte / propriétaire / dépôt* (ou `–repo`) sélectionne un autre référentiel en utilisant le format indiqué.
 
-`$ gh browse -s` (ou `–settings`) paramètre le dépôt ouvert.
+`$ gh browse -s` (ou `--settings`) paramètre le dépôt ouvert.
 
-`$ gh browse -w` (ou `–wiki`) définit le wiki du dépôt.
+`$ gh browse -w` (ou `--wiki`) définit le wiki du dépôt.
 
 #### `gh codespace`
 
@@ -1212,45 +1213,45 @@ La commande permet de travailler avec `GitHub gists`.
 
 `$ gh gist create` *nom du dépôt* *option* permet de créer un dépôt distant. Les options sont :
 
-- `–desc` *description* qui décrit le dépôt ;
+- `--desc` *description* qui décrit le dépôt ;
 
-- `–filename` *nom du fichier* qui fournit un nom de fichier à utiliser lors de la lecture à partir d'une entrée standard ;
+- `--filename` *nom du fichier* qui fournit un nom de fichier à utiliser lors de la lecture à partir d'une entrée standard ;
 
-- `–public` (ou `-p`) qui crée un dépôt public (par défaut) ;
+- `--public` (ou `-p`) qui crée un dépôt public (par défaut) ;
 
-- `–web` (ou `-w`) qui ouvre le navigateur web avec un dépôt crée.
+- `--web` (ou `-w`) qui ouvre le navigateur web avec un dépôt crée.
 
 `$ gh gist delete` *nom du dépôt* supprime le dépôt.
 
 `$ gh gist edit` *nom du dépôt* *options* modifie le dépôt. Les options sont :
 
-- `–add` *nom du fichier* (ou `-a`) qui ajoute un fichier au dépôt ;
+- `--add` *nom du fichier* (ou `-a`) qui ajoute un fichier au dépôt ;
 
-- `–desc` *description* qui décrit le dépôt ;
+- `--desc` *description* qui décrit le dépôt ;
 
-- `–filename` *nom du fichier* qui modifie un fichier du dépôt ;
+- `--filename` *nom du fichier* qui modifie un fichier du dépôt ;
 
-- `–remove` *nom du fichier* (ou `-r`) qui supprime un fichier du dépôt.
+- `--remove` *nom du fichier* (ou `-r`) qui supprime un fichier du dépôt.
 
 `$ gh gist list` *options* liste les dépôts. Les options sont :
 
-- `–limit` *nombre* (ou `-L`) qui limite le nombre maximal de dépôt ;
+- `--limit` *nombre* (ou `-L`) qui limite le nombre maximal de dépôt ;
 
-- `–public` qui permet d'afficher que le dépôt public ;
+- `--public` qui permet d'afficher que le dépôt public ;
 
-- `–private` qui permet d'afficher que le dépôt privé.
+- `--private` qui permet d'afficher que le dépôt privé.
 
 `$ gh gist rename`*nom du dépôt* *nom de l'ancien fichier* *nom du nouveau fichier* permet de renommer un fichier dans le dépôt choisi.
 
 `$ gh gist view` *nom du dépôt* *options* permet de visualiser le dépôt distant. Les options sont :
 
-- `–filename` *nom du fichier* (ou `-f`) qui permet d'afficher un seul fichier ;
+- `--filename` *nom du fichier* (ou `-f`) qui permet d'afficher un seul fichier ;
 
-- `–files` qui permet de lister les noms des fichiers ;
+- `--files` qui permet de lister les noms des fichiers ;
 
-- `–raw` (ou `-r`) qui renvoie le contenu brut au lieu d'être rendu du contenu ;
+- `--raw` (ou `-r`) qui renvoie le contenu brut au lieu d'être rendu du contenu ;
 
-- `–web` (ou `-w`) qui renvoie le contenu `gist` du navigateur.
+- `--web` (ou `-w`) qui renvoie le contenu `gist` du navigateur.
 
 #### `gh issue`
 
@@ -1298,7 +1299,7 @@ La commande permet de travailler avec les organisations `GitHub`.
 
 `$ gh org list` *option* liste les organisation rattachées à l'utilisateur authentifié. Son unique option est :
 
-- `–limit` *nombre* (ou `-L`) qui limite le nombre maximal d'organisation à inscrire dans la liste affichée (par défaut, 30).
+- `--limit` *nombre* (ou `-L`) qui limite le nombre maximal d'organisation à inscrire dans la liste affichée (par défaut, 30).
 
 #### `gh pr`
 
@@ -1307,83 +1308,83 @@ La commande permet de travailler avec les organisations `GitHub`.
 
 `$ gh pr create` permet de créer un *pull request*. Les options sont :
 
-- `–assignee` *mot de passe* (ou `-a`) qui assigne les utilisateurs par leur mot de passe – on utilise `-me` pour s'assigner soi-même ; 
+- `--assignee` *mot de passe* (ou `-a`) qui assigne les utilisateurs par leur mot de passe – on utilise `-me` pour s'assigner soi-même ; 
 
-- `–base` *nom de la branche* (ou `-B`) qui permet de choisir la branche sur laquelle on effectue un `pull request` ;
+- `--base` *nom de la branche* (ou `-B`) qui permet de choisir la branche sur laquelle on effectue un `pull request` ;
 
-- `–body` *chaîne de caractères* (ou `-b`) qui permet de donner un titre au `pull request` ;
+- `--body` *chaîne de caractères* (ou `-b`) qui permet de donner un titre au `pull request` ;
 
-- `–body-file` (ou `-F`) qui permet de lire le corps du texte à partir du fichier ;
+- `--body-file` (ou `-F`) qui permet de lire le corps du texte à partir du fichier ;
 
-- `–draft` (ou `-d`) qui permet de tenter un `pull request` ;
+- `--draft` (ou `-d`) qui permet de tenter un `pull request` ;
 
-- `–dry-run` qui fournit les détails au lieu de créer le `pull request` ;
+- `--dry-run` qui fournit les détails au lieu de créer le `pull request` ;
 
-- `–editor` (ou `-e`) qui permet de sauter et d'ouvrir l'éditeur de texte pour écrire le titre (première ligne) et le corps du texte (à partir de la deuxième ligne) ;
+- `--editor` (ou `-e`) qui permet de sauter et d'ouvrir l'éditeur de texte pour écrire le titre (première ligne) et le corps du texte (à partir de la deuxième ligne) ;
 
-- `–fill` (ou `-f`) qui utilise les informations du `commit`n pour le titre et le corps ;
+- `--fill` (ou `-f`) qui utilise les informations du `commit`n pour le titre et le corps ;
 
-- `–fill-first` qui utilise les informations du premier `commit` pour le titre et le corps ; 
+- `--fill-first` qui utilise les informations du premier `commit` pour le titre et le corps ; 
 
-- `–fill-verbose` qui utilise les informations du `commit` pour sa description ;
+- `--fill-verbose` qui utilise les informations du `commit` pour sa description ;
 
-- `–head` *nom de la branche* (ou `-H`) qui permet de définir la branche envoyée par `pull request` ;
+- `--head` *nom de la branche* (ou `-H`) qui permet de définir la branche envoyée par `pull request` ;
 
-- `–label` *chaîne de caractères* (ou `-l`) qui ajoute des étiquettes ;
+- `--label` *chaîne de caractères* (ou `-l`) qui ajoute des étiquettes ;
 
-- `–milestone` *nom* (ou `-m`) qui ajoute la demande de `pull request` à un `commit` par son nom ;
+- `--milestone` *nom* (ou `-m`) qui ajoute la demande de `pull request` à un `commit` par son nom ;
 
-- `–no-maintainer-edit` qui permet de désactiver la capacité de modifier le `pull request` ;
+- `--no-maintainer-edit` qui permet de désactiver la capacité de modifier le `pull request` ;
 
-- `–projet` *titre* (ou `-p`) qui permet d'ajouter la demande d'extraction aux projets par tire ;
+- `--projet` *titre* (ou `-p`) qui permet d'ajouter la demande d'extraction aux projets par tire ;
 
-- `–recover` *chaîne de caractères* qui permet de récupérer les entrées d'une exécution de création ayant échoué ;
+- `--recover` *chaîne de caractères* qui permet de récupérer les entrées d'une exécution de création ayant échoué ;
 
-- `–reviewer` (ou `-r`) qui permet de demander des avis à des personnes ou à des équipes par leur identifiant ;
+- `--reviewer` (ou `-r`) qui permet de demander des avis à des personnes ou à des équipes par leur identifiant ;
 
-- `–template` *fichier* (ou `-T`) qui définit `template` à utiliser comme texte de départ ;
+- `--template` *fichier* (ou `-T`) qui définit `template` à utiliser comme texte de départ ;
 
-- `–title` *chaîne de caractères* (ou `-t`) qui permet de définir un titre pour le `pull request` ;
+- `--title` *chaîne de caractères* (ou `-t`) qui permet de définir un titre pour le `pull request` ;
 
-- `–web` (ou `-w`) qui permet d'ouvrir le navigateur web pour créer une `pull request`.
+- `--web` (ou `-w`) qui permet d'ouvrir le navigateur web pour créer une `pull request`.
 
 `$ gh pr list` *option* permet de visualiser la liste des dernières *pull request*. Les options permettent d'opérer des filtres :
 
-- `–assignee` *chaîne de caractères* (ou `-a`) qui permet de filtrer par accesseur ;
+- `--assignee` *chaîne de caractères* (ou `-a`) qui permet de filtrer par accesseur ;
 
-- `–author` *nom* (ou `-A`) qui permet de filtrer les auteurs ;
+- `--author` *nom* (ou `-A`) qui permet de filtrer les auteurs ;
 
-- `–base` *nom de la branche* (ou `-B`) qui permet de filtrer par branche de type `base` ;
+- `--base` *nom de la branche* (ou `-B`) qui permet de filtrer par branche de type `base` ;
 
-- `–draft` (ou `-d`) qui permet de filtrer par projet ;
+- `--draft` (ou `-d`) qui permet de filtrer par projet ;
 
-- `–head` *nom de la branche* (ou `-H`) qui permet de filtrer par branche `head` ;
+- `--head` *nom de la branche* (ou `-H`) qui permet de filtrer par branche `head` ;
 
-- `–jq` *expression* (ou `-q`) qui permet de filtrer la sortie JSON en utilisant une expression `jq` ;
+- `--jq` *expression* (ou `-q`) qui permet de filtrer la sortie JSON en utilisant une expression `jq` ;
 
-- `–json` *champs* qui permet de filtrer la sortie JSON avec des champs spécifiques ;
+- `--json` *champs* qui permet de filtrer la sortie JSON avec des champs spécifiques ;
 
-- `–label` *nom* (ou `-l`) qui filtre par étiquette ;
+- `--label` *nom* (ou `-l`) qui filtre par étiquette ;
 
-- `–limit` (*nombre* ou `-L`) qui fixe le nombre maximal de réponses (par défaut : 30) ;
+- `--limit` (*nombre* ou `-L`) qui fixe le nombre maximal de réponses (par défaut : 30) ;
 
-- `–search` *requête* (ou `-S`) qui recherche le `pull request` ;
+- `--search` *requête* (ou `-S`) qui recherche le `pull request` ;
 
-- `–state` *option* (ou `-s`) qui filtre par état : `open`, `closed`, `merged` et `all` ;
+- `--state` *option* (ou `-s`) qui filtre par état : `open`, `closed`, `merged` et `all` ;
 
-- `–template` *chaîne de caractères* (ou `-t`) qui formate la sortie JSON à l'aide d'un modèle ;
+- `--template` *chaîne de caractères* (ou `-t`) qui formate la sortie JSON à l'aide d'un modèle ;
 
-- `–web` (ou `-w`) qui liste les demandes de `pull request` dans le navigateur web.
+- `--web` (ou `-w`) qui liste les demandes de `pull request` dans le navigateur web.
 
 `$ gh pr status` *options* affiche l'état d'avancement des `pull request`. Les options sont :
 
-- `–conflict-status` (ou `-c`) qui permet d'afficher l'état des conflits des `commit` de chaque demande d'extraction ;
+- `--conflict-status` (ou `-c`) qui permet d'afficher l'état des conflits des `commit` de chaque demande d'extraction ;
 
-- `–jq` *expression* (ou `-q`) qui filtre la sortie JSON utilsant une expression `jq` ;
+- `--jq` *expression* (ou `-q`) qui filtre la sortie JSON utilsant une expression `jq` ;
 
-- `–json` *champs* qui filtre la sortie JSON avec des champs spécifiés ;
+- `--json` *champs* qui filtre la sortie JSON avec des champs spécifiés ;
 
-- `-template-` *modèle* (ou `-t`) qui formate la sortie JSON à l'aide d'un modèle.
+- `--template` *modèle* (ou `-t`) qui formate la sortie JSON à l'aide d'un modèle.
 
 `$ gh pr checkout` *numéro du* `pull request` *option* vérifie un `pull request`.
 
@@ -1401,29 +1402,29 @@ La commande permet de travailler avec les organisations `GitHub`.
 
 `$ gh pr merge` *numéro du* `pull request` *option* permet de fusionner un *pull request* sur `GitHub`. Les options possibles sont : 
 
-- `–admin` qui utilise les privilèges de l'administrateur pour fusionner un `pull request` qui ne satisfait pas aux exigences ;
+- `--admin` qui utilise les privilèges de l'administrateur pour fusionner un `pull request` qui ne satisfait pas aux exigences ;
 
-- `–author-email` *courriel* (ou `-A`) qui envoie un message à l'auteur du `pull request` ;
+- `--author-email` *courriel* (ou `-A`) qui envoie un message à l'auteur du `pull request` ;
 
-- `–auto` qui envoie automatiquement un `pull request` satisfaisant aux exigences nécessaires ;
+- `--auto` qui envoie automatiquement un `pull request` satisfaisant aux exigences nécessaires ;
 
-- `–body` *texte* (ou `-b`) qui permet d'écrire un texte d'envoi pour le `pull request` ;
+- `--body` *texte* (ou `-b`) qui permet d'écrire un texte d'envoi pour le `pull request` ;
 
-- `–body-file` *fichier* (ou `-F`) qui permet de lire le corps du texte à partir du fichier ;
+- `--body-file` *fichier* (ou `-F`) qui permet de lire le corps du texte à partir du fichier ;
 
-- `–delete-branch` (ou `-d`) qui permet de supprimer la branche locale et la branche éloignée après la fusion ;
+- `--delete-branch` (ou `-d`) qui permet de supprimer la branche locale et la branche éloignée après la fusion ;
 
-- `–disable-auto` permet de désactiver l'auto-fusion pour le `pull request` ;
+- `--disable-auto` permet de désactiver l'auto-fusion pour le `pull request` ;
 
-- `–match-head-commit` *numéro du SHA-1* qui permet de valider le SHA auquel l'entête du `pull request` doit correspondre pour autoriser la fusion ;
+- `--match-head-commit` *numéro du SHA-1* qui permet de valider le SHA auquel l'entête du `pull request` doit correspondre pour autoriser la fusion ;
 
-- `–merge` (ou `-m`) qui permet de fusionner les `commit` sur la branche de base ;
+- `--merge` (ou `-m`) qui permet de fusionner les `commit` sur la branche de base ;
 
-- `–rebase` (ou `-r`) qui permet de fusionner les `commit` par un `rebase` sur la branche de base ;
+- `--rebase` (ou `-r`) qui permet de fusionner les `commit` par un `rebase` sur la branche de base ;
 
-- `–squash` (ou `-s`) qui permet de réduire les `commit` en seul `commit` et le fusionner dans la branche de base ;
+- `--squash` (ou `-s`) qui permet de réduire les `commit` en seul `commit` et le fusionner dans la branche de base ;
 
-- `–subject` (ou `-t`) qui permet d'inscrire un message dans le `merge commit`.
+- `--subject` (ou `-t`) qui permet d'inscrire un message dans le `merge commit`.
 
 `$ gh pr ready` *numéro du* `pull request` *option* permet de marquer un `pull request` comme prête à être examinée. Sans argument, le `pull request` appartenant à la branche actuelle est marqué comme prêt.
 
@@ -1501,39 +1502,39 @@ La commande permet d'utiliser le mode projet de `GitHub`. Néanmoins, pour l'uti
 
 `$ gh repo create` *nom* *option* crée un nouveau dépôt sur `GitHub`. Les options sont :
 
-- `–add-readme` qui permet d'ajouter un fichier `README.md` au nouveau référentiel ;
+- `--add-readme` qui permet d'ajouter un fichier `README.md` au nouveau référentiel ;
 
-- `–clone` (ou `-c`) qui permet de cloner le nouveau référentiel du répertoire actuel ;
+- `--clone` (ou `-c`) qui permet de cloner le nouveau référentiel du répertoire actuel ;
 
-- `–description` *description* (ou `-d`) qui permet de décrire le dépôt ;
+- `--description` *description* (ou `-d`) qui permet de décrire le dépôt ;
 
-- `–disable-issues` qui permet de désactiver les problèmes dans le nouveau dépôt ;
+- `--disable-issues` qui permet de désactiver les problèmes dans le nouveau dépôt ;
 
-- `–disable-wiki` qui permet de désactiver le wiki dans le nouveau dépôt ;
+- `--disable-wiki` qui permet de désactiver le wiki dans le nouveau dépôt ;
 
-- `–gitignore` *texte* (ou `-i`) qui permet de spécifier d'un modèle de `.gitignore` pour le dépôt ;
+- `--gitignore` *texte* (ou `-i`) qui permet de spécifier d'un modèle de `.gitignore` pour le dépôt ;
 
-- `–homepage` *U.R.L.* (ou `-h`) qui définit la page d'accueil du dépôt ;
+- `--homepage` *U.R.L.* (ou `-h`) qui définit la page d'accueil du dépôt ;
 
-- `–include-all-branches` qui permet d'inclure toutes les branches du référentiel modèle ;
+- `--include-all-branches` qui permet d'inclure toutes les branches du référentiel modèle ;
 
-- `–internal` qui permet de rendre le nouveau dépôt interne ;
+- `--internal` qui permet de rendre le nouveau dépôt interne ;
 
-- `–license` *texte* (ou `-l`) qui permet de spécifier une licence *open source* pour le dépôt ;
+- `--license` *texte* (ou `-l`) qui permet de spécifier une licence *open source* pour le dépôt ;
 
-- `–private` qui permet de rendre un dépôt privé ;
+- `--private` qui permet de rendre un dépôt privé ;
 
-- `–public` qui permet de rendre un dépôt public ;
+- `--public` qui permet de rendre un dépôt public ;
 
-- `–push` qui permet de pousser les dépôts locaux vers le nouveau dépôt ;
+- `--push` qui permet de pousser les dépôts locaux vers le nouveau dépôt ;
 
-- `–remote` *nom* (ou `-r`) qui permet de donner un nom au nouveau dépôt ;
+- `--remote` *nom* (ou `-r`) qui permet de donner un nom au nouveau dépôt ;
 
-- `–source` *texte* (ou `-s`) qui permet de spécifier le chemin d'accès au dépôt local à utiliser comme source ;
+- `--source` *texte* (ou `-s`) qui permet de spécifier le chemin d'accès au dépôt local à utiliser comme source ;
 
-- `–team` (ou `-t`) qui spécifie le nom de l'équipe de l'organisation à laquelle l'accès doit être accordé ;
+- `--team` (ou `-t`) qui spécifie le nom de l'équipe de l'organisation à laquelle l'accès doit être accordé ;
 
-- `–template` (ou `-p`) qui permet de créer le nouveau dépôt à partir d'un modèle de dépôt.
+- `--template` (ou `-p`) qui permet de créer le nouveau dépôt à partir d'un modèle de dépôt.
 
 `$ gh repo list` *nom de l'utilisateur* *option* liste les dépôts propriétaires de l'utilisateur ou de l'organisation.
 
@@ -1547,41 +1548,41 @@ La commande permet d'utiliser le mode projet de `GitHub`. Néanmoins, pour l'uti
 
 `$ gh repo edit` *nom du dépôt distant* *options* permet d'éditer les paramètres du référentiel. Les options sont :
 
-- `–add-topic` *chaîne de caractères* qui ajoute un sujet au dépôt distant ;
+- `--add-topic` *chaîne de caractères* qui ajoute un sujet au dépôt distant ;
 
-- `–allow-forking` qui autorise la duplication d'un dépôt distant ;
+- `--allow-forking` qui autorise la duplication d'un dépôt distant ;
 
-- `–allow-update-branch` qui autorise la mise à jour d'une branche principale de demande d'extraction qui se trouve derrière sa branche principale ;
+- `--allow-update-branch` qui autorise la mise à jour d'une branche principale de demande d'extraction qui se trouve derrière sa branche principale ;
 
-- `–default-branch` *nom de la branche* qui définit le nom de branche par défaut pour le référentiel ;
+- `--default-branch` *nom de la branche* qui définit le nom de branche par défaut pour le référentiel ;
 
-- `–delte-branch-on-merge` qui supprime la branche principale lorsque les requêtes d'extraction sont fusionnées ;
+- `--delete-branch-on-merge` qui supprime la branche principale lorsque les requêtes d'extraction sont fusionnées ;
 
-- `–description` *chaîne de caractères* (ou `-d`) qui décrit le dépôt ;
+- `--description` *chaîne de caractères* (ou `-d`) qui décrit le dépôt ;
 
-- `–enable-auto-merge` qui active la fonctionnalité de fusion automatique ;
+- `--enable-auto-merge` qui active la fonctionnalité de fusion automatique ;
 
-- `–enable-discussions` qui active les discussions dans le dépôt ;
+- `--enable-discussions` qui active les discussions dans le dépôt ;
 
-- `–enable-issues` qui active les tickets dans le dépôt distant ;
+- `--enable-issues` qui active les tickets dans le dépôt distant ;
 
-- `–enable-merge-commit` qui active la fusion des requêtes d'extraction grâce à la validation de fusion ;
+- `--enable-merge-commit` qui active la fusion des requêtes d'extraction grâce à la validation de fusion ;
 
-- `–enable-projects` qui active les projets dans le référentiel ;
+- `--enable-projects` qui active les projets dans le référentiel ;
 
-- `–enable-rebase-merge` qui active la fusion des requêtes d'extraction grâce à un `commit` écrasé ;
+- `--enable-rebase-merge` qui active la fusion des requêtes d'extraction grâce à un `commit` écrasé ;
 
-- `–enable-squash-merge` qui active la fusion des requêtes d'extraction grâce à un `commit` écrasé ;
+- `--enable-squash-merge` qui active la fusion des requêtes d'extraction grâce à un `commit` écrasé ;
 
-- `–enable-wiki` qui active le wiki dans le dépôt distant ;
+- `--enable-wiki` qui active le wiki dans le dépôt distant ;
 
-- `–homepage` *U.R.L.* (ou `-h`) qui définit l'U.R.L. de la page d'accueil du dépôt distant ;
+- `--homepage` *U.R.L.* (ou `-h`) qui définit l'U.R.L. de la page d'accueil du dépôt distant ;
 
-- `–remove-topic` *chaîne de caractères* qui supprime le sujet du dépôt ;
+- `--remove-topic` *chaîne de caractères* qui supprime le sujet du dépôt ;
 
-- `–template` qui rend le référentiel disponible en tant que référentiel de modèles ;
+- `--template` qui rend le référentiel disponible en tant que référentiel de modèles ;
 
-- `–visibility` *chaîne de caractères* qui modifie la visibilité du référentiel sur `public`, `private` et `internal`.
+- `--visibility` *chaîne de caractères* qui modifie la visibilité du référentiel sur `public`, `private` et `internal`.
 
 `$ gh repo fork` *nom du dépôt distant* permet de cloner un autre dépôt distant sur son dépôt distant personnel.
 
@@ -1589,53 +1590,53 @@ La commande permet d'utiliser le mode projet de `GitHub`. Néanmoins, pour l'uti
 
 `$ gh repo set-default` *options* qui définit le dépôt distant par défaut à utiliser lors de l'interrogation de `GitHub API` pour le dépôt cloné localement. Les options sont :
 
-- `–unset` (ou `-u`) qui désactive le dépôt distant par défaut actuel ;
+- `--unset` (ou `-u`) qui désactive le dépôt distant par défaut actuel ;
 
-- `–view` (ou `-v`) qui visualise le dépôt distant par défaut actuel.
+- `--view` (ou `-v`) qui visualise le dépôt distant par défaut actuel.
 
 `$ gh repo sync` *nom du dépôt distant* permet de synchroniser le dépôt distant à partir du dépôt source. La synchronisation utilise la branche par défaut du dépôt distant de référence pour mettre à jour la branche de correspondance sur la destination. Les options sont :
 
-- `–branch` *nom de la branche* (ou `-b`) qui permet de définir la branche de synchroniser ;
+- `--branch` *nom de la branche* (ou `-b`) qui permet de définir la branche de synchroniser ;
 
-- `–force` qui réinitialise la branche du dépôt distant pour correspondre au dépôt distant de référence ;
+- `--force` qui réinitialise la branche du dépôt distant pour correspondre au dépôt distant de référence ;
 
-- `–source` *chaîne de caractères* (ou `-s`) qui définit les sources.
+- `--source` *chaîne de caractères* (ou `-s`) qui définit les sources.
 
 `$ gh repo unarchive` *nom du dépôt distant* permet de désarchiver un dépôt distant. 
 
 `$ gh repo view` *nom du dépôt distant* *options* permet d'afficher la description et le fichier `README.md` du dépôt distant. Les options sont :
 
-- `–branch` *nom de la branche* (ou `-b`) qui permet de voir une branche spécifique du dépôt ;
+- `--branch` *nom de la branche* (ou `-b`) qui permet de voir une branche spécifique du dépôt ;
 
-- `–jq` *expression* (ou `-q`) qui permet de filtrer la sortie J.S.O.N. en utilisant une expression `jq` ;
+- `--jq` *expression* (ou `-q`) qui permet de filtrer la sortie J.S.O.N. en utilisant une expression `jq` ;
 
-- `–json` *champ* qui renvoie une sortie J.S.O.N. avec des champs spécifiques ;
+- `--json` *champ* qui renvoie une sortie J.S.O.N. avec des champs spécifiques ;
 
-- `–template` *chaîne de caractères* (ou `-t`) qui formate le format J.S.O.N. ;
+- `--template` *chaîne de caractères* (ou `-t`) qui formate le format J.S.O.N. ;
 
-- `–web` (ou `-w`) qui ouvre un dépôt distant dans le navigateur.
+- `--web` (ou `-w`) qui ouvre un dépôt distant dans le navigateur.
 
 #### `gh cache`
 
-`$ gh cache delete` (`–all` ou `-a`) permet de supprimer les caches. 
+`$ gh cache delete` (`--all` ou `-a`) permet de supprimer les caches. 
 
 `$ gh cache list` *options* liste les caches de `GitHub`. Les options sont :
 
-- `–jq` *expression* qui permet de filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
+- `--jq` *expression* qui permet de filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
 
-- `–json` *champs* qui génère du J.S.O.N. avec les champs spécifiés ;
+- `--json` *champs* qui génère du J.S.O.N. avec les champs spécifiés ;
 
-- `–key` *chaîne de caractères* (ou `-k`) qui filtre par préfixe de la clé du cache ;
+- `--key` *chaîne de caractères* (ou `-k`) qui filtre par préfixe de la clé du cache ;
 
-- `–limit` *nombre* (ou `-L`) qui définit le nombre maximal de caches à récupérer, par défaut : 30 ;
+- `--limit` *nombre* (ou `-L`) qui définit le nombre maximal de caches à récupérer, par défaut : 30 ;
 
-- `–order` *choix de l'ordre* (ou `-O`) qui définit l'ordre des caches renvoyés : `asc` ou `desc` (par défaut) ;
+- `--order` *choix de l'ordre* (ou `-O`) qui définit l'ordre des caches renvoyés : `asc` ou `desc` (par défaut) ;
 
-- `–ref` *chaîne de caractères* (ou `-r`) qui filtre par référence ; la demande est formatée comme `refs/heads/` *nom de la branche* ou `refs/pull/` *numéro* `/merge`
+- `--ref` *chaîne de caractères* (ou `-r`) qui filtre par référence ; la demande est formatée comme `refs/heads/` *nom de la branche* ou `refs/pull/` *numéro* `/merge`
 
-- `–sort` *options* (ou `-S`) qui trie les caches récupérés. Les options possibles sont : `created_at`, `last_accessed_at` et `size_in_bytes`.
+- `--sort` *options* (ou `-S`) qui trie les caches récupérés. Les options possibles sont : `created_at`, `last_accessed_at` et `size_in_bytes`.
 
-- `–templace` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N.
+- `--templace` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N.
 
 #### `gh run`
 
@@ -1645,73 +1646,73 @@ La commande permet d'utiliser le mode projet de `GitHub`. Néanmoins, pour l'uti
 
 `$ gh run download` *numéro du flux de travail* *option* télécharge un flux de travail en cours d'exécution. Les options sont :
 
-- `–dir` *chaîne de caractères* (ou `-D`) qui définit le répertoire dans lequel télécharger les artefacts ;
+- `--dir` *chaîne de caractères* (ou `-D`) qui définit le répertoire dans lequel télécharger les artefacts ;
 
-- `–name` *liste des noms* (ou `-n`) qui télécharge les artefacts correspondant à l'un des noms données ;
+- `--name` *liste des noms* (ou `-n`) qui télécharge les artefacts correspondant à l'un des noms données ;
 
-- `–pattern` *liste des noms* (ou `-p`) qui télécharge les artefacts correspondant à un modèle global.
+- `--pattern` *liste des noms* (ou `-p`) qui télécharge les artefacts correspondant à un modèle global.
 
 `$ gh run list` *option* liste les flux de travail récents en cours d'exécution. Les options sont :
 
-- `–all` (ou `-all`) qui inclut des flux de travail désactivés ;
+- `--all` (ou `-all`) qui inclut des flux de travail désactivés ;
 
-- `–branch` *nom de la branche* (ou `-b`) qui filtre les exécutions par branche ;
+- `--branch` *nom de la branche* (ou `-b`) qui filtre les exécutions par branche ;
 
-- `–commit` *numéro* (ou `-c`) qui filtre à partir du `SHA-1` de validation ;
+- `--commit` *numéro* (ou `-c`) qui filtre à partir du `SHA-1` de validation ;
 
-- `–created` *date* qui filtre les exécutions par date ;
+- `--created` *date* qui filtre les exécutions par date ;
 
-- `–event` *événement* qui filtre les exécutions en fonction de l'événement déclenchant l'exécution ;
+- `--event` *événement* qui filtre les exécutions en fonction de l'événement déclenchant l'exécution ;
 
-- `–jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. ;
+- `--jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. ;
 
-- `–json` *champ* qui filtre la sortie J.S.O.N. avec les champs spécifiés ;
+- `--json` *champ* qui filtre la sortie J.S.O.N. avec les champs spécifiés ;
 
-- `–limit` *nombre* qui limite le nombre maximal d'exécutions à récupérer ;
+- `--limit` *nombre* qui limite le nombre maximal d'exécutions à récupérer ;
 
-- `–status` *option* (ou `-s`) qui filtre les exécutions par statut : `queued`, `completed`, `in_progress`, `requested`, `waiting`, `action_required`, `cancellered`, `failure`, `neutral`, `skipped`, `stale`, `startup_failure`, `startup_failure` et `timed_out`.
+- `--status` *option* (ou `-s`) qui filtre les exécutions par statut : `queued`, `completed`, `in_progress`, `requested`, `waiting`, `action_required`, `cancellered`, `failure`, `neutral`, `skipped`, `stale`, `startup_failure`, `startup_failure` et `timed_out`.
 
-- `–template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N.
+- `--template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N.
 
-- `–user` *nom* qui filtre les exécutions de l'utilisateur qui a déclenché l'exécution ;
+- `--user` *nom* qui filtre les exécutions de l'utilisateur qui a déclenché l'exécution ;
 
-- `–workflow` *nom du flux de travail* (ou `-w`) qui filtre les exécutions du flux de travail.
+- `--workflow` *nom du flux de travail* (ou `-w`) qui filtre les exécutions du flux de travail.
 
 `$ gh run rerun` *numéro du flux de travail* *option* ré-exécute un flux de travail uniquement sur les tâches ayant échoué ou une tâche spécifique. Les options sont :
 
-- `–debug` (ou `-d`) qui ré-exécute avec la journalisation des bogues ;
+- `--debug` (ou `-d`) qui ré-exécute avec la journalisation des bogues ;
 
-- `–failed` qui ré-exécute uniquement les tâches ayant échoué, y compris les dépendances ;
+- `--failed` qui ré-exécute uniquement les tâches ayant échoué, y compris les dépendances ;
 
-- `–job` *chaîne de caractères* (ou `-j`) qui ré-exécute un identifiant de tâche spécifique à partir d'une exécution, y compris les dépendances.
+- `--job` *chaîne de caractères* (ou `-j`) qui ré-exécute un identifiant de tâche spécifique à partir d'une exécution, y compris les dépendances.
 
 `$ gh run view` *numéro du flux de travail* *option* affiche le résumé de l'exécution d'un flux de travail. Les options sont :
 
-- `–attempt` *nombre entier* (ou `-a`) qui fixe le nombre de tentatives de l'exécution du flux de travail, par défaut : 0 ;
+- `--attempt` *nombre entier* (ou `-a`) qui fixe le nombre de tentatives de l'exécution du flux de travail, par défaut : 0 ;
 
-- `–exit-status` qui quitte avec un statut différent de zéro si l'exécution a échoué ;
+- `--exit-status` qui quitte avec un statut différent de zéro si l'exécution a échoué ;
 
-- `–job` *chaîne de caractères* (ou `-j`) qui affiche un identifiant de tâche spécifique à partir d'une exécution ;
+- `--job` *chaîne de caractères* (ou `-j`) qui affiche un identifiant de tâche spécifique à partir d'une exécution ;
 
-- `–jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. d'une expression `jq` ;
+- `--jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. d'une expression `jq` ;
 
-- `–json` *champ* (ou `-`) qui génère une sortie J.S.O.N. avec les champs spécifiques ;
+- `--json` *champ* (ou `-`) qui génère une sortie J.S.O.N. avec les champs spécifiques ;
 
-- `–log` qui affiche le journal complet d'une exécution ou d'une tâche spécifique ;
+- `--log` qui affiche le journal complet d'une exécution ou d'une tâche spécifique ;
 
-- `–log-failed` qui affiche le journal de toutes les étapes ayant échoué dans une exécution ou une tâche spécifique ;
+- `--log-failed` qui affiche le journal de toutes les étapes ayant échoué dans une exécution ou une tâche spécifique ;
 
-- `–template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N. ;
+- `--template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N. ;
 
-- `–verbose` (ou `-v`) qui affiche les étapes du travail en cours d'exécution ;
+- `--verbose` (ou `-v`) qui affiche les étapes du travail en cours d'exécution ;
 
-- `–web` (ou `-w`) qui ouvre l'exécution dans le navigateur.
+- `--web` (ou `-w`) qui ouvre l'exécution dans le navigateur.
 
 `$ gh run watch` *numéro du flux de travail* *option* surveille une exécution jusqu'à ce qu'elle se termine en affichant sa progression. Les options sont :
 
-- `–exit-status` qui quitte avec un statut différent de zéro si l'exécution échoue ;
+- `--exit-status` qui quitte avec un statut différent de zéro si l'exécution échoue ;
 
-- `–interval` *nombre entier* (ou `-i`) qui fixe l'intervalle d'actualisation en secondes.
+- `--interval` *nombre entier* (ou `-i`) qui fixe l'intervalle d'actualisation en secondes.
 
 #### `gh workflow`
 
@@ -1721,147 +1722,147 @@ La commande permet d'utiliser le mode projet de `GitHub`. Néanmoins, pour l'uti
 
 `$ gh workflow list` *numéro du flux de travail* *option* répertorie les fichiers du flux de travail en masquant les flux de travail désactivés par défaut. Les options sont :
 
-- `–all` (ou `-a`) qui inclut les flux de travail désactivés ;
+- `--all` (ou `-a`) qui inclut les flux de travail désactivés ;
 
-- `–jq` (ou `-q`) qui filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
+- `--jq` (ou `-q`) qui filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
 
-- `–json` *champ* qui filtre une sortie J.S.O.N. avec les champs spécifiés ;
+- `--json` *champ* qui filtre une sortie J.S.O.N. avec les champs spécifiés ;
 
-- `–limit` *nombre entier* (ou `-L`) qui limite le nombre maximal de flux de travail à récupérer, par défaut : 50 ;
+- `--limit` *nombre entier* (ou `-L`) qui limite le nombre maximal de flux de travail à récupérer, par défaut : 50 ;
 
-- `–template` *chaîne de caractères*(ou `-t`) qui formate la sortie J.S.O.N.
+- `--template` *chaîne de caractères*(ou `-t`) qui formate la sortie J.S.O.N.
 
 `$ gh workflow run` *numéro du flux de travail* *option* crée un événement `workflow_dispatch` pour un flux de travail donné. Cette commande déclenche les actions `GitHub` pour exécuter un fichier du flux de travail. Ce fichier doit prendre en charge un déclencheur `on.workflow_dispatch` pour pouvoir être exécuté de cette manière. Les options sont :
 
-- `–field` *clé* `=` *valeur* (ou `-F`) qui ajoute un paramètre de chaîne de caractères au format clé-valeur en respectant la syntaxe `@` ;
+- `--field` *clé* `=` *valeur* (ou `-F`) qui ajoute un paramètre de chaîne de caractères au format clé-valeur en respectant la syntaxe `@` ;
 
-- `–json` qui lit les entrées du flux de travail au format J.S.O.N. *via* STDIN ;
+- `--json` qui lit les entrées du flux de travail au format J.S.O.N. *via* STDIN ;
 
-- `–raw-field` *clé* `=` *valeur* (ou `-f`) qui ajoute un paramètre de chaîne de caractères au format clé-valeur ;
+- `--raw-field` *clé* `=` *valeur* (ou `-f`) qui ajoute un paramètre de chaîne de caractères au format clé-valeur ;
 
-- `–ref` *nom de la branche* (ou `-r`) qui contient la version du fichier du flux de travail que l'on souhaite exécuter.
+- `--ref` *nom de la branche* (ou `-r`) qui contient la version du fichier du flux de travail que l'on souhaite exécuter.
 
 `$ gh workflow view` *numéro du flux de travail* *option* affiche le résumé d'un flux de travail. Les options sont :
 
-- `–ref` *nom de la branche* qui contient la version du fichier du flux de travail que l'on souhaite afficher ;
+- `--ref` *nom de la branche* qui contient la version du fichier du flux de travail que l'on souhaite afficher ;
 
-- `–web` (ou `-w`) qui ouvre le flux de travail dans le navigateur ;
+- `--web` (ou `-w`) qui ouvre le flux de travail dans le navigateur ;
 
-- `–yaml` (ou `-y`) qui affiche le fichier `yaml` du flux de travail.
+- `--yaml` (ou `-y`) qui affiche le fichier `yaml` du flux de travail.
 
 #### `gh alias`
 
 `$ gh alias delete` *nom de l'alias* (ou `–all` pour tout supprimer) supprime un alias.
 
-`$ gh alias import` *nom du fichier* (ou `-`) *option* importe les alias à partir du contenu d'un fichier Y.A.M.L. Les alias doivent être définis comme une carte dans Y.A.M.L. dans laquelle les clés représentent les alias et les valeurs représentent les extensions correspondantes. L'option est `–clobber` qui remplace les alias existants du même nom.
+`$ gh alias import` *nom du fichier* (ou `-`) *option* importe les alias à partir du contenu d'un fichier Y.A.M.L. Les alias doivent être définis comme une carte dans Y.A.M.L. dans laquelle les clés représentent les alias et les valeurs représentent les extensions correspondantes. L'option est `--clobber` qui remplace les alias existants du même nom.
 
 `$ gh alias list` affiche tous les alias que `gh` a configuré.
 
 `$ gh alias set` *nom de l'alias* *option* définit un alias qui se développera en une commande `gh` complète lorsqu'elle sera invoquée. Les options sont :
 
-- `–clobber` qui remplace les alias existants du même nom ;
+- `--clobber` qui remplace les alias existants du même nom ;
 
-- `–shell` (ou `-s`) qui déclare un alias à transmettre grâce ) un interpréteur de commande.
+- `--shell` (ou `-s`) qui déclare un alias à transmettre grâce ) un interpréteur de commande.
 
 #### `gh api`
 
 `$ gh api` *point d'entrée* *option* effectue une requête H.T.T.P. authentifiée auprès de l'A.P.I. `GitHub` et renvoie la réponse. Le point d'entrée est soit un chemin d'accès à un point de terminaison de l'A.P.I. `GitHub v3`, soit un chemin d'accès `GraphQL` à un point de terminaison de l'A.P.I. `GitHub v4`. Les options sont :
 
-- `–cache` *durée* qui définit le temps de réponse du cache (`"3600s"`, `"60m"` ou `"1h"`) ;
+- `--cache` *durée* qui définit le temps de réponse du cache (`"3600s"`, `"60m"` ou `"1h"`) ;
 
-- `–field` *clé* `=` *valeur* (ou `-F`) qui ajoute un paramètre au format clé-valeur ;
+- `--field` *clé* `=` *valeur* (ou `-F`) qui ajoute un paramètre au format clé-valeur ;
 
-- `–header` *clé* `=` *valeur* (ou `-H`) qui ajoute un entête de requête H.T.T.P. au format clé-valeur ;
+- `--header` *clé* `=` *valeur* (ou `-H`) qui ajoute un entête de requête H.T.T.P. au format clé-valeur ;
 
-- `–hostname` *chaîne de caractères* qui définit le nom de l'hôte `GitHub`, par défaut `github.com` ;
+- `--hostname` *chaîne de caractères* qui définit le nom de l'hôte `GitHub`, par défaut `github.com` ;
 
-- `–include` (ou `-i`) qui inclut la ligne d'état de réponse H.T.T.P. et les entêtes dans la sortie ;
+- `--include` (ou `-i`) qui inclut la ligne d'état de réponse H.T.T.P. et les entêtes dans la sortie ;
 
-- `–input` *nom du fichier* (ou `-`) qui définit le fichier à utiliser comme corps pour la requête H.T.T.P. ;
+- `--input` *nom du fichier* (ou `-`) qui définit le fichier à utiliser comme corps pour la requête H.T.T.P. ;
 
-- `–jq` *chaîne de caractères* (ou `-q`) qui définit une requête pour sélectionner des valeurs dans la réponse en utilisant la syntaxe `jq` ;
+- `--jq` *chaîne de caractères* (ou `-q`) qui définit une requête pour sélectionner des valeurs dans la réponse en utilisant la syntaxe `jq` ;
 
-- `–method` *chaîne de caractères* (ou `-X`) qui définit la méthode H.T.T.P. pour la requête, par défaut `GET` ;
+- `--method` *chaîne de caractères* (ou `-X`) qui définit la méthode H.T.T.P. pour la requête, par défaut `GET` ;
 
-- `–paginate` qui effectue des requêtes H.T.T.P. supplémentaires pour récupérer toutes les pages de résultats ;
+- `--paginate` qui effectue des requêtes H.T.T.P. supplémentaires pour récupérer toutes les pages de résultats ;
 
-- `–preview` *nom* (ou `-p`) qui fournit des noms d'aperçu de l'A.P.I. `GitHub` à demander ;
+- `--preview` *nom* (ou `-p`) qui fournit des noms d'aperçu de l'A.P.I. `GitHub` à demander ;
 
-- `–raw-field` *clé* `=` *valeur* (ou `-f`) qui ajoute un paramètre de chaîne de caractères au format clé-valeur ;
+- `--raw-field` *clé* `=` *valeur* (ou `-f`) qui ajoute un paramètre de chaîne de caractères au format clé-valeur ;
 
-- `–silent` qui n'affiche pas le corps de la réponse ;
+- `--silent` qui n'affiche pas le corps de la réponse ;
 
-- `–slurp` qui est utilisé avec `–paginate` pour renvoyer un tableau de toutes les pages de tableaux ou d'objets J.S.O.N. ;
+- `--slurp` qui est utilisé avec `–paginate` pour renvoyer un tableau de toutes les pages de tableaux ou d'objets J.S.O.N. ;
 
-- `–template` *chaîne de caractères* qui formate la sortie J.S.O.N. ;
+- `--template` *chaîne de caractères* qui formate la sortie J.S.O.N. ;
 
-- `–verbose` qui inclut la requête H.T.T.P. complète et la réponse dans la sortie.
+- `--verbose` qui inclut la requête H.T.T.P. complète et la réponse dans la sortie.
 
 #### `gh attestation`
 
 `$ gh attestation download` *nom du fichier* *option* télécharge les attestations associées à un artefact pour une utilisation hors ligne. Les options sont :
 
-- `–digest-alg` *SHA-1* (ou `-d`) qui définit l'algorithme utilisé pour calculer un *hash* soit avec `sha256` (par défaut), soit avec `sha512` ;
+- `--digest-alg` *SHA-1* (ou `-d`) qui définit l'algorithme utilisé pour calculer un *hash* soit avec `sha256` (par défaut), soit avec `sha512` ;
 
-- `–hostname` *chaîne de caractères* qui configure l'hôte à utiliser ;
+- `--hostname` *chaîne de caractères* qui configure l'hôte à utiliser ;
 
-- `–limit` *nombre entier* (ou `-L`) qui définit le nombre maximal d'attestations à récupérer ;
+- `--limit` *nombre entier* (ou `-L`) qui définit le nombre maximal d'attestations à récupérer ;
 
-- `–owner` *chaîne de caractères* qui définit la portée de la recherche d'attestation ;
+- `--owner` *chaîne de caractères* qui définit la portée de la recherche d'attestation ;
 
-- `–predicate-type` *chaîne de caractères* qui filtre les attestations par type de prédicat défini ;
+- `--predicate-type` *chaîne de caractères* qui filtre les attestations par type de prédicat défini ;
 
-- `–repo` *chaîne de caractères* qui définit le nom du dépôt au format `owner/repo`.
+- `--repo` *chaîne de caractères* qui définit le nom du dépôt au format `owner/repo`.
 
 `$ gh attestation trusted-root` `–tuf-url` *U.R.L.* `–tuf-root` *nom du fichier* `–verify-only` *option* définit le contenu de sortie du fichier `trust_root.jsonl`, probablement pour une vérification hors ligne. Les options sont :
 
-- `–hostname` *chaîne de caractères* qui configure l'hôte à utiliser ;
+- `--hostname` *chaîne de caractères* qui configure l'hôte à utiliser ;
 
-- `–tuf-root` *chaîne de caractères* qui définit un chemin d'accès au fichier `tuf` `root.json` sur le disque ;
+- `--tuf-root` *chaîne de caractères* qui définit un chemin d'accès au fichier `tuf` `root.json` sur le disque ;
 
-- `–tuf-url` *chaîne de caractères* qui définit un U.R.L. vers le miroir du dépôt `TUF` ;
+- `--tuf-url` *chaîne de caractères* qui définit un U.R.L. vers le miroir du dépôt `TUF` ;
 
-- `–verify-only` qui permet de ne pas afficher les contenu de `trusted_root.jsonl`.
+- `--verify-only` qui permet de ne pas afficher les contenu de `trusted_root.jsonl`.
 
 `$ gh attestation verify` *fichier* *option* vérifie l'intégrité et la provenance d'un artefact à l'aide de ses attestations signées et associées de manière cryptographique. Les options sont :
 
-- `–bundle` *chaîne de caractères* (ou `-b`) qui définit un chemin d'accès au `bundle` sur le disque, soit un `bundle` unique dans un fichier J.S.O.N. avec plusieurs `bundle` ;
+- `--bundle` *chaîne de caractères* (ou `-b`) qui définit un chemin d'accès au `bundle` sur le disque, soit un `bundle` unique dans un fichier J.S.O.N. avec plusieurs `bundle` ;
 
-- `–bundle-from-oci` qui récupère le `bundle` d'attestation à partir du registre O.C.I. plutôt que `GitHub` lors de la vérification d'une image O.C.I. ;
+- `--bundle-from-oci` qui récupère le `bundle` d'attestation à partir du registre O.C.I. plutôt que `GitHub` lors de la vérification d'une image O.C.I. ;
 
-- `–cert-identity` *chaîne de caractères* qui assure que le nom alternatif du sujet du certificat correspond exactement à la valeur fournie ;
+- `--cert-identity` *chaîne de caractères* qui assure que le nom alternatif du sujet du certificat correspond exactement à la valeur fournie ;
 
-- `–cert-identity-regex` (ou `-i`) qui assure que le nom alternatif du sujet du certificat correspond à l'expression régulière fournie ;
+- `--cert-identity-regex` (ou `-i`) qui assure que le nom alternatif du sujet du certificat correspond à l'expression régulière fournie ;
 
-- `–cert-oidc-issuer` *chaîne de caractères* qui émet un jeton O.I.D.I.C. Par défaut, la valeur est \href{https://token.actions.githubusercontent.com}{https://token.actions.githubusercontent.com} ;
+- `--cert-oidc-issuer` *chaîne de caractères* qui émet un jeton O.I.D.I.C. Par défaut, la valeur est \href{https://token.actions.githubusercontent.com}{https://token.actions.githubusercontent.com} ;
 
-- `–custom-trusted-root` *chaîne de caractères* qui définit le chemin vers un fichier `trust_root.jsonl`, utilisé probablement pour la vérification hors ligne ;
+- `--custom-trusted-root` *chaîne de caractères* qui définit le chemin vers un fichier `trust_root.jsonl`, utilisé probablement pour la vérification hors ligne ;
 
-- `–deny-self-hosted-runners` qui définit l'échec de la vérification des attestations générées sur les exécuteurs auto-hébergés ;
+- `--deny-self-hosted-runners` qui définit l'échec de la vérification des attestations générées sur les exécuteurs auto-hébergés ;
 
-- `–digest-alg` (ou `-d`) qui définit l'algorithme utilisé pour calculer le *hash* de l'artefact avec soit `sha256` (par défaut), soit `sha512` ;
+- `--digest-alg` (ou `-d`) qui définit l'algorithme utilisé pour calculer le *hash* de l'artefact avec soit `sha256` (par défaut), soit `sha512` ;
 
-- `–format` *chaîne de caractères* qui définit le format de sortie (J.S.O.N.) ;
+- `--format` *chaîne de caractères* qui définit le format de sortie (J.S.O.N.) ;
 
-- `–hostname` *chaîne de caractères* qui configure l'hôte à utiliser ;
+- `--hostname` *chaîne de caractères* qui configure l'hôte à utiliser ;
 
-- `–jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
+- `--jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
 
-- `–limit` *nombre entier* (ou `-L`) qui définit le nombre maximal d'attestation à récupérer, par défaut : 30 ;
+- `--limit` *nombre entier* (ou `-L`) qui définit le nombre maximal d'attestation à récupérer, par défaut : 30 ;
 
-- `–no-public-good` qui ne vérifie pas les attestations signées avec l'instance publique `Sigstore` ;
+- `--no-public-good` qui ne vérifie pas les attestations signées avec l'instance publique `Sigstore` ;
 
-- `–owner` *chaîne de caractères* (ou `-o`) qui définit une attestation ;
+- `--owner` *chaîne de caractères* (ou `-o`) qui définit une attestation ;
 
-- `–predicate-type` *chaîne de caractères* qui filtre les attestations par type de prédicat fourni ;
+- `--predicate-type` *chaîne de caractères* qui filtre les attestations par type de prédicat fourni ;
 
-- `–repo` *chaîne de caractères* qui définit le nom du référentiel au format `owner/repo` ;
+- `--repo` *chaîne de caractères* qui définit le nom du référentiel au format `owner/repo` ;
 
-- `–signer-repo` *chaîne de caractères* qui définit le référentiel du flux de travail réutilisable qui a signé l'attestation au format `owner/repo` ;
+- `--signer-repo` *chaîne de caractères* qui définit le référentiel du flux de travail réutilisable qui a signé l'attestation au format `owner/repo` ;
 
-- `–signer-workflow` *chaîne de caractères* qui définit la signature de l'attestation d'un flux de travail au format : `host/owner/repo/path/to/workflow` ;
+- `--signer-workflow` *chaîne de caractères* qui définit la signature de l'attestation d'un flux de travail au format : `host/owner/repo/path/to/workflow` ;
 
-- `–template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N.
+- `--template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N.
 
 #### `gh completion`
 
@@ -1885,9 +1886,9 @@ La commande permet d'utiliser le mode projet de `GitHub`. Néanmoins, pour l'uti
 
 `$ gh extension browse` *option* prend le contrôle du terminal et exécute une interface entièrement interactive pour parcourir, ajouter et supprimer les extensions `gh`. Une largeur de terminal supérieure à 100 colonnes est recommandée. Pour accéder à l'aide, il faut taper `?`. Pour quitter l'interface, il faut taper `q`. Les options sont :
 
-- `–debug` qui crée un journal dans `/tmp/extBrowse-*` ;
+- `--debug` qui crée un journal dans `/tmp/extBrowse-*` ;
 
-- `–single-column` (ou `-s`) qui affiche l'interface utilisateur graphique avec une seule colonne de texte.
+- `--single-column` (ou `-s`) qui affiche l'interface utilisateur graphique avec une seule colonne de texte.
 
 `$ gh extension create` *nom* crée une nouvelle extension.
 
@@ -1895,9 +1896,9 @@ La commande permet d'utiliser le mode projet de `GitHub`. Néanmoins, pour l'uti
 
 `$ gh extension install` *nom du dépôt* *option* installe un dépôt `GitHub` localement en tant qu'extension `GitHub CLI`. Les options sont :
 
-- `–force` qui force la mise à niveau de l'extension, ou ignore si la dernière est déjà installée ;
+- `--force` qui force la mise à niveau de l'extension, ou ignore si la dernière est déjà installée ;
 
-- `–pin` *chaîne de caractères* qui épingle l'extension à une balise de publication ou à une référence de validation.
+- `--pin` *chaîne de caractères* qui épingle l'extension à une balise de publication ou à une référence de validation.
 
 `$ gh extension list` liste les commandes d'extension installée.
 
@@ -1905,9 +1906,9 @@ La commande permet d'utiliser le mode projet de `GitHub`. Néanmoins, pour l'uti
 
 `$ gh extension search` *requête* *option* cherche parmi les extensions `gh`. Sans argument, la commande affiche les 30 premières extensions disponibles à installer, triées par nombre d'étoiles. Les options sont :
 
-- `–jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
+- `--jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
 
-- `–license` *chaîne de caractères* qui définit la sortie J.S.O.N. avec les champs spécifiés. Les champs possibles sont :
+- `--license` *chaîne de caractères* qui définit la sortie J.S.O.N. avec les champs spécifiés. Les champs possibles sont :
 
 	-`createdAt` ;
 
@@ -1965,19 +1966,19 @@ La commande permet d'utiliser le mode projet de `GitHub`. Néanmoins, pour l'uti
 
 	-`watcherCount`.
 
-- `–license` *chaîne de caractères* qui filtre à partir du type de licence ;
+- `--license` *chaîne de caractères* qui filtre à partir du type de licence ;
 
-- `–limit` *nombre entier* (ou `-L`) qui définit un nombre maximal d'extensions à récupérer, par défaut : 30 ;
+- `--limit` *nombre entier* (ou `-L`) qui définit un nombre maximal d'extensions à récupérer, par défaut : 30 ;
 
-- `–order` *option* qui ordonne les dépôts renvoyés, sauf si l'indicateur `–sort` qui spécifié. Les options possibles sont : `desc` (par défaut) ou `asc`.
+- `--order` *option* qui ordonne les dépôts renvoyés, sauf si l'indicateur `–sort` qui spécifié. Les options possibles sont : `desc` (par défaut) ou `asc`.
 
-- `–owner` *chaîne de caractères* qui filtre à partir du propriétaire ;
+- `--owner` *chaîne de caractères* qui filtre à partir du propriétaire ;
 
-- `–sort` *type de tri* qui trie les dépôts récupérés. Les options possibles sont : `best-match` (par défaut), `forks`, `help-wanted-issues`, `stars` et `updated`.
+- `--sort` *type de tri* qui trie les dépôts récupérés. Les options possibles sont : `best-match` (par défaut), `forks`, `help-wanted-issues`, `stars` et `updated`.
 
-- `–template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N.
+- `--template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N.
 
-- `–web` (ou `-w`) qui ouvre la requête de recherche dans le navigateur web.
+- `--web` (ou `-w`) qui ouvre la requête de recherche dans le navigateur web.
 
 `$ gh extension upgrade` *nom* (ou `–all`) met à jour les extensions installées.
 
@@ -1995,65 +1996,65 @@ La commande permet d'utiliser le mode projet de `GitHub`. Néanmoins, pour l'uti
 
 `$ gh label create` *nom* *option* crée une nouvelle étiquette sur `GitHub`. Les options sont :
 
-- `–color` *nom de la couleur* (ou `-`) qui définit la couleur de l'étiquette ;
+- `--color` *nom de la couleur* (ou `-`) qui définit la couleur de l'étiquette ;
 
-- `–description` *chaîne de caractères* (ou `-d`) qui décrit l'étiquette ;
+- `--description` *chaîne de caractères* (ou `-d`) qui décrit l'étiquette ;
 
-- `–force` (ou `-f`) qui met à jour la couleur et la description de l'étiquette si elle existe déjà.
+- `--force` (ou `-f`) qui met à jour la couleur et la description de l'étiquette si elle existe déjà.
 
 `$ gh label delete` *nom* supprime une étiquette d'un dépôt.
 
 `$ gh label edit` *nom* *option* met à jour une étiquette d'un dépôt. Les options sont :
 
-	- `–color` *nom de la couleur* (ou `-`) qui définit la couleur de l'étiquette ;
+	- `--color` *nom de la couleur* (ou `-`) qui définit la couleur de l'étiquette ;
 
-	- `–description` *chaîne de caractères* (ou `-d`) qui décrit l'étiquette ;
+	- `--description` *chaîne de caractères* (ou `-d`) qui décrit l'étiquette ;
 
-	- `–force` (ou `-f`) qui met à jour la couleur et la description de l'étiquette si elle existe déjà.
+	- `--force` (ou `-f`) qui met à jour la couleur et la description de l'étiquette si elle existe déjà.
 
 `$ gh label list` affiche les étiquettes dans un dépôt `GitHub`. Les options sont :
 
-- `–jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
+- `--jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
 
-- `–json` *champ* qui définit la sortie J.S.O.N. avec les champs spécifiés ;
+- `--json` *champ* qui définit la sortie J.S.O.N. avec les champs spécifiés ;
 
-- `–limit` *nombre entier* (ou `-L`) qui définit le nombre maximal d'étiquette à récupérer, par défaut : 30 ;
+- `--limit` *nombre entier* (ou `-L`) qui définit le nombre maximal d'étiquette à récupérer, par défaut : 30 ;
 
-- `–order` *choix de l'ordination* qui ordonne les étiquettes renvoyés avec soit `asc` (par défaut), soit `desc` ;
+- `--order` *choix de l'ordination* qui ordonne les étiquettes renvoyés avec soit `asc` (par défaut), soit `desc` ;
 
-- `–search` *chaîne de caractères* (ou `-S`) qui recherche les noms et les descriptions des étiquettes ;
+- `--search` *chaîne de caractères* (ou `-S`) qui recherche les noms et les descriptions des étiquettes ;
 
-- `–sort` *choix du tri* qui trie les étiquettes récupérées avec soit `created`, soit `name` ;
+- `--sort` *choix du tri* qui trie les étiquettes récupérées avec soit `created`, soit `name` ;
 
-- `–template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N. ;
+- `--template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N. ;
 
-- `–web` (ou `-w`) qui répertorie les étiquettes dans le navigateur web.
+- `--web` (ou `-w`) qui répertorie les étiquettes dans le navigateur web.
 
 #### `gh ruleset`
 
 `$ gh ruleset check` *nom de la branche* *option* affiche les informations sur les règles `GitHub` qui s'appliquent à une branche donnée. Le nom de la branche fourni n'a pas besoin d'exister. Sans nom de branche, la branche actuelle est utilisée. Les options sont :
 
-- `–default` qui vérifie les règles sur la branche par défaut ;
+- `--default` qui vérifie les règles sur la branche par défaut ;
 
-- `–web` (ou `-w`) qui ouvre la page des règles de la branche dans un navigateur web.
+- `--web` (ou `-w`) qui ouvre la page des règles de la branche dans un navigateur web.
 
 `$ gh ruleset list` répertorie les ensembles de règles `GitHub` pour un dépôt donné. Si aucune option n'est fournie, l'ensemble de règles du dépôt actuel sont utilisés. Les options sont :
 
-- `–limit` *nombre entier* (ou `-L`) qui définit le nombre maximal des ensembles de règles à répertorier ;
+- `--limit` *nombre entier* (ou `-L`) qui définit le nombre maximal des ensembles de règles à répertorier ;
 
-- `–org` *chaîne de caractères* (ou `-o`) qui répertorie les ensembles de règles à l'échelle de l'organisation par elle-même ;
+- `--org` *chaîne de caractères* (ou `-o`) qui répertorie les ensembles de règles à l'échelle de l'organisation par elle-même ;
 
 - `–parents` (ou `-p`) qui inclut ou non les ensembles de règles configurés à des niveaux supérieurs qui s'appliquent également ;
 
-- `–web` (ou `-w`) qui ouvre la liste des ensembles de règles dans le navigateur web.
+- `--web` (ou `-w`) qui ouvre la liste des ensembles de règles dans le navigateur web.
 
 `$ gh ruleset view` *numéro de la règle* *option* affiche les informations sur un ensemble de règles `GitHub`. Les options sont :
 
-- `–org` *chaîne de caractères* (ou `-o`) qui répertorie les ensembles de règles à l'échelle de l'organisation par elle-même ;
+- `--org` *chaîne de caractères* (ou `-o`) qui répertorie les ensembles de règles à l'échelle de l'organisation par elle-même ;
 
-- `–parents` (ou `-p`) qui inclut ou non les ensembles de règles configurés à des niveaux supérieurs qui s'appliquent également ;
+- `--parents` (ou `-p`) qui inclut ou non les ensembles de règles configurés à des niveaux supérieurs qui s'appliquent également ;
 
-- `–web` (ou `-w`) qui ouvre la liste des ensembles de règles dans le navigateur web.
+- `--web` (ou `-w`) qui ouvre la liste des ensembles de règles dans le navigateur web.
 
 #### `gh search`
 
@@ -2071,49 +2072,49 @@ La commande permet d'utiliser le mode projet de `GitHub`. Néanmoins, pour l'uti
 
 `$ gh secret delete` *nom du secret* *option* supprime un secret sur l'un des niveaux suivants : `repository` (par défaut), `environment`, `organization` et `user`. Les options sont :
 
-- `–app` *choix de l'action* (ou `-a`) qui supprime un secret pour une application spécifique : `actions`, `codespaces` et `dependabot` ;
+- `--app` *choix de l'action* (ou `-a`) qui supprime un secret pour une application spécifique : `actions`, `codespaces` et `dependabot` ;
 
-- `–env` *chaîne de caractères* (ou `-e`) qui supprime un secret pour un environnement ;
+- `--env` *chaîne de caractères* (ou `-e`) qui supprime un secret pour un environnement ;
 
-- `–org` *chaîne de caractères* (ou `-o`) qui supprime un secret pour une organisation ;
+- `--org` *chaîne de caractères* (ou `-o`) qui supprime un secret pour une organisation ;
 
-- `–user` (ou `-u`) qui supprime un secret pour un utilisateur.
+- `--user` (ou `-u`) qui supprime un secret pour un utilisateur.
 
 `$ gh secret list` *option* répertorie les secrets sur l'un des niveaux suivants : `repository` (par défaut), `environment`, `organization` et `user`. Les options sont :
 
-- `–app` *choix de l'action* (ou `-a`) qui liste un secret pour une application spécifique : `actions`, `codespaces` et `dependabot` ;
+- `--app` *choix de l'action* (ou `-a`) qui liste un secret pour une application spécifique : `actions`, `codespaces` et `dependabot` ;
 
-- `–env` *chaîne de caractères* (ou `-e`) qui liste un secret pour un environnement ;
+- `--env` *chaîne de caractères* (ou `-e`) qui liste un secret pour un environnement ;
 
-- `–jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
+- `--jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
 
-- `–json` *champ* qui filtre la sortie J.S.O.N. avec des champs spécifiques ;
+- `--json` *champ* qui filtre la sortie J.S.O.N. avec des champs spécifiques ;
 
-- `–org` *chaîne de caractères* (ou `-o`) qui liste un secret pour une organisation ;
+- `--org` *chaîne de caractères* (ou `-o`) qui liste un secret pour une organisation ;
 
-- `–template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N. ;
+- `--template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N. ;
 
-- `–user` (ou `-u`) qui liste un secret pour un utilisateur.
+- `--user` (ou `-u`) qui liste un secret pour un utilisateur.
 
 `$ gh secret set` *nom du secret* *option* définit une valeur pour un secret sur l'un des niveaux suivants : `repository` (par défaut), `environment`, `organization` et `user`. Les options sont :
 
-- `–app` *choix de l'action* (ou `-a`) qui définit un secret pour une application spécifique : `actions`, `codespaces` et `dependabot` ;
+- `--app` *choix de l'action* (ou `-a`) qui définit un secret pour une application spécifique : `actions`, `codespaces` et `dependabot` ;
 
-- `–body` *chaîne de caractères* (ou `-b`) qui définit la valeur d'un secret ;
+- `--body` *chaîne de caractères* (ou `-b`) qui définit la valeur d'un secret ;
 
-- `–env` *chaîne de caractères* (ou `-e`) qui définit un secret pour un environnement de déploiement ;
+- `--env` *chaîne de caractères* (ou `-e`) qui définit un secret pour un environnement de déploiement ;
 
-- `–env-file` *nom du fichier* (ou `-f`) qui définit les noms et les valeurs secrets à partir d'un fichier au format `dotenv` ;
+- `--env-file` *nom du fichier* (ou `-f`) qui définit les noms et les valeurs secrets à partir d'un fichier au format `dotenv` ;
 
-- `–no-store` qui affiche la valeur chiffrée encodée en base 64 au lieu de stocker sur `GitHub` ; 
+- `--no-store` qui affiche la valeur chiffrée encodée en base 64 au lieu de stocker sur `GitHub` ; 
 
-- `–org` *chaîne de caractères* (ou `-o`) qui définit un secret pour une organisation ;
+- `--org` *chaîne de caractères* (ou `-o`) qui définit un secret pour une organisation ;
 
-- `–repos` *nom du secret* (ou `-r`) qui liste les dépôts pouvant accéder au secret d'un utilisateur ou d'une organisation ;
+- `--repos` *nom du secret* (ou `-r`) qui liste les dépôts pouvant accéder au secret d'un utilisateur ou d'une organisation ;
 
-- `–user` (ou `-u`) qui définit un secret pour un utilisateur ;
+- `--user` (ou `-u`) qui définit un secret pour un utilisateur ;
 
-- `–visibility` *choix de la visibilité* (ou `-v`) qui définit la visibilité d'un secret : `all`, `private` et `selected`.
+- `--visibility` *choix de la visibilité* (ou `-v`) qui définit la visibilité d'un secret : `all`, `private` et `selected`.
 
 #### `gh ssh-key`
 
@@ -2135,47 +2136,47 @@ La commande permet d'utiliser le mode projet de `GitHub`. Néanmoins, pour l'uti
 
 `$ gh variable delete` *nom de la variable* supprime une variable sur l'un des niveaux suivants : `repository` (par défaut), `environment` et `organization`. Les options sont :
 
-- `–env` *chaîne de caractères* (ou `-e`) qui supprime une variable pour un environnement ;
+- `--env` *chaîne de caractères* (ou `-e`) qui supprime une variable pour un environnement ;
 
-- `–org` *chaîne de caractères* (ou `-o`) qui supprime une variable pour une organisation.
+- `--org` *chaîne de caractères* (ou `-o`) qui supprime une variable pour une organisation.
 
 `$gh variable get` *nom de la variable* obtient une variable sur l'un des niveaux suivants : `repository` (par défaut), `environment` et `organization`. Les options sont :
 
-- `–env` *chaîne de caractères* (ou `-e`) qui supprime une variable pour un environnement ;
+- `--env` *chaîne de caractères* (ou `-e`) qui supprime une variable pour un environnement ;
 
-- `–jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
+- `--jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
 
-- `–json` *champ* qui génère une sortie J.S.O.N. avec les champs spécifiés ;
+- `--json` *champ* qui génère une sortie J.S.O.N. avec les champs spécifiés ;
 
-- `–org` *chaîne de caractères* (ou `-o`) qui supprime une variable pour une organisation ;
+- `--org` *chaîne de caractères* (ou `-o`) qui supprime une variable pour une organisation ;
 
-- `–template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N.
+- `--template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N.
 
 `$ gh variable list` *options* répertorie les variables sur l'un des niveaux suivants : `repository` (par défaut), `environment` et `organization`. Les options sont :
 
-- `–env` *chaîne de caractères* (ou `-e`) qui liste une variable pour un environnement ;
+- `--env` *chaîne de caractères* (ou `-e`) qui liste une variable pour un environnement ;
 
-- `–jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
+- `--jq` *expression* (ou `-q`) qui filtre la sortie J.S.O.N. à l'aide d'une expression `jq` ;
 
-- `–json` *champ* qui génère une sortie J.S.O.N. avec les champs spécifiés ;
+- `--json` *champ* qui génère une sortie J.S.O.N. avec les champs spécifiés ;
 
-- `–org` *chaîne de caractères* (ou `-o`) qui supprime une variable pour une organisation ;
+- `--org` *chaîne de caractères* (ou `-o`) qui supprime une variable pour une organisation ;
 
-- `–template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N.
+- `--template` *chaîne de caractères* (ou `-t`) qui formate la sortie J.S.O.N.
 
 `$gh variable set` *nom de la variable* *option* définit une valeur pour une variable sur l'un des niveaux suivants : `repository` (par défaut), `environment` et `organization`. Les options sont :
 
-- `–body` *chaîne de caractères* (ou `-b`) qui lit une variable pour un environnement ;
+- `--body` *chaîne de caractères* (ou `-b`) qui lit une variable pour un environnement ;
 
-- `–env` *chaîne de caractères* (ou `-e`) qui définit une variable pour un environnement de déploiement ;
+- `--env` *chaîne de caractères* (ou `-e`) qui définit une variable pour un environnement de déploiement ;
 
-- `–env-file` *nom du fichier* (ou `-f`) qui charge les noms et les valeurs des variables à partir d'un fichier au format `dotenv` ;
+- `--env-file` *nom du fichier* (ou `-f`) qui charge les noms et les valeurs des variables à partir d'un fichier au format `dotenv` ;
 
-- `–org` *chaîne de caractères* (ou `-o`) qui supprime une variable pour une organisation ;
+- `--org` *chaîne de caractères* (ou `-o`) qui supprime une variable pour une organisation ;
 
-- `–repos` *nom du dépôt* (ou `-r`) qui liste les dépôts pouvant accéder à une variable d'organisation ;
+- `--repos` *nom du dépôt* (ou `-r`) qui liste les dépôts pouvant accéder à une variable d'organisation ;
 
-- `–visibility` *choix du type d'organisation* (ou `-v`) qui définit la visibilité d'une variable d'organisation avec soit `all`, soit `private` (par défaut), soit `selected`.
+- `--visibility` *choix du type d'organisation* (ou `-v`) qui définit la visibilité d'une variable d'organisation avec soit `all`, soit `private` (par défaut), soit `selected`.
 
 ## `Lazygit`
 
@@ -2205,7 +2206,7 @@ Sous `Linux`, pour installer `Lazygit`[^10], on tape la commande suivante :
 Pour vérifier l'installation de `Lazygit`, on tape la commande :
 
 ```
-	$ lazygit –version
+	$ lazygit --version
 ```
 
 Pour ouvrir `Lazygit`, on tape la commande :
@@ -2339,7 +2340,7 @@ Les lignes de commande principales sont :
 
 - `tig log` qui permet de visualiser un `git log` beaucoup plus détaillé et en couleur ;
 
-- `tig –` *fichier* qui permet de faire le focus sur un fichier ;
+- `tig -` *fichier* qui permet de faire le focus sur un fichier ;
 
 - `tig blame -C` *fichier* qui permet de visualiser un `git blame` de manière plus détaillée et des couleurs.
 
