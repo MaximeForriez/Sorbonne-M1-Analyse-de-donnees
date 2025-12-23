@@ -1,8 +1,5 @@
 # `Git`- Approfondissement
 
-
-
-
 ## Création de fichiers MarkDown
 
 Les fichiers `MarkDown` ont pour extension `*.md`. Ce sont des fichiers décrivant le code. Il est conseillé de mettre au minimum un `README.md` à la racine du dépôt. Il décrit les dépendances et les installations particulières.

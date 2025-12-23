@@ -98,3 +98,7 @@ Par défaut, j'ai placé tous les paquets nécessaires pour les T.D.
 - [`Python` officiel en ligne et en console](https://www.python.org/shell/) (les données externes ne sont pas accessibles)
 
 - [`Python` online](https://www.online-python.com/) (les bibliothèques externes ne peuvent pas être installées)
+
+## Approfondissement : qu'est-ce `Docker` ?
+
+- [Qu'est-ce `Docker` ?](https://www.youtube.com/watch?v=dtUOHULPmKg) (en deux minutes)
