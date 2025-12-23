@@ -1,5 +1,8 @@
 # `Git`- Approfondissement
 
+
+
+
 ## Création de fichiers MarkDown
 
 Les fichiers `MarkDown` ont pour extension `*.md`. Ce sont des fichiers décrivant le code. Il est conseillé de mettre au minimum un `README.md` à la racine du dépôt. Il décrit les dépendances et les installations particulières.
@@ -929,11 +932,17 @@ Avec `GitBash`, on tape la commande :
 
 `ed25519` peut être remplacé par `rsa`.
 
+```
+	$ssh-keygen -t rsa -b 4096 -C "maxime.forriez@gmail.com"
+```
+
+En général, on préfère cette dernière ligne de commande, car elle crée une meilleure sécurité.
+
 La commande affiche le texte suivant :
 
 - `Generating public/private ed25519 key pair`
 
-- `Enter file in which to save the key:` *donner un nom au fichier (sans extension)*
+- `Enter file in which to save the key:` *on peut soit laisser celui par défaut, soit donner un nom au fichier (sans extension).*
 
 - `Enter passphrase (empty for no passphrase):` *on peut soit faire « entrée », soit mettre une phrase clé*
 
@@ -946,6 +955,24 @@ Pour finir, sur `GitHub`, on place la clé SSH générée et contenue dans le fi
 
 > [!NOTE]
 > Il ne faut pas toucher à la clé privée `id_rsa`.
+
+> [!NOTE]
+> Pour `Windows`, bien respecter les étapes avec ce [tutoriel](https://www.youtube.com/watch?v=qixAZdj-I4I)
+> Le fichier `id_rsa.pub` se trouve dans le répertoire **caché** : `C:\Users\`*nom de l'utilisateur*`\.ssh\`.
+
+Pour établir le tunnel, il ne faut plus utiliser l'adresse du dépôt `https://github.com/...`, mais l'adresse SSH `git@github.com:`*nom de l'utilisateur*`/`*nom du dépôt*.
+
+```
+	$ git remote add origin git@github.com:...
+```
+
+Il faut bien compléter la bonne adresse SSH. Pour vérifier la connexion, taper et exécuter :
+
+```
+	$ ssh -T git@github.com
+```
+
+Ici, on ne complète rien. Si la connexion sécurisée est acceptée, alors le nom du dépôt apparaît avec un message de succès.
 
 ## Modèles pour `Git` : `README.md`
 
