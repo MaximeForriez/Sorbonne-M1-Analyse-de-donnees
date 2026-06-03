@@ -31,7 +31,7 @@ Si vous avez des difficultés à comprendre les équations, voici des cours et d
 
 ### [Séance 1. Présentation du contenu du cours et mise en route](./Seance-01/Seance-01.md)
 
-Tous les groupes doivent télécharger dans le [dossier suivant](./Installation%20de%20Python%20avec%20Docker/).
+Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%20Python%20avec%20Docker/).
 
 - Débutants [17/09/2025] - Clignancourt - Salle 426 - 12h00-14h00
 
