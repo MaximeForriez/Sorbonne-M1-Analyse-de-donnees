@@ -265,4 +265,4 @@ Tous les T.D. sont notés. Pour la fin du semestre, vous devez me rendre un port
 
 ## Notes de bas de page
 
-[^1]: CHADULE signifie : Henri Chamussy (1935-2015), Joël Charre (né en 1946), Pierre Dumolard (né en 1941) et Maryvonne Le Berre (1940-2012). Ce sont les principaux auteurs de manuel de statistiques en géographie.
+[^1]: CHADULE signifie : Henri Chamussy (1935-2015), Joël Charre (né en 1946), Pierre Dumolard (1941-2026) et Maryvonne Le Berre (1940-2012). Ce sont les principaux auteurs de manuel de statistiques en géographie.

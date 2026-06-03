@@ -511,6 +511,8 @@ $N = \mu \pm \sqrt{N}$
 
 ### Loi normale
 
+[Pourquoi la loi normale est-elle normale ?](https://www.youtube.com/watch?v=z8MVmd5OB58)
+
 La loi normale concerne les variables continues. Elle s'appelle ainsi, car sa paternité est difficile à établir entre P.-S. de Laplace[^11] qui a découvert le théorème centrale limite et C. F. Gauss[^12] qui en a fait sa formalisation. Parfois, on l'appelle de fait loi de Gauss-Laplace, ou plus simplement la loi de Gauss, ce dernier ayant à son compte les travaux les plus récents sur cette loi.
 
 Il est compliqué de ne pas commencer les distributions statistiques par la loi normale. Pourtant, ce n'est pas la distribution statistique la plus simple à comprendre. Elle n'en demeure pas moins celle qui est la plus fréquente, celle qui donne notamment un sens à la moyenne arithmétique. De plus, la loi normale est bien souvent la distribution limite à l'infini d'autres distributions statistiques. Tel est le cas de la loi binomiale, comme cela fut démontré par A. de Moivre[^13].

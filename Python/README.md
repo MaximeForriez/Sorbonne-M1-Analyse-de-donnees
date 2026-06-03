@@ -23,3 +23,5 @@
 - [Réalisation de statistiques multivariées](./PYTHON-STATISTIQUES-MULTIVARIEES.md)
 
 - [Analyse de corpus textuels](./PYTHON-ANALYSE-DE-CORPUS-TEXTUEL.md)
+
+- [Approfondissement : cours Kaggle](./PYTHON-COURS-KAGGLE.md)
