@@ -1,5 +1,11 @@
 # L'analyse factorielle multiple (A.F.M.)
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-08-Chapitre-22.pdf)
+
+## Introduction
+
 L'analyse factorielle multiple[^1] (A.F.M.) consiste à opérer une analyse factorielle, non plus sur un ensemble de données, mais sur un **ensemble de groupes de données**.
 
 Comment regrouper les variables en fonction d'une typologie ?
@@ -1258,10 +1264,6 @@ $J \times \sum_{j = 1}^{J} \mathrm{Tr } \left[ \left( X_j - Y \right) {{}^t}\lef
 De cette égalité, on interprète $Sr$ comme un indicateur d'homogénéité globale entre les configurations partielles. Cet indicateur est valable aussi bien pour la représentation superposée de l'A.P.G. que pour celle de l'A.F.M.P.
 
 De plus, chaque terme de la somme $\mathrm{Tr } \left[ {{}^t}\left( {\hat{X}}_j - Y \right).\left( {\hat{X}}_j - Y \right) \right]$ peut s'interpréter comme une proximité de la $j$-ième configuration partielle à la représentation moyenne. Plus une sous-configuration contribue à la somme des carrés des résidus, moins elle est en accord avec la représentation moyenne.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-09-Chapitre-22.pdf)
 
 ## Notes de bas de page
 

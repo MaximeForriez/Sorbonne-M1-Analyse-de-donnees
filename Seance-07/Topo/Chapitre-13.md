@@ -1,5 +1,11 @@
 # Analyse factorielle des correspondances (A.F.C.) : une introduction
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-07-Chapitre-13.pdf)
+
+## Introduction
+
 L'analyse factorielle des correspondances (A.F.C.) entre dans la catégorie des statistiques bivariées, mais elle a la particularité d'être multidimensionnelle au niveau des modalités prises par les variables qualitatives qu'elle étudie. Elle fut développée dans les années 1970, notamment par J.-P. Benzécri[^1]. Elle constitue une introduction à l'analyse factorielle et à sa propre généralisation multivariée, l'analyse factorielle des correspondances multiples (A.C.M.). Toutefois, la méthode optimisant l'A.F.C. sera étudiée dans le chapitre portant sur l'analyse factorielle en composantes principales (A.C.P.). Ainsi, lors du chapitre portant sur la généralisation de l'A.F.C. en A.C.M., certains aspects seront repris et réinterprétés.
 
 L'A.F.C. est une méthode statistique permettant de transformer un tableau de nombres en graphique, appelé *mapping*. Dit autrement, elle permet de visualiser la nature de la liaison entre deux variables. Elle est souvent utilisée en dépouillement d'enquête dans le cas où l'on ne se pose que deux questions.
@@ -197,10 +203,6 @@ Le ${\phi}^2$ permet d'identifier la nature de la liaison, c'est-à-dire la natu
 L'A.F.C. utilise des catégories mutuellement exclusives. La matrice s'y rapportant est un **tableau disjonctif**. Il n'est pas possible d'opérer deux choix simultanés.
 
 L'A.F.C. se généralise avec plusieurs variables. On parle alors d'analyse des composantes multiples (A.C.M.). Le tableau disjonctif est remplacé par le **tableau de Burt**[^3]. Lors du chapitre portant sur l'A.C.M., la première partie commencera par un exemple d'A.F.C.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-08-Chapitre-13.pdf)
 
 ## Notes de bas de page
 

@@ -1,15 +1,25 @@
 # Statistiques bivariées (1). Régression et corrélation statistique de deux variables quantitatives
 
-## [Statistique bivariée et géographie](./Topo/Chapitre-6.md)
+## Cours
 
-## [Relation entre deux variables quantitatives](./Topo/Chapitre-7.md)
+- [Statistique bivariée et géographie](./Topo/Chapitre-6.md)
 
-## [Méthode des moindres carrés](./Topo/Chapitre-8.md)
+- [Relation entre deux variables quantitatives](./Topo/Chapitre-7.md)
 
-## [Théorie de la corrélation. Corrélation simple](./Topo/Chapitre-9.md)
+- [Méthode des moindres carrés](./Topo/Chapitre-8.md)
 
-## [Régression linéaire entre deux variables aléatoires : étude détaillée](./Topo/Chapitre-10.md)
+- [Théorie de la corrélation. Corrélation simple](./Topo/Chapitre-9.md)
 
-## Liens
+- [Régression linéaire entre deux variables aléatoires : étude détaillée](./Topo/Chapitre-10.md)
 
-En construction
+## Exercices
+
+- [ACA](./Exercice-ACA/)
+
+- [EnviTERR](./Exercice-EnviTERR/)
+
+- [GeoINT](./Exercice-GeoINT/)
+
+- [GeoSUDS](./Exercice-GeoSUDS/)
+
+- [SCT](./Exercice-SCT/)

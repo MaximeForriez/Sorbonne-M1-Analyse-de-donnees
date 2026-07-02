@@ -1,5 +1,11 @@
 # Principes généraux de la statistique
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-02-Chapitre-01.pdf)
+
+## Introduction
+
 La géographie est une discipline qui se cherche toujours. Il est fréquent qu'elle méprise les définitions mathématiques élémentaires de la statistique sous prétexte que cela n'entre traditionnellement pas dans son champ disciplinaire. Pourtant, elle produit des données massives que seul l'outil statistique permet d'étudier. Ainsi, les relations entre les deux disciplines sont très souvent tendues et complexes. Cette situation paradoxale conduit bien souvent les géographes à sous-estimer l'apport des analyses statistiques, mais, s'ils utilisent mal cet outil, comment trouver des résultats satisfaisants ? Néanmoins, il eut tout de même quelques géographes qui furent de bons statisticiens[^1] [^2] [^3] [^4] [^5]. Ce cours s'inspire de leurs œuvres, mais également de manuels beaucoup plus mathématiques[^6] [^7] [^8] [^9] [^10] [^11].
 
 Pour commencer, dans ce premier chapitre, il faut revenir sur une confusion fréquente entre le singulier et le pluriel du terme « statistique ». **La** statistique désigne la science qui est une branche des mathématiques. La statistique est un **ensemble de méthodes** permettant de prendre de « bonnes décisions » en présence de l'incertain. **Les** statistiques renvoient à un ensemble de données concernant une catégorie de faits et utilisables par l'intermédiaire des techniques de la statistique. En géographie, on regroupe souvent les statistiques sous un vocable beaucoup plus vaste qui est celui de l'**information géographique** qui permet de classer les statistiques en fonction des objets géographiques étudiés. Par ailleurs, il ne faut pas confondre **la** statistique qui est la science, avec **une** statistique qui est l'étude particulière d'un estimateur dans le cadre de la statistique inférentielle. Il est important de fixer le vocabulaire pour un débutant, car la rencontre entre la rigueur mathématique et la souplesse du langage des sciences humaines et sociales parmi lesquelles se trouve la géographie, produit très souvent des expressions ambiguës et peu claires ; c'est un véritable *melting-pot*, pour le coup improbable, un comble pour les statistiques...
@@ -454,10 +460,6 @@ $\sum_{i = 1}^{k} {f_i} = 1$
 
 La fréquence, étant une valeur comprise entre 0 et 1, sert à établir une «
 probabilité réelle » dans le sens où elle est observée. Elle permet d'établir une **distribution statistique empirique** de laquelle il sera possible de conclure sur le type de loi de probabilité utilisée. Pour construire la distribution, il faut préablement connaître les paramètres statistiques élémentaires.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-02.pdf)
 
 ## Notes de bas de page
 

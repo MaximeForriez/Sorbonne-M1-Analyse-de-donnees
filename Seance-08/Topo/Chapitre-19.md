@@ -1,5 +1,11 @@
 # Les classifications automatiques
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-08-Chapitre-19.pdf)
+
+## Introduction
+
 Une classification automatique[^1] est une **analyse factorielle d'un tableau de dissimilarité**[^2] [^3] [^4] [^5] [^6] [^7]. Elle sert à recherche une partition d'un ensemble d'individus en **groupes homogènes et distincts**[^8]. Elle permet de :
 
 1. mettre en évidence une structure simple (partitionnement ou hiérarchie de groupes) dans un ensemble de données ;
@@ -621,10 +627,6 @@ Quelle est la validité de la classification obtenue ?
 - Comment obtenir une validation relative ? Il est nécessaire d'appliquer plusieurs méthodes de classification différentes et de choisir celle qui propose les meilleurs résultats.
 
 - Comment obtenir une validation externe ? Il est possible qu'il existe des connaissances *a priori* concernant le regroupement, ou non, d'une partie des données, qui peuvent être utilisées pour évaluer les résultats de la classification automatique.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-09-Chapitre-19.pdf)
 
 ## Notes de bas de page
 

@@ -1,5 +1,11 @@
 # Relation entre deux variables qualitatives
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-07-Chapitre-11.pdf)
+
+## Introduction
+
 Après avoir vu la puissance des liaisons entre variables quantitatives, il peut paraître étrange de s'intéresser à la relation entre deux variables qualitatives. Pourtant, cet aspect est fondamental, car il existe beaucoup plus de variables qualitatives que de variables quantitatives. Par ailleurs, toute variable quantitative peut être analysée par la liaison faisant l{}objet de ce chapitre.
 
 ## Corrélation entre deux variables qualitatives
@@ -175,10 +181,6 @@ tandis que $C_{ij} = n_{i.} f_{ij}$. On peut alors calculer la valeur du ${\chi}
 Il est à noter que l'écart à l'indépendance le plus important ${{\chi}_{22}}^2$ correspond à la plus forte contribution par rapport à la liaison des deux variables.
 
 Il ne reste qu'à déterminer la $p_{value}$ de $\upsilon = \left( n_1 - 1 \right) \left( n_2 - 1 \right)$ degrés de liberté, c'est-à-dire $\upsilon = 1$. Le test est unilatéral. Pour un seuil de confiance $\alpha$, il existe une table spécifique. Pour $\alpha = 0,05$, ${{\chi}_C}^2 = 3,841$. Ici, ${\chi}^2 < {{\chi}_C}^2$, ce qui signifie que $H_0$ est rejetée. Le taux de guérison entre les deux traitements est difféent. Les deux variables sont liées. En cas d'indépendance, il y aurait eu moins de 2,5 % de chances d'obtenir de telles différences entre les deux traitements. On aurait eu $0,01 < p_{value} < 0,025$.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-08-Chapitre-11.pdf)
 
 ## Notes de bas de page
 

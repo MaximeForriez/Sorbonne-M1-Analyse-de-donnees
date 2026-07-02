@@ -1,10 +1,12 @@
 # Statistiques univariées (1). Paramètres statistiques élémentaires
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-02-Chapitre-02.pdf)
+
+## Introduction
+
 Les paramètres statistiques concernent principalement les variables quantitatives, et ponctuellement qualitatives. Il existe trois sortes de paramètres : les paramètres de position, les paramètres de dispersion et les paramètres de forme.
-
-## Tutoriels
-
-- [Traitement, analyse et modélisation avec Pascal et Léa : la statistique descriptive](https://www.youtube.com/watch?v=99jDA-hN3P8&list=PLWwpP-YNkDjb7PefcxvLoOt0rsIcI3VWu)
 
 ## Première approche : espérance, variance et écart type
 
@@ -590,10 +592,6 @@ Si ${\beta}_2 = 0$ alors la distribution est dite **mésocurtique**. On peut cit
 
 > [!WARNING]
 > Si les coefficients d'asymétrie et d'aplatissement sont des estimateurs biaisés. Il faut utiliser les définitions de la moyenne et de l'écart type non biaisés pour les calculer dans le cadre d'un échantillon.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-03.pdf)
 
 ## Notes de bas de page
 

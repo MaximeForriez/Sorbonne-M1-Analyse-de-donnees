@@ -1,5 +1,11 @@
 # Méthode des moindres carrés
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-06-Chapitre-08.pdf)
+
+## Introduction
+
 Lorsque l'on lie plusieurs variables, il en existe deux types : les **variables explicatives $X$** et les **variables expliquées $Y$**.
 
 Il existe plusieurs types d'ajustement (Tab. 1).
@@ -109,10 +115,6 @@ Par extension de la méthode des moindres carrés, on parle de l'approximation d
 $\left\lbrace  \begin{array}{l} \sum_{i = 1}^{N} Z_i = a_0 N + a_1 \sum_{i = 1}^{N} X_i + a_2 \sum_{i = 1}^{N} Y_i \\ \sum_{i = 1}^{N} X_i Z_i = a_0 \sum_{i = 1}^{N} X_i + a_1 \sum_{i = 1}^{N} {X_i}^2 + a_2 \sum_{i = 1}^{N} X_i Y_i \\ \sum_{i = 1}^{N} Y_i Z_i = a_0 \sum_{i = 1}^{N} Y_i + a_1 \sum_{i = 1}^{N} X_i Y_i + a_2 \sum_{i = 1}^{N} {Y_i}^2 \end{array} \right.$
 
 On peut considérer des équations plus compliquées que l'équation linéaire. De telles équations correspondent à des surfaces dites **surfaces de régression**. Si le nombre de variables excède trois, on parle d'**hyperplans de régression**.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-07-Chapitre-08.pdf)
 
 ## Notes de bas de page
 

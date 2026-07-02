@@ -1,5 +1,11 @@
 # Méthodes factorielles
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-08-Chapitre-15.pdf)
+
+## Introduction
+
 Les méthodes factorielles sont des **analyses en axes principaux**. Elles permettent de dépouiller une enquête. Elles opèrent une **réduction** des variables en produisant des **visualisations graphiques**, et ce, en suivant toujours la même méthode :
 
 1. créer un tableau de données ;
@@ -316,10 +322,6 @@ Il faut vérifier les biais et interpréter les facteurs.
 8. Donner en toute prudence un nom aux facteurs. Cette démarche est risquée, car elle peut limiter l'interprétation aux noms données aux axes.
 
 « Il est évident que l'analyse factorielle n'est qu'un instrument, un outil : elle permet de décrire les grandes lignes d'un tableau de nombres comme une moyenne décrit une valeur centrale d'une distribution ou un écart type sa variabilité. Ces outils peuvent-ils avoir statut de modèle ? Dans le cas de l'analyse factorielle le débat existe »[^2] (p. 118).
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-09-Chapitre-15.pdf)
 
 ## Notes de bas de page
 

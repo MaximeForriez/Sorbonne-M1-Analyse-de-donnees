@@ -1,5 +1,11 @@
 # Analyse canonique
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-09-Chapitre-26.pdf)
+
+## Introduction
+
 Pour conclure le cours sur les analyses statistiques multivariées, ce chapitre propose une petite synthèse sur ce que l'on appelle l'**analyse canonique**. Elle opère la synthèse entre les méthodes exploratoires et les méthodes explicatives. Ce chapitre est large inspiré par [^1] (p. 63-82).
 
 L'analyse canonique fut inventée par Harold Hotelling en 1969[^2]. Elle constitue la base théorique de la plupart des méthodes d'analyse de données :
@@ -330,10 +336,6 @@ L'analyse canonique généralisée (ou analyse multicanonique) présente quatre 
 3. l'A.C.M. dans le cas où les tableaux $X_i$ sont des tableaux de variables indicatrices. L'A.C.M. est une analyse canonique généralisée dans laquelle les groupes de variables sont composés chacun par les indicatrices des classes d'une même variable qualitative ;
 
 4. l'A.F.M. dans le cas où les tableaux sont pondérés.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-10-Chapitre-26.pdf)
 
 ## Notes de bas de page
 

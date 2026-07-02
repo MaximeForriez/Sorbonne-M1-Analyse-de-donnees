@@ -1,5 +1,11 @@
 # Méthodes de classification
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-08-Chapitre-18.pdf)
+
+## Introduction
+
 Il existe deux types de méthodes de classification :
 
 1. les méthodes de classification non supervisées[^1] ;
@@ -63,10 +69,6 @@ L'objectif d'un classement est d'**expliquer** ou de **prévoir**.
 **Classe (ou groupe) :** regroupement d'objets.
 
 **Centre de la classe :** point moyen d'une classe d'objets.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-09-Chapitre-18.pdf)
 
 ## Notes de bas de page
 

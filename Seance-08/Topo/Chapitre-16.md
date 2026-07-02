@@ -1,5 +1,11 @@
 # L'analyse factorielle en composantes principales (A.C.P.)
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-08-Chapitre-16.pdf)
+
+## Introduction
+
 L'analyse factorielle en composantes principales (A.C.P.) est une **statistique exploratoire multidimensionnelle**. Elle concerne les variables quantitatives. Dans ce cadre, les individus sont caractérisés par beaucoup de variables. L'objectif est de décrire les données. De fait, il n'y a pas de questions sous-jacentes. La méthode s'oppose à la statistique inférentielle.
 
 Cela étant l'analyse factorielle nécessite la double connaissance préalable de la notion d'[espace vectoriel](../../Formulaire-mathematique/Seance-09/03-Generalisation%20de%20la%20notion%20de%20vecteurs.md) et du [calcul matriciel](../../Formulaire-mathematique/Seance-09/04-Calcul%20matriciel.md). Ce chapitre en fournit quelques éléments indispensables à la compréhension des calculs menées en analyse factorielle. Néanmoins, afin de ne pas surcharger le chapitre déjà bien, un certain nombre de notions sont détaillées en annexes (le produit scalaire).
@@ -1076,10 +1082,6 @@ Une A.C.P. avec $n$ individus et $m$ variables se résumé en :
 - une métrique $\mathbf{M} = \mathbf{I_m}$ ;
 
 - une pondération $\mathbf{D} = \frac{1}{n} \mathbf{I_n}$.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-09-Chapitre-16.pdf)
 
 ## Notes de bas de page
 

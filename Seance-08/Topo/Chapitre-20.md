@@ -1,5 +1,11 @@
 # L'analyse discriminante
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-08-Chapitre-20.pdf)
+
+## Introduction
+
 L'**analyse discriminante** est une technique statistique ayant pour objectif de décrire, expliquer et prédire l'appartenance à des groupes prédéfinis (classes, modalités de la variable à prédire, *etc*.) d'un ensemble d'observations (individus, exemples, *etc*.) à partir d'une série des variables prédictives (descripteurs, variables exogènes, *etc*.). La construction d'outils discriminants répond à des **objectifs opérationnels**.
 
 Le champ d'application de l'analyse discriminante est large :
@@ -87,10 +93,6 @@ Les traitements de variables se distinguent :
 - pour les valeurs aberrantes ;
 
 - pour les valeurs extrêmes.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-09-Chapitre-20.pdf)
 
 ## Notes de bas de page
 

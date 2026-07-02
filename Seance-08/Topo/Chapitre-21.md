@@ -1,5 +1,11 @@
 # L'analyse factorielle discriminante (A.F.D.)
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-08-Chapitre-21.pdf)
+
+## Introduction
+
 L'analyse discriminante est une des **techniques de *scoring***. C'est une méthode de classement. Il cherche à déterminer la contribution des variables qui expliquent l'**appartenance des individus à des groupes connus *a priori***. Deux ou plusieurs groupes sont comparés sur plusieurs variables pour déterminer s'ils différent et pour comprendre la nature des différences. L'analyse discriminante permet de 
 (1) décrire et de (2) classer.
 
@@ -491,10 +497,6 @@ Même si deux sous-ensembles diffèrent des variables retenues, très souvent l'
 ## Conclusion générale
 
 L'A.F.D. s'opère souvent un complément de l'A.C.P. ou de l'A.C.M.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-09-Chapitre-21.pdf)
 
 ## Notes de bas de page
 

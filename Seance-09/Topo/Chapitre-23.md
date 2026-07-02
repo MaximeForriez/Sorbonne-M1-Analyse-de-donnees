@@ -2,6 +2,10 @@
 
 Ce chapitre généralise la corrélation simple entre deux variables quantitatives à plusieurs variables quantitatives.
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-09-Chapitre-23.pdf)
+
 ## Généralisation de l'espérance et de la variance pour $n$ variables aléatoires
 
 Pour $n$ variables aléatoires, l'espérance d'une somme algébrique de variables aléatoires vaut :
@@ -226,7 +230,3 @@ Un tenseur d'ordre 2 permet l'association d'un nombre à toute combinaison possi
 **Figure 1. Représentation des directions du tenseur d'ordre 2 de la représentation n°1**
 
 Concrètement, un tenseur ${\sigma}_{ijk}$ représente un « cube de données ». On dit que c'est un tenseur d'ordre 3. Dans un tel tenseur, on associe un nombre à toute combinaison possible de trois vecteurs de base. On obtient le « cube de directions ».
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-10-Chapitre-23.pdf)

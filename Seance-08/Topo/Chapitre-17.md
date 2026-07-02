@@ -1,5 +1,11 @@
 # L'analyse factorielle des correspondances multiples (A.C.M.)
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-08-Chapitre-17.pdf)
+
+## Introduction
+
 L'A.C.M. étant une généralisation de l'A.F.C., il convient de reprendre ce qu'est une A.F.C. au travers un exemple simple. Dans les deux cas, il s'agit d'analyser la **correspondance** entre deux (A.F.C.) ou plusieurs (A.C.M.) variables qualitatives. On opère ce genre d'étude, en général, après une enquête.
 
 > [!NOTE]
@@ -1573,10 +1579,6 @@ L'analyse des correspondances (simple ou multiple) souffre deux effets : l'effet
 - « L'analyse des correspondances, du fait de la distance du ${\chi}^2$ qu'elle utilise, pondère les petits effectifs, et les prend ainsi en compte : c'est même là une de ses qualités reconnues. Cependant cette qualité peut se transformer en piège : il suffit pour cela, en analyse des correspondances multiples pour le traitement d'enquêtes, que quelques modalités soient prises en même temps par un petit nombre d'individus pour que ce regroupement apparaisse dans le premier facteur de l'analyse »[^11] (p. 309). C'est l'**effet de distinction**. « Le signal d'alarme de cet effet de distinction est ici la **distance au centre** : on sait que des points qui contribuent bien à un axe mais qui sont de faible effectif sont de ce fait éloigné du centre de gravité (effet de levier). En général quand un seul point est dans ce cas, le chercheur considère qu'il s'agit d'un phénomène perturbateur et le met en élément supplémentaire »[^11] (p. 312).
 
 Toute analyse factorielle (A.C.P., A.F.C., A.C.M. ou A.F.D.M.) est souvent le prélude d'une classification. En effet, « Tout « objet » scientifique est déjà le résultat d'une catégorisation préalable. L'observation étant déjà le fruit d'une construction, les régularités qu'un facteur discerne entre ces observations dépendent à la fois de la théorie sous-jacente à leur recueil et du champ d'observation dont elles sont issues »[^4] (p. 125)
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-09-Chapitre-17.pdf)
 
 ## Notes de bas de page
 

@@ -1,5 +1,11 @@
 # Statistique multivariée et géographie
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-08-Chapitre-14.pdf)
+
+## Introduction
+
 L'analyse des données a plus d'un siècle d'existence. L'**analyse factorielle** consiste à transformer un tableau en une représentation graphique. L'analyse canonique fut développée par C. Spearman[^1] [^2] et K. Pearson au début du XX<sup>e</sup> siècle. L'approche de Charles Spearman propose de comparer une matrice de données $\mathbf{T}$ avec le cas d'indépendance $\mathbf{T_0}$. Ainsi, il établit une égalité avec la meilleure approximation $\mathbf{T_1}$ et le reste des valeurs $\mathbf{T_2}$.
 
 $\mathbf{T} - \mathbf{T_0} = \mathbf{T_1} + \mathbf{T_2}$
@@ -93,10 +99,6 @@ L'analyse de la covariance est une méthode qui généralise les méthodes de r�
 ## Méthodes de prévision
 
 Les méthodes de prévision concernent principalement l'analyse et la prévision des séries chronologiques. Celles-ci ont principalement pour but de mettre en évidence une tendance, une saisonnalité et un résidu à l'aide d'un modèle multiplicatif, le plus utilisé en gestion, ou d'un modèle additif.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-09-Chapitre-14.pdf)
 
 ## Notes de bas de page
 

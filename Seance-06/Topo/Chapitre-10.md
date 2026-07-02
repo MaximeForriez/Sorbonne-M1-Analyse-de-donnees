@@ -1,5 +1,11 @@
 # Régression linéaire entre deux variables aléatoires : étude détaillée
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-06-Chapitre-10.pdf)
+
+## Introduction
+
 Souvent, en se fondant sur des données d'un échantillon, on souhaite estimer la valeur d'une variable aléatoire $Y$ en fonction d'une seconde variable $X$. La mise en relation des deux variables quantitatives (ou semi-quantitatives) s’effectue par l'intermédiaire de la méthode des moindres carrés. On obtient une **courbe** dite **de régression** ajustant au mieux les données de l'échantillon. Dans ce cas, le résultat obtenu est une courbe de régression de $Y$ en $X$, puisque l'on estime les valeurs de $Y$ à partir des valeurs de $X$. Toutefois, il est important de souligner qu'il est possible d'inverser le choix est de proposer une courbe de régression de $X$ en $Y$, et, de manière générale, les deux courbes obtenues seront différentes. Parmi toutes les courbes possibles, le cas d'une droite est le plus simple et le plus étudié. Dans ce cas, il s'agit d'une **régression linéaire**.
 
 > [!NOTE]
@@ -323,10 +329,6 @@ La méthode graphique consiste à tracer à l'oeil à l'aide d'une règle transp
 ### Droite de Mayer[^2]
 
 On découpe le nuage de points en deux sous-ensembles de même effectif. Pour chacun des deux sous-ensembles, on calcule la moyennes des $x_i$ et la moyenne des $y_i$. On obtient ainsi deux points moyens $\left( \bar{x_1}, \bar{y_1} \right)$ et $\left( \bar{x_2}, \bar{y_2} \right)$. Il reste à tracer la droite passant par ces deux points.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-07-Chapitre-10.pdf)
 
 ## Notes de bas de page
 

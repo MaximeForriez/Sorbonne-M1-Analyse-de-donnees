@@ -4,6 +4,12 @@ Exposer la richesse des statistiques multivariées en une séance est une gageur
 
 J'ai peu insisté sur le caractère progressif à l'intérieur de chaque séance, mais ici, il faut bien suivre l'ordre des analyses. **Le niveau de complexité et de puissance d'analyse est progressif**. Suivez bien l'ordre établi par la leçon.
 
+## Exercices
+
+- [EnviTERR](./Exercice-EnviTERR/)
+
+- [GeoINT](./Exercice-GeoINT/)
+
 ## Tutoriels
 
 >[!WARNING]
@@ -31,7 +37,7 @@ J'ai peu insisté sur le caractère progressif à l'intérieur de chaque séance
 
 - Avoir mathématiquement compris l'ensemble des analyses univariées et bivariées
 
-- Connaître l'algèbre linéraire : [matrices](../Formulaire-mathematique/Seance-09/04-Calcul%20matriciel.md), [systèmes linéaires](../Formulaire-mathematique/Seance-09/05-Algebre%20lineaire.md), [espaces vectoriels](../Formulaire-mathematique/Seance-09/03-Generalisation%20de%20la%20notion%20de%20vecteurs.md)
+- Connaître l'algèbre linéraire : [matrices](../Formulaire-mathematique/PDF/27-Calcul-matriciel.pdf), [systèmes linéaires](../Formulaire-mathematique/PDF/28-Algebre-lineaire.pdf), [espaces vectoriels](../Formulaire-mathematique/PDF/26-Generalisation-de-la-notion-de-vecteurs.pdf)
 
     - [Comprendre les matrices](https://www.youtube.com/watch?v=Dr9J1BIcVBw)
 
@@ -43,21 +49,21 @@ J'ai peu insisté sur le caractère progressif à l'intérieur de chaque séance
 
     - Jean-Marc Lasgouttes, 2023-2024, [Cours d'analyse de données : A.F.C. et A.C.M. - Synthèse du calcul matriciel](https://who.rocq.inria.fr/Jean-Marc.Lasgouttes/ana-donnees/cours-afc-acm.pdf)
 
-## [Tests statistiques](../Seance-05/Seance-05.md)
+## [Tests statistiques](../Seance-05/Topo/Chapitre-05.md)
 
 - [Table du Khi<sup>2</sup>](https://who.rocq.inria.fr/Jean-Marc.Lasgouttes/ana-donnees/chi-deux.pdf)
 
 - [Table de la loi normale centrée et réduite](https://www.math.u-bordeaux.fr/~mchabano/Tab0.pdf)
 
-## Calculer des [matrices](../Formulaire-mathematique/Seance-09/04-Calcul%20matriciel.md)
+## Calculer des [matrices](../Formulaire-mathematique/PDF/27-Calcul-matriciel.pdf)
 
 [Calculer des matrices](https://matrixcalc.org/fr/)
 
 ## La philosophie de l'analyse factorielle
 
-- [](./Topo/Chapitre-14.md)
+- [Statistique multivariée et géographie](./Topo/Chapitre-14.md)
 
-- [](./Topo/Chapitre-15.md)
+- [Méthodes factorielles](./Topo/Chapitre-15.md)
 
 ## [L'analyse factorielle en composantes principales (A.C.P.)](./Topo/Chapitre-16.md)
 
@@ -73,7 +79,7 @@ J'ai peu insisté sur le caractère progressif à l'intérieur de chaque séance
 
 - Philippeau, Gérard, (1992). *Comment interpréter les résultats d'une analyse en composantes principales*, Paris, Institut technique des céréales et des fourrages (I.T.C.F.), 64 p. [STAT-ICTF]
 
-## [L'analyse factorielle des correspondances (A.F.C.)](../Seance-08/Topo/Chapitre-13.md)
+## [L'analyse factorielle des correspondances (A.F.C.)](../Seance-07/Topo/Chapitre-13.md)
 
 - Escofier, Brigitte & Pagès, Jérôme, 2016, [*Analyses factorielles simples et multiples. Cours et études de cas*](https://cdn-cms.f-static.com/uploads/1460418/normal_5b9ba5dc15394.pdf), Paris, Dunod, VIII-392 p. [Sciences sup]
 
@@ -134,7 +140,3 @@ Maîtriser toutes les subtilités de l'A.F.M. n'est pas votre priorité, mais il
 ### L'analyse factorielle multiple procustéenne
 
 - Morand, Elisabeth & Pagès, Jérôme, 2007, [« Analyse factorielle multiple procustéenne »](https://www.numdam.org/item/JSFS_2007__148_2_65_0.pdf), *Journal de la Société française de statistique & Revue de statistique appliquée*, vol. 148, n°2, p. 65-97
-
-## Liens
-
-En construction

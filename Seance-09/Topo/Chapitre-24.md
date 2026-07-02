@@ -1,5 +1,11 @@
 # Analyse de la variance à double entrée
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Seance-09-Chapitre-24.pdf)
+
+## Introduction
+
 L'analyse de la variance[^1] permet de généraliser le test de comparaison de plusieurs échantillons au problème suivant : **la comparaison des moyennes de plusieurs échantillons indépendants**. Ainsi, comme son nom ne l'indique pas, l'analyse de la variance permet de **comparer des moyennes** – c'est la méthode à utiliser lorsqu'il faut comparer plusieurs moyennes (à partir de trois). Il faut ajouter que le procédé qui consiste à tester l'égalité des moyennes de chaque couple n'est pas satisfaisant. Aussi, la nécessité d'une procédure permettant de **tester globalement** l'ensemble de tous les échantillons est fournie par la **théorie de l'analyse de la variance**. Le but de cette théorie est d'étudier la variabilité d'un objet en fonction d'un ensemble de facteurs que l'on peut contrôler systématiquement, et que l'on souhaite dissocier la part revenant à chaque facteur.
 
 L'An.O.Va. permet d'étudier la dépendance d'une variable quantitative à une ou deux variables qualitatives. Plus généralement, les variables qualitatives sont appelées **facteurs**. Le facteur contrôlé peut intervenir dans des conditions qui différent :
@@ -279,10 +285,6 @@ Au risque $\alpha = 0,01$, l'hypothèse d'homogénéité doit être rejetée. Se
 
 > [!NOTE]
 > Si l'on choisit un risque $\alpha = 0,005$, aucun facteur n'est significatif.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Seance-10-Chapitre-24.pdf)
 
 ## Notes de bas de page
 
