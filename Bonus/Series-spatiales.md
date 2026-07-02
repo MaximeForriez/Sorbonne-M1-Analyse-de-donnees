@@ -1,3 +1,0 @@
-# Séries spatiales
-
-À venir...

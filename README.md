@@ -29,79 +29,103 @@ Si vous avez des difficultés à comprendre les équations, voici des cours et d
 > [!WARNING]
 > Retenez bien que la phrase « ouin, ouin, je suis un littéraire, je ne comprends rien aux mathématiques », je ne veux pas l'entendre. Moi-même je suis littéraire et, même si je ne peux démontrer l'intégralité des étapes d'une méthode statistique, je les comprends, et c'est en les comprenant que je peux utiliser les outils avec `Python`. Toutefois, pour la comprendre, il faut maîtriser des mathématiques élémentaires, donc vous **devez** rattraper ce que vous méconnaissez et le comprendre. C'est très important si vous voulez travailler dans les métiers touchant les données.
 
-### [Séance 1. Présentation du contenu du cours et mise en route](./Seance-01/Seance-01.md)
+### [Séance 1. Présentation du contenu du cours et mise en route](./Seance-01/README.md)
 
-Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%20Python%20avec%20Docker/).
+Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%20Python%20avec%20Docker/Fichiers-test).
 
-- Débutants [17/09/2025] - Clignancourt - Salle 426 - 12h00-14h00
+- ACA / SCT [23/09/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
-- Intermédiaires [01/10/2025] - Clignancourt - Salle 426 - 12h00-14h00
+- GeoINT [16/09/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
-- Confirmés (GEOINT) [17/09/2025] - Clignancourt - Salle 217 - 10h00-12h00
+- GeoSUDS [16/09/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-    - Rattrapage [24/09/2025] - Clignancourt - Salle 217 - 10h00-12h00
+- EnviTERR [22/09/2026] - Institut de géographie - Salle 301 - 11h00-13h00
 
-### [Séance 2. Principes généraux de la statistique](./Seance-02/Seance-02.md)
+### [Séance 2. Principes généraux de la statistique et paramètres statistiques élémentaires](./Seance-02/README.md)
 
-- Débutants [08/10/2025] - Clignancourt - Salle 426 - 12h00-14h00
+- ACA / SCT [07/10/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
-### [Séance 3. Statistiques univariées (1). Paramètres statistiques élémentaires](./Seance-03/Seance-03.md)
+- GeoSUDS [30/09/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-- Débutants [22/10/2025] - Clignancourt - Salle 426 - 12h00-14h00
+### [Séance 3. Statistiques univariées (1). Distributions statistiques](./Seance-03/README.md)
 
-### [Séance 4. Statistiques univariées (2). Distributions statistiques](./Seance-04/Seance-04.md)
+- ACA / SCT [07/10/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-- Débutants [12/11/2025] - Clignancourt - Salle 426 - 12h00-14h00
+- GeoSUDS [21/10/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-- Intermédiaires [15/10/2025] - Clignancourt - Salle 426 - 12h00-14h00
+### [Séance 4. Statistiques univariées (2). Statistiques inférentielles](./Seance-04/README.md)
 
-### [Séance 5. Statistiques univariées (3). Statistiques inférentielles](./Seance-05/Seance-05.md)
+- ACA / SCT [14/10/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-- Débutants [19/11/2025] - Clignancourt - Salle 426 - 12h00-14h00
+- GeoINT [30/09/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
-- Intermédiaires [05/11/2025] - Clignancourt - Salle 426 - 12h00-14h00
+- GeoSUDS [04/11/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-> [!WARNING]
-> Dernier cours en salle 426 pour les intermédiaires
+- EnviTERR [06/10/2026] - Institut de géographie - Salle 301 - 11h00-13h00
 
-- Confirmés (GEOINT) [01/10/2025] - Clignancourt - Salle 217 - 10h00-12h00
+### [Séance 5. Statistiques univariées (3). Statistique d'ordre des variables qualitatives](./Seance-05/README.md)
 
-### [Séance 6. Statistiques univariées (4). Statistique d'ordre des variables qualitatives](./Seance-06/Seance-06.md)
+- ACA / SCT [04/11/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
-- Débutants [26/11/2025] - Clignancourt - Salle 426 - 12h00-14h00
+- GeoINT [14/10/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
-- Intermédiaires [19/11/2025] - Clignancourt - Salle 217 - 10h00-12h00
+- GeoSUDS [18/11/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-> [!WARNING]
-> Changement de salle et d'horaire pour les intermédiaires
+- EnviTERR [13/10/2026] - Institut de géographie - Salle 301 - 11h00-13h00
 
-- Confirmés (GEOINT) [08/10/2025] - Clignancourt - Salle 217 - 10h00-12h00
+### [Séance 6. Statistiques bivariées (1). Régression et corrélation statistique de deux variables quantitatives](./Seance-06/README.md)
 
-### [Séance 7. Statistiques bivariées (1). Régression et corrélation statistique de deux variables quantitatives](./Seance-07/Seance-07.md)
+- ACA / SCT [25/11/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
-- Débutants [03/12/2025] - Clignancourt - Salle 426 - 12h00-14h00 (en version allégée)
+- GeoINT [21/10/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
-- Intermédiaires [26/11/2025] - Clignancourt - Salle 217 - 10h00-12h00
+- GeoSUDS [25/11/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-- Confirmés (GEOINT) [15/10/2025] - Clignancourt - Salle 217 - 10h00-12h00
+- EnviTERR [20/10/2026] - Institut de géographie - Salle 301 - 11h00-13h00
 
-### [Séance 8. Statistiques bivariées (2). Étude de deux variables qualitatives](./Seance-08/Seance-08.md)
+### [Séance 7. Statistiques bivariées (2). Étude de deux variables qualitatives](./Seance-07/README.md)
 
-- Débutants [03/12/2025] - Clignancourt - Salle 426 - 12h00-14h00 (en version allégée)
+- ACA / SCT [09/12/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-- Intermédiaires [03/12/2025] - Clignancourt - Salle 217 - 10h00-12h00
+- GeoINT [18/11/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
-- Confirmés (GEOINT) [22/10/2025] - Clignancourt - Salle 217 - 10h00-12h00
+- GeoSUDS [02/12/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-### [Séance 9. Statistiques multivariées (1). Les méthodes descriptives](./Seance-09/Seance-09.md)
+- EnviTERR [03/11/2026] - Institut de géographie - Salle 301 - 11h00-13h00
 
-- Confirmés (GEOINT) [05/11/2025] - Clignancourt - Salle 217 - 10h00-12h00
+### [Séance 8. Statistiques multivariées (1). Les méthodes descriptives](./Seance-08/README.md)
 
-### [Séance 10. Statistiques multivariées (2). Les méthodes explicatives](./Seance-10/Seance-10.md)
+- GeoINT [02/12/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
-- Confirmés (GEOINT) [12/11/2025] - Clignancourt - Salle 217 - 10h00-12h00
+- EnviTERR [17/11/2026] - Institut de géographie - Salle 301 - 11h00-13h00
 
-### [Bonus. Autres techniques statistiques](./Bonus/Bonus.md)
+### [Séance 9. Statistiques multivariées (2). Les méthodes explicatives](./Seance-09/README.md)
+
+- GeoINT [09/12/2026] - Clignancourt - Salle 217 - 10h00-12h00
+
+- EnviTERR [08/12/2026] - Institut de géographie - Salle 301 - 11h00-13h00
+
+### [Séance Bonus. Téléchargement des données à partir d'un A.P.I.](./Seance-Bonus/README.md)
+
+- ACA / SCT
+
+- GeoINT
+
+- GeoSUDS
+
+- EnviTERR
+
+### [Bonus. Autres techniques statistiques](./Bonus-Analyse-de-donnees/README.md)
+
+- ACA / SCT
+
+- GeoINT
+
+- GeoSUDS
+
+- EnviTERR
+
+### [Bonus. Compléments mathématiques concernant le cours de statistique](./Formulaire-mathematique/Complements-mathematiques-sur-le-cours-de-statistiques/README.md)
 
 ## Bibliographie générale
 
@@ -252,9 +276,9 @@ Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%
 
 ## [Statisticiens à connaître](./Formulaire-mathematique/Statisticiens.md)
 
-## [`Git`](./Git/Git.md)
+## [`Git`](./Git/README.md)
 
-## [`Python`](./Python/PYTHON-COMMANDES-DE-BASE.md)
+## [`Python`](./Python/README.md)
 
 ## Notation
 

@@ -1,10 +1,10 @@
 # Évaluation du module
 
-Il vous est demandé de me rendre l'ensemble de vos travaux pour le **19 décembre 2025 23:59:59 au plus tard**.
+Il vous est demandé de me rendre l'ensemble de vos travaux pour le **16 décembre 2026 23:59:59 au plus tard**.
 
 La procédure sera la suivante.
 
-- Dans l'onglet d'évaluation du `Discord` ou sur mon courriel professionnel alternatif : `mforriez.sorbonne.universite@gmail.com` (pour l'instant), vous m'envoyez le lien de votre portfolio.
+- Dans l'onglet d'évaluation du `Discord` ou sur mon courriel professionnel alternatif en cas de problème : `mforriez.sorbonne.universite@gmail.com` (pour l'instant), vous m'envoyez le lien de votre portfolio.
 
 > [!WARNING]
 > Le dépôt sur `GitHub` fait partie de l'exercice. Je n'évaluerai aucun autre type d'envoi. Si vous n'utilisez pas `GitHub`, votre note sera 00/20.
@@ -89,8 +89,6 @@ Votre rapport doit apporter la réponse aux questions posées de manière struct
 - Des points bonus seront attribués par rapport aux indications optionnelles contenues dans votre rapport.
 
 - Des points bonus seront attribués si vous me faites une annexe mathématique de toutes les équations calculées par `Python` que vous avez comprises.
-
-## [Résumé des barèmes](./Bareme-GEANDO-Questions-Code-Bonus.pdf)
 
 ## Remarque
 
