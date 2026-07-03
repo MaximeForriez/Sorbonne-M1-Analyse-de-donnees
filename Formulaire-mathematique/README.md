@@ -128,6 +128,8 @@ Mathématiquement, les probabilités peuvent être très complexes. En cas prati
 
 ## Exercices
 
+- [Problème du chevalier de Méré](./PDF/Mere.pdf)
+
 - [Exercices sur les probabilités](./PDF/02-Probabilites-Exercices.pdf)
 
 - [Corrections des exercices sur les probabilités](./PDF/02-Probabilites-Corrections.pdf)
@@ -150,7 +152,7 @@ La statistique est une application des probabilités. Elle effectue des tests st
 
     - [Quiz sur les variables aléatoires](https://www.apprendre-en-ligne.net/MADIMU2/PROBA/quiz3.php)
 
-## Séance 2. Algèbre et géométrie élémentaire (ou pas)
+## Séance 2. Algèbre et géométrie élémentaires (ou pas)
 
 ### Les applications dans le plan
 

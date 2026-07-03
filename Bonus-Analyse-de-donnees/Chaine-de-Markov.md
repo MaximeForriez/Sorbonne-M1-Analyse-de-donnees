@@ -1,5 +1,19 @@
 # Chaînes de Markov
 
+## Liens
+
+- [Topo en format P.D.F.](./PDF/Chaines-de-Markov.pdf)
+
+## Exercices
+
+- [Problème de Doudou le hamster](./PDF/Doudou.pdf)
+
+- [Exercices sur les chaînes de Markov](./PDF/Exercices-Chaine-de-Markov.pdf)
+
+- [Correction des exercices sur les chaînes de Markov](./PDF/Exercices-Chaine-de-Markov%20-Corrections.pdf)
+
+## Introduction
+
 Le processus de J. Bernoulli est une chaîne de A. A. Markov[^1] particulière.
 
 ## Vecteurs de probabilité
@@ -139,10 +153,6 @@ La diagonale principale d'une matrice carrée $A = \left( a_{ij} \right)$ d'ordr
 Soit $a_i$ un état absorbant d'une chaîne de Markov ayant la matrice de transition $P$, alors, pour $j \neq i$, la probabilité de transition d'ordre $n$, $p_{ij}^{\left( n \right)} = 0$ pour tout $n$. Il en résulte que toute puissance de $P$ a un élément nul et que par conséquent $P$ n'est pas régulière.
 
 **Théorème.** Si l'un des éléments de la diagonale principale d'une matrice stochastique $P$ est égal à $1$, $P$ n'est pas régulière, sauf si $P$ est une matrice $1 \times 1$.
-
-## Liens
-
-- [Topo en format P.D.F.](./PDF/Chaines-de-Markov.pdf)
 
 ## Notes de bas de page
 
