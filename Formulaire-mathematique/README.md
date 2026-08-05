@@ -8,6 +8,8 @@
 
 - [Outils statistiques en géographie](./Dumolard-Allignol-Paul-Quesseveur--L%20outil%20informatique%20en%20geographie.pdf)
 
+- [Comment les maths modernes ont-elles traumatisé toute une génération ?](https://www.youtube.com/watch?v=5Y5cAxucyHU)
+
 ## Séance 1. Ensembles finis, dénombrement, probabilités et statistique
 
 Il faut prendre conscience que toutes les données que vous aurez à traiter, sont des ensembles finis. Il faut bien comprendre cette notion afin de pouvoir dénombrer efficacement les éléments de vos données, d'où l'impératif de savoir bien compter vos éléments. Une fois que vous maîtriser les ensembles finis et le dénombrement, vous pourrez vous attaquer à la notion clé de probabilités. Les probabilités en statistique servent souvent de **modèles théoriques**. Tout l'art des statistiques est de comparer une distribution observée de fréquences avec une distribution théorique de probabilités. Ainsi, cette leçon s'achève par les notions de clés de statistiques, et surtout leur comparaison avec les notions vues en probaibilités.
@@ -416,17 +418,83 @@ En construction
 
 - [Corrections des exercices sur le calcul matriciel](./PDF/27-Matrices-Corrections.pdf)
 
+### Systèmes linéaire
+
+#### Cours
+
+- [Topo en format P.D.F.](./PDF/28-Systeme-lineaire.pdf)
+
+#### Exercices
+
+- [Exercices sur le calcul matriciel](./PDF/28-Systeme-lineaire-Exercices.pdf)
+
+- [Corrections des exercices sur le calcul matriciel](./PDF/28-Systeme-lineaire-Corrections.pdf)
+
 ### L'algèbre linéaire
 
 #### Cours
 
-- [Topo en format P.D.F.](./PDF/28-Algebre-lineaire.pdf)
+- [Topo en format P.D.F.](./PDF/29-Algebre-lineaire.pdf)
+
+### Logique et raisonnement
+
+#### Cours
+
+- [Topo en format P.D.F.](./PDF/31-Logique-et-raisonnements.pdf)
+
+### Théorie des ensembles
+
+#### Cours
+
+- [Topo en format P.D.F.](./PDF/32-Theorie-des-ensembles.pdf)
+
+### Structures algébriques
+
+#### Cours
+
+- [Topo en format P.D.F.](./PDF/33-Structures-algebriques.pdf)
+
+### Algèbre de Boole
+
+#### Cours
+
+- [Topo en format P.D.F.](./PDF/34-Algebre-de-Boole.pdf)
+
+### Approche algébrique des polynômes
+
+#### Cours
+
+- [Topo en format P.D.F.](./PDF/35-Polynomes-Approche-algebrique.pdf)
+
+### Polynômes orthogonaux
+
+#### Cours
+
+- [Topo en format P.D.F.](./PDF/36-Polynomes-orthogonaux.pdf)
+
+### Arithmétique
+
+#### Cours
+
+- [Topo en format P.D.F.](./PDF/37-Arithmetique.pdf)
 
 #### Exercices
 
-- [Exercices sur le calcul matriciel](./PDF/28-Applications-lineaires-Exercices.pdf)
+- [Exercices d'arithmétique](./PDF/37-Arithmetique-Exercices.pdf)
 
-- [Corrections des exercices sur le calcul matriciel](./PDF/28-Applications-lineaires-Corrections.pdf)
+- [Corrections des exercices d'arithmétique](./PDF/37-Arithmetique-Exercices.pdf)
+
+### Différentielles et vecteurs
+
+#### Cours
+
+- [Topo en format P.D.F.](./PDF/42-Differentielles-et-vecteurs.pdf)
+
+### Courbes polaires
+
+#### Cours
+
+- [Topo en format P.D.F.](./PDF/43-Courbes-polaires.pdf)
 
 ## Bibliographie
 
