@@ -114,7 +114,7 @@ Mathématiquement, les probabilités peuvent être très complexes. En cas prati
 
 À partir des lois de probabilités, il devient possible d'établir les **distributions statistiques**.
 
-## Ressources
+#### Ressources
 
 - [Probabilité](https://www.apprendre-en-ligne.net/MADIMU2/PROBA/PROBA2.PDF) (Cours de Didier Müller)
 
@@ -124,11 +124,11 @@ Mathématiquement, les probabilités peuvent être très complexes. En cas prati
 
     - [Approfondissement et programmes en `Python`](https://www.apprendre-en-ligne.net/hearthstone/index.html)
 
-## Cours
+#### Cours
 
 - [Topo en format P.D.F.](./PDF/03-Probabilites.pdf)
 
-## Exercices
+#### Exercices
 
 - [Problème du chevalier de Méré](./PDF/Mere.pdf)
 
@@ -495,6 +495,15 @@ En construction
 #### Cours
 
 - [Topo en format P.D.F.](./PDF/43-Courbes-polaires.pdf)
+
+
+## Séance Bonus
+
+### Théorie des graphes
+
+#### Ressources
+
+- [Tutoriel sur la théorie des graphes](https://www.youtube.com/@a_la_decouverte_des_graphes/featured)
 
 ## Bibliographie
 
