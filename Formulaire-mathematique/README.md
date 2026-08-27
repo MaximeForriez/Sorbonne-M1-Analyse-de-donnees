@@ -1,5 +1,9 @@
 # Cours express de mathématiques
 
+Cette partie est une partie bonus permettant d'approfondir, de réviser, la quasi-totalité des notions mathématiques abordées dans les cours de statistiques, mais non expliquée. La plupart de ces documents sont une collection d'axiomes, de propriétés, de théorèmes, de propositions, de lemmes, *etc*. Lorsque les démonstrations sont intéressantes ou accessibles, elles sont proposées, sinon l'ensemble de ces documents ne sont qu'une vague synthèse des connaissances utiles en mathématiques appliquées.
+
+L'ensemble des fiches propose de parcourir ce qui est vu en mathématiques depuis le collègue jusqu'à la licence de mathématiques (ou toute licence ayant un programme de mathématiques avancées). Il est fondamental de comprendre avant tout lecture des fiches qu'il faut davantage comprendre l'idée générale développée et à quoi elle pourrait servir dans une analyse de données, plutôt que de bloquer sur une notion mathématique peut-être abordée plus en détail dans une autre fiche. Vous le comprendrez assez rapidement l'ensemble de ces fiches, bien que séparées, forme un bloc de connaissances. Les concepts se répètent dans différentes branches des mathématiques.
+
 - [Lettres spéciales](./Lettres-speciales-utilisees.md)
 
 - [Statisticiens - Mathématiciens](./Statisticiens.md)
@@ -164,7 +168,7 @@ La statistique est une application des probabilités. Elle effectue des tests st
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Les règles de calcul élémentaire (ou l'algèbre des nombres réels)
 
@@ -174,7 +178,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### La géométrie descriptive
 
@@ -184,7 +188,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Trigonométrie
 
@@ -194,7 +198,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Les vecteurs
 
@@ -204,7 +208,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Équations cartésiennes
 
@@ -214,7 +218,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Calcul vectoriel dans le plan
 
@@ -224,7 +228,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Calcul vectoriel dans l'espace
 
@@ -234,7 +238,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Courbes paramétrées
 
@@ -244,7 +248,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Barycentre dans le plan et dans l'espace à trois dimensions
 
@@ -254,7 +258,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ## Séance 3. Les fonctions mathématiques
 
@@ -266,7 +270,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Les fonctions numériques d'une variable réelle
 
@@ -276,7 +280,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Les fonctions numériques de deux variables réelles
 
@@ -286,7 +290,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Les fonctions numériques de plusieurs variables réelles
 
@@ -296,7 +300,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Les approximations de fonctions
 
@@ -306,7 +310,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Courbe et tracé
 
@@ -316,7 +320,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ## Séance 4. Notation indicielle, suites numériques et séries numériques
 
@@ -328,7 +332,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Les suites numériques
 
@@ -338,7 +342,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Les séries numériques
 
@@ -348,7 +352,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ## Séance 5. Les nombres complexes
 
@@ -360,7 +364,23 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
+
+### Les fonctions complexes
+
+#### Cours
+
+- [Topo en format P.D.F.](./PDF/44-Fonctions-complexes.pdf)
+
+### Les quaternions
+
+#### Cours
+
+- [Topo en format P.D.F.](./PDF/45-Quaternions.pdf)
+
+#### Exercices
+
+- En construction
 
 ## Séance 6. Les équations différentielles
 
@@ -372,7 +392,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ## Séance 7. Vecteurs, matrices et algèbre linéaire
 
@@ -384,7 +404,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Les vecteurs dans l'espace à trois dimensions
 
@@ -394,7 +414,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Les vecteurs dans un hyperplan
 
@@ -404,7 +424,7 @@ En construction
 
 #### Exercices
 
-En construction
+- En construction
 
 ### Le calcul matriciel
 
@@ -418,7 +438,7 @@ En construction
 
 - [Corrections des exercices sur le calcul matriciel](./PDF/27-Matrices-Corrections.pdf)
 
-### Systèmes linéaire
+### Systèmes linéaires
 
 #### Cours
 
@@ -436,11 +456,19 @@ En construction
 
 - [Topo en format P.D.F.](./PDF/29-Algebre-lineaire.pdf)
 
+#### Exercices
+
+- En construction
+
 ### Logique et raisonnement
 
 #### Cours
 
 - [Topo en format P.D.F.](./PDF/31-Logique-et-raisonnements.pdf)
+
+#### Exercices
+
+- En construction
 
 ### Théorie des ensembles
 
@@ -448,11 +476,19 @@ En construction
 
 - [Topo en format P.D.F.](./PDF/32-Theorie-des-ensembles.pdf)
 
+#### Exercices
+
+- En construction
+
 ### Structures algébriques
 
 #### Cours
 
 - [Topo en format P.D.F.](./PDF/33-Structures-algebriques.pdf)
+
+#### Exercices
+
+- En construction
 
 ### Algèbre de Boole
 
@@ -460,17 +496,39 @@ En construction
 
 - [Topo en format P.D.F.](./PDF/34-Algebre-de-Boole.pdf)
 
+#### Exercices
+
+- En construction
+
 ### Approche algébrique des polynômes
 
 #### Cours
 
 - [Topo en format P.D.F.](./PDF/35-Polynomes-Approche-algebrique.pdf)
 
+#### Exercices
+
+- En construction
+
 ### Polynômes orthogonaux
 
 #### Cours
 
 - [Topo en format P.D.F.](./PDF/36-Polynomes-orthogonaux.pdf)
+
+#### Exercices
+
+- En construction
+
+### Tenseurs
+
+#### Cours
+
+- À venir
+
+#### Exercices
+
+- À venir
 
 ### Arithmétique
 
@@ -484,11 +542,35 @@ En construction
 
 - [Corrections des exercices d'arithmétique](./PDF/37-Arithmetique-Exercices.pdf)
 
+### Espaces topologiques
+
+#### Cours
+
+- [Espaces topologiques](./PDF/38-Espaces-topologiques.pdf)
+
+#### Exercices
+
+- En construction
+
+### Espaces métriques
+
+#### Cours
+
+- [Espaces métriques](./PDF/39-Espaces-metriques.pdf)
+
+#### Exercices
+
+- En construction
+
 ### Différentielles et vecteurs
 
 #### Cours
 
 - [Topo en format P.D.F.](./PDF/42-Differentielles-et-vecteurs.pdf)
+
+#### Exercices
+
+- En construction
 
 ### Courbes polaires
 
@@ -496,14 +578,63 @@ En construction
 
 - [Topo en format P.D.F.](./PDF/43-Courbes-polaires.pdf)
 
+#### Exercices
+
+- En construction
 
 ## Séance Bonus
 
 ### Théorie des graphes
 
+- À venir
+
+#### Exercices
+
+- À venir
+
 #### Ressources
 
 - [Tutoriel sur la théorie des graphes](https://www.youtube.com/@a_la_decouverte_des_graphes/featured)
+
+### Analyse non standard
+
+#### Cours
+
+- [Analyse non standard](./PDF/40-L-analyse-non-standard.pdf)
+
+#### Exercices
+
+- En construction
+
+### Dérivation non entière
+
+#### Cours
+
+- [Dérivation non entière](./PDF/41-Derivation-non-entiere.pdf)
+
+#### Exercices
+
+- En construction
+
+### Groupes des rotations de l'ensemble à trois dimensions
+
+#### Cours
+
+- [Groupes des rotations de l'ensemble à trois dimensions](./PDF/46-Groupes-des-rotations-de-l-ensemble-a-trois-dimensions.pdf)
+
+#### Exercices
+
+- En construction
+
+### Groupes de H. Lorentz
+
+#### Cours
+
+- [Groupes de H. Lorentz](./PDF/47-Groupes-de-Lorentz.pdf)
+
+#### Exercices
+
+- En construction
 
 ## Bibliographie
 
