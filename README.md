@@ -18,6 +18,20 @@ Chaque séance possède son dossier. Vous devez les sélectionner en fonction vo
 
 - Vous rendre autonome dans la lecture, la compréhension globale et l'analyse de (vos) données
 
+## Livrets d'accueil
+
+- [Livret général pour l'ensemble des étudiants](./Livret-Etudiant-Donnees.pdf)
+
+- [Livret d'exercices d'ACA](./Livret-ACA.pdf)
+
+- [Livret d'exercices d'EnviTERR](./Livret-EnviTERR.pdf)
+
+- [Livret d'exercices de GéoINT](./Livret-GeoINT.pdf)
+
+- [Livret d'exercices de GéoSUDS](./Livret-GeoSUDS.pdf)
+
+- [Livret d'exercices de SCT](./Livret-SCT.pdf)
+
 ## Plan du cours
 
 [Planning synthétisé](./Forriez-M1-GEANDO.pdf)
