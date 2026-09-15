@@ -147,11 +147,11 @@ Le choix de la méthode statistique dépend de la nature des variables.
 
 En géographie, tous les cas statistiques sont possibles.
 
-1. La statistique univariée étudie un seul caractère (niveau débutant).
+1. La statistique univariée étudie un seul caractère (niveaux 1 et 2).
 
-2. La statistique bivariée étudie deux caractères (niveau intermédiaire).
+2. La statistique bivariée étudie deux caractères (niveaux 1 et 2).
 
-3. La statistique multivariée étudie plus de deux caractères (niveau confirmé - GEOINT).
+3. La statistique multivariée étudie plus de deux caractères (niveau 2).
 
 ### La géographie à l'ère des humanités numériques
 
@@ -169,7 +169,7 @@ En géographie, tous les cas statistiques sont possibles.
 
 ### Découverte du `Python`
 
-- [Diaporama du cours d'introduction](./PDF/Cours-GEAND-Algorithmique-Python.pdf)
+- [Diaporama du cours d'introduction](./PDF/Cours-GEANDO-Algorithmique-Python.pdf)
 
 ## Bibliographie
 
