@@ -47,13 +47,15 @@ Si vous avez des difficultés à comprendre les équations, voici des cours et d
 
 Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%20Python%20avec%20Docker/Fichiers-test).
 
-- ACA / SCT [23/09/2026] - Clignancourt - Salle 217 - 10h00-12h00
+- SCT (seulement) [23/09/2026] - Clignancourt - Salle 217 - 10h00-12h00
+
+- ACA (seulement) [29/09/2026] - Institut de géographie - Salle 301 - 9h30-11h30
 
 - GeoINT [16/09/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
 - GeoSUDS [16/09/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-- EnviTERR [22/09/2026] - Institut de géographie - Salle 301 - 11h00-13h00
+- EnviTERR [29/09/2026] - Institut de géographie - Salle 301 - 11h30-13h30
 
 ### [Séance 2. Principes généraux de la statistique et paramètres statistiques élémentaires](./Seance-02/README.md)
 
@@ -75,7 +77,7 @@ Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%
 
 - GeoSUDS [04/11/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-- EnviTERR [06/10/2026] - Institut de géographie - Salle 301 - 11h00-13h00
+- EnviTERR [13/10/2026] - Institut de géographie - Salle 301 - 11h00-13h00
 
 ### [Séance 5. Statistiques univariées (3). Statistique d'ordre des variables qualitatives](./Seance-05/README.md)
 
@@ -85,7 +87,7 @@ Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%
 
 - GeoSUDS [18/11/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-- EnviTERR [13/10/2026] - Institut de géographie - Salle 301 - 11h00-13h00
+- EnviTERR [20/10/2026] - Institut de géographie - Salle 301 - 11h00-13h00
 
 ### [Séance 6. Statistiques bivariées (1). Régression et corrélation statistique de deux variables quantitatives](./Seance-06/README.md)
 
@@ -95,7 +97,7 @@ Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%
 
 - GeoSUDS [25/11/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-- EnviTERR [20/10/2026] - Institut de géographie - Salle 301 - 11h00-13h00
+- EnviTERR [03/11/2026] - Institut de géographie - Salle 301 - 11h00-13h00
 
 ### [Séance 7. Statistiques bivariées (2). Étude de deux variables qualitatives](./Seance-07/README.md)
 
@@ -105,13 +107,13 @@ Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%
 
 - GeoSUDS [02/12/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
-- EnviTERR [03/11/2026] - Institut de géographie - Salle 301 - 11h00-13h00
+- EnviTERR [17/11/2026] - Institut de géographie - Salle 301 - 11h00-13h00
 
 ### [Séance 8. Statistiques multivariées (1). Les méthodes descriptives](./Seance-08/README.md)
 
 - GeoINT [02/12/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
-- EnviTERR [17/11/2026] - Institut de géographie - Salle 301 - 11h00-13h00
+- EnviTERR [24/11/2026] - Institut de géographie - Salle 301 - 12h00-14h00
 
 ### [Séance 9. Statistiques multivariées (2). Les méthodes explicatives](./Seance-09/README.md)
 
