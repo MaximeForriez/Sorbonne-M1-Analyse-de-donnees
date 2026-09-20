@@ -6,7 +6,7 @@ import scipy
 import scipy.stats
 
 def ouvrirUnFichier(nom):
-    with open(nom, "r", encoding="utf-8") as fichier:
+    with open(nom, "r", encoding = "utf-8") as fichier:
         contenu = pd.read_csv(fichier)
     return contenu
 
@@ -33,21 +33,24 @@ def sommeDesLignes(tableau):
         sommeLigne.append(np.sum(list(ligne)))
     return sommeLigne
 
-data = pd.DataFrame(ouvrirUnFichier("./data/Socioprofessionnelle-vs-sexe.csv"))
+data = pd.DataFrame(ouvrirUnFichier("./data/arrondissements-enseignes.csv"))
 # print(data)
 
 # Création du tableau de contingence
 # Contrairement à l'usage, vous ne devez pas créer de tableau croisé dynamique, puisque le fichier est déjà un tableau de contingence
-tableauDeContingence = tableauDeContingence(data["Catégorie"], {"Femmes": data["Femmes"], "Hommes": data["Hommes"]})
-print(tableauDeContingence)
+nomdescolonnes = list(data.head(0))
+# print(nomdescolonnes)
+dictionnaire = {}
+for element in range(1, len(nomdescolonnes)):
+    dictionnaire[nomdescolonnes[element]] = data[nomdescolonnes[element]]
+tableauDeContingence = tableauDeContingence(data[nomdescolonnes[0]], dictionnaire)
+# print(tableauDeContingence)
 
 # Question 1
 print("Question 1")
-# Calculer les marges
 
 # Question 2
 print("Question 2")
-# Vérification du calcul des marges
 
 # Question 3
 print("Question 3")
@@ -55,4 +58,6 @@ print("Question 3")
 
 # Question 4
 print("Question 4")
-# Calculer l'intensité de liaison phi2 de Pearson
+
+# Question bonus
+print("Question bonus")
