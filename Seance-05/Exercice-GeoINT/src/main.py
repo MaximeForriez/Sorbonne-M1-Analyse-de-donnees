@@ -63,9 +63,7 @@ print("Question 6")
 
 # Question 7
 print("Question 7")
-
-# Question 8
-print("Question 8")
+# Mettre ici votre réponse argumentée
 
 # Question 9
 print("Question 9")
