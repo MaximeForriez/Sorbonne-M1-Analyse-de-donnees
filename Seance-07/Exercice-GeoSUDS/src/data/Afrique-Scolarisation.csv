@@ -1,0 +1,55 @@
+"Country Name","Country Code","Continent","SE.PRM.ENRL","SE.PRM.UNE","SE.SEC.ENRL"
+"Angola","ago","Afrique",5383867,2281912,2591552
+"Burundi","bdi","Afrique","","",""
+"Bénin","ben","Afrique","","",""
+"Burkina Faso","bfa","Afrique",2835544,1647302,1185480
+"Botswana","bwa","Afrique","","",""
+"République centrafricaine","caf","Afrique","","",""
+"Côte d'Ivoire","civ","Afrique",4632737,664020,3098275
+"Cameroun","cmr","Afrique",5155547,167116,2007361
+"Congo, République démocratique du","cod","Afrique",21145524,"",7928331
+"Congo, République du","cog","Afrique",880625,171125,""
+"Comores","com","Afrique","","",""
+"Cabo Verde","cpv","Afrique","","",""
+"Djibouti","dji","Afrique",69705,"",69362
+"Algérie","dza","Afrique",5187616,45584,5580053
+"Égypte, République arabe d’","egy","Afrique",15066458,691113,11190521
+"Érythrée","eri","Afrique","","",""
+"Éthiopie","eth","Afrique",15545804,4423953,""
+"Gabon","gab","Afrique","","",""
+"Ghana","gha","Afrique","","",""
+"Guinée","gin","Afrique","","",""
+"Gambie","gmb","Afrique",428053,81428,""
+"Guinée-Bissau","gnb","Afrique","","",""
+"Guinée équatoriale","gnq","Afrique","","",""
+"Kenya","ken","Afrique",8043380,468923,6737289
+"Libéria","lbr","Afrique","","",""
+"Libye","lby","Afrique","","",""
+"Lesotho","lso","Afrique",312005,117314,""
+"Maroc","mar","Afrique",4683013,"",3434273
+"Madagascar","mdg","Afrique",5113497,129499,""
+"Mali","mli","Afrique",2973205,1186892,1305142
+"Mozambique","moz","Afrique","","",""
+"Mauritanie","mrt","Afrique",861768,"",""
+"Maurice","mus","Afrique",89001,1399,""
+"Malawi","mwi","Afrique",4623698,"",1160938
+"Namibie","nam","Afrique",564723,3788,228486
+"Niger","ner","Afrique",3022704,1779825,910184
+"Nigéria","nga","Afrique",33415352,9070702,15198844
+"Rwanda","rwa","Afrique",2838343,9134,819262
+"Soudan","sdn","Afrique","","",""
+"Sénégal","sen","Afrique",2340219,658669,1283240
+"Sierra Leone","sle","Afrique",2017170,"",1162280
+"République fédérale de Somalie","som","Afrique",464607,"",115828
+"Soudan du Sud","ssd","Afrique","","",""
+"Sao Tomé-et-Principe","stp","Afrique","","",""
+"Eswatini","swz","Afrique",222351,"",""
+"Seychelles","syc","Afrique",9598,329,7861
+"Tchad","tcd","Afrique",2955477,893810,750180
+"Togo","tgo","Afrique",1664472,10944,915214
+"Tunisie","tun","Afrique",1337527,14015,""
+"Tanzanie","tza","Afrique",11428969,1682043,""
+"Ouganda","uga","Afrique","","",""
+"Afrique du Sud","zaf","Afrique",7521185,448146,5500042
+"Zambie","zmb","Afrique","","",""
+"Zimbabwe","zwe","Afrique",2953307,289420,""

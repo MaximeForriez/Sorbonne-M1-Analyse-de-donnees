@@ -1,0 +1,217 @@
+"Country Name","Country Code","Continent","SE.PRM.ENRL","SE.PRM.UNE","SE.SEC.ENRL"
+"Aruba","abw","Amérique","","",""
+"Afghanistan","afg","Asie",7507218,"",3429308
+"Angola","ago","Afrique",5383867,2281912,2591552
+"Albanie","alb","Europe",146962,17039,216158
+"Andorre","and","Europe",4271,8,5063
+"Émirats arabes unis","are","Asie",554644,919,860281
+"Argentine","arg","Amérique",4580276,32816,4562016
+"Arménie","arm","Asie",156224,5589,274915
+"Samoa américaines","asm","Océanie","","",""
+"Antigua-et-Barbuda","atg","Amérique",8720,133,7160
+"Australie","aus","Océanie",2260382,4719,2634165
+"Autriche","aut","Europe",359638,5345,702731
+"Azerbaïdjan","aze","Asie",627013,9457,1065995
+"Burundi","bdi","Afrique","","",""
+"Belgique","bel","Europe",814388,13226,1182656
+"Bénin","ben","Afrique","","",""
+"Burkina Faso","bfa","Afrique",2835544,1647302,1185480
+"Bangladesh","bgd","Asie",16252802,1085126,15661732
+"Bulgarie","bgr","Europe",232742,13937,484824
+"Bahreïn","bhr","Asie",117496,8399,110169
+"Bahamas","bhs","Amérique",23311,8599,29409
+"Bosnie-Herzégovine","bih","Europe",141518,2933,226755
+"Bélarus","blr","Europe",451993,25871,725721
+"Belize","blz","Amérique",44727,5322,37444
+"Bermudes","bmu","Amérique",3377,"",3484
+"Bolivie","bol","Amérique",1389317,58597,1277841
+"Brésil","bra","Amérique",15129503,"",21635780
+"Barbade","brb","Amérique",17209,2832,18515
+"Brunéi Darussalam","brn","Asie",38604,233,40924
+"Bhoutan","btn","Asie",88861,9805,69354
+"Botswana","bwa","Afrique","","",""
+"République centrafricaine","caf","Afrique","","",""
+"Canada","can","Amérique",2430798,127666,2703607
+"Suisse","che","Europe",549595,252,626178
+"Îles Anglo-Normandes","chi","Europe","","",""
+"Chili","chl","Amérique",1526597,20233,1621105
+"Chine","chn","Asie",107535825,"",96318011
+"Côte d'Ivoire","civ","Afrique",4632737,664020,3098275
+"Cameroun","cmr","Afrique",5155547,167116,2007361
+"Congo, République démocratique du","cod","Afrique",21145524,"",7928331
+"Congo, République du","cog","Afrique",880625,171125,""
+"Colombie","col","Amérique","","",""
+"Comores","com","Afrique","","",""
+"Cabo Verde","cpv","Afrique","","",""
+"Costa Rica","cri","Amérique",474484,21131,479766
+"Cuba","cub","Amérique",724307,24569,679586
+"Curacao","cuw","Amérique",11693,366,12675
+"Îles Caïmans","cym","Amérique",4575,6,4036
+"Chypre","cyp","Europe",58672,247,59926
+"République tchèque","cze","Europe",579161,4700,918975
+"Allemagne","deu","Europe",3214132,6559,6926438
+"Djibouti","dji","Afrique",69705,"",69362
+"Dominique","dma","Amérique",5766,230,4483
+"Danemark","dnk","Europe",435969,3707,527242
+"République dominicaine","dom","Amérique",1165161,57004,856499
+"Algérie","dza","Afrique",5187616,45584,5580053
+"Équateur","ecu","Amérique",1772335,86090,1810723
+"Égypte, République arabe d’","egy","Afrique",15066458,691113,11190521
+"Érythrée","eri","Afrique","","",""
+"Espagne","esp","Europe",2863340,35806,3663347
+"Estonie","est","Europe",90300,2264,99476
+"Éthiopie","eth","Afrique",15545804,4423953,""
+"Finlande","fin","Europe",364836,5714,534380
+"Fidji","fji","Océanie",115485,"",113605
+"France","fra","Europe",4179223,4470,6257733
+"Îles Féroé","fro","Europe","","",""
+"Micronésie, États fédérés de","fsm","Océanie",11827,3446,""
+"Gabon","gab","Afrique","","",""
+"Royaume-Uni","gbr","Europe",4864956,3326,6396663
+"Géorgie","geo","Asie",345099,16447,302590
+"Ghana","gha","Afrique","","",""
+"Gibraltar","gib","Europe",2824,62,2429
+"Guinée","gin","Afrique","","",""
+"Gambie","gmb","Afrique",428053,81428,""
+"Guinée-Bissau","gnb","Afrique","","",""
+"Guinée équatoriale","gnq","Afrique","","",""
+"Grèce","grc","Europe",578574,622,687813
+"Grenade","grd","Amérique",9511,"",8209
+"Groenland","grl","Amérique","","",""
+"Guatemala","gtm","Amérique",2413805,197954,1078266
+"Guam","gum","Océanie","","",""
+"Guyana","guy","Amérique",91199,17362,63477
+"Chine, RAS de Hong Kong","hkg","Asie",337549,4755,333676
+"Honduras","hnd","Amérique",1069213,309515,546949
+"Croatie","hrv","Europe",147483,2642,325996
+"Haïti","hti","Amérique","","",""
+"Hongrie","hun","Europe",381013,7985,801694
+"Indonésie","idn","Asie",28619329,211985,26883110
+"Île de Man","imn","Europe","","",""
+"Inde","ind","Asie",131298001,1722439,134342141
+"Irlande","irl","Europe","","",""
+"Iran, République islamique d’","irn","Asie",9085264,9163,6617876
+"Iraq","irq","Asie","","",""
+"Islande","isl","Europe",32314,599,37056
+"Israël","isr","Asie",1037953,21176,928356
+"Italie","ita","Europe",2625062,52117,4606046
+"Jamaïque","jam","Amérique",195202,27604,184800
+"Jordanie","jor","Asie",1105189,30737,1007080
+"Japon","jpn","Asie",6246268,4225,6610454
+"Kazakhstan","kaz","Asie",1573512,93210,2375914
+"Kenya","ken","Afrique",8043380,468923,6737289
+"République kirghize","kgz","Asie",607542,"",840456
+"Cambodge","khm","Asie",2198283,159916,1132622
+"Kiribati","kir","Océanie",17777,1547,16945
+"Saint-Kitts-et-Nevis","kna","Amérique",5110,"",3904
+"Corée, République de","kor","Asie",2614790,175,2626947
+"Koweït","kwt","Asie","","",""
+"République démocratique populaire lao","lao","Asie",741976,73926,568402
+"Liban","lbn","Asie",524141,172038,405438
+"Libéria","lbr","Afrique","","",""
+"Libye","lby","Afrique","","",""
+"Sainte-Lucie","lca","Amérique",14936,304,10805
+"Liechtenstein","lie","Europe","","",""
+"Sri Lanka","lka","Asie",1576358,157499,2537045
+"Lesotho","lso","Afrique",312005,117314,""
+"Lituanie","ltu","Europe",121494,120,240830
+"Luxembourg","lux","Europe",42250,254,52258
+"Lettonie","lva","Europe",121947,2427,124401
+"Région administrative spéciale de Macao, Chine","mac","Asie",37854,6221,30274
+"Saint-Martin (fr)","maf","Amérique","","",""
+"Maroc","mar","Afrique",4683013,"",3434273
+"Monaco","mco","Europe",2024,"",3478
+"Moldova","mda","Europe",137227,750,227896
+"Madagascar","mdg","Afrique",5113497,129499,""
+"Maldives","mdv","Asie",45617,3089,33002
+"Mexique","mex","Amérique",13384870,45955,13573877
+"Îles Marshall","mhl","Océanie",5815,17,5357
+"Macédoine du Nord","mkd","Europe",105461,4151,150231
+"Mali","mli","Afrique",2973205,1186892,1305142
+"Malte","mlt","Europe",27337,738,32424
+"Myanmar","mmr","Asie","","",""
+"Monténégro","mne","Europe",38834,80,56561
+"Mongolie","mng","Asie",381720,31779,412877
+"Mariannes","mnp","Océanie","","",""
+"Mozambique","moz","Afrique","","",""
+"Mauritanie","mrt","Afrique",861768,"",""
+"Maurice","mus","Afrique",89001,1399,""
+"Malawi","mwi","Afrique",4623698,"",1160938
+"Malaisie","mys","Asie",3092312,308987,2626044
+"Namibie","nam","Afrique",564723,3788,228486
+"Nouvelle-Calédonie","ncl","Océanie","","",""
+"Niger","ner","Afrique",3022704,1779825,910184
+"Nigéria","nga","Afrique",33415352,9070702,15198844
+"Nicaragua","nic","Amérique",880080,53481,463660
+"Pays-Bas","nld","Europe",1143261,5698,1610754
+"Norvège","nor","Europe",437855,5825,466864
+"Népal","npl","Asie",3610603,57234,3695560
+"Naoero","nru","Océanie",2054,8,1438
+"Nouvelle-Zélande","nzl","Océanie",378663,8998,540275
+"Oman","omn","Asie",345401,"",513330
+"Pakistan","pak","Asie",24613073,8389473,16970015
+"Panama","pan","Amérique",442354,41370,""
+"Pérou","per","Amérique",3775989,"",3209642
+"Philippines","phl","Asie",12953380,1470794,12594216
+"Palaos","plw","Océanie",1401,114,1398
+"Papouasie-Nouvelle-Guinée","png","Asie",1654794,"",655030
+"Pologne","pol","Europe",1598937,1874,3283716
+"Puerto Rico (US)","pri","Amérique",150261,22174,236258
+"Corée, République démocratique de","prk","Asie","","",""
+"Portugal","prt","Europe",598661,2741,741752
+"Paraguay","pry","Amérique",706905,97283,569965
+"Cisjordanie et Gaza","pse","Asie",514700,53793,868232
+"Polynésie française","pyf","Océanie","","",""
+"Qatar","qat","Asie",171563,12367,142105
+"Roumanie","rou","Europe",873154,160246,1425336
+"Fédération de Russie","rus","Asie",7554896,187975,10798220
+"Rwanda","rwa","Afrique",2838343,9134,819262
+"Arabie saoudite","sau","Asie","","",""
+"Soudan","sdn","Afrique","","",""
+"Sénégal","sen","Afrique",2340219,658669,1283240
+"Singapour","sgp","Asie",238816,504,163746
+"Îles Salomon","slb","Océanie",95872,38710,""
+"Sierra Leone","sle","Afrique",2017170,"",1162280
+"El Salvador","slv","Amérique",608681,95913,442494
+"Saint-Marin","smr","Europe",1462,104,1715
+"République fédérale de Somalie","som","Afrique",464607,"",115828
+"Serbie","srb","Europe","","",""
+"Soudan du Sud","ssd","Afrique","","",""
+"Sao Tomé-et-Principe","stp","Afrique","","",""
+"Suriname","sur","Amérique",54706,26242,63941
+"République slovaque","svk","Europe",242236,2889,466120
+"Slovénie","svn","Europe",132709,1904,160956
+"Suède","swe","Europe",867281,3210,988482
+"Eswatini","swz","Afrique",222351,"",""
+"Sint Maarten (Dutch part)","sxm","Amérique",3913,196,""
+"Seychelles","syc","Afrique",9598,329,7861
+"République arabe syrienne","syr","Asie",2172256,745174,1353625
+"Îles Turques-et-Caïques","tca","Amérique",3511,"",2846
+"Tchad","tcd","Afrique",2955477,893810,750180
+"Togo","tgo","Afrique",1664472,10944,915214
+"Thaïlande","tha","Asie",4611695,72338,4424066
+"Tadjikistan","tjk","Asie",994877,"",1257135
+"Turkménistan","tkm","Asie",633319,17294,1024078
+"Timor-Leste","tls","Asie",227656,13085,""
+"Tonga","ton","Océanie",16114,"",15981
+"Trinité-et-Tobago","tto","Amérique",128993,38105,88408
+"Tunisie","tun","Afrique",1337527,14015,""
+"Turquie","tur","Asie",5535531,32563,12313798
+"Tuvalu","tuv","Océanie",1418,5,1179
+"Tanzanie","tza","Afrique",11428969,1682043,""
+"Ouganda","uga","Afrique","","",""
+"Ukraine","ukr","Europe",1524174,193616,2645164
+"Uruguay","ury","Amérique",287527,98,337808
+"États-Unis","usa","Amérique",23832746,"",25345304
+"Ouzbékistan","uzb","Asie",2543859,130836,4112120
+"Saint-Vincent-et-les Grenadines","vct","Amérique",12163,"",9707
+"Venezuela","ven","Amérique",3540946,17643,2695688
+"Îles Vierges britanniques","vgb","Amérique",2499,441,2162
+"Îles Vierges (EU)","vir","Amérique","","",""
+"Viet Nam","vnm","Asie",9192690,147000,""
+"Vanuatu","vut","Océanie",55233,1407,61360
+"Samoa","wsm","Océanie",35003,1246,""
+"Yémen, Rép. du","yem","Asie","","",""
+"Afrique du Sud","zaf","Afrique",7521185,448146,5500042
+"Zambie","zmb","Afrique","","",""
+"Zimbabwe","zwe","Afrique",2953307,289420,""
