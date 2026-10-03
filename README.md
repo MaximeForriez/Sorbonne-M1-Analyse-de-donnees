@@ -59,19 +59,35 @@ Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%
 
 ### [Séance 2. Principes généraux de la statistique et paramètres statistiques élémentaires](./Seance-02/README.md)
 
-- ACA / SCT [07/10/2026] - Clignancourt - Salle 217 - 10h00-12h00
+- ACA [13/10/2026] - Institut de géographie - Salle 301 - 13h00-15h00
+
+> [!NOTE]
+> Si vous ne pouvez pas venir mardi, dans la limite des places disponibles, venez le 14/10/2026 - Clignancourt - Salle 217 - 12h00-14h00.
+> Si vous faites ce choix, le groupe d'accueil ayant déjà eu les explications sur le code vous devrait réaliser les exercices sans ce cours.
+
+- SCT (seulement) [07/10/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
 - GeoSUDS [30/09/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
 ### [Séance 3. Statistiques univariées (1). Distributions statistiques](./Seance-03/README.md)
 
-- ACA / SCT [07/10/2026] - Clignancourt - Salle 217 - 12h00-14h00
+- ACA [20/10/2026] - Institut de géographie - Salle 301 - 13h00-15h00
+
+> [!NOTE]
+> Si vous ne pouvez pas venir mardi, dans la limite des places disponibles, venez le 21/10/2026 - Clignancourt - Salle 217 - 12h00-14h00.
+
+- SCT [07/10/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
 - GeoSUDS [21/10/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
 ### [Séance 4. Statistiques univariées (2). Statistiques inférentielles](./Seance-04/README.md)
 
-- ACA / SCT [14/10/2026] - Clignancourt - Salle 217 - 12h00-14h00
+- ACA [03/11/2026] - Institut de géographie - Salle 301 - 13h00-15h00
+
+> [!NOTE]
+> Si vous ne pouvez pas venir mardi, dans la limite des places disponibles, venez le 04/11/2026 - Clignancourt - Salle 217 - 12h00-14h00.
+
+- SCT [14/10/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
 - GeoINT [30/09/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
@@ -81,7 +97,12 @@ Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%
 
 ### [Séance 5. Statistiques univariées (3). Statistique d'ordre des variables qualitatives](./Seance-05/README.md)
 
-- ACA / SCT [04/11/2026] - Clignancourt - Salle 217 - 10h00-12h00
+- ACA [17/11/2026] - Institut de géographie - Salle 301 - 14h00-16h00
+
+> [!NOTE]
+> Si vous ne pouvez pas venir mardi, dans la limite des places disponibles, venez le 18/11/2026 - Clignancourt - Salle 217 - 12h00-14h00.
+
+- SCT [04/11/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
 - GeoINT [14/10/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
@@ -91,7 +112,12 @@ Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%
 
 ### [Séance 6. Statistiques bivariées (1). Régression et corrélation statistique de deux variables quantitatives](./Seance-06/README.md)
 
-- ACA / SCT [25/11/2026] - Clignancourt - Salle 217 - 10h00-12h00
+- ACA [01/12/2026] - Institut de géographie - Salle 301 - 11h00-13h00
+
+> [!NOTE]
+> Si vous ne pouvez pas venir mardi, dans la limite des places disponibles, venez le 02/12/2026 - Clignancourt - Salle 217 - 12h00-14h00.
+
+- SCT [25/11/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
 - GeoINT [21/10/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
@@ -101,7 +127,12 @@ Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%
 
 ### [Séance 7. Statistiques bivariées (2). Étude de deux variables qualitatives](./Seance-07/README.md)
 
-- ACA / SCT [09/12/2026] - Clignancourt - Salle 217 - 12h00-14h00
+- ACA [08/12/2026] - Institut de géographie - Salle 301 - 13h00-15h00
+
+> [!NOTE]
+> Si vous ne pouvez pas venir mardi, dans la limite des places disponibles, venez le 09/12/2026 - Clignancourt - Salle 217 - 12h00-14h00.
+
+- SCT [09/12/2026] - Clignancourt - Salle 217 - 12h00-14h00
 
 - GeoINT [18/11/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
@@ -123,7 +154,9 @@ Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%
 
 ### [Séance Bonus. Téléchargement des données à partir d'un A.P.I.](./Seance-Bonus/README.md)
 
-- ACA / SCT
+- ACA
+
+- SCT
 
 - GeoINT
 
@@ -133,7 +166,9 @@ Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%
 
 ### [Bonus. Autres techniques statistiques](./Bonus-Analyse-de-donnees/README.md)
 
-- ACA / SCT
+- ACA
+
+- SCT
 
 - GeoINT
 
