@@ -47,6 +47,10 @@ Si vous avez des difficultés à comprendre les équations, voici des cours et d
 
 ### [Séance 1. Présentation du contenu du cours et mise en route](./Seance-01/README.md)
 
+[Tutoriel `Git`](https://www.youtube.com/watch?v=qn6d_IUGAic)
+
+[Tutoriel `Docker`](https://www.youtube.com/watch?v=SGtFntTNAMY)
+
 Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%20Python%20avec%20Docker/Fichiers-test).
 
 - SCT (seulement) [23/09/2026] - Clignancourt - Salle 217 - 10h00-12h00
