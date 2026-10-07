@@ -52,7 +52,7 @@ def getliste(territoiretest):
 # Question 4
 print("Question 4")
 # Source des données : https://www.cepii.fr/CEPII/en/bdd_modele/bdd_modele_item.asp?id=37
-with open("./data/Produits-alimentaires-2024.csv", "r", encoding="utf-8") as fichier:
+with open("./data/Afrique-2024.csv", "r", encoding="utf-8") as fichier:
     contenu = pd.read_csv(fichier)
 
 # Question 5
