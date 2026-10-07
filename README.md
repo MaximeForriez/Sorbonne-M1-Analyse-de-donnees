@@ -51,6 +51,8 @@ Si vous avez des difficultés à comprendre les équations, voici des cours et d
 
 [Tutoriel `Docker` et `Visual Studio Code`](https://www.youtube.com/watch?v=SGtFntTNAMY)
 
+[Tutoriel `Python`](https://www.youtube.com/watch?v=qOSCgcDb2jM)
+
 Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%20Python%20avec%20Docker/Fichiers-test).
 
 - SCT (seulement) [23/09/2026] - Clignancourt - Salle 217 - 10h00-12h00
