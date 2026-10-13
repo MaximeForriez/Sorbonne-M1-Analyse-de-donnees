@@ -77,7 +77,7 @@ Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%
 
 > [!NOTE]
 > Si vous ne pouvez pas venir mardi, dans la limite des places disponibles, venez le 14/10/2026 - Clignancourt - Salle 217 - 12h00-14h00.
-> Si vous faites ce choix, le groupe d'accueil ayant déjà eu les explications sur le code vous devrait réaliser les exercices sans ce cours.
+> Si vous faites ce choix, le groupe d'accueil ayant déjà eu les explications sur le code vous devrez réaliser les exercices sans ce cours.
 
 - SCT (seulement) [07/10/2026] - Clignancourt - Salle 217 - 10h00-12h00
 
@@ -224,7 +224,7 @@ Tous les groupes doivent télécharger le [dossier suivant](./Installation%20de%
 
 - Dumolard, Pierre, 2011, *Données géographiques. Analyse statistique multivariée*, Paris, Lavoisier-Hermès, 208 p.
 
-- Dumolard, Pierre, Allignol, Françoise, Paul, Emmanuel et Quesseveur, Erwan, [*L’outil informatique en géographie*](./Formulaire-mathematique/Dumolard-Allignol-Paul-Quesseveur--L%20outil%20informatique%20en%20geographie.pdf), 150 p. 
+- Dumolard, Pierre, Allignol, Françoise, Paul, Emmanuel et Quesseveur, Erwan, [*L’outil informatique en géographie*](./Formulaire-mathematique/Dumolard-Allignol-Paul-Quesseveur--L%20outil%20informatique%20en%20geographie.pdf), 150 p.
 
 - Dumolard, Pierre, Dubus, Nathalie & Charleux, Laure, 2003, *Les statistiques en géographie*, Paris, Belin, 240 p. [Atout géographie]
 
